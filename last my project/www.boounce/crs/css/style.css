@@ -41,14 +41,31 @@ html {
   background-image: url("../img/btn-menu.png") !important;
   margin-top: 0.5em;
 }
-.we-are{
- height: 100vh;
- width: 100%;
- min-height: 600px;
- z-index: 10;
- text-align: center;
- padding-top: 17em;
+#navbarSupportedContent {
+  z-index: 999;
+  position: relative;
 }
+
+
+.main-firsr {
+  height: 100vh;
+  width: 100%;
+  min-height: 600px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: 1s;
+}
+
 .we-are h1{
   font-size: 1.8em;
   font-family: "tahoma";
@@ -66,9 +83,14 @@ html {
   z-index: 10;
   padding-top: 2em;
 }
+
+.delate {
+  opacity: 0;
+}
+
 .btn-down-wrap{
   position: absolute;
-  top: 85%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 2;
@@ -854,9 +876,7 @@ color: #19bd9a;
 
 @media (max-width: 1024px) {
 
-.we-are{
-  padding-top: 19em;
-}
+
 
 #here span {
   font-size: 1.5em;
@@ -1190,9 +1210,7 @@ dark span {
   margin-top: 1em;
   font-size: 1.5em;
 }
-.we-are{
-  padding-top: 13em;
-}
+
 .latest_news {
   padding-top: 5em;
   padding-bottom: 5em;
@@ -1216,7 +1234,6 @@ dark span {
 }
 
 
-
 /*Медиа запросы 320*/
 
 @media (max-width: 320px) {
@@ -1225,9 +1242,7 @@ dark span {
   margin-top: 0.5em;
   font-size: 1.1em;
 }
-.we-are{
-  padding-top: 8em;
-}
+
 .latest_news {
   padding-top: 1em;
   padding-bottom: 1em;
