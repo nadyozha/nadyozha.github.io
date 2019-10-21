@@ -24,11 +24,11 @@ body {
   body video {
     filter: brightness(0.4);
     position: absolute;
-    left: 0;
     right: 0;
-    top: 0;
     bottom: 0;
-    height: 100vh; }
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2)); }
 
 .second {
   position: absolute;

@@ -1,0 +1,509 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../fonts/ProximaNova/ProximaNova-Reg.otf); }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../fonts/ProximaNova/ProximaNova-Bold.otf);
+  font-weight: bold; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+html {
+  width: 100%;
+  overflow-x: hidden; }
+
+button:focus, input:focus, a:focus, textarea:focus {
+  outline: none; }
+
+button {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s; }
+
+.nav-first {
+  margin-top: 2rem; }
+  .nav-first .granit-logo {
+    padding-left: 0.5rem; }
+    .nav-first .granit-logo h3 {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #292929;
+      text-transform: uppercase;
+      margin: 0; }
+    .nav-first .granit-logo h6 {
+      font-size: 11px;
+      font-weight: 300;
+      color: #969696;
+      margin: 0; }
+  .nav-first .telefon h3 {
+    letter-spacing: 0;
+    font-size: 18px;
+    text-align: right; }
+  .nav-first .telefon a h6 {
+    text-align: right; }
+  .nav-first .telefon a:hover {
+    text-decoration: none; }
+  .nav-first button {
+    font-size: 12px;
+    font-weight: 500;
+    color: #292929;
+    border: solid 2px #292929;
+    background-color: transparent;
+    padding: 8px 25px; }
+    .nav-first button:hover {
+      background-color: #292929;
+      border: solid 2px #292929;
+      color: white; }
+  .nav-first .nav-yelow {
+    background-color: #ffcc00;
+    margin-top: 1rem; }
+    .nav-first .nav-yelow ul li {
+      padding: 10px 30px;
+      list-style: none; }
+      .nav-first .nav-yelow ul li a {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s; }
+        .nav-first .nav-yelow ul li a:hover {
+          font-weight: 700; }
+    .nav-first .nav-yelow nav button {
+      border: none; }
+      .nav-first .nav-yelow nav button span {
+        font-size: 1.5rem; }
+
+.traktor {
+  position: relative;
+  min-height: 35vh;
+  overflow: hidden; }
+  .traktor video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 100vh;
+    -webkit-filter: brightness(0.4);
+    filter: brightness(0.4); }
+  .traktor .title-first h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 7rem; }
+  .traktor .title-first p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 1rem; }
+  .traktor .title-first button {
+    font-size: 12px;
+    font-weight: 900;
+    color: #0d0d0d;
+    background-color: #ffd200;
+    border-radius: 0;
+    padding: 15px 30px; }
+    .traktor .title-first button:hover {
+      background-color: #0d0d0d;
+      color: #fff; }
+  .traktor .title-first a span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 2rem;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s; }
+  .traktor .title-first a:hover {
+    text-decoration: none; }
+    .traktor .title-first a:hover span {
+      color: #ffd200; }
+
+.card {
+  border: solid 2px #f6f6f6;
+  border-radius: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .card .card-title {
+    min-height: 175px; }
+  .card .card-body a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #292929;
+    text-decoration: underline; }
+  .card .card-body p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #626262;
+    text-transform: lowercase;
+    margin-top: 10px; }
+  .card .card-body h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0f0f0f;
+    text-transform: lowercase; }
+  .card .card-body button {
+    font-size: 12px;
+    font-weight: 900;
+    color: #0d0d0d;
+    background-color: #ffd200;
+    border-radius: 0;
+    padding: 10px 40px;
+    margin-top: 15px; }
+    .card .card-body button:hover {
+      background-color: #0d0d0d;
+      color: #ffd200; }
+
+.card:hover {
+  background-color: #f6f6f6; }
+
+.card-2 {
+  border: solid 2px #ffffff;
+  background-color: transparent;
+  padding: 1.5rem;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  min-height: 330px; }
+  .card-2 .card-title {
+    min-height: 90px; }
+  .card-2 .card-body h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #292929;
+    text-transform: uppercase; }
+  .card-2 .card-body p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #292929; }
+
+.card-2:hover {
+  background-color: #ffffff; }
+
+.card-3 {
+  border: solid 2px #f6f6f6;
+  background-color: transparent;
+  padding: 1rem;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .card-3 .card-body a {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 12px; }
+  .card-3 .card-body span {
+    font-size: 10px;
+    color: #979797; }
+  .card-3 .card-body .span-prace {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff0000; }
+  .card-3 .card-body button {
+    width: 90%; }
+
+.line-through {
+  text-decoration: line-through; }
+
+.card-3:hover {
+  background-color: #ffd200;
+  border: solid 2px #ffd200; }
+  .card-3:hover button {
+    background-color: #cca800; }
+
+.card-4 {
+  padding: 1rem; }
+  .card-4 .card-title {
+    min-height: 180px;
+    padding-top: 2rem; }
+
+.card-4:hover {
+  background-color: white; }
+
+.map {
+  background: url("../img/24.png") no-repeat center;
+  background-size: cover;
+  position: relative; }
+  .map .marker {
+    position: absolute;
+    color: #ffd200;
+    top: 42%;
+    left: 27%;
+    font-size: 2rem; }
+  .map .card_contact {
+    background-color: #ffffff;
+    padding: 4rem;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .map .card_contact h5 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #292929;
+      text-transform: uppercase; }
+    .map .card_contact h6 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #292929;
+      margin-top: 2rem;
+      position: relative; }
+    .map .card_contact p {
+      font-size: 14px;
+      color: #292929;
+      margin-top: 2rem;
+      position: relative; }
+    .map .card_contact .faw-contact {
+      position: absolute;
+      left: -25px;
+      top: 5px; }
+  .map .card_contact:hover {
+    background-color: #ffd200; }
+
+footer {
+  background-color: #292929; }
+  footer .granit-logo-footer {
+    color: #ffffff; }
+    footer .granit-logo-footer h3 {
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin: 0; }
+  footer .footer-contact {
+    color: #ffffff; }
+    footer .footer-contact h3 {
+      font-size: 18px;
+      text-align: right; }
+    footer .footer-contact h6 {
+      font-size: 11px;
+      text-align: right; }
+    footer .footer-contact button {
+      font-size: 12px;
+      font-weight: 500;
+      background-color: transparent;
+      color: #ffffff;
+      border: solid 1px #ffffff;
+      border-radius: 0;
+      margin-top: 10px;
+      -webkit-transition: 0.6s;
+      -o-transition: 0.6s;
+      transition: 0.6s; }
+      footer .footer-contact button:hover {
+        background-color: #ffd200;
+        border: solid 1px #ffd200;
+        color: #292929; }
+
+/*Медиа запросы 1199*/
+@media (max-width: 1199px) {
+  .card-3 {
+    position: relative;
+    min-height: 360px; }
+    .card-3 .card-body button {
+      padding: 10px;
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px; } }
+
+/*Медиа запросы 991*/
+@media (max-width: 991px) {
+  .nav-first .nav-yelow ul li {
+    padding: 10px 10px; }
+  .card .card-title {
+    min-height: 142px; }
+  .card .card-body {
+    padding: 10px; }
+    .card .card-body button {
+      padding: 10px; }
+  .card-2 {
+    padding: 0;
+    min-height: 275px; }
+    .card-2 .card-title {
+      min-height: 100px; }
+  .card-3 {
+    padding: 7px;
+    min-height: 320px;
+    position: relative; }
+    .card-3 .card-title {
+      min-height: 130px; }
+    .card-3 .card-body a {
+      font-size: 8px; }
+    .card-3 .card-body span {
+      font-size: 8px;
+      display: block; }
+    .card-3 .card-body button {
+      padding: 10px;
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px; }
+  .card-4 {
+    min-height: 250px; }
+    .card-4 .card-title {
+      min-height: 160px; } }
+
+/*Медиа запросы 768*/
+@media (max-width: 768px) {
+  .nav-first {
+    margin-top: 1rem; }
+    .nav-first .granit-logo-h3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .nav-first .telefon h3 {
+      font-size: 16px; }
+    .nav-first .telefon h6 {
+      font-size: 9px; }
+    .nav-first button {
+      font-size: 10px; }
+  .nav-first .nav-yelow ul {
+    text-align: center; }
+    .nav-first .nav-yelow ul li a {
+      font-size: 16px; }
+  .card {
+    margin-bottom: 1rem; }
+    .card .card-title {
+      min-height: 100px;
+      padding: 8px;
+      margin-bottom: 0; }
+    .card .card-body {
+      padding: 7px; }
+      .card .card-body p {
+        font-size: 10px; }
+      .card .card-body button {
+        font-size: 10px;
+        margin-top: 5px;
+        width: 100%; }
+  .card-2 {
+    min-height: 224px; }
+    .card-2 .card-body h6 {
+      font-size: 12px; }
+    .card-2 .card-body p {
+      font-size: 9px; }
+  .card-3 {
+    min-height: 305px; }
+    .card-3 .card-body a {
+      font-size: 13px; }
+    .card-3 .card-body span {
+      font-size: 12px; }
+    .card-3 .card-body button {
+      width: 93%; }
+  .card-4 {
+    padding: 1.5rem;
+    min-height: 200px; }
+    .card-4 .card-title {
+      min-height: 114px; }
+    .card-4 .card-body a {
+      font-size: 14px; } }
+
+/*Медиа запросы 599*/
+@media (max-width: 575px) {
+  .nav-first {
+    margin-top: 0; }
+    .nav-first .container .row .logo-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      justify-content: center !important; }
+    .nav-first .wrap-nav-tel {
+      margin-top: 1rem; }
+      .nav-first .wrap-nav-tel .back-call {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+        justify-content: start !important; } }
+
+/*Медиа запросы 500*/
+@media (max-width: 500px) {
+  .nav-first {
+    margin-top: 0; }
+    .nav-first .wrap-nav-tel {
+      margin-top: 1rem; }
+  .card {
+    padding: 1rem; }
+    .card .card-body a {
+      font-size: 26px; }
+    .card .card-body p {
+      font-size: 16px; }
+    .card .card-body h6 {
+      font-size: 32px; }
+    .card .card-body button {
+      padding: 15px 20px;
+      font-size: 16px;
+      margin-top: 1rem; }
+  .card-3 {
+    min-height: 590px; }
+    .card-3 .card-body span {
+      font-size: 22px; }
+    .card-3 .card-body .span-prace {
+      font-size: 28px; }
+    .card-3 .card-body a {
+      font-size: 22px; } }
+
+/*Медиа запросы 414*/
+/*@media (max-width: 414px) */
+/*Медиа запросы 375*/
+@media (max-width: 375px) {
+  .nav-first .telefon h3 {
+    font-size: 13px; }
+  .nav-first .telefon h6 {
+    font-size: 7px; }
+  .nav-first button {
+    font-size: 8px;
+    padding: 4px 25px; }
+  .traktor .title-first h1 {
+    font-size: 30px; }
+  .traktor .title-first p {
+    font-size: 20px; }
+  .traktor .title-first button {
+    font-size: 10px;
+    padding: 15px 20px; }
+  .traktor .title-first a span {
+    padding-left: 10px; } }
+
+/*Медиа запросы 320*/
+@media (max-width: 320px) {
+  .traktor .title-first h1 {
+    font-size: 26px;
+    margin-top: 4rem; }
+  .traktor .title-first p {
+    font-size: 16px; }
+  .traktor .title-first button {
+    font-size: 10px;
+    padding: 15px;
+    margin-top: 2rem; }
+  .traktor .title-first a span {
+    display: none; }
+  h2 {
+    font-size: 26px; }
+  .card .card-body h6 {
+    font-size: 22px; }
+  .card-3 {
+    min-height: 470px; }
+    .card-3 .card-body a {
+      font-size: 15px; }
+  footer .footer-contact h3 {
+    font-size: 14px; }
+  footer .footer-contact h6 {
+    font-size: 7px; }
+  footer .footer-contact button {
+    font-size: 10px; } }
