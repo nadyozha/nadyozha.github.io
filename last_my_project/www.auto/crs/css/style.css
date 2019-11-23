@@ -18,6 +18,10 @@ html {
   width: 100%;
   overflow-x: hidden; }
 
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
 button:focus, input:focus, a:focus, textarea:focus {
   outline: none; }
 

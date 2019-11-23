@@ -16,6 +16,10 @@ img {
 html {
   font-family: ProximaNova; }
 
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
 .first {
   background: url("../img/bg.png") no-repeat center;
   background-size: cover; }
