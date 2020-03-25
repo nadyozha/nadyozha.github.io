@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6
     height: 100%
     background: url(https://www.pvsm.ru/images/2017/02/14/veb-animaciya-gde-zachem-i-pochemu-2.gif) center no-repeat
     background-color: #66ceff
-    z-index: 101
+    z-index: 999
     opacity: 1
     visibility: visible
                 /* style */    
@@ -105,10 +105,10 @@ h1, h2, h3, h4, h5, h6
 
 .collapse-content
     transition: all 0.5s ease 0
-    opacity: 0.95
+    opacity: 0.92
     padding: 3rem
-    z-index: 99
     position: fixed
+    z-index: 90
     top: -150%
     left: 0
     width: 100%
@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6
     overflow: auto
     padding: 1rem
     
-
 
     &.active
         top: 0
@@ -203,6 +202,7 @@ h1, h2, h3, h4, h5, h6
         .contact
             position: relative
             z-index: 4
+            color: white
 
             i
                 color: white
@@ -222,13 +222,12 @@ h1, h2, h3, h4, h5, h6
 
         .btn-open
             padding-left: 3rem
-            z-index: 100
             position: relative
             width: 30px
             height: 20px
             display: block
             cursor: pointer
-            position: relative
+            z-index: 200
 
             
 
