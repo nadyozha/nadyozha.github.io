@@ -187,7 +187,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 30px;
       height: 20px;
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative; }
       .first .navbar .btn-open:before, .first .navbar .btn-open:after {
         content: "";
         background-color: white;
