@@ -92,8 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.92;
   padding: 3rem;
   position: fixed;
-  z-index: 2;
-  z-index: 90;
+  z-index: 0;
   top: -150%;
   left: 0;
   width: 100%;
@@ -116,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
         text-transform: uppercase;
         font-size: 36px;
-        font-weight: 100;
+        font-weight: 300;
         letter-spacing: 3px; }
       .collapse-content .navbar-navigation li a:hover {
         color: #19b5fe; }
@@ -148,11 +147,9 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh; }
   .first .navbar {
     min-height: 15vh;
-    position: relative;
-    z-index: 900; }
+    position: relative; }
     .first .navbar a {
-      padding: 0;
-      z-index: 4; }
+      padding: 0; }
       .first .navbar a .logo_23 {
         width: 50px;
         height: 50px;
@@ -169,7 +166,6 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 10px; }
     .first .navbar .contact {
       position: relative;
-      z-index: 4;
       color: white; }
       .first .navbar .contact i {
         color: white;
@@ -250,6 +246,9 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 300;
       color: #ffffff;
       margin-top: 2rem; }
+
+.none-display {
+  visibility: hidden; }
 
 .second {
   min-height: 100vh; }
@@ -349,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
   .threth button {
     background-color: #19b5fe;
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     padding: 15px 3px; }
 
 .four {
@@ -879,9 +878,9 @@ footer {
   .threth a {
     font-size: 10px; }
   .threth small {
-    font-size: 14px; }
+    font-size: 16px; }
   .threth h6 {
-    font-size: 16px;
+    font-size: 30px;
     margin-top: 0.5rem; }
   .threth .card_1 h5 {
     font-size: 14px; }
@@ -927,7 +926,9 @@ footer {
     margin-top: 1rem; }
 
   .ten .arrow-down {
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  .ten .contact small {
+    font-size: 14px; } }
 @media (max-width: 375px) {
   .first .navbar {
     padding: 8px 0; }

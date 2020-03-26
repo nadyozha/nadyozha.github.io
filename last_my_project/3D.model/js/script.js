@@ -19,6 +19,12 @@ document.body.onload = function() {
 $('#btn-open').click(function(){
 	$('.btn-open, .collapse-content').toggleClass('active');
 	$('body').toggleClass('lock');
+	$('.logo_23').toggleClass('none-display');
+	$('.span_23').toggleClass('none-display');
+	$('.Degree').toggleClass('none-display');
+	$('.contact').toggleClass('none-display');
+	$('.first_input').toggleClass('none-display');
+	$('.fa-angle-double-down').toggleClass('none-display');
 });
 
 
