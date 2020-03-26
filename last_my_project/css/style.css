@@ -873,14 +873,15 @@ footer {
   .threth h2 {
     font-size: 28px; }
   .threth span {
-    font-size: 12px;
-    margin-top: 1.5rem; }
+    font-size: 14px;
+    margin-top: 1.5rem;
+    font-weight: 300; }
   .threth a {
     font-size: 10px; }
   .threth small {
-    font-size: 16px; }
+    font-size: 18px; }
   .threth h6 {
-    font-size: 30px;
+    font-size: 33px;
     margin-top: 0.5rem; }
   .threth .card_1 h5 {
     font-size: 14px; }
