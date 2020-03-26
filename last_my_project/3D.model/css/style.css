@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.92;
   padding: 3rem;
   position: fixed;
+  z-index: 2;
   z-index: 90;
   top: -150%;
   left: 0;
@@ -146,7 +147,9 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   min-height: 100vh; }
   .first .navbar {
-    min-height: 15%; }
+    min-height: 15vh;
+    position: relative;
+    z-index: 900; }
     .first .navbar a {
       padding: 0;
       z-index: 4; }
@@ -188,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 20px;
       display: block;
       cursor: pointer;
-      z-index: 200; }
+      z-index: 900; }
       .first .navbar .btn-open:before, .first .navbar .btn-open:after {
         content: "";
         background-color: white;
