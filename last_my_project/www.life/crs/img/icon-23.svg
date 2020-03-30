@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="Group_362" data-name="Group 362" transform="translate(-565 -4351)">
+    <circle id="Ellipse_38" data-name="Ellipse 38" cx="36" cy="36" r="36" transform="translate(565 4351)" fill="#ddefe2"/>
+    <g id="Group_55" data-name="Group 55" transform="translate(-4 -102)">
+      <path id="inbox-full" d="M18.8,18.8h5.371V2.685H2.685V18.8H8.056a2.693,2.693,0,0,0,2.685,2.685h5.371A2.685,2.685,0,0,0,18.8,18.8ZM0,2.685A2.693,2.693,0,0,1,2.685,0H24.168a2.685,2.685,0,0,1,2.685,2.685V24.168a2.685,2.685,0,0,1-2.685,2.685H2.685A2.685,2.685,0,0,1,0,24.168ZM5.371,5.371H21.482V8.056H5.371Zm0,4.028H21.482v2.685H5.371Zm0,4.028H21.482v2.685H5.371Z" transform="translate(589 4473)" fill="#25772f"/>
+      <g id="Group_54" data-name="Group 54" transform="translate(605.112 4489.112)">
+        <circle id="Ellipse_45" data-name="Ellipse 45" cx="6.445" cy="6.445" r="6.445" transform="translate(1.611 1.611)" fill="#ddefe2"/>
+        <path id="block" d="M0,8.056a8.056,8.056,0,1,1,8.056,8.056A8.056,8.056,0,0,1,0,8.056ZM13.147,4.109,4.1,13.139A6.445,6.445,0,0,0,13.147,4.1ZM12.011,2.965a6.445,6.445,0,0,0-9.047,9.047l9.047-9.047Z" fill="#25772f"/>
+      </g>
+    </g>
+  </g>
+</svg>

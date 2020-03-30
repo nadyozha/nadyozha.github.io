@@ -1,0 +1,533 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: ProximaNova; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+input::placeholder {
+  color: #858585; }
+
+button:focus, input:focus, a:focus, textarea:focus {
+  outline: none; }
+
+button {
+  transition: all 0.4s;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #c11717, #e42626);
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px; }
+
+button:hover {
+  cursor: pointer; }
+
+.button {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 8px 20px; }
+  .button:hover {
+    color: #ededed; }
+
+b {
+  font-weight: 600; }
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #1c1c1c; }
+
+.navbar_1 {
+  padding-left: 0;
+  padding-right: 0; }
+  .navbar_1 .navbar-brand {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.14px;
+    color: #1c1c1c; }
+  .navbar_1 div ul li {
+    padding: 0 0.7rem; }
+    .navbar_1 div ul li a {
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.14px;
+      color: #1c1c1c; }
+      .navbar_1 div ul li a:hover {
+        color: #e42626; }
+  .navbar_1 .call-me a {
+    color: #fff; }
+    .navbar_1 .call-me a:hover {
+      text-decoration: none; }
+
+.first {
+  padding-top: 1rem; }
+  .first .logo span {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-left: 8px; }
+  .first .urist span {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
+    color: #1c1c1c; }
+  .first .contact .telefon {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.18px;
+    color: #1c1c1c; }
+  .first .contact .ios {
+    width: 30px;
+    height: 30px;
+    color: #e42626;
+    border: 1px solid #e42626;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 0.5rem; }
+    .first .contact .ios i {
+      width: 25px; }
+
+.parallax-window {
+  min-height: 300px;
+  background: transparent; }
+
+.second {
+  margin-top: 1rem;
+  padding: 4rem 0; }
+  .second h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; }
+  .second h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold; }
+  .second p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 2rem; }
+  .second button {
+    margin-top: 2rem;
+    padding: 12px 20px; }
+
+.about {
+  color: #fff; }
+  .about h3 {
+    color: #fff; }
+  .about p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    margin-top: 3rem; }
+  .about .card {
+    background-color: transparent;
+    border: none; }
+    .about .card .card-title {
+      height: 70px;
+      padding: 1rem;
+      margin: 0; }
+      .about .card .card-title span {
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 0.48px; }
+        .about .card .card-title span .small-span {
+          font-size: 22px; }
+    .about .card .card-body {
+      height: 60px;
+      padding: 1rem;
+      margin: 0; }
+      .about .card .card-body p {
+        margin: 0; }
+
+.about_2 {
+  background-color: #f5f5f5; }
+  .about_2 .card {
+    background-color: transparent;
+    border: none; }
+    .about_2 .card .card-title {
+      padding: 1rem; }
+    .about_2 .card .card-body {
+      padding: 1rem; }
+
+.four .fitches_4 p {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.13px;
+  color: #000000; }
+  .four .fitches_4 p strong {
+    font-weight: bold; }
+  .four .fitches_4 p img {
+    width: 30px;
+    padding-right: 0.5rem; }
+.four .fitches_4 h6 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  color: #1c1c1c;
+  margin-bottom: 1rem; }
+.four .fitches_4 button {
+  padding-top: 1rem;
+  padding: 1rem; }
+.four .fitches_4 .card {
+  padding: 0.5rem;
+  border-radius: 0;
+  border: none; }
+  .four .fitches_4 .card .card-body {
+    padding: 0.5rem; }
+    .four .fitches_4 .card .card-body p {
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 0.13px; }
+    .four .fitches_4 .card .card-body h6 {
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.14px; }
+.four .fitches_4 .consultation {
+  text-align: right; }
+.four .fitches_4 .our_uslugi {
+  text-align: left; }
+.four .fitches_4 .card_green {
+  background-color: #26b83a; }
+  .four .fitches_4 .card_green .card-body p, .four .fitches_4 .card_green h6 {
+    color: #fff; }
+
+.five {
+  color: #fff; }
+  .five h5 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 3rem; }
+  .five p {
+    font-size: 16px;
+    font-weight: 300; }
+    .five p span {
+      font-weight: 500;
+      color: #e41e1e;
+      padding-right: 1rem; }
+  .five .apple {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+
+.six {
+  background-color: #f5f5f5; }
+  .six ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem; }
+    .six ul li {
+      list-style: none;
+      padding: 0.2rem 1rem;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+      color: #313131;
+      text-transform: uppercase;
+      border: solid 2px #f5f5f5;
+      border-radius: 5px;
+      transition: 0.7s;
+      cursor: pointer; }
+      .six ul li:hover {
+        color: #e42626; }
+    .six ul .active {
+      border: solid 2px #e42626;
+      color: #e42626; }
+    .six ul .owl-rel {
+      position: relative; }
+
+.seven .green-text {
+  box-shadow: 0px 10px 10px 0 rgba(38, 184, 58, 0.2);
+  background-color: #26b83a;
+  padding: 1rem; }
+  .seven .green-text p {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+    margin: 0; }
+
+.eight {
+  background-color: #f5f5f5; }
+  .eight h3 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px; }
+  .eight h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #313131;
+    margin-top: 2rem; }
+  .eight .tarifs p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #313131;
+    margin: 0.5rem; }
+  .eight .tarifs span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #313131;
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    transition: 0.7s; }
+    .eight .tarifs span:hover {
+      color: #e42626; }
+  .eight .tarifs .border-red {
+    border: solid 2px #e42626;
+    color: #e42626; }
+  .eight .card {
+    border: solid 1px #e8e8e8;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    border-radius: 0; }
+    .eight .card .card-title h6 {
+      font-size: 20px;
+      font-weight: 300; }
+      .eight .card .card-title h6 strong {
+        font-weight: bold; }
+    .eight .card .card-title img {
+      margin-top: 1rem; }
+    .eight .card .card-body {
+      min-height: 481px; }
+      .eight .card .card-body hr {
+        margin: 0;
+        margin-bottom: 1rem; }
+      .eight .card .card-body p {
+        font-size: 11px;
+        font-weight: 300;
+        color: #000000; }
+      .eight .card .card-body span {
+        font-size: 11px;
+        font-weight: 500;
+        color: #000000; }
+    .eight .card .card-footer {
+      border: none;
+      background-color: transparent; }
+      .eight .card .card-footer p {
+        font-size: 14px;
+        font-weight: 300; }
+      .eight .card .card-footer h6 {
+        font-size: 24px;
+        font-weight: bold; }
+      .eight .card .card-footer button {
+        margin-top: 1rem;
+        padding: 1rem; }
+      .eight .card .card-footer .bg-button-grey {
+        background: grey; }
+      .eight .card .card-footer .bg-button-green {
+        background: green; }
+      .eight .card .card-footer .bg-button-blue {
+        background: blue; }
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+  font-family: "fontAwesome"; }
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-75%); }
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-75%); }
+
+.nine {
+  background-color: #f5f5f5; }
+  .nine h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1rem; }
+  .nine form label {
+    font-size: 14px;
+    font-weight: 500; }
+  .nine form input {
+    border-radius: 2px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+  .nine button {
+    margin-top: 1rem;
+    padding: 1rem; }
+  .nine small {
+    font-size: 13px;
+    font-weight: 500; }
+  .nine .contact {
+    padding: 4rem 5rem; }
+    .nine .contact h4 {
+      font-size: 30px;
+      font-weight: bold;
+      padding-bottom: 3rem; }
+    .nine .contact small {
+      font-size: 13px;
+      font-weight: 300; }
+    .nine .contact p {
+      font-size: 17px;
+      font-weight: 500; }
+      .nine .contact p a {
+        color: #000000;
+        text-decoration: none; }
+
+footer {
+  background-color: #0e0e0e;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  footer span {
+    font-size: 26px;
+    font-weight: bold; }
+  footer .small-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    footer .small-wrap small {
+      font-size: 12px;
+      letter-spacing: 1px; }
+
+/*Медиа запросы 1199 */
+@media (max-width: 1199px) {
+  .navbar_1 div ul li {
+    padding: 0; } }
+/*Медиа запросы 1024 */
+/*Медиа запросы 991 */
+@media (max-width: 991px) {
+  .first .contact .telefon {
+    display: none; }
+
+  .about .card .card-title span .small-span {
+    font-size: 10px; }
+
+  .five p {
+    flex: 14px; } }
+/*Медиа запросы 768 */
+@media (max-width: 768px) {
+  .first .urist span {
+    display: none; }
+
+  .four .fitches_4 .consultation {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .four .fitches_4 .our_uslugi {
+    text-align: center;
+    margin-top: 2rem; }
+
+  .five h5 {
+    text-align: center; }
+
+  .six ul li {
+    padding: 0.2rem 0.5rem; }
+
+  .nine .contact {
+    margin-top: 2rem; } }
+/*Медиа запросы 575 */
+@media (max-width: 767px) {
+  .five .apple {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem; } }
+@media (max-width: 578px) {
+  .six ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
+  .eight .card .card-body {
+    min-height: 100px; }
+
+  footer .footer-logo {
+    display: flex;
+    justify-content: center; }
+  footer .small-wrap {
+    display: flex;
+    justify-content: center; }
+    footer .small-wrap small {
+      margin-top: 0.5rem; } }
+@media (max-width: 500px) {
+  .second h2 {
+    font-size: 24px; }
+  .second h1 {
+    font-size: 32px; }
+  .second button {
+    width: 100%; }
+
+  .about .card .card-title {
+    height: 75px;
+    margin: 0;
+    padding: 0; }
+    .about .card .card-title br {
+      display: none; }
+  .about .card .card-body {
+    min-height: 75px;
+    padding: 0;
+    margin: 0; }
+    .about .card .card-body br {
+      display: none; }
+
+  .five p {
+    font-size: 12px; }
+  .five .apple {
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    .five .apple a {
+      margin-top: 1rem; }
+
+  .eight .tarifs p {
+    font-size: 15px; }
+  .eight .tarifs .sravnit {
+    margin-top: 1rem; }
+
+  .nine .contact {
+    padding: 3rem; }
+    .nine .contact h4 {
+      margin-bottom: 1rem; } }
+@media (max-width: 414px) {
+  .second h2 {
+    font-size: 19px; }
+  .second h1 {
+    font-size: 26px; }
+  .second p {
+    font-size: 16px; } }
+/*Медиа запросы 375 */
+@media (max-width: 375px) {
+  .first .urist {
+    padding: 0; }
+
+  .seven .green-text {
+    padding: 0.4rem; }
+
+  .nine .contact {
+    padding: 2rem; } }
+/*Медиа запросы 320 */
+@media (max-width: 320px) {
+  .nine .contact {
+    padding: 1rem; }
+
+  footer {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
