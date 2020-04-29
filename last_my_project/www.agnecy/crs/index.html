@@ -11,113 +11,131 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    html, body {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #scroll-section {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
  </head>
  <body>
-  <section id="menu">
-    <nav class="container menu-color animated slideInDown">
-      <a class="menu_trigger" style="color: #ff2d2d;">MENU</a>
+
+  <div id="scroll-section" data-scrollbar>
+    <section id="menu">
+        <nav class="container menu-color animated slideInDown">
+          <a class="menu_trigger" style="color: #ff2d2d;">MENU</a>
+          <ul class="nav text-uppercase justify-content-center">
+           <li class="nav-item">
+            <a class="nav-link active" href="#do_you" id="active_1">home</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#feature_prod">portfolio</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#meet">about us</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#telefon">contact</a>
+           </li>
+          </ul>
+        </nav>
+        <div class="container strong-center">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="text-uppercase our_strong">our strong organaisation</h1>
+              <p class="Lorem_1">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
+              <button type="button" class="btn btn-burak" data-toggle="modal" data-target="#modal_1">Contact Us</button>
+            </div>
+            <div class="col-lg-6">
+              <iframe width="100%" height="400" src="https://player.vimeo.com/video/350086688?background=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vipeo_ptushkin"></iframe>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="do_you_know ">
+    <div class="container">
+     <div class="row">
+       <div class="col-lg-6 do_you_center">
+         <h3 class="text-uppercase" id="do_you">do you know we can provide for you?</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore.</p>
+         <button type="button" class="btn" data-toggle="modal" data-target="#modal_2">Learn More</button>
+       </div>
+       <div class="col-lg-3 col-md-6 cog">
+        <span><i class="fa fa-cog"></i></span>
+        <h6>Management</h6>
+        <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+        </p>
+        <span><i class="fa fa-gem pt-3"></i></span>
+        <h6>Logo / Branding</h6>
+        <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+        </p>
+       </div>
+       <div class="col-lg-3 col-md-6 cog cog_2">
+        <span><i class="fas fa-pen"></i></span>
+        <h6>UI/UX Design</h6>
+        <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+        </p>
+        <span><i class="fa fa-truck-moving pt-3"></i></span>
+        <h6>Animation</h6>
+        <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+        </p>
+       </div>
+     </div>
+    </div>
+    </section>
+    <section class="feature_products">
+    <hr style="width: 100%; height: 3px; color: #f6f2f2">
+    <div class="container text-center pt-5">
+     <h4 class="text-uppercase" id="feature_prod">feature products</h4>
+     <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius<br>mod tempor incididunt ut labore et.</p>
+     <hr id="feature">
+    </div>
+    <div class="menu_2">
+    	<nav class="container">
+    	 <a class="menu_trigger" style="color: #ff2d2d;">Edd More</a>
       <ul class="nav text-uppercase justify-content-center">
        <li class="nav-item">
-        <a class="nav-link active" href="#do_you" id="active_1">home</a>
+        <a class="nav-link" href="#">All</a>
        </li>
        <li class="nav-item">
-        <a class="nav-link" href="#feature_prod">portfolio</a>
+        <a class="nav-link" href="#">print template</a>
        </li>
        <li class="nav-item">
-        <a class="nav-link" href="#meet">about us</a>
+        <a class="nav-link" href="#">web template</a>
        </li>
        <li class="nav-item">
-        <a class="nav-link" href="#telefon">contact</a>
+        <a class="nav-link" href="#">user interface</a>
        </li>
       </ul>
-    </nav>
-    <div class="container strong-center">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="text-uppercase our_strong">our strong organaisation</h1>
-          <p class="Lorem_1">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
-          <button type="button" class="btn btn-burak" data-toggle="modal" data-target="#modal_1">Contact Us</button>
-        </div>
-        <div class="col-lg-6">
-          <iframe width="100%" height="400" src="https://player.vimeo.com/video/350086688?background=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vipeo_ptushkin"></iframe>
-        </div>
-      </div>
+    	</nav>
+    	<div class="container img_8">
+    	 <div class="row no-gutters">
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/5.jpg"></div>
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/2.jpg"></div>
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/3.jpg"></div>
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/4.jpg"></div>
+    	 </div>
+     <div class="row no-gutters">
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/7.jpg"></div>
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/6.jpg"></div>
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/8.jpg"></div>
+    	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/10.jpg"></div>
+    	 </div>		
+    	</div>
     </div>
-   </section>
-   <section class="do_you_know">
-     <div class="container">
-       <div class="row">
-         <div class="col-lg-6 do_you_center">
-           <h3 class="text-uppercase" id="do_you">do you know we can provide for you?</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore.</p>
-           <button type="button" class="btn" data-toggle="modal" data-target="#modal_2">Learn More</button>
-         </div>
-         <div class="col-lg-3 col-md-6 cog">
-          <span><i class="fa fa-cog"></i></span>
-          <h6>Management</h6>
-          <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
-          </p>
-          <span><i class="fa fa-gem pt-3"></i></span>
-          <h6>Logo / Branding</h6>
-          <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
-          </p>
-         </div>
-         <div class="col-lg-3 col-md-6 cog cog_2">
-          <span><i class="fas fa-pen"></i></span>
-          <h6>UI/UX Design</h6>
-          <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
-          </p>
-          <span><i class="fa fa-truck-moving pt-3"></i></span>
-          <h6>Animation</h6>
-          <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
-          </p>
-         </div>
-       </div>
-      </div>
-   </section>
-   <section class="feature_products">
-     <hr style="width: 100%; height: 3px; color: #f6f2f2">
-     <div class="container text-center pt-5">
-       <h4 class="text-uppercase" id="feature_prod">feature products</h4>
-       <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eius<br>mod tempor incididunt ut labore et.</p>
-       <hr id="feature">
-     </div>
-     <div class="menu_2">
-     	<nav class="container">
-     	 <a class="menu_trigger" style="color: #ff2d2d;">Edd More</a>
-	      <ul class="nav text-uppercase justify-content-center">
-	       <li class="nav-item">
-	        <a class="nav-link" href="#">All</a>
-	       </li>
-	       <li class="nav-item">
-	        <a class="nav-link" href="#">print template</a>
-	       </li>
-	       <li class="nav-item">
-	        <a class="nav-link" href="#">web template</a>
-	       </li>
-	       <li class="nav-item">
-	        <a class="nav-link" href="#">user interface</a>
-	       </li>
-	      </ul>
-     	</nav>
-     	<div class="container img_8">
-     	 <div class="row no-gutters">
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/5.jpg"></div>
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/2.jpg"></div>
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/3.jpg"></div>
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/4.jpg"></div>
-     	 </div>
-	 	 <div class="row no-gutters">
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/7.jpg"></div>
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/6.jpg"></div>
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/8.jpg"></div>
-     	 	<div class="col-lg-3 col-md-6 col-sm-6 overflow"><img src="img/10.jpg"></div>
-     	 </div>		
-     	</div>
-     </div>
-   </section>
-   <section class="meet_our" id="meet">
-   	<div class="container">
+    </section>
+    <section class="meet_our" id="meet">
+    	<div class="container">
      <div class="row">
       <div class="col-lg-5">
        <h4 class="meet">Meet our team</h4>
@@ -141,67 +159,67 @@
       	</div>
       </div>
      </div>
-   	</div>
-   </section>
-   <section class="xl_input">
-   	<div class="container-fluid text-center">
-   	 <h5>Design tips, tricks, and freebies. Delivered weekly.</h5>
-   	 <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
-   	 <input type="email" placeholder="Email Address...">
-   	 <button type="button" class="form-btn" data-toggle="modal" data-target="#modal_3">subscribe</button>
-   	</div>
-   </section>
-   <section class="get_in">
-     <div class="container-fluid">
-      <div class="row">
-       <div class="col-lg-5 offset-lg-1">
-         <h4 class="meet">get in touch</h4>
-         <p class="lorem_ux">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-         <hr id="hr-last">
-      </div>
-     </div>
-     <div class="row">
-       <div class="col-lg-5 offset-lg-1">
-         <div class="row">
-           <div class="col-lg-6">
-             <input type="name" class="sm-input" placeholder="Name">
-           </div>
-           <div class="col-lg-6">
-             <input type="email" class="sm-input" placeholder="Your Mail">
-           </div>
-           <div class="col-lg-12">
-             <textarea name="" id="textarea"  rows="10" placeholder="Type your message"></textarea>
-           </div>
-           <div class="col-lg-12">
-             <button class="btn-input btn-input-2" data-toggle="modal" data-target="#modal_4">Send message</button>
-           </div>
+    	</div>
+    </section>
+    <section class="xl_input">
+    	<div class="container-fluid text-center">
+    	 <h5>Design tips, tricks, and freebies. Delivered weekly.</h5>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+    	 <input type="email" placeholder="Email Address...">
+    	 <button type="button" class="form-btn" data-toggle="modal" data-target="#modal_3">subscribe</button>
+    	</div>
+    </section>
+    <section class="get_in">
+    <div class="container-fluid">
+    <div class="row">
+     <div class="col-lg-5 offset-lg-1">
+       <h4 class="meet">get in touch</h4>
+       <p class="lorem_ux">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+       <hr id="hr-last">
+    </div>
+    </div>
+    <div class="row">
+     <div class="col-lg-5 offset-lg-1">
+       <div class="row">
+         <div class="col-lg-6">
+           <input type="name" class="sm-input" placeholder="Name">
+         </div>
+         <div class="col-lg-6">
+           <input type="email" class="sm-input" placeholder="Your Mail">
+         </div>
+         <div class="col-lg-12">
+           <textarea name="" id="textarea"  rows="10" placeholder="Type your message"></textarea>
+         </div>
+         <div class="col-lg-12">
+           <button class="btn-input btn-input-2" data-toggle="modal" data-target="#modal_4">Send message</button>
          </div>
        </div>
-       <div class="col-lg-5 offset-lg-1 contact" id="telefon">
-         <span>contact info</span>
-         <p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
-         <p>redwan@deviserweb.com</span>
-         <p>+88 (017) 617 46373</p>
-       </div>
      </div>
+     <div class="col-lg-5 offset-lg-1 contact" id="telefon">
+       <span>contact info</span>
+       <p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+       <p>redwan@deviserweb.com</span>
+       <p>+88 (017) 617 46373</p>
      </div>
-   </section>
-   <footer>
-     <div class="container">
-      <div class="row">
-       <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12" id="copy">
-        <span>© Copyright @Junaed 2016, All rights reserved.</span>
-       </div>
-       <div class="col-xl-2 offset-xl-5 col-lg-3 offset-lg-4 col-md-4 offset-md-4 col-6 offset-3 wrap-round">
-        <div id="round"><i class="fab fa-twitter"></i></div>
-        <div id="round"><i class="fab fa-linkedin-in"></i></div>
-        <div id="round"><i class="fab fa-google-plus-g"></i></div>
-        <div id="round"><i class="fab fa-facebook-f"></i></div>
-      </div>
+    </div>
+    </div>
+    </section>
+    <footer>
+    <div class="container">
+    <div class="row">
+     <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12" id="copy">
+      <span>© Copyright @Junaed 2016, All rights reserved.</span>
      </div>
+     <div class="col-xl-2 offset-xl-5 col-lg-3 offset-lg-4 col-md-4 offset-md-4 col-6 offset-3 wrap-round">
+      <div id="round"><i class="fab fa-twitter"></i></div>
+      <div id="round"><i class="fab fa-linkedin-in"></i></div>
+      <div id="round"><i class="fab fa-google-plus-g"></i></div>
+      <div id="round"><i class="fab fa-facebook-f"></i></div>
+    </div>
+    </div>
     </div> 
-   </footer>
-  
+    </footer>
+  </div>
 
   <div class="modal fade" id="modal_1" tabindex="-1">
     <div class="modal-dialog modal-lg">
@@ -261,22 +279,14 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+  <script>
+    Scrollbar.initAll();
+  </script>
  </body>
 </html>
