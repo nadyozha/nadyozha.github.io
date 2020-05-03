@@ -427,6 +427,9 @@ footer {
         .header-menu .navbar .navbar-collapse .navbar-nav .nav-item .active {
           background-color: transparent;
           color: black; }
+          .header-menu .navbar .navbar-collapse .navbar-nav .nav-item .active:hover {
+            background-color: transparent;
+            color: #333333; }
         .header-menu .navbar .navbar-collapse .navbar-nav .nav-item .link-weight {
           font-weight: 500; }
         .header-menu .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
