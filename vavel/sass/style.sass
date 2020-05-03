@@ -69,7 +69,8 @@ p
 .header-menu
     background: #e6f8ec
     position: relative
-    padding-bottom: 3rem
+    min-height: 100vh
+
 
     .navbar
         position: relative
@@ -184,6 +185,7 @@ p
         z-index: 3
         margin-top: 6rem
         padding-bottom: 5rem
+        min-height: 100%
 
         a
             font-size: 30px
@@ -227,12 +229,15 @@ p
             &:hover
                 background-color: $Feo
 
+        .visible-md
+                visibility: hidden
 
-        .bg_img
-            position: relative
-            bottom: -10.5rem
-            right: 0
-            transform: scale(1.6)
+
+    .bg_img
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 48%
 
 .second
 
@@ -252,6 +257,8 @@ p
             background-color: $Green
             font-size: 16px
             height: 44px
+            font-weight: 500
+
 
             &:hover
                 background-color: $Feo
@@ -517,16 +524,8 @@ footer
 
 @media (max-width: 1199px)
     .header-menu
-        .head
-            .bg_img
-                bottom: -22rem
-                transform: scale(2)
-
-@media (max-width: 1024px)
-    .header-menu
-            .head
-                .bg_img
-                    right: 5rem
+        .bg_img
+            width: 68%
 
 @media (max-width: 991px)
     .header-menu
@@ -552,10 +551,10 @@ footer
             button
                 height: 38px
 
-            .bg_img
-                bottom: -3rem
-                transform: scale(1)
-                right: 0
+
+        .bg_img
+            right: 6rem
+            width: 79%  
         
         .navbar
             padding: 1rem 0
@@ -597,13 +596,6 @@ footer
                         margin: 0
                         opacity: 0.1
 
-
-
-
-
-
-
-
     .threeth
         h4
             line-height: 25px
@@ -630,6 +622,14 @@ footer
                 button
                     height: 38px
 
+            .visible-md
+                visibility: visible
+
+
+
+        .bg_img
+            display: none
+            
     
     .threeth
         a

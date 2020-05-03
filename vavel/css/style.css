@@ -60,7 +60,7 @@ p {
 .header-menu {
   background: #e6f8ec;
   position: relative;
-  padding-bottom: 3rem; }
+  min-height: 100vh; }
   .header-menu .navbar {
     position: relative;
     z-index: 4; }
@@ -149,7 +149,8 @@ p {
     position: relative;
     z-index: 3;
     margin-top: 6rem;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    min-height: 100%; }
     .header-menu .head a {
       font-size: 30px;
       color: black;
@@ -182,11 +183,13 @@ p {
         color: #e6f8ec; }
       .header-menu .head button:hover {
         background-color: #7656ff; }
-    .header-menu .head .bg_img {
-      position: relative;
-      bottom: -10.5rem;
-      right: 0;
-      transform: scale(1.6); }
+    .header-menu .head .visible-md {
+      visibility: hidden; }
+  .header-menu .bg_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 48%; }
 
 .second p {
   margin-top: 2rem; }
@@ -200,7 +203,8 @@ p {
     width: 100%;
     background-color: #00e191;
     font-size: 16px;
-    height: 44px; }
+    height: 44px;
+    font-weight: 500; }
     .second form button:hover {
       background-color: #7656ff;
       color: white; }
@@ -392,12 +396,8 @@ footer {
     font-size: 8px; }
 
 @media (max-width: 1199px) {
-  .header-menu .head .bg_img {
-    bottom: -22rem;
-    transform: scale(2); } }
-@media (max-width: 1024px) {
-  .header-menu .head .bg_img {
-    right: 5rem; } }
+  .header-menu .bg_img {
+    width: 68%; } }
 @media (max-width: 991px) {
   .header-menu .head {
     padding-bottom: 0; }
@@ -414,10 +414,9 @@ footer {
       padding-left: 3rem; }
     .header-menu .head button {
       height: 38px; }
-    .header-menu .head .bg_img {
-      bottom: -3rem;
-      transform: scale(1);
-      right: 0; }
+  .header-menu .bg_img {
+    right: 6rem;
+    width: 79%; }
   .header-menu .navbar {
     padding: 1rem 0; }
     .header-menu .navbar .navbar-collapse {
@@ -465,6 +464,10 @@ footer {
     margin-top: 2rem; }
     .header-menu .head .header-contant button {
       height: 38px; }
+    .header-menu .head .visible-md {
+      visibility: visible; }
+  .header-menu .bg_img {
+    display: none; }
 
   .threeth a {
     font-size: 18px; }
