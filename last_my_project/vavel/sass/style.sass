@@ -135,6 +135,9 @@ body.lock
             z-index: 2
 
             .navbar-nav
+                hr
+                    display: none
+                    
                 .nav-item
                     padding-left: 14px
 
@@ -210,39 +213,24 @@ body.lock
             p
                 margin-top: 1rem
 
-            button
-                margin-top: 1rem
-                height: 38px
+        button
+            margin-top: 1rem
+            height: 38px
+            color: #e6f8ec
+            font-weight: 600
+
+            i
+                padding-left: 8px
                 color: #e6f8ec
-                font-weight: 600
 
-                i
-                    padding-left: 8px
-                    color: #e6f8ec
-
-                &:hover
-                    background-color: $Feo
+            &:hover
+                background-color: $Feo
 
 
-    a.massage
-        position: absolute
-        bottom: 1rem
-        right: 1.5rem
-        transition: 0.4s
-
-        i
-            color: $Feo
-            font-size: 28px
-
-        &:hover
-            transform: scale(1.2)
-
-    .bg_img
-        position: absolute
-        bottom: 0
-        right: 10%
-        height: 85%
-        z-index: 2
+        .bg_img
+            position: relative
+            bottom: -3rem
+            right: 0
 
 .second
 
@@ -526,20 +514,82 @@ footer
 
 
 
-
-
-
+@media (max-width: 1199px)
+    .header-menu
+        .head
+            .bg_img
+                bottom: -3rem
 
 @media (max-width: 1024px)
-    .ten .form-contact button
-        width: 100%
 
 
 @media (max-width: 991px)
     .header-menu
-        .bg_img
-            height: 70%
-            right: 5%
+        .head
+            a
+                font-size: 30px
+
+                i
+                    font-size: 30px
+                    padding-right: 1rem
+
+            h1
+                font-size: 70px
+
+            p
+                font-size: 24px
+
+            .header-contant
+                padding-left: 3rem
+
+            button
+                height: 38px
+
+            .bg_img
+                bottom: -3rem
+        
+        .navbar
+            padding: 1rem 0
+
+            .navbar-collapse
+                background-color: white
+                padding: 1.5rem 0
+                border-top: 4px solid $Feo 
+                margin-top: 0.5rem
+                position: absolute
+                top: 4rem   
+                left: 0
+                right: 0
+                filter: drop-shadow(0 3px 30px rgba(0, 0, 0, .16))
+
+                
+                .navbar-nav
+                    .nav-item
+                        padding: 0
+                        .active
+                            background-color: transparent
+                            color: $Black
+
+                        .link-weight
+                            font-weight: 500
+
+                        .dropdown-menu
+                            padding: 0
+
+                            .dropdown-item
+                                font-weight: 300
+
+                    hr
+                        display: block
+                        margin: 0
+                        opacity: 0.1
+
+
+
+
+
+
+
 
     .threeth
         h4
@@ -559,18 +609,10 @@ footer
 
 @media (max-width: 768px)
     .header-menu
-        a.massage
-            i
-                font-size: 48px
-
-        .bg_img
-            height: 70%
-            right: 0
         
         .head
             .header-contant
                 button
-                    width: 100%
                     height: 38px
 
     
@@ -618,14 +660,29 @@ footer
 
 
 @media (max-width: 575px)
-    .header-menu a.massage i
-            font-size: 32px
-    .bg_img
-        height: 75%
-        opacity: 0.2
+    .header-menu
+        .head
+            h1
+                font-size: 40px
+
+            a
+                font-size: 18px
+
+                i
+                    font-size: 20px
+                    padding-right: 0.5rem
+                    top: 1px
+
+            .header-contant
+                padding-left: 0
+
+                p
+                    font-size: 16px
+
+
 
     h2
-        font-size: 38px
+        font-size: 34px
 
     .threeth
         a
@@ -646,8 +703,25 @@ footer
         .ilus
             min-height: 200px
 
+    .ten
+        .form-contact
+            input
+                border-radius: 6px
+                height: 50px
+
+            textarea
+                border-radius: 6px
+
+            button
+                height: 50px
 
 @media (max-width: 375px)
+    .header-menu
+        .head
+            .header-contant
+                p
+                    font-size: 14px
+
     h2, .eight h2
         font-size: 34px
         font-weight: 500
@@ -707,6 +781,7 @@ footer
     .threeth
         span.pop
             padding: 15px
+            font-size: 12px
 
         h3
             margin-top: 0
