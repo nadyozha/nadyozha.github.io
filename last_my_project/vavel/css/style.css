@@ -104,7 +104,7 @@ body.lock {
       top: 9px; }
     .header-menu .navbar .btn-open.active:after {
       transform: rotate(-45deg);
-      bottom: 8px; }
+      bottom: 9px; }
     .header-menu .navbar .btn-open.active span {
       transform: scale(0); }
     .header-menu .navbar .navbar-collapse {
@@ -150,7 +150,7 @@ body.lock {
     .header-menu .head a {
       font-size: 10px;
       color: black;
-      font-weight: 100;
+      font-weight: 300;
       padding-left: 1.2rem;
       transition: 0.4s; }
       .header-menu .head a i {
@@ -171,7 +171,8 @@ body.lock {
       .header-menu .head .header-contant button {
         margin-top: 1rem;
         height: 38px;
-        color: #e6f8ec; }
+        color: #e6f8ec;
+        font-weight: 500; }
         .header-menu .head .header-contant button i {
           padding-left: 8px;
           color: #e6f8ec; }
