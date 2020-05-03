@@ -57,10 +57,6 @@ h2 {
 p {
   font-size: 14px; }
 
-body.lock {
-  overflow: hidden;
-  position: fixed; }
-
 .header-menu {
   background: #e6f8ec;
   position: relative;
@@ -151,30 +147,33 @@ body.lock {
   .header-menu .head {
     margin-top: 1rem;
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    margin-top: 6rem;
+    padding-bottom: 5rem; }
     .header-menu .head a {
-      font-size: 11px;
+      font-size: 30px;
       color: black;
       font-weight: 500;
       padding-left: 1.2rem;
       transition: 0.4s; }
       .header-menu .head a i {
-        font-size: 16px;
-        padding-right: 0.3rem;
+        font-size: 30px;
+        padding-right: 1rem;
         position: relative;
-        top: 2px;
+        top: 1px;
         color: #00e191; }
     .header-menu .head h1 {
       font-weight: 400;
-      font-size: 40px;
+      font-size: 79px;
       margin-bottom: 0;
-      margin-top: 1rem; }
+      margin-top: 2rem; }
     .header-menu .head .header-contant {
       padding-left: 1rem; }
       .header-menu .head .header-contant p {
-        margin-top: 1rem; }
+        margin-top: 2rem;
+        font-size: 22px; }
     .header-menu .head button {
-      margin-top: 1rem;
+      margin-top: 3rem;
       height: 38px;
       color: #e6f8ec;
       font-weight: 600; }
@@ -185,25 +184,26 @@ body.lock {
         background-color: #7656ff; }
     .header-menu .head .bg_img {
       position: relative;
-      bottom: -3rem;
-      right: 0; }
+      bottom: -10.5rem;
+      right: 0;
+      transform: scale(1.6); }
 
 .second p {
   margin-top: 2rem; }
-.second .input-group {
+.second form {
   margin-top: 2rem;
   bottom: 1rem; }
-  .second .input-group input.form-control {
-    background-color: #f7f7f5; }
-  .second .input-group .input-group-append {
-    width: 50%; }
-    .second .input-group .input-group-append button {
-      width: 100%;
-      background-color: #00e191;
-      font-size: 16px; }
-      .second .input-group .input-group-append button:hover {
-        background-color: #7656ff;
-        color: white; }
+  .second form input {
+    background-color: #f7f7f5;
+    height: 44px; }
+  .second form button {
+    width: 100%;
+    background-color: #00e191;
+    font-size: 16px;
+    height: 44px; }
+    .second form button:hover {
+      background-color: #7656ff;
+      color: white; }
 
 .threeth {
   background-color: #7656ff;
@@ -393,23 +393,31 @@ footer {
 
 @media (max-width: 1199px) {
   .header-menu .head .bg_img {
-    bottom: -3rem; } }
-@media (max-width: 991px) {
-  .header-menu .head a {
-    font-size: 30px; }
-    .header-menu .head a i {
-      font-size: 30px;
-      padding-right: 1rem; }
-  .header-menu .head h1 {
-    font-size: 70px; }
-  .header-menu .head p {
-    font-size: 24px; }
-  .header-menu .head .header-contant {
-    padding-left: 3rem; }
-  .header-menu .head button {
-    height: 38px; }
+    bottom: -22rem;
+    transform: scale(2); } }
+@media (max-width: 1024px) {
   .header-menu .head .bg_img {
-    bottom: -3rem; }
+    right: 5rem; } }
+@media (max-width: 991px) {
+  .header-menu .head {
+    padding-bottom: 0; }
+    .header-menu .head a {
+      font-size: 30px; }
+      .header-menu .head a i {
+        font-size: 30px;
+        padding-right: 1rem; }
+    .header-menu .head h1 {
+      font-size: 70px; }
+    .header-menu .head p {
+      font-size: 24px; }
+    .header-menu .head .header-contant {
+      padding-left: 3rem; }
+    .header-menu .head button {
+      height: 38px; }
+    .header-menu .head .bg_img {
+      bottom: -3rem;
+      transform: scale(1);
+      right: 0; }
   .header-menu .navbar {
     padding: 1rem 0; }
     .header-menu .navbar .navbar-collapse {
@@ -453,8 +461,10 @@ footer {
     .eight h2 .br_none {
       display: none; } }
 @media (max-width: 768px) {
-  .header-menu .head .header-contant button {
-    height: 38px; }
+  .header-menu .head {
+    margin-top: 2rem; }
+    .header-menu .head .header-contant button {
+      height: 38px; }
 
   .threeth a {
     font-size: 18px; }
@@ -483,18 +493,20 @@ footer {
   .ten .contact h5 {
     font-size: 16px; } }
 @media (max-width: 575px) {
-  .header-menu .head h1 {
-    font-size: 40px; }
-  .header-menu .head a {
-    font-size: 18px; }
-    .header-menu .head a i {
-      font-size: 20px;
-      padding-right: 0.5rem;
-      top: 1px; }
-  .header-menu .head .header-contant {
-    padding-left: 0; }
-    .header-menu .head .header-contant p {
-      font-size: 16px; }
+  .header-menu .head {
+    margin-top: 0; }
+    .header-menu .head h1 {
+      font-size: 40px; }
+    .header-menu .head a {
+      font-size: 18px; }
+      .header-menu .head a i {
+        font-size: 20px;
+        padding-right: 0.5rem;
+        top: 1px; }
+    .header-menu .head .header-contant {
+      padding-left: 0; }
+      .header-menu .head .header-contant p {
+        font-size: 16px; }
 
   h2 {
     font-size: 34px; }

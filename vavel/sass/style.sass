@@ -65,9 +65,6 @@ h2
 p
     font-size: 14px
 
-body.lock
-    overflow: hidden
-    position: fixed
 
 .header-menu
     background: #e6f8ec
@@ -185,36 +182,40 @@ body.lock
         margin-top: 1rem
         position: relative
         z-index: 3
+        margin-top: 6rem
+        padding-bottom: 5rem
 
         a
-            font-size: 11px
+            font-size: 30px
             color: $Black
             font-weight: 500
             padding-left: 1.2rem
             transition: 0.4s
 
+
             i
-                font-size: 16px
-                padding-right: 0.3rem
+                font-size: 30px
+                padding-right: 1rem
                 position: relative
-                top: 2px
+                top: 1px
                 color: $Green
 
         h1
             font-weight: 400
-            font-size: 40px
+            font-size: 79px
             margin-bottom: 0
-            margin-top: 1rem
+            margin-top: 2rem
 
         .header-contant
             padding-left: 1rem
                 
         
             p
-                margin-top: 1rem
+                margin-top: 2rem
+                font-size: 22px
 
         button
-            margin-top: 1rem
+            margin-top: 3rem
             height: 38px
             color: #e6f8ec
             font-weight: 600
@@ -229,32 +230,32 @@ body.lock
 
         .bg_img
             position: relative
-            bottom: -3rem
+            bottom: -10.5rem
             right: 0
+            transform: scale(1.6)
 
 .second
 
     p
         margin-top: 2rem
 
-    .input-group
+    form
         margin-top: 2rem
         bottom: 1rem
 
-        input.form-control
+        input
             background-color: #f7f7f5
-        
-        .input-group-append
-            width: 50%
+            height: 44px
 
-            button
-                width: 100%
-                background-color: $Green
-                font-size: 16px
+        button
+            width: 100%
+            background-color: $Green
+            font-size: 16px
+            height: 44px
 
-                &:hover
-                    background-color: $Feo
-                    color: white
+            &:hover
+                background-color: $Feo
+                color: white
 
 .threeth
     background-color: $Feo
@@ -518,14 +519,20 @@ footer
     .header-menu
         .head
             .bg_img
-                bottom: -3rem
+                bottom: -22rem
+                transform: scale(2)
 
 @media (max-width: 1024px)
-
+    .header-menu
+            .head
+                .bg_img
+                    right: 5rem
 
 @media (max-width: 991px)
     .header-menu
         .head
+            padding-bottom: 0
+
             a
                 font-size: 30px
 
@@ -547,6 +554,8 @@ footer
 
             .bg_img
                 bottom: -3rem
+                transform: scale(1)
+                right: 0
         
         .navbar
             padding: 1rem 0
@@ -615,6 +624,8 @@ footer
     .header-menu
         
         .head
+            margin-top: 2rem
+
             .header-contant
                 button
                     height: 38px
@@ -666,6 +677,8 @@ footer
 @media (max-width: 575px)
     .header-menu
         .head
+            margin-top: 0
+
             h1
                 font-size: 40px
 
