@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="Group_362" data-name="Group 362" transform="translate(-685 -4030)">
+    <circle id="Ellipse_39" data-name="Ellipse 39" cx="35" cy="35" r="35" transform="translate(685 4030)" fill="#dff0e3"/>
+    <g id="medical-report" transform="translate(661.996 4049)">
+      <g id="Group_115" data-name="Group 115" transform="translate(50.681 5.678)">
+        <g id="Group_114" data-name="Group 114">
+          <path id="Path_117" data-name="Path 117" d="M147.169,89.5v3.773h-9.915V89.5H134.5v21.127H149.92V89.5Zm-7.507,7.657h1.562V95.594h1.84v1.562h1.562V99h-1.562v1.562h-1.84V99h-1.562Zm8.259,11.5H136.5v-1.84h11.42Zm0-3.807H136.5v-1.84h11.42Z" transform="translate(-134.503 -89.5)" fill="#25772f"/>
+        </g>
+      </g>
+      <g id="Group_117" data-name="Group 117" transform="translate(55.336 5.678)">
+        <g id="Group_116" data-name="Group 116">
+          <rect id="Rectangle_199" data-name="Rectangle 199" width="6.108" height="1.87" fill="#25772f"/>
+        </g>
+      </g>
+      <g id="Group_119" data-name="Group 119" transform="translate(45.003)">
+        <g id="Group_118" data-name="Group 118">
+          <path id="Path_118" data-name="Path 118" d="M63.347,0V3.838h4.591V28.646h-19.1V3.838h4.591V0H45V32.484H71.777V0Z" transform="translate(-45.003)" fill="#25772f"/>
+        </g>
+      </g>
+      <g id="Group_121" data-name="Group 121" transform="translate(55.336)">
+        <g id="Group_120" data-name="Group 120">
+          <rect id="Rectangle_200" data-name="Rectangle 200" width="6.108" height="3.838" fill="#25772f"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

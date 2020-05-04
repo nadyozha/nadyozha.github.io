@@ -1,0 +1,734 @@
+$yelow: #ffcc00
+$Dark: #292929
+$light: #ffffff
+
+@font-face
+    font-family: "ProximaNova"
+    src: url(../fonts/ProximaNova/ProximaNova-Reg.otf)
+@font-face
+    font-family: "ProximaNova"
+    src: url(../fonts/ProximaNova/ProximaNova-Bold.otf)
+    font-weight: bold
+
+* 
+    margin: 0
+    padding: 0
+   
+img 
+    max-width: 100%
+    height: auto
+
+html 
+    width: 100%
+    overflow-x: hidden
+
+body
+    width: 100%
+    overflow-x: hidden
+
+button, input, a, textarea
+    &:focus
+        outline: none 
+
+button
+    transition: 0.7s
+
+
+
+.nav-first
+    margin-top: 2rem
+
+    .granit-logo
+        padding-left: 0.5rem
+
+        h3
+            font-size: 20px
+            font-weight: bold
+            letter-spacing: 2px
+            color: #292929
+            text-transform: uppercase
+            margin: 0
+            
+
+        h6
+            font-size: 11px
+            font-weight: 300
+            color: #969696
+            margin: 0
+
+    .telefon
+        h3
+            letter-spacing: 0
+            font-size: 18px
+            text-align: right
+        
+        a
+            h6
+                text-align: right
+
+        a:hover
+            text-decoration: none
+            
+
+    button
+        font-size: 12px
+        font-weight: 500
+        color: #292929
+        border: solid 2px #292929
+        background-color: transparent
+        padding: 8px 25px
+
+
+        &:hover
+            background-color: #292929
+            border: solid 2px #292929
+            color: white
+
+    .nav-yelow
+        background-color: #ffcc00
+        margin-top: 1rem
+        
+        ul
+            li
+                padding: 10px 30px
+                list-style: none
+                
+
+                a
+                    color: #000000
+                    font-size: 14px
+                    font-weight: 500
+                    transition: 0.6s
+
+                    &:hover
+                        font-weight: 700
+
+        nav
+            button
+                border: none
+                
+                span
+                    font-size: 1.5rem
+
+.traktor
+    position: relative
+    min-height: 35vh
+    overflow: hidden
+    
+
+    video
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        min-width: 100%
+        max-height: 100vh
+        filter: brightness(0.4)
+
+        
+    
+    
+
+    .title-first
+        h1
+            font-size: 36px
+            font-weight: bold
+            color: #fff
+            text-transform: uppercase
+            margin-top: 7rem
+            
+        
+        p
+            font-size: 14px
+            font-weight: 300
+            color: #fff
+            margin-top: 1rem
+            
+
+
+        button
+            font-size: 12px
+            font-weight: 900
+            color: #0d0d0d
+            background-color: #ffd200
+            border-radius: 0
+            padding: 15px 30px
+
+            &:hover
+                background-color: #0d0d0d
+                color: #fff
+
+        a    
+
+            span
+                font-size: 12px
+                font-weight: 500
+                color: #fff
+                padding-left: 2rem
+                transition: 0.7s
+
+        a:hover
+            text-decoration: none
+
+            span
+                color: #ffd200
+
+.card
+    border: solid 2px #f6f6f6
+    border-radius: 0
+    transition: 1s
+
+    .card-title
+        min-height: 175px
+
+    .card-body
+        a
+            font-size: 15px
+            font-weight: 500
+            color: #292929
+            text-decoration: underline
+            
+
+        p
+            font-size: 13px
+            font-weight: 300
+            color: #626262
+            text-transform: lowercase
+            margin-top: 10px
+        
+        h6
+            font-size: 16px
+            font-weight: 500
+            color: #0f0f0f
+            text-transform: lowercase
+
+        button
+            font-size: 12px
+            font-weight: 900
+            color: #0d0d0d
+            background-color: #ffd200
+            border-radius: 0
+            padding: 10px 40px
+            margin-top: 15px
+
+            &:hover
+                background-color: #0d0d0d
+                color: #ffd200
+
+.card:hover
+    background-color: #f6f6f6
+
+
+
+.card-2
+    border: solid 2px #ffffff
+    background-color: transparent
+    padding: 1.5rem
+    transition: 0.6s
+    min-height: 330px
+
+    .card-title
+        min-height: 90px
+
+    .card-body
+        h6
+            font-size: 15px
+            font-weight: 500
+            color: #292929
+            text-transform: uppercase
+            
+        p
+            font-size: 12px
+            font-weight: 300
+            line-height: 1.5
+            color: #292929
+
+.card-2:hover
+    background-color: #ffffff
+
+.card-3
+    border: solid 2px #f6f6f6
+    background-color: transparent
+    padding: 1rem
+    transition: 1s
+
+
+
+    .card-body
+        a
+            font-size: 12px
+            display: block
+            padding-bottom: 12px
+
+        span
+            font-size: 10px
+            color: #979797
+
+
+        
+        .span-prace
+            font-size: 16px
+            font-weight: 500
+            color: #ff0000
+
+        button
+            width: 90%
+
+
+.line-through
+    text-decoration: line-through
+
+.card-3:hover
+    background-color: #ffd200
+    border: solid 2px #ffd200
+
+    button
+        background-color: darken(#ffd200, 10%)
+
+.card-4
+    padding: 1rem
+
+    .card-title
+        min-height: 180px
+        padding-top: 2rem
+
+.card-4:hover
+    background-color: white
+
+
+
+.map
+    background: url("../img/24.png") no-repeat center
+    background-size: cover
+    position: relative
+
+
+    .marker
+        position: absolute
+        color: #ffd200
+        top: 42%
+        left: 27%
+        font-size: 2rem
+        
+
+
+    .card_contact
+        background-color: #ffffff
+        padding: 4rem
+        transition: 1s
+
+        h5
+            font-size: 20px
+            font-weight: bold
+            color: #292929
+            text-transform: uppercase
+            
+        h6
+            font-size: 14px
+            font-weight: 700
+            line-height: 1.5
+            color: #292929
+            margin-top: 2rem
+            position: relative
+        p
+            font-size: 14px
+            color: #292929
+            margin-top: 2rem
+            position: relative
+
+        .faw-contact
+            position: absolute
+            left: -25px
+            top: 5px
+
+    .card_contact:hover
+        background-color: #ffd200
+
+    
+            
+
+
+
+footer
+    background-color: #292929
+    
+    .granit-logo-footer
+        color: #ffffff
+
+        h3
+            text-transform: uppercase
+            font-size: 18px
+            letter-spacing: 2px
+            margin: 0
+
+    .footer-contact
+        color: #ffffff
+
+        h3
+            font-size: 18px
+            text-align: right
+            
+        h6
+            font-size: 11px
+            text-align: right
+
+        button
+            font-size: 12px
+            font-weight: 500
+            background-color: transparent
+            color: #ffffff
+            border: solid 1px #ffffff
+            border-radius: 0
+            margin-top: 10px
+            transition: 0.6s
+
+            &:hover
+                background-color: #ffd200
+                border: solid 1px #ffd200
+                color: #292929
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Медиа запросы 1199*/
+
+@media (max-width: 1199px)
+    .card-3
+            position: relative
+            min-height: 360px
+
+            .card-body
+                    
+                button
+                    padding: 10px
+                    position: absolute
+                    bottom: 8px
+                    left: 8px
+                    right: 8px
+
+/*Медиа запросы 991*/
+
+@media (max-width: 991px)
+    .nav-first .nav-yelow 
+        ul
+            li
+                padding: 10px 10px
+    .card
+        .card-title
+            min-height: 142px
+
+        .card-body
+            padding: 10px
+
+            button
+                padding: 10px
+
+    .card-2
+        padding: 0
+        min-height: 275px
+        
+        .card-title
+            min-height: 100px
+
+
+    .card-3
+        padding: 7px
+        min-height: 320px
+        position: relative
+
+        .card-title
+            min-height: 130px
+
+        .card-body
+            a
+                font-size: 8px
+
+            span
+                font-size: 8px
+                display: block
+                
+            button
+                padding: 10px
+                position: absolute
+                bottom: 8px
+                left: 8px
+                right: 8px
+    
+    .card-4
+        min-height: 250px
+
+        .card-title
+            min-height: 160px
+
+
+
+
+
+
+
+
+
+
+/*Медиа запросы 768*/
+@media (max-width: 768px)
+    .nav-first
+        margin-top: 1rem
+
+        .granit-logo-h3
+            display: flex
+            align-items: center
+
+        .telefon
+            h3
+                font-size: 16px
+
+            h6
+                font-size: 9px
+
+        button
+            font-size: 10px
+            
+    .nav-first .nav-yelow  
+        ul
+            text-align: center
+            
+            li
+
+                a
+                    font-size: 16px
+
+    .card
+        margin-bottom: 1rem
+        
+        .card-title
+            min-height: 100px
+            padding: 8px
+            margin-bottom: 0
+
+        .card-body
+            padding: 7px
+
+            p
+                font-size: 10px
+
+            button
+                font-size: 10px
+                margin-top: 5px
+                width: 100%
+                
+    .card-2
+        min-height: 224px
+        
+        .card-title
+
+        .card-body
+            h6
+                font-size: 12px
+
+            p
+                font-size: 9px
+
+    .card-3
+        min-height: 305px
+        
+        .card-body
+            a
+                font-size: 13px
+
+            span
+                font-size: 12px
+
+            button
+                width: 93%
+
+    .card-4
+        padding: 1.5rem
+        min-height: 200px
+        
+        .card-title
+            min-height: 114px
+
+        .card-body
+            a
+                font-size: 14px
+
+
+
+
+/*Медиа запросы 599*/
+@media (max-width: 575px)
+    .nav-first
+        margin-top: 0
+        
+        .container .row .logo-img
+            display: flex
+            justify-content: center !important
+
+        .wrap-nav-tel
+            margin-top: 1rem
+
+            .back-call
+                display: flex
+                justify-content: start !important
+
+
+
+
+
+
+
+
+/*Медиа запросы 500*/
+@media (max-width: 500px)
+    .nav-first
+        margin-top: 0
+
+        .wrap-nav-tel
+            margin-top: 1rem
+
+
+    .card
+        padding: 1rem
+
+        .card-body
+            a
+                font-size: 26px
+
+            p
+                font-size: 16px
+
+            h6
+                font-size: 32px
+
+            button
+                padding: 15px 20px
+                font-size: 16px
+                margin-top: 1rem
+
+    .card-3
+        min-height: 590px
+
+        .card-body
+            span
+                font-size: 22px
+
+            .span-prace
+                font-size: 28px
+
+            a
+                font-size: 22px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Медиа запросы 414*/
+
+/*@media (max-width: 414px)
+
+/*Медиа запросы 375*/
+
+@media (max-width: 375px)
+    .nav-first
+        .telefon
+            h3
+                font-size: 13px
+
+            h6
+                font-size: 7px
+
+        button
+            font-size: 8px
+            padding: 4px 25px
+
+    .traktor
+        .title-first
+            h1
+                font-size: 30px
+
+            p
+                font-size: 20px
+
+            button
+                font-size: 10px
+                padding: 15px 20px
+                
+            a span
+                padding-left: 10px
+
+
+
+
+
+
+
+/*Медиа запросы 320*/
+
+@media (max-width: 320px)
+
+    .traktor
+        .title-first
+            h1
+                font-size: 26px
+                margin-top: 4rem
+
+            p
+                font-size: 16px
+
+            button
+                font-size: 10px
+                padding: 15px
+                margin-top: 2rem
+                
+            a span
+                display: none
+                
+    h2
+        font-size: 26px
+
+    .card .card-body h6
+        font-size: 22px
+
+
+    .card-3
+        min-height: 470px
+
+        .card-body
+            a
+                font-size: 15px
+
+    footer .footer-contact
+        h3
+            font-size: 14px
+
+        h6
+            font-size: 7px
+
+        button
+            font-size: 10px
+

@@ -1,0 +1,549 @@
+$yelow: #ffcc00
+$Dark: #292929
+$light: #ffffff
+
+@font-face
+    font-family: "ProximaNova"
+    src: url(../fonts/ProximaNova/ProximaNova-Reg.otf)
+@font-face
+    font-family: "ProximaNova"
+    src: url(../fonts/ProximaNova/ProximaNova-Bold.otf)
+    font-weight: bold
+
+* 
+    margin: 0
+    padding: 0
+   
+img 
+    max-width: 100%
+    height: auto
+
+html 
+    width: 100%
+    overflow-x: hidden
+
+body    
+    width: 100%
+    overflow-x: hidden  
+
+button, input, a, textarea
+    &:focus
+        outline: none
+
+button
+    transition: 0.7s
+    
+.button
+    font-size: 14px
+    color: #ffffff
+    border-radius: 25px
+    background-color: #d91233
+    padding: 13px 55px
+    border: solid 2px #d91233
+
+    &:hover
+        background-color: transparent
+        color: #ffffff
+
+.btn-transparent
+    background-color: transparent
+    color: #ffffff
+    
+    &:hover
+        background-color: #d91233
+
+
+a:hover
+    text-decoration: none
+
+.first
+    background: url('../img/bg.jpg') center no-repeat
+    background-size: cover
+    min-height: 100vh
+
+    .logo
+        img
+            height: 80px
+
+    .nav-contact
+        h5
+            font-size: 27.5px
+            font-weight: bold
+            color: #ffffff
+            text-align: right
+        
+        a
+
+            h6
+                font-size: 16px
+                text-align: right
+                color: #d91233
+                margin-bottom: 0
+
+
+    .title
+        margin-top: 14rem
+
+        h1
+            font-size: 48px
+            font-weight: 100
+            letter-spacing: 6px
+            text-transform: uppercase
+            color: #ffffff
+
+        h2
+            font-size: 30px
+            font-weight: 100
+            color: #ffffff
+            letter-spacing: 4px
+
+        .wrap-card
+            width: 70%
+            margin-top: 5rem
+
+            .card
+                color: #ffffff
+                background-color: transparent
+                border: none
+
+                .card-title
+                    i
+                        font-size: 40px
+
+                .card-body
+                    font-size: 18px
+                    font-weight: 100
+            
+.wrap-btn
+    margin-top: 5rem
+
+    p
+        font-size: 14px
+        text-align: center
+        color: #ffffff
+        margin-top: 1.5rem
+
+.second
+    .card
+        border: none
+        margin-top: 2rem
+        
+        .card-title
+            i
+                font-size: 50px
+                color: #d91233
+
+        .card-body
+            h6
+                font-size: 16px
+                font-weight: bold
+
+            p
+                font-size: 14px
+
+
+.thried
+    background-color: #ebebeb
+
+    h3
+        font-size: 30px
+        font-weight: bold
+
+    .card
+        margin-top: 3rem
+        padding: 2rem
+        border: solid 5px #ffffff
+        background-color: #ebebeb
+
+        label
+            font-size: 13px
+
+        .name-form
+            margin-top: 1.8rem
+
+        button
+            width: 100%
+            margin-top: 1rem
+
+            &:hover
+                color: #d91233
+
+
+
+.six
+    .brand-auto
+
+        img
+            max-height: 70px
+
+    .card
+        margin-top: 3rem
+        padding: 1rem
+        border: solid 5px #f2f2f2
+        background-color: white
+        border-radius: 0
+
+.seven
+    background-color: #ebebeb
+
+    .media
+        padding-bottom: 2rem
+
+        img
+            max-height: 90px
+
+        h6
+            font-size: 12px
+            font-weight: bold
+            color: #757575
+
+        h5
+            font-size: 16px
+            font-weight: bold
+            color: #d91233
+
+        p
+            font-size: 13px
+            font-weight: bold
+            color: #2b2b2b
+
+.eight
+    background-color: #dbdbdb
+
+    .card-wrapper
+        width: 70%
+
+        .card
+            margin-top: 2rem
+            padding: 2rem
+            border: solid 5px #ffffff
+            background-color: #dbdbdb
+            border-radius: 0
+
+
+            label
+                font-size: 13px
+                color: #3b3b3b
+
+            input
+                border-radius: 0
+                border: none
+                
+            button
+                width: 60%
+
+                &:hover
+                    color: #d91233
+
+.nine
+    position: relative
+
+    .card
+        background-color: #d91233
+        padding: 1rem
+        max-width: 550px
+        position: absolute
+        left: 50%
+        top: 5%
+        transform: translate(-50%, -5%)
+        transition: 0.6s
+
+        &:hover
+            opacity: 0.9
+
+        h4
+            font-size: 20px
+            font-weight: bold
+            color: #ffffff
+
+        h5
+            font-size: 18px
+            color: #ffffff
+
+        a
+            h4
+                font-size: 20px
+                font-weight: bold
+                color: #ffffff
+
+footer
+    background-color: #dbdbdb
+
+    .logo-footer
+        img
+            height: 60px
+
+    .nav-contact
+        h5
+            font-size: 27.5px
+            font-weight: bold
+            color: black
+            text-align: right
+        
+        a
+
+            h6
+                font-size: 16px
+                text-align: right
+                color: #d91233
+                margin-bottom: 0
+
+
+
+
+/*Модальные окна*/
+#modal_1, #modal_2, #modal_3, #modal_4
+
+    .modal-content
+        width: 60%
+        min-height: 150px
+        margin: auto
+        margin-top: 100%
+        border-radius: 0
+
+        .modal-header
+            border: none
+            position: relative
+            padding-bottom: 0
+            padding-top: 2.6rem
+            
+            h5
+                font-size: 14px
+                font-weight: bold
+            
+            button
+                position: absolute
+                right: -2rem
+                top: -0.4rem
+                width: 22px
+                height: 22px
+                color: #d91233
+                background-color: transparent
+                border: none
+                
+
+        .modal-body
+            h4
+                font-size: 12px
+                margin: 0
+
+        .modal-footer
+            padding: 0
+            font-size: 10px
+            border: none
+            margin-top: 0.5rem
+            padding-bottom: 1rem
+            
+            form
+                width: 90%
+
+                input::placeholder
+                    font-size: 12px
+
+            button
+                width: 90%
+
+                &:hover
+                    color: #d91233
+
+
+
+
+
+
+
+
+/*Медиа запросы 1199*/
+
+@media (max-width: 1199px)
+    .button
+        padding: 12px
+
+
+
+
+/*Медиа запросы 1024*/
+
+@media (max-width: 1024px)
+    .first .title 
+        margin-top: 18rem
+
+    .first .title .wrap-card
+        width: 80%
+
+
+
+
+
+/*Медиа запросы 991*/
+
+@media (max-width: 991px)
+    .textarea
+        margin-top: 1rem
+
+    .eight .card-wrapper
+        width: 100%
+
+
+
+/*Медиа запросы 768*/
+@media (max-width: 768px)
+    .first
+        height: 100%
+
+        .title 
+            margin-top: 8rem
+
+    .eight .card-wrapper .card button
+        width: 100%
+
+    #modal_1, #modal_2, #modal_3, #modal_4
+        .modal-content
+            margin-top: 90%
+
+
+
+
+
+/*Медиа запросы 500*/
+@media (max-width: 500px)
+    .first
+        height: 100%
+
+        .logo img
+            height: 50px
+
+        .nav-contact
+            h5
+                font-size: 20px
+
+        .title
+            margin-top: 3rem
+
+            h1
+                font-size: 22px
+                letter-spacing: 4px
+
+            h2
+                font-size: 16px
+                margin-top: 1rem
+                letter-spacing: 1px
+
+            .wrap-card
+                margin-top: 3rem
+
+                .card
+                    .card-body
+                        font-size: 14px
+
+        .wrap-btn
+            margin-top: 2rem
+
+            p
+                padding-bottom: 2rem
+
+    .first .nav-contact a h6
+        font-size: 11px 
+
+
+
+    br
+        display: none
+
+.eight .card-wrapper .card, .thried .card
+    padding: 1rem
+
+    
+.nine .card
+    width: 90%
+    padding: 1rem
+
+footer
+    .logo-footer
+        img
+            height: 38px
+
+    .nav-contact
+        h5
+            font-size: 18px
+
+        a h6
+            font-size: 10px
+
+#modal_1, #modal_2, #modal_3, #modal_4
+        .modal-content
+            margin-top: 70%
+            width: 90%
+
+            .modal-header
+                
+                button
+                    right: -1.5rem
+
+
+
+/*Медиа запросы 414*/
+
+/*@media (max-width: 414px)
+
+/*Медиа запросы 375*/
+
+@media (max-width: 375px)
+    .wrap-btn
+        padding-top: 0
+        margin-top: 0
+
+    .nine .card
+        h4
+            font-size: 16px
+
+        h5
+            font-size: 14px
+
+    footer .nav-contact
+        h5
+            font-size: 12px
+
+        a h6
+            font-size: 8px
+
+
+
+
+/*Медиа запросы 320*/
+
+@media (max-width: 320px)
+    .first
+        .nav-contact
+            h5
+                font-size: 15px
+
+        .title
+            margin-top: 3rem
+
+            h1
+                font-size: 24px
+
+            h2
+                font-size: 12px
+                margin-top: 1rem
+
+            .wrap-card
+                margin-top: 3rem
+
+                .card
+                    .card-body
+                        font-size: 10px
+
+        .wrap-btn
+            margin-top: 2rem
+
+            p
+                padding-bottom: 2rem
+
+    .first .nav-contact a h6
+        font-size: 9px
+
+    #modal_1 .modal-content .modal-header, #modal_2 .modal-content .modal-header, #modal_3 .modal-content .modal-header, #modal_4 .modal-content .modal-header
+        padding-top: 1.6rem
+    
