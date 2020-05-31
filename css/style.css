@@ -12,7 +12,8 @@ body {
   overflow-x: hidden;
   background-color: #302D39;
   font-family: "Roboto", sans-serif;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-left: 162px; }
 
 body.lock {
   overflow: hidden; }
@@ -106,7 +107,11 @@ h1 {
 .menu-vertical_line {
   border-right: 1px solid #2C2934;
   min-height: 100vh;
-  max-width: 162px; }
+  max-width: 162px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0; }
   .menu-vertical_line h5 {
     font-size: 36px;
     margin: 0; }
@@ -338,6 +343,9 @@ hr {
   .modal-lg {
     max-width: 963px; } }
 @media (max-width: 991px) {
+  body {
+    padding-left: 0; }
+
   body.lock {
     height: 100vh; }
 
@@ -349,7 +357,8 @@ hr {
     padding: 0; }
 
   .menu-vertical_line {
-    max-width: 100%; }
+    max-width: 100%;
+    position: relative; }
 
   .dashboard .menu-wrap .menu {
     display: none;

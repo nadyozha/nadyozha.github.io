@@ -16,6 +16,7 @@ body
     background-color: $Black
     font-family: 'Roboto', sans-serif
     min-height: 100vh
+    padding-left: 162px
 
 body.lock
     overflow: hidden
@@ -121,6 +122,10 @@ h1
     border-right: 1px solid #2C2934
     min-height: 100vh
     max-width: 162px
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
 
     h5
         font-size: 36px
@@ -452,6 +457,9 @@ hr
         max-width: 963px
 
 @media (max-width: 991px)
+    body
+        padding-left: 0
+
     body.lock
         height: 100vh
 
@@ -464,6 +472,7 @@ hr
 
     .menu-vertical_line
         max-width: 100%
+        position: relative
 
     .dashboard
         .menu-wrap
