@@ -182,6 +182,15 @@ h1 {
     transition: ease 0.4s; }
     .dashboard .dash-content .find span a img:hover {
       opacity: 0.5; }
+  .dashboard .dash-content .find input {
+    background-color: #2C2934;
+    border-radius: 5px;
+    padding-left: 1rem;
+    border: none;
+    height: 30px;
+    margin-left: 1rem;
+    color: white;
+    font-size: 16px; }
 .dashboard .dash-content .online-bots {
   padding-left: 1rem;
   margin-top: 2rem;
