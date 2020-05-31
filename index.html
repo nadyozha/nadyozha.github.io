@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="css/animate.css">-->
+		<link rel="stylesheet" href="css/style.css">
+		<title>Mozart Dashboard</title>
+	</head>
+	<body>
+		<section class="dashboard pt-lg-0 pt-lg-4 pt-md-3 pt-sm-4 pt-3">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2 col-md-12 menu-vertical_line pr-lg-0">
+						<div class="row">
+							<div class="col-lg-12 col-md-2 col-sm-2 col-3">
+								<div class="text-center logo">
+									<img src="img/mozart_black.svg" alt="logo">
+								</div>
+							</div>
+							<div class="col-sm-8 col-md-8 col-6 d-lg-none d-flex justify-content-center align-items-center">
+								<h5 class="toggle-none">Dashbord</h5>
+							</div>
+							<div class="col-lg-12 col-md-2 col-sm-2 col-3 d-flex flex-lg-column justify-content-lg-start align-items-lg-start justify-content-end align-items-center">
+								<div class="btn-open open_menu" id="btn-open">
+									<span></span>
+								</div>
+							</div>
+							<div class="col-12 menu-wrap">
+								<div class="menu" id="menu">
+									<div class="nav flex-column justify-content-center nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+										
+											<a class="font-weight-bold d-flex justify-content-lg-between justify-content-center" id="v-pills-Dashboard-tab" data-toggle="pill" href="#v-pills-Dashboard" role="tab" aria-controls="v-pills-Dashboard" aria-selected="true">Dashboard <img src="img/Path.svg"></a>
+										
+									
+									
+											<a class="d-flex justify-content-lg-between justify-content-center" id="v-pills-menu_1-tab" data-toggle="pill" href="#v-pills-menu_1" role="tab" aria-controls="v-pills-menu_1" aria-selected="false">Menu section 1 <img src="img/Path.svg"></a>
+										
+									
+									
+											<a class="d-flex justify-content-lg-between justify-content-center" id="v-pills-menu_2-tab" data-toggle="pill" href="#v-pills-menu_2" role="tab" aria-controls="v-pills-menu_2" aria-selected="false">Menu section 2 <img src="img/Path.svg"></a>
+										
+									
+									
+											<a class="d-flex justify-content-lg-between justify-content-center" id="v-pills-menu_3-tab" data-toggle="pill" href="#v-pills-menu_3" role="tab" aria-controls="v-pills-menu_3" aria-selected="false">Menu section 3 <img src="img/Path.svg"></a>
+										
+									
+									
+											<a class="d-flex justify-content-lg-between justify-content-center" id="v-pills-menu_4-tab" data-toggle="pill" href="#v-pills-menu_4" role="tab" aria-controls="v-pills-menu_4" aria-selected="false">Menu section 4 <img src="img/Path.svg"></a>
+										</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-12 dash-content pl-md-0">
+						<div class="find d-lg-block d-none">
+							<span>
+								<a href="#"><img src="img/search.1.svg" alt="search"></a>
+							</span>
+						</div>
+						<div class="tab-content online-bots" id="v-pills-tabContent">
+
+							<div  class="tab-pane fade show active" id="v-pills-Dashboard" role="tabpanel" aria-labelledby="v-pills-Dashboard-tab">
+								<h3 class="d-lg-block d-none">Dashboard</h3>
+								<div class="card pb-lg-3 pb-4 mt-lg-4">
+									<div class="card-body">
+										<h6>Online Bots</h6>
+										<div class="row table_list d-lg-flex d-none">
+											<div class="col-lg-2 col-12">
+												<h5>UID</h5>
+											</div>
+											<div class="col-lg-2 col-12">
+												<h5>Info</h5>
+											</div>
+											<div class="col-lg-5 col-12">
+												<h5>URL</h5>
+											</div>
+											<div class="col-lg-2 col-12">
+												<h5>Status</h5>
+											</div>
+											<div class="col-lg-1 col-12 px-0">
+												<h5>Country</h5>
+											</div>
+										</div>
+										<hr class="d-lg-block d-none my-1">
+										<div class="mini-card mt-4">
+											<div class="row">
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-1">
+													<h5>UID</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-2 pr-lg-0">
+													<span class="text-underline span-hover-link" data-toggle="modal" data-target="#exampleModalCenter">198262763492</span>
+												</div>
+												<div class=" col-4 col-sm-3 d-lg-none d-block order-lg-3">
+													<h5>Info</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-4">
+													<span>TotoBOT</span>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-5 order-9">
+													<h5>URL</h5>
+												</div>
+												<div class="col-lg-5 col-sm-9 col-8 order-lg-6 order-10">
+													<div class="overflow-hidden">
+														<a href="https://brass.example.com/believe/back">https://brass.example.com/believe/back</a>
+													</div>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-7 order-7">
+													<h5>Status</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-8 order-8 mt-auto mb-auto">
+													<small class="online">Online</small>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-9">
+													<h5>Country</h5>
+												</div>
+												<div class="col-lg-1 col-sm-9 col-8 order-lg-10 text-lg-center text-left">
+													<span>NL</span>
+												</div>
+											</div>
+										</div>
+										<hr class="d-lg-block d-none">
+										<div class="mini-card">
+											<div class="row">
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-1">
+													<h5>UID</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-2 pr-lg-0">
+													<span class="text-underline span-hover-link"  data-toggle="modal" data-target="#exampleModalCenter">198262763492</span>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-3">
+													<h5>Info</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-4">
+													<span>KenBOT</span>
+												</div>
+												<div class="col-4  col-sm-3 d-lg-none d-block order-lg-5 order-9">
+													<h5>URL</h5>
+												</div>
+												<div class="col-lg-5  col-sm-9 col-8 order-lg-6 order-10">
+													<div class="overflow-hidden">
+														<a href="https://brass.example.com/believe/back">https://brass.example.com/believe/back</a>
+													</div>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-7 order-7">
+													<h5>Status</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-8 order-8 mt-auto mb-auto">
+													<small>Offline</small>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-9">
+													<h5>Country</h5>
+												</div>
+												<div class="col-lg-1 col-sm-9 col-8 order-lg-10 text-lg-center text-left">
+													<span>BR</span>
+												</div>
+											</div>
+										</div>
+										<hr class="d-lg-block d-none">
+										<div class="mini-card">
+											<div class="row">
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-1">
+													<h5>UID</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-2 pr-lg-0">
+													<span class="text-underline span-hover-link"  data-toggle="modal" data-target="#exampleModalCenter">198262763492</span>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-3">
+													<h5>Info</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-4">
+													<span>GIGI BOT</span>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-5 order-9">
+													<h5>URL</h5>
+												</div>
+												<div class="col-lg-5 col-sm-9 col-8 order-lg-6 order-10">
+													<div class="overflow-hidden">
+														<a href="https://brass.example.com/believe/back">https://brass.example.com/believe/back</a>
+													</div>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-7 order-7">
+													<h5>Status</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-8 order-8 mt-auto mb-auto">
+													<small>Offline</small>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-9">
+													<h5>Country</h5>
+												</div>
+												<div class="col-lg-1 col-sm-9 col-8 order-lg-10 text-lg-center text-left">
+													<span>BR</span>
+												</div>
+											</div>
+										</div>
+										<hr class="d-lg-block d-none">
+										<div class="mini-card">
+											<div class="row">
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-1">
+													<h5>UID</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-2 pr-lg-0">
+													<span class="text-underline span-hover-link" data-toggle="modal" data-target="#exampleModalCenter">198262763492</span>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-3">
+													<h5>Info</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-4">
+													<span>BroBot</span>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-5 order-9">
+													<h5>URL</h5>
+												</div>
+												<div class="col-lg-5 col-sm-9 col-8 order-lg-6 order-10">
+													<div class="overflow-hidden">
+														<a href="https://brass.example.com/believe/back">https://brass.example.com/believe/back</a>
+													</div>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-7 order-7">
+													<h5>Status</h5>
+												</div>
+												<div class="col-lg-2 col-sm-9 col-8 order-lg-8 order-8 mt-auto mb-auto">
+													<small class="online">Online</small>
+												</div>
+												<div class="col-4 col-sm-3 d-lg-none d-block order-lg-9">
+													<h5>Country</h5>
+												</div>
+												<div class="col-lg-1 col-sm-9 col-8 order-lg-10 text-lg-center text-left">
+													<span>UK</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-menu_1" role="tabpanel" aria-labelledby="v-pills-menu_1-tab">
+								<h3 class="d-lg-block d-none example">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quas inventore possimus quam sunt sed reiciendis nisi perspiciatis quia ipsam neque quis, reprehenderit dolorum porro velit cupiditate voluptates nulla harum?
+								</h3>
+								
+							</div>
+							<div class="tab-pane fade" id="v-pills-menu_2" role="tabpanel" aria-labelledby="v-pills-menu_2-tab">
+								<h3 class="d-lg-block d-none example">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aperiam odio suscipit soluta quasi facilis quis voluptas, eveniet neque aliquam accusamus distinctio eligendi, magnam quidem officiis dicta delectus! Itaque beatae labore laboriosam id, doloremque rerum laudantium corrupti ad rem nulla voluptate aliquam eius voluptates voluptatum eveniet ipsam deserunt! Adipisci, ut.
+								</h3>
+							</div>	
+							<div class="tab-pane fade" id="v-pills-menu_3" role="tabpanel" aria-labelledby="v-pills-menu_3-tab">
+								<h3 class="d-lg-block d-none">3
+								</h3>
+								
+							</div>
+							<div class="tab-pane fade" id="v-pills-menu_4" role="tabpanel" aria-labelledby="v-pills-menu_4-tab">
+								<h3 class="d-lg-block d-none">4
+								</h3>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">UID Pop-Up</h5>
+        <button class="close" data-dismiss="modal">
+          <img src="img/cross.svg" alt="close">
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid px-sm-2 px-1">
+			<ul class="nav nav-tabs d-lg-flex d-none" id="myTab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="System-tab" data-toggle="tab" href="#System" role="tab" aria-controls="System" aria-selected="true">System Info</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Alerts-tab" data-toggle="tab" href="#Alerts" role="tab" aria-controls="Alerts" aria-selected="false">Alerts</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Notification-tab" data-toggle="tab" href="#Notification" role="tab" aria-controls="Notification" aria-selected="false">Notification</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Cookies-tab" data-toggle="tab" href="#Cookies" role="tab" aria-controls="Cookies" aria-selected="false">Cookies</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Formgrabber-tab" data-toggle="tab" href="#Formgrabber" role="tab" aria-controls="Formgrabber" aria-selected="false">Formgrabber</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Data-tab" data-toggle="tab" href="#Data" role="tab" aria-controls="Data" aria-selected="false">JS Data</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Screenshare-tab" data-toggle="tab" href="#Screenshare" role="tab" aria-controls="Screenshare" aria-selected="false">Screenshare</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Video-tab" data-toggle="tab" href="#Video" role="tab" aria-controls="Video" aria-selected="false">Video/Audio</a>
+			  </li>
+			</ul>
+			<select class="dropdown d-lg-none d-block w-100" id="my-select">
+			  <option selected>System Info</option>
+			  <option value="1" id="Alerts-tab" data-toggle="tab" href="#Alerts">Alerts</option>
+			  <option value="2">Notification</option>
+			  <option value="3">Cookies</option>
+			  <option value="4">Formgrabber</option>
+			  <option value="5">JS Data</option>
+			  <option value="6">Screenshare</option>
+			  <option value="7">Video/Audio</option>
+			</select>
+			<div class="tab-content w-100" id="myTabContent">
+			  <div class="tab-pane fade show active " id="System" role="tabpanel" aria-labelledby="System-tab">
+				<div class="container-fluid system-info">
+				  	<div class="row">
+				  		<div class="col-lg-6 col-12">
+				  			<div class="row">
+				  				<div class="col-lg-5 col-5">
+				  					<h6>OS</h6>
+				  					<h6>RAM</h6>
+				  					<h6>Screen</h6>
+				  					<h6>Languages</h6>
+				  					<h6>Timezone</h6>
+				  					<h6>Etc</h6>
+				  					<h6>Country</h6>
+				  					<h6>IP</h6>
+				  					<h6>Browsers</h6>
+				  				</div>
+				  				<div class="col-lg-7 col-7">
+				  					<span class="d-block">Windows 10 Pro x64</span>
+				  					<span class="d-block">8088 MB</span>
+				  					<span class="d-block">1536x864</span>
+				  					<span class="d-block">nl-NL, nl, en-US, en</span>
+				  					<span class="d-block">1</span>
+				  					<span class="d-block">-</span>
+				  					<span class="d-block">NL</span>
+				  					<span class="d-block">86.91.53.181</span>
+				  					<span class="d-block">Chrome 80.0.3987.149</span>
+				  					<span class="d-block">IE 11.0.18362.1</span>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="col-lg-5 offset-lg-1 col-md-6 log_tracker">
+				  			<h6>LOG Tracker</h6>
+				  			<span class="d-block">11/06/2020 11:13 AM - Visited google.com</span>
+				  			<span class="d-block">11/06/2020 11:13 AM - Visited google.com</span>
+				  			<span class="d-block">11/06/2020 11:13 AM - Visited google.com</span>
+				  		</div>
+				  	</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+			  </div>
+			  <div class="tab-pane fade" id="Alerts" role="tabpanel" aria-labelledby="Alerts-tab">
+			  	<div class="container">
+			  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum veritatis, optio nihil corrupti ad voluptatibus a hic, deserunt qui saepe sequi nobis ab maiores eveniet, recusandae voluptatem? Doloremque laborum quod tempora veniam laudantium sequi sed obcaecati explicabo, </p>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="Notification" role="tabpanel" aria-labelledby="Notification-tab">
+			  	<div class="container">
+			  		<p>Lorem ipsum dolor sit amet</p>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="Cookies" role="tabpanel" aria-labelledby="Cookies-tab">
+			  	<div class="container">
+			  		<p>Lm laudantium sequi sed obcaecati explicabo, deserunt omnis eos illum provident cumque officiis ribus.</p>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="Formgrabber" role="tabpanel" aria-labelledby="Formgrabber-tab">
+			  	<div class="container">
+			  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum veritatis, optio nihil corrupti ad voluptatibus a hic, deserunt qui saepe sequi nobis ab maiores eveniet, recusandae voluptatem? Doloremque laborum quod tempora veniam laudantium sequi sed obcaecati explicabo, deserunt omnis eos illum provident cumque officiis voluptates asperiores dolore recusandae rerum deleniti voluptatem ia consequuntur dolor temporibus.</p>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="Data" role="tabpanel" aria-labelledby="Data-tab">
+			  <div class="container">
+			  		<p>L provident cumque officiis voluptates asperiores dolore recusandae rerum deleniti voluptatem illo. Nisi, distinctio sapiente culpa consequuntur dolor temporibus.</p>
+			  	</div></div>
+			  <div class="tab-pane fade" id="Screenshare" role="tabpanel" aria-labelledby="Screenshare-tab">
+			  <div class="container">
+			  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum veritatis, optio nihil corrupti ad vo sapiente culpa consequuntur dolor temporibus.</p>
+			  	</div></div>
+			  <div class="tab-pane fade" id="Video" role="tabpanel" aria-labelledby="Video-tab">
+			  <div class="container">
+			  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum veritatis, optio nihil corrupti ad voluptatibus a hic, deserunt qui saepe sequi nobis ab maiores eveniet, recusandae voluptatem? Doloremque laborum quod tempora veniam laudantium sequi sed obcaecati explicabo, deserunt omnis eos illum provident cumque officiis voluptates asperiores dolore recusandae rerum deleniti vol.</p>
+			  	</div></div>
+			</div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!--<script src="js/wow.min.js"></script>-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
