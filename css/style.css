@@ -49,59 +49,63 @@ h1 {
   padding-left: 32px; }
 
 .mt-10 {
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 .mt-form {
   margin-top: 29px; }
 
-.username {
-  margin-top: 65px; }
+.logo-password {
+  width: 100%; }
 
 .sing_in {
   border: none;
   background: linear-gradient(177.34deg, #433F4D 2.71%, #302D39 96.87%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  padding: 1rem; }
-  .sing_in .card-body h6 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px; }
-    .sing_in .card-body h6::before {
-      content: "";
-      display: inline-block;
-      height: 44px;
-      width: 5px;
-      background-color: #fff;
-      position: absolute;
-      top: 25px;
-      left: 0; }
-  .sing_in .card-body form {
-    padding: 5px; }
-    .sing_in .card-body form input {
-      background-color: transparent;
-      border: 1px solid rgba(190, 189, 189, 0.2);
-      border-radius: 3px;
-      height: 43px;
-      color: white; }
-      .sing_in .card-body form input:focus {
-        border: 2px solid white;
-        outline: none !important; }
-    .sing_in .card-body form .active {
-      border: 1px solid white; }
-    .sing_in .card-body form label {
-      font-size: 19px;
-      line-height: 43px;
-      color: #FFFFFF;
-      padding-bottom: 0; }
-  .sing_in .card-body .footer-form {
-    margin-top: 18px; }
-    .sing_in .card-body .footer-form span {
+  border-radius: 5px; }
+
+.username {
+  margin-top: 4rem; }
+  .username .card-body {
+    padding: 2rem; }
+    .username .card-body h6 {
+      font-weight: bold;
       font-size: 20px;
-      line-height: 24px;
-      margin-left: 47px; }
-    .sing_in .card-body .footer-form button {
-      margin-left: 24px; }
+      line-height: 24px; }
+      .username .card-body h6::before {
+        content: "";
+        display: inline-block;
+        height: 44px;
+        width: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 22px;
+        left: 0; }
+    .username .card-body form {
+      padding: 0 5px; }
+      .username .card-body form input {
+        background-color: transparent;
+        border: 1px solid rgba(190, 189, 189, 0.2);
+        border-radius: 3px;
+        height: 40px;
+        color: white; }
+        .username .card-body form input:focus {
+          border: 2px solid white;
+          outline: none !important; }
+      .username .card-body form .active {
+        border: 1px solid white; }
+      .username .card-body form label {
+        font-size: 19px;
+        line-height: 40px;
+        color: #FFFFFF;
+        padding-bottom: 0; }
+    .username .card-body .footer-form {
+      margin-top: 18px; }
+      .username .card-body .footer-form span {
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 47px; }
+      .username .card-body .footer-form button {
+        margin-left: 24px; }
 
 .menu-vertical_line {
   border-right: 1px solid #2C2934;
@@ -349,6 +353,11 @@ hr {
   .modal-lg {
     max-width: 963px; } }
 @media (max-width: 991px) {
+  .username {
+    margin-top: 6rem; }
+    .username .card-body .footer-form span {
+      margin-left: 0; }
+
   body.lock {
     height: 100vh; }
 
@@ -432,18 +441,21 @@ hr {
   .pl-10 {
     padding-right: 0; }
 
-  .username {
-    margin-top: 30px; }
-    .username .card .card-body form label {
-      padding-left: 0;
-      line-height: 30px; }
-    .username .card .card-body .footer-form span {
-      padding-right: 0; } }
+  .username .card .card-body form label {
+    padding-left: 0;
+    line-height: 30px; }
+  .username .card .card-body .footer-form button {
+    margin-left: 0; }
+  .username .card .card-body .footer-form span {
+    padding-right: 0; } }
 @media (max-width: 767px) {
   .username .card .card-body .footer-form span {
     margin-top: 1rem;
     margin-left: 0; } }
 @media (max-width: 576px) {
+  .username {
+    margin-top: 2rem; }
+
   .menu-vertical_line h5 {
     font-size: 28px; }
 
@@ -474,7 +486,20 @@ hr {
         line-height: 24px; } }
 @media (max-width: 440px) {
   .dashboard .menu-wrap .active_menu .nav a {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .username .card .card-body {
+    padding: 19px; }
+    .username .card .card-body .mt-form {
+      margin-top: 20px; }
+      .username .card .card-body .mt-form .mt-form {
+        margin-top: 0; }
+    .username .card .card-body form label {
+      line-height: 22px; }
+    .username .card .card-body .footer-form span {
+      margin-top: 6px; }
+    .username .card .card-body .footer-form button {
+      margin-top: 0; } }
 @media (max-width: 375px) {
   .username .card {
     padding: 0.5rem; } }

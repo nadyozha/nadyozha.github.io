@@ -4,3 +4,4 @@
 	$('.toggle-none').toggleClass('display_none');
 	$('body').toggleClass('lock');
 });
+
