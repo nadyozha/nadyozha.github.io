@@ -12,8 +12,7 @@ body {
   overflow-x: hidden;
   background-color: #302D39;
   font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-  padding-left: 162px; }
+  min-height: 100vh; }
 
 body.lock {
   overflow: hidden; }
@@ -107,11 +106,7 @@ h1 {
 .menu-vertical_line {
   border-right: 1px solid #2C2934;
   min-height: 100vh;
-  max-width: 162px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0; }
+  max-width: 162px; }
   .menu-vertical_line h5 {
     font-size: 36px;
     margin: 0; }
@@ -191,6 +186,8 @@ h1 {
     margin-left: 1rem;
     color: white;
     font-size: 16px; }
+    .dashboard .dash-content .find input:focus {
+      outline: none !important; }
 .dashboard .dash-content .online-bots {
   padding-left: 1rem;
   margin-top: 2rem;
@@ -352,9 +349,6 @@ hr {
   .modal-lg {
     max-width: 963px; } }
 @media (max-width: 991px) {
-  body {
-    padding-left: 0; }
-
   body.lock {
     height: 100vh; }
 
@@ -366,8 +360,7 @@ hr {
     padding: 0; }
 
   .menu-vertical_line {
-    max-width: 100%;
-    position: relative; }
+    max-width: 100%; }
 
   .dashboard .menu-wrap .menu {
     display: none;
