@@ -96,6 +96,7 @@ a {
     .aside {
       position: sticky;
       bottom: auto;
+      overflow: visible;
       width: 100%;
       padding-top: 18px;
       padding-bottom: 18px;
