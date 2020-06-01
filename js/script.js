@@ -2,6 +2,12 @@ $(function() {
 
 	$('#sandwich').click(function() {
 		$('body').toggleClass('menubar-in');
+
+	});
+
+	$('.menu-close').click(function() {
+		$('.menubar-in').removeClass('menubar-in');
+
 	});
 
   $('.stylish-select').stylishSelect();
