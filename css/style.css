@@ -362,40 +362,42 @@ a {
     .modal .tab-content {
       background-color: #423D4C; } }
 
-.modal .stylish-select-container {
-  margin-bottom: 20px; }
-@media (min-width: 992px) {
-  .stylish-select-container {
-    display: none; } }
-.stylish-select-container > .stylish-select-selected {
-  color: inherit;
-  border: none;
-  border-radius: 5px;
-  padding: 9.5px 25px 9.5px 20px;
-  background-color: #322F3A;
-  background-image: url(../img/arrow.svg);
-  background-position: right 8px center;
-  background-size: 8px 6px;
-  box-shadow: none !important; }
-.stylish-select-container[data-select-state="open"] > .stylish-select-selected {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
-.stylish-select-container > .stylish-select-list {
-  color: #706C77;
-  max-height: none;
-  border: none;
-  border-radius: 0 0 5px 5px;
-  background-color: #322F3A; }
-  .stylish-select-container > .stylish-select-list > li {
-    padding: 8.5px 19px;
-    line-height: inherit;
-    border: 1px solid transparent;
-    background-color: transparent !important;
-    transition: 0.3s; }
-    .stylish-select-container > .stylish-select-list > li:last-child {
-      border-radius: 0 0 5px 5px; }
-    .stylish-select-container > .stylish-select-list > li:hover {
-      color: #fff;
-      border-color: #706C77; }
+.stylish-select-container {
+  width: 100%; }
+  .modal .stylish-select-container {
+    margin-bottom: 20px; }
+  @media (min-width: 992px) {
+    .stylish-select-container {
+      display: none; } }
+  .stylish-select-container > .stylish-select-selected {
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    padding: 9.5px 25px 9.5px 20px;
+    background-color: #322F3A;
+    background-image: url(../img/arrow.svg);
+    background-position: right 8px center;
+    background-size: 8px 6px;
+    box-shadow: none !important; }
+  .stylish-select-container[data-select-state="open"] > .stylish-select-selected {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  .stylish-select-container > .stylish-select-list {
+    color: #706C77;
+    max-height: none;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #322F3A; }
+    .stylish-select-container > .stylish-select-list > li {
+      padding: 8.5px 19px;
+      line-height: inherit;
+      border: 1px solid transparent;
+      background-color: transparent !important;
+      transition: 0.3s; }
+      .stylish-select-container > .stylish-select-list > li:last-child {
+        border-radius: 0 0 5px 5px; }
+      .stylish-select-container > .stylish-select-list > li:hover {
+        color: #fff;
+        border-color: #706C77; }
 
 /*# sourceMappingURL=style.css.map */
