@@ -273,6 +273,7 @@ a
 			padding: 20px !important
 
 .cart-body-2
+	padding: 0 !important
 	.cart-head, .cart-block
 		padding-left: 40px
 		padding-right: 40px
@@ -325,11 +326,12 @@ a
 	text-align: center
 	border-bottom: none
 	.nav-item
-		flex-grow: 1
+		.modal &
+			flex-grow: 1
 	.nav-link
 		transition: .3s
 		border: none
-		padding: 9.5px 11px
+		padding: 9.5px 1rem
 		border-top-left-radius: 5px
 		border-top-right-radius: 5px
 		&:not(.active)
@@ -351,7 +353,8 @@ a
 			background-color: #423D4C
 
 .stylish-select-container 
-	margin-bottom: 20px
+	.modal &
+		margin-bottom: 20px
 	@media (min-width: 992px)
 		display: none
 	> .stylish-select-selected
