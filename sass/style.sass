@@ -1,692 +1,390 @@
-$Black: #302D39
-$White: white
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
 
-img 
-    max-width: 100%
-    height: auto
-
-html 
-    width: 100%
-    height: 100%
-    overflow-x: hidden
-    font-family: 'Hind Vadodara', Sans-Serif
+*
+	outline: none !important
 
 body
-    overflow-x: hidden
-    background-color: $Black
-    font-family: 'Roboto', sans-serif
-    min-height: 100vh
-
-body.lock
-    overflow: hidden
-
-input::placeholder, textarea::placeholder
-    color: rgba(190, 189, 189, 0.7)
-    font-size: 19px
- 
-button
-    transition: all 0.8s
-    color: $Black
-    border: none
-    padding: 10px 63px
-    background-color: $White
-    border-radius: 5px
-    font-size: 20px
-    line-height: 24px
-
-button:hover
-    cursor: pointer
-    background-color: darken($White, 15%)
-
-a:hover
-    text-decoration: none
-
-h1, h2, h3, h4, h5, h6, p, span, a
-    color: $White
-
-h1 
-    font-weight: 900
-    color: $White
-
-.pl-10
-    padding-left: 32px
-
-.mt-10
-    margin-top: 10px
-
-.mt-form
-    margin-top: 29px
-
-
-
-.logo-password
-    width: 100%
-
-.sing_in
-    border: none
-    background: linear-gradient(177.34deg, #433F4D 2.71%, #302D39 96.87%)
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    border-radius: 5px
-
-.username
-    margin-top: 4rem
-
-    .card-body
-        padding: 2rem
-
-        h6
-            font-weight: bold
-            font-size: 20px
-            line-height: 24px
-
-            &::before
-                content: ''
-                display: inline-block
-                height: 44px
-                width: 5px
-                background-color: #fff
-                position: absolute
-                top: 22px
-                left: 0
-
-        form
-            padding: 0 5px    
-
-            input
-                background-color: transparent
-                border: 1px solid rgba(190, 189, 189, 0.2)
-                border-radius: 3px
-                height: 40px
-                color: white
-
-                &:focus
-                    border: 2px solid white
-                    outline: none !important
-
-            .active
-                border: 1px solid white
-
-            label
-                font-size: 19px
-                line-height: 40px
-                color: #FFFFFF
-                padding-bottom: 0
-        
-        .footer-form
-            margin-top: 18px
-
-            span
-                font-size: 20px
-                line-height: 24px
-                margin-left: 47px
-
-            button
-                margin-left: 24px
-
-.menu-vertical_line
-    border-right: 1px solid #2C2934
-    min-height: 100vh
-    max-width: 162px
-
-    h5
-        font-size: 36px
-        margin: 0
-
-.logo
-    z-index: 1000
-    position: relative
-
-.dashboard
-    .menu
-        padding-right: 12px
-        margin-top: 1rem
-        display: block
-        transition: ease 0.5s
-
-        a
-            font-size: 18px
-            line-height: 24px
-            color: $White
-            font-family: Roboto
-            transition: ease 0.6s
-            margin-top: 30px
-
-            &:hover
-                color: silver
-
-        a .active
-            height: 20px
-        
-
-    .active
-        display: block
-        transition: ease 0.5s
-        
-    .btn-open
-        margin-top: 2rem
-        position: relative
-        width: 40px
-        height: 20px
-        display: block
-        cursor: pointer
-        z-index: 900
-
-        &:before,
-        &:after
-            content: ''
-            background-color: white
-            position: absolute
-            width: 20px
-            height: 2px
-            left: 0
-            transition: all 0.3s ease 0s        
-
-        &:before
-            top: 0
-
-        &:after
-            bottom: 0
-
-        span
-            position: absolute
-            background-color: white
-            left: 0
-            width: 14px
-            height: 2px
-            top: 9px
-            transition: all 0.3s ease 0
-            
-    
-    .btn-open.active:before
-        transform: rotate(45deg)
-        top: 9px
-    
-    .btn-open.active:after
-        transform: rotate(-45deg)
-        bottom: 9px
-
-    .btn-open.active span
-        transform: scale(0)
-
-
-    
-
-
-
-    .dash-content
-        .find
-            border-bottom: 1px solid #2C2934
-            padding: 1rem
-
-            span
-                a
-                    img
-                        transition: ease 0.4s
-
-                        &:hover
-                            opacity: 0.5
-
-            input
-                background-color: #2C2934
-                border-radius: 5px
-                padding-left: 1rem
-                border: none
-                height: 30px
-                margin-left: 1rem
-                color: $White
-                font-size: 16px
-
-                &:focus
-                    outline: none !important
-
-
-        .online-bots
-            padding-left: 1rem
-            margin-top: 2rem
-            color: white
-
-            .example
-                font-size: 18px
-
-            h3
-                font-size: 35px
-                font-weight: 400
-
-            .card
-                border: none
-                background: linear-gradient(177.34deg, #433F4D 2.71%, #302D39 96.87%)
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-                border-radius: 5px
-                padding: 10px
-
-                .card-body
-                    padding: 10px
-
-                    h6
-                        font-weight: bold
-                        font-size: 20px
-                        line-height: 24px
-
-                        &::before
-                            content: ''
-                            display: inline-block
-                            height: 44px
-                            width: 5px
-                            background-color: #fff
-                            position: absolute
-                            top: 10px
-                            left: 0
-
-        
-                    .table_list
-                        margin-top: 2rem
-
-                        h5
-                            font-weight: 500
-                            font-size: 16px
-                            margin: 0
-
-                    .mini-card
-                        margin-top: 1rem
-                        
-
-                        a
-                            font-size: 16px
-                            transition: ease 0.6s
-
-                            &:hover
-                                color: silver
-
-                        .overflow-hidden
-                            padding: 4px 10px
-                            border-radius: 2px
-                            border: 1px solid #87858B
-                            white-space: nowrap
-                            text-overflow: ellipsis
-                            transition: ease 0.6s
-
-                        small
-                            border: 1px solid #0095E8
-                            box-sizing: border-box
-                            border-radius: 2px
-                            font-size: 12px
-                            line-height: 12px
-                            text-align: center
-                            color: #0095E8
-                            padding: 2px 5px
-
-
-                        .online
-                            border: 1px solid #FF6A00
-                            color: #FF9244
-
-                        span
-                            line-height: 34px
-                            transition: ease 0.4s
-
-                        .span-hover-link:hover
-                            cursor: pointer
-                            color: silver
-
+	color: #fff
+	background-color: #302D39
+	font-family: 'Roboto', sans-serif
+	min-height: 100vh
+	@media (min-width: 992px)
+		&.dashboard
+			padding-left: 162px
+	@media (max-width: 991.98px)
+		&.menubar-in
+			overflow: hidden
+
+img 
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+h3 
+	font-size: 35px
+	margin-bottom: 30px
+
+button 
+	transition: .3s
+
+a
+	color: #fff !important
+	text-decoration: none !important
+	transition: .3s
+	&:hover:not(.btn) 
+		opacity: .8
+
+.btn 
+	font-size: inherit
+	border-radius: 5px
+	min-width: 166px
+	padding: 5px 1rem
+	&-light
+		color: #302D39
+
+.form-control
+	color: #fff !important
+	font-size: inherit
+	background-color: transparent !important
+	box-shadow: none !important
+	border-color: rgba(190, 189, 189, .2)
+	padding: 4px 9px
+	height: auto
+	border-radius: 3px
+	&:focus
+		border-color: #fff
+	&::placeholder
+		color: rgba(190, 189, 189, .7)
+
+.fz-25 
+	font-size: 25px
+.fz-20 
+	font-size: 20px
+.fz-18	
+	font-size: 18px
+.fz-0
+	font-size: 0
+
+.row-1:not(.no-gutters)
+	margin-left: -20px
+	margin-right: -20px
+	> [class*="col"]
+		padding-left: 10px
+		padding-right: 10px
+
+.container-fluid
+	@media (min-width: 992px)
+		padding-left: 30px 
+		padding-right: 30px
+
+.aside
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	width: 162px
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+	padding: 47px 20px
+	background-color: #302D39
+	overflow: auto
+	z-index: 99
+	@media (max-width: 991.98px)
+		position: sticky
+		bottom: auto
+		width: 100%
+		padding-top: 18px
+		padding-bottom: 18px
+		background-color: #322F3A
+		box-shadow: 0 4px 54px rgba(0, 0, 0, .1)
+		.logo
+			width: 61px
+			position: relative
+			z-index: 99
+
+#menu
+	transition: .3s
+	.nav
+		flex-direction: column
+		flex-wrap: nowrap
+		padding-bottom: 75px
+	@media (max-width: 991.98px)
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 9
+		opacity: 0
+		visibility: hidden
+		background-color: #302D39
+		font-size: 26px
+		text-align: center
+		padding-top: 75px
+		display: flex
+		flex-direction: column
+		.nav
+			flex-grow: 1
+			overflow: auto
+			align-items: center
+			justify-content: center
+		.menubar-in &
+			opacity: 1
+			visibility: visible
+	a 
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		padding: 15px 0
+		&.active
+			font-weight: bold
+		@media (min-width: 992px)
+			padding: 0
+			margin-top: 40px
+			&:after 
+				content: ''
+				width: 5px
+				height: 10px
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				background-image: url(../img/path.svg)
+				background-size: cover
+				margin-left: 10px
+
+#sandwich
+	position: relative
+	width: 20px
+	height: 12px
+	cursor: pointer
+	transition: .3s
+	margin-left: 41px
+	z-index: 99
+	@media (min-width: 992px)
+		margin-top: 80px
+		margin-left: 0
+		margin-right: auto
+	&:before, span, &:after
+		content: ''
+		background-color: #fff
+		position: absolute
+		height: 2px
+		left: 0
+		right: 0
+		transition: .3s   
+		border-radius: 100px    
+	&:before
+		top: 0
+		transform-origin: 15% center
+		.menubar-in &
+			transform: rotate(45deg)
+	span 
+		top: 5px
+		width: 13px
+		.menubar-in &
+			width: 0
+	&:after
+		bottom: 0
+		transform-origin: 15% center
+		.menubar-in &
+			transform: rotate(-45deg)
+	&:hover 
+		opacity: .8
+
+.header
+	position: sticky
+	top: 0
+	background-color: #302D39
+	padding: 13px 0
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+	z-index: 98
+	.form
+		max-width: 400px
+		position: relative
+		.form-control
+			padding-left: 35px
+		button 
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			width: 34px
+			background: url(../img/search.svg) no-repeat center center !important
+			border: none !important
+			padding: 0 !important
+			box-shadow: none !important
+			&:hover
+				opacity: .8
+
+.section
+	padding-top: 20px
+	padding-bottom: 20px
+	@media (min-width: 992px)
+		padding-top: 30px
+		padding-bottom: 30px
+
+.logo-1
+	@media (max-width: 991.98px)
+		width: 122px
+
+.cart
+	width: 100%
+	pointer-events: auto
+	box-shadow: 0 6px 27px rgba(35, 35, 35, .38)
+	border-radius: 5px
+	padding-top: 20px
+	background: linear-gradient(to bottom, #433F4D, #302D39)
+	@media (min-width: 992px)
+		.modal & 
+			background: #403C4A
+	&-header
+		font-weight: bold
+		position: relative
+		font-size: 20px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 7px 40px
+		.modal & 
+			padding-left: 30px
+			padding-right: 30px
+		@media (max-width: 575.98px)
+			padding-left: 20px !important
+			padding-right: 20px !important
+		&:before 
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			border-left: 5px solid
+			.modal & 
+				border-left-color: #2AC5A9
+	&-body
+		padding: 20px 40px 40px
+		.modal & 
+			padding-left: 30px
+			padding-right: 30px
+		@media (max-width: 575.98px)
+			padding: 20px !important
+
+.cart-body-2
+	.cart-head, .cart-block
+		padding-left: 40px
+		padding-right: 40px
+	.cart-head
+		font-weight: bold
+	.cart-block
+		transition: .3s
+		cursor: pointer
+		&:hover 
+			background: #302D39
+		.cart-block-2
+			padding-top: 11px
+			padding-bottom: 11px
+			border-top: 1px solid #514E59
+			
+.cart-link
+	border: 1px solid #FFF
+	border-radius: 4px
+	padding: 5px
+	white-space: nowrap
+	text-overflow: ellipsis
+	overflow: hidden
+	max-width: 337px
+
+.online 
+	border-radius: 2px
+	font-size: 12px
+	color: #0095E8
+	padding: 1px 10px
+	border: 1px solid #0095E8
+.offline 
+	color: #FF9244
+	border: 1px solid #FF9244
+
+.cart-mini-body
+	.mini-cart
+		transition: .3s
+		cursor: pointer
+		border: 1px solid #595561
+		border-radius: 5px
+		padding: 20px 20px .25rem
+		background-color: #423D4C
+		margin: 10px
+		&:hover
+			background: #302D39
+		.tdu	
+			text-decoration: underline
+
+.nav-tabs
+	text-align: center
+	border-bottom: none
+	.nav-item
+		flex-grow: 1
+	.nav-link
+		transition: .3s
+		border: none
+		padding: 9.5px 11px
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+		&:not(.active)
+			color: #706C77 !important
+		&.active
+			background-color: #322F3A
+			opacity: 1
+			
+@media (min-width: 992px)
+	.modal-lg
+		max-width: 962px
 
 .modal
-    .modal-lg
+	.tab-content
+		padding: 25px
+		background-color: #322F3A
+		border-radius: 0 0 5px 5px
+		@media (max-width: 991.98px)
+			background-color: #423D4C
+
+.stylish-select-container 
+	margin-bottom: 20px
+	@media (min-width: 992px)
+		display: none
+	> .stylish-select-selected
+		color: inherit
+		border: none
+		border-radius: 5px
+		padding: 9.5px 25px 9.5px 20px
+		background-color: #322F3A
+		background-image: url(../img/arrow.svg)
+		background-position: right 8px center
+		background-size: 8px 6px
+		box-shadow: none !important
+	&[data-select-state="open"] 
+		> .stylish-select-selected
+			border-bottom-left-radius: 0
+			border-bottom-right-radius: 0
+	> .stylish-select-list
+		color: #706C77
+		max-height: none
+		border: none
+		border-radius: 0 0 5px 5px
+		background-color: #322F3A
+		> li 
+			padding: 8.5px 19px
+			line-height: inherit
+			border: 1px solid transparent
+			background-color: transparent !important
+			transition: .3s
+			&:last-child
+				border-radius: 0 0 5px 5px
+			&:hover 
+				color: #fff
+				border-color: #706C77
+	
 
-        .modal-content
-            background-color: #403C4A
-            padding: 0
-            box-shadow: 0px 6px 27px rgba(35, 35, 35, 0.378227)
 
-            .modal-header
-                border: none
-                margin-top: 1rem
-                
 
-                h5
-                    font-weight: bold
-                    font-size: 20px
-                    line-height: 20px
-                    margin-left: 1rem
-
-                    &::before
-                        content: ''
-                        display: inline-block
-                        height: 40px
-                        width: 5px
-                        background-color: #2AC5A9
-                        position: absolute
-                        top: 22px
-                        left: 0
-
-
-                button:hover
-                    background-color: transparent
-
-            .modal-body
-                .nav-tabs
-                    border-bottom: none
-
-                    .nav-item
-                        border: none
-
-                        .nav-link
-                            color: #706C77
-                            font-size: 16px
-                            line-height: 24px
-                            transition: ease 0.3s
-                            font-weight: 400
-                            border: none
-                            padding: 8px 20px
-                            
-
-                            &:hover
-                                color: white
-                                font-weight: 400
-
-                        .active
-                            border: none
-                            background-color: #322F3A
-                            color: white
-                            
-                .tab-content
-                    background-color: #322F3A
-                    padding-top: 1rem
-                    padding-bottom: 1rem
-                    border-radius: 5px
-                    color: white
-
-
-                    .system-info
-                        h6
-                            margin: 0
-                            font-weight: bold
-                            font-size: 16px
-                            line-height: 24px
-
-                        span
-                            font-size: 16px
-                            line-height: 24px
-
-
-
-
-
-
-
-
-
-
-
-#my-select
-    padding: 8px
-    margin-bottom: 10px
-    background: #322F3A
-    border-radius: 5px
-    color: white
-    border: none
-    outline: none
-    display: inline-block
-    -webkit-appearance: none
-    -moz-appearance: none
-    appearance: none
-    cursor: pointer
-    font-size: 16px
-
-
-
-
-
-
-
-
-
-
-hr
-    margin: 14px 0
-    height: 1px
-    background-color: #514E59
-
-
-.display_none
-    visibility: hidden
-
-
-@media (max-width: 1199px)
-    .pl-10
-        padding-left: 0
-
-    .dashboard
-        .dash-content
-            .online-bots
-                .card
-                    .card-body
-                        .mini-card
-                            span
-                                font-size: 16px
-
-                                a
-                                    font-size: 16px
-@media (min-width: 992px)
-    .modal-lg
-        max-width: 963px
-
-@media (max-width: 991px)
-    .username
-        margin-top: 6rem
-
-        .card-body .footer-form span
-            margin-left: 0
-
-    body.lock
-        height: 100vh
-
-    .logo img
-        max-height: 48px
-
-    #btn-open
-        margin-top: 0
-        padding: 0
-
-    .menu-vertical_line
-        max-width: 100%
-
-    .dashboard
-        .menu-wrap
-            .menu
-                display: none
-                margin-top: 0
-                
-                a
-                    font-size: 22px
-                    margin-top: 0
-                    margin-bottom: 15px
-
-                    img
-                        display: none
-                        
-
-        .menu-wrap .active_menu
-            display: flex
-            padding: 0
-            position: fixed
-            top: 0
-            left: 0
-            bottom: 0
-            right: 0
-            z-index: 9
-            background-color: $Black
-
-            .nav
-                text-align: center
-                width: 100%
-                
-                a
-                    font-size: 26px
-                    line-height: 24px
-                    letter-spacing: 1px
-
-        .dash-content
-            padding: 0 24px !important
-            
-            .tab-content
-                background-color: linear-gradient(177.34deg, #433F4D 96.87%, #302D39 2.71%)
-
-            .online-bots
-                padding-left: 0
-
-                h3
-                    font-size: 32px
-
-                .card
-                    padding: 16px
-
-                    .card-body
-                        padding: 0
-
-                        h6::before
-                            top: 8px
-                            height: 38px
-                            width: 4px
-
-                        .mini-card
-                            border: 1px solid #595561
-                            border-radius: 8px
-                            padding: 20px
-                            margin-top: 1rem
-                            background-color: #423D4C
-
-                            h5
-                                font-size: 14px
-                                line-height: 34px
-                                margin-bottom: 0
-
-                            span
-                                font-size: 14px
-                                color: white
-                                padding: 0
-
-                            a
-                                font-size: 14px
-                                line-height: 14px
-                                text-align: center
-                                color: white
-                                    
-                            .text-underline
-                                text-decoration: underline
-
-    .menu-vertical_line
-        min-height: 1px
-                            
-@media (max-width: 768px)
-    .pl-10
-        padding-right: 0
-
-    .username
-
-        .card
-            .card-body
-                form label
-                    padding-left: 0
-                    line-height: 30px
-
-                .footer-form
-                    button
-                        margin-left: 0
-                    span
-                        padding-right: 0
-    
-       
-@media (max-width: 767px)
-    .username
-        .card
-            .card-body
-                .footer-form
-                    span
-                        margin-top: 1rem
-                        margin-left: 0
-    
-@media (max-width: 576px)
-    .username
-        margin-top: 2rem
-        
-    .menu-vertical_line
-        h5
-            font-size: 28px
-        
-    .dashboard
-        .dash-content
-            padding: 16px !important
-
-            .online-bots
-                padding-left: 0
-
-                h5
-                    font-size: 16px
-
-        .menu-wrap
-            padding: 0
-
-            .active_menu
-                min-height: 90vh
-
-                .nav a
-                    font-size: 26px
-                    line-height: 24px
-                    margin-bottom: 10px
-
-
-
-    .menu-vertical_line h5
-        font-size: 24px
-
-    .modal
-        .modal-dialog
-            .modal-content
-                .modal-body
-                    padding: 0
-
-                    .tab-content
-                        .system-info 
-                            .log_tracker
-                                margin-top: 16px
-
-                                span
-                                    font-size: 13px
-                                    line-height: 24px
-
-@media (max-width: 440px)
-    .dashboard .menu-wrap .active_menu .nav a
-        margin-bottom: 40px
-
-    .username
-        .card
-            .card-body
-                padding: 19px
-
-                .mt-form
-                    margin-top: 20px
-
-                    .mt-form
-                        margin-top: 0
-                        
-                form
-                    label
-                        line-height: 22px
-
-                .footer-form
-                    span
-                        margin-top: 6px
-                        
-                    button
-                        margin-top: 0
-
-
-
-@media (max-width: 375px)
-    .username
-        .card
-            padding: 0.5rem
-
-    
-
-@media (max-width: 320px)

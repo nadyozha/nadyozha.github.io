@@ -1,7 +1,13 @@
-	$('.open_menu').click(function(){
-	$('.btn-open').toggleClass('active');
-	$('#menu').toggleClass('active_menu');
-	$('.toggle-none').toggleClass('display_none');
-	$('body').toggleClass('lock');
-});
+$(function() {
 
+	$('#sandwich').click(function() {
+		$('body').toggleClass('menubar-in');
+	});
+
+  $('.stylish-select').stylishSelect();
+
+  $('.stylish-select').on('change', function() {
+	  $('[href="' + this.value + '"]').trigger('click');
+	});
+
+});
