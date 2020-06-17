@@ -14,13 +14,15 @@ html
   width: 100%
   height: 100%
   overflow-x: hidden
-  font-family: 'Hind Vadodara', Sans-Serif
+  
 
 body
   overflow-x: hidden
   background-color: #fbfbfb
   position: relative
   height: 100%
+  font-family: 'Montserrat', sans-serif
+  @media (max-width: 990.98px)
 
 input::placeholder, textarea::placeholder
   color: #0F385E
@@ -57,6 +59,7 @@ h1
   font-weight: 600
   font-size: 52px
   line-height: 60px
+  
   @media (max-width: 990.98px)
     font-size: 40px
     line-height: 50px
@@ -100,6 +103,9 @@ h3
       opacity: 0
       visibility: hidden
 
+@media (min-width: 1200px)
+  .container
+    max-width: 1200px
 
 //cariusel
 
@@ -156,6 +162,7 @@ h3
   line-height: 14px
   padding: 14px
   height: 42px
+  transition: 0.3s
   &:hover
     background: #edb957
     font-size: 12px
@@ -173,8 +180,9 @@ h3
   font-size: 12px
   line-height: 14px
   padding: 14px
+  transition: 0.3s
   &:hover
-    background: #F3F5F7
+    background: #F3F5F7 !important
     font-size: 12px
     line-height: 14px
     color: $Dark
@@ -200,8 +208,8 @@ h3
   position: absolute
   top: 0
   z-index: 50
-  @media (max-width: 991px)
-    position: sticky
+  @media (max-width: 990.98px)
+    position: fixed
     top: 0
     background: rgba(50, 66, 204, 0.85)
 
@@ -288,6 +296,10 @@ h3
     button
       margin-left: auto
       color: $Blue
+      transition: 0.3s
+      &:hover
+        background-color: #F3F5F7
+        color: $Blue
 
     .logo
       margin-right: 3rem
@@ -318,12 +330,15 @@ h3
     color: white
 
   .carts
+    .cart:hover
+      box-shadow: 0px 6px 37px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
     .cart
       background-color: white
       padding: 16px 12px
       box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
       border-radius: 10px
       min-height: 350px
+      transition: 0.3s
       .cart-title
         padding: 14px 0
         .number
@@ -343,6 +358,7 @@ h3
 
         .number_orange
           background: #E8A82D
+          left: -5px
 
         .broker
           width: 100%
@@ -435,83 +451,102 @@ h3
     width: 50%
 
 .little-carts-row
+  position: relative
+  z-index: 5
+  right: 0
+  margin-left: -.25rem
+  margin-right: -.25rem
+  > [class*="col"]
+    padding-left: .25rem
+    padding-right: .25rem
+    margin-top: .25rem
+    margin-bottom: .25rem
   .little-cart
     background: #FFFFFF
     box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
     border-radius: 10px
     font-weight: 300
     font-size: 14px
-    line-height: 80px
     color: #0F385E
     text-align: center
-    transition: 0.5s
-    margin: 2px
+    transition: 0.3s
     cursor: pointer
-    padding: 0 3px
-    img
+    padding: 24px 5px
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 80px
+    .img-cart
       padding-right: 2px
-      width: 30px
-
+      flex-basis: 30px
+      img 
+        width: 100%
     &:hover
-      box-shadow: 0px 6px 37px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
+      box-shadow: 0px 10px 45px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
         
 .thert
   h2
     display: inline
     padding-right: 1rem
   button
-    width: 15%
     height: 40px
     padding: 12px 8px 
     color: #0F385E
-    @media (max-width: 991px)
-      width: 40%
-      display: flex
-      margin-left: 0
-      @media (max-width: 550px)
-        width: 55%
+    transition: 0.3s
+    &:hover
+      background: #F3F5F7
       
-  .cart-blog
-    background: #FFFFFF
-    box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
-    border-radius: 10px
-    padding: 8px
+.cart-blog
+  background: #FFFFFF
+  box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
+  border-radius: 10px
+  padding: 8px
+  height: 100%
+  display: flex
+  flex-direction: column
+  transition: 0.5s
+  &:hover
+    box-shadow: 0px 6px 37px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
 
-    .cart-blog-body
-      margin-top: 8px
-      padding: 16px
-      overflow: hidden
-      @media (max-width: 767.98px)
-        padding: 8px
+  .cart-blog-body
+    margin-top: 8px
+    padding: 16px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    @media (max-width: 767.98px)
+      padding: 8px
 
-      img
-        width: 20px
-        margin-right: 12px
-        line-height: 20px
+    img
+      width: 20px
+      margin-right: 12px
+      line-height: 20px
 
-      small
-        font-size: 12px
-        line-height: 12px
-        color: #0F385E
-        opacity: 0.7
-        line-height: 20px
-        margin-top: 3px
-        margin-right: 16px
+    small
+      font-size: 12px
+      line-height: 12px
+      color: #0F385E
+      opacity: 0.7
+      line-height: 20px
+      margin-top: 3px
+      margin-right: 16px
 
-      h5
-        font-weight: 600
-        font-size: 24px
-        line-height: 32px
-        margin-top: 1rem
+    h5
+      font-weight: 600
+      font-size: 24px
+      line-height: 32px
+      margin-top: 1rem
 
-      span
-        padding: 6px 10px
-        background: rgba(50, 66, 204, 0.1)
-        border-radius: 39px
-        color: $Blue
-        font-size: 12px
-        line-height: 14px
-        margin-right: 8px
+    span
+      padding: 6px 10px
+      background: rgba(50, 66, 204, 0.1)
+      border-radius: 39px
+      color: $Blue
+      font-size: 12px
+      line-height: 14px
+      margin-right: 8px
 
 footer
   background-color: white
@@ -537,7 +572,6 @@ footer
     height: 1px
     background-color: $Dark
     opacity: 0.1
-
 
 //For beginners
 .mt-sm-6
@@ -570,27 +604,15 @@ footer
     transform: translateY(-50%)
     z-index: -1
     @media (max-width: 767.98px)
-      top: -10%
+      top: 0
       height: 658px
       left: -135px
       transform: none
-      
-.wrap-bg_2
-  &:after
-    @media (max-width: 420px)
-      height: 558px
-      top: 10%
 
-.little-carts-row
-  position: relative
-  z-index: 5
-  right: 0
+.mt-6
+  @media (max-width: 767.98px)
+    margin-top: 14rem
 
-  .little-cart img
-    @media (max-width: 991px)
-      padding: 0
-      height: 35px
-      width: 35px
 
   .book
     .book_content
@@ -651,7 +673,6 @@ footer
   h2, p
     color: white
 
-
 //news
 .menu-header-white
   .naw-white
@@ -699,14 +720,13 @@ footer
 
 .last_card
   .cart-white
-    background-color: white
+    background-color: #fbfbfb
     padding: 3rem 2rem
     box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
     border-radius: 10px
 
     button
       width: 50%
-
 
 .background-img
   position: absolute
@@ -723,21 +743,6 @@ footer
   z-index: -1
 
 //news-article
-.cart-blog
-  transition: 0.5s
-  box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
-
-  &:hover
-    box-shadow: 0px 6px 37px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
-
-  .cart-blog-body
-    span
-      background-color: #ebecfa
-      border-radius: 40px
-      color: $Blue
-      display: block
-      padding: 6px 12px
-      text-align: center
 
 .first-news-article
   small
@@ -758,16 +763,18 @@ footer
     line-height: 14px
     margin-right: 8px    
     
-
 //compare_best
 .compare_best
   .long-carts
+    .cart:hover
+      box-shadow: 0px 6px 37px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
     .cart
       background-color: white
       padding: 0 2rem
       box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
       border-radius: 10px
       position: relative
+      transition: 0.3s
       .l-vertival-line
         border-left: 1px solid silver
         display: flex
@@ -826,7 +833,6 @@ footer
 
         &:hover
           background-color: darken(#eaf7ef, 6%)
-
       
       h6
         font-size: 12px
@@ -862,7 +868,6 @@ footer
         img
           width: 14px
           height: 14px
-
 //broker
 .mt-lg-7
   margin-top: 10rem
@@ -872,142 +877,140 @@ footer
   color: white
   border: 1px solid silver
   &:hover
-    background-color: #1217eb
+    background-color: #1217eb !important
     color: white
     border: 1px solid silver
 
 .broker
   .broker-first
-      .cart-star
-        padding: 2rem
-        background: #FFFFFF
-        box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
-        border-radius: 10px
-        margin-top: 3rem
+    .cart-star
+      padding: 2rem
+      background: #FFFFFF
+      box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11)
+      border-radius: 10px
+      margin-top: 3rem
 
-        img
-          width: 20px
-          height: 20px
+      img
+        width: 20px
+        height: 20px
 
-        span
-          margin-left: 1rem
-          font-size: 12px
-          line-height: 17px
-          color: $Dark
-
-      .carts
-        .cart
-          padding: 0 0 1.5rem 0
-
-          hr.horizont
-            opacity: 1
-            margin: 0
-
-        .cart-title
-          padding: 2rem
-
-        .cart-body
-          padding:  0.5rem 1rem
-          margin-top: 0
-          position: static
-
-          h6
-            font-size: 10px
-            line-height: 12px
-            color: #3242CC
-            margin: 0
-
-          a, span
-            font-size: 12px
-            line-height: 18px
-            color: $Dark
-
-          a
-            text-decoration-line: underline
-
-      .banner
-        margin-top: 1rem
-        background: #e7e9f6
-        border-radius: 10px
-        padding: 2rem
-        font-weight: 300
-        font-size: 14px
-        line-height: 24px
-        color: #3242CC
-        font-style: italic
-
-      h4
-        font-weight: 600
-        font-size: 24px
-        line-height: 32px
-
-      ul
-        margin-top: 1rem
-
-        li
-          font-size: 14px
-          line-height: 24px
-          color: $Dark
-          list-style-type: none
-
-          &:before
-            content: ""
-            background-image: url("../img/bullet.svg")
-            background-size: 20px 20px
-            width: 20px
-            height: 20px
-            display: block
-            position: absolute
-            left: 0.8rem
-
-      p
+      span
+        margin-left: 1rem
+        font-size: 12px
+        line-height: 17px
         color: $Dark
 
-      p.mt-lg-7
-        margin-top: 7rem
-        @media (max-width: 990.98px)
-          margin-top: 0
+    .carts
+      .cart
+        padding: 0 0 1.5rem 0
 
-      .banner_2
-        margin-top: 1rem
-        background: url('../img/Rectangle64.jpg') no-repeat center
-        background-size: cover
-        border-radius: 10px
-        padding: 2rem  6rem
-        font-style: italic
-        font-weight: 600
-        font-size: 24px
-        color: #FBFBFB
-        @media (max-width: 768px)
-          padding: 1rem
-          margin-top: 2rem
+        hr.horizont
+          opacity: 1
+          margin: 0
 
-      .banner_3
-        background: #FFFFFF
-        margin-top: 1rem
-        box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
-        border-radius: 10px
+      .cart-title
         padding: 2rem
-        @media (max-width: 768px)
-          padding: 1rem
 
-      .banner_4
-        font-style: normal
-
+      .cart-body
+        padding:  0.5rem 1rem
+        margin-top: 0
+        position: static
 
         h6
-          font-weight: 600
-          font-size: 14px
-          line-height: 14px
-          color: #FBFBFB
+          font-size: 10px
+          line-height: 12px
+          color: #3242CC
+          margin: 0
 
-        p
-          font-size: 14px
-          line-height: 24px
-          color: #FBFBFB
-          font-weight: 300
-          margin-bottom: 0
+        a, span
+          font-size: 12px
+          line-height: 18px
+          color: $Dark
 
+        a
+          text-decoration-line: underline
+
+    .banner
+      margin-top: 1rem
+      background: #e7e9f6
+      border-radius: 10px
+      padding: 2rem
+      font-weight: 300
+      font-size: 14px
+      line-height: 24px
+      color: #3242CC
+      font-style: italic
+
+    h4
+      font-weight: 600
+      font-size: 24px
+      line-height: 32px
+
+    ul
+      margin-top: 1rem
+
+      li
+        font-size: 14px
+        line-height: 24px
+        color: $Dark
+        list-style-type: none
+
+        &:before
+          content: ""
+          background-image: url("../img/bullet.svg")
+          background-size: 20px 20px
+          width: 20px
+          height: 20px
+          display: block
+          position: absolute
+          left: 0.8rem
+    p
+      color: $Dark
+
+    p.mt-lg-7
+      margin-top: 7rem
+      @media (max-width: 990.98px)
+        margin-top: 0
+
+    .banner_2
+      margin-top: 1rem
+      background: url('../img/Rectangle64.jpg') no-repeat center
+      background-size: cover
+      border-radius: 10px
+      padding: 2rem  6rem
+      font-style: italic
+      font-weight: 600
+      font-size: 24px
+      color: #FBFBFB
+      @media (max-width: 768px)
+        padding: 1rem
+        margin-top: 2rem
+
+    .banner_3
+      background: #FFFFFF
+      margin-top: 1rem
+      box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
+      border-radius: 10px
+      padding: 2rem
+      @media (max-width: 768px)
+        padding: 1rem
+
+    .banner_4
+      font-style: normal
+
+
+      h6
+        font-weight: 600
+        font-size: 14px
+        line-height: 14px
+        color: #FBFBFB
+
+      p
+        font-size: 14px
+        line-height: 24px
+        color: #FBFBFB
+        font-weight: 300
+        margin-bottom: 0
 
 .FAQ
   .faq-search
@@ -1099,14 +1102,19 @@ footer
 
 //Not_found
 .Not_found
-  background-color: $Blue  
+  background-color: $Blue 
+  @media (max-width: 990.98px)
+    padding-top: 70px 
   .img_404
     position: absolute
-    top: 25%
+    top: 50%
     right: 0
     bottom: 0
     left: 0
+    width: 100%
     z-index: 1
+    transform: translateY(-50%)
+      
   .not_found_404
     .wrap-content 
       position: relative
@@ -1118,10 +1126,35 @@ footer
 
 .index-bg
   padding-top: 150px
-  background: url('../img/baks.png') top center no-repeat
-  background-size: cover
+  position: relative
+  //background: url('../img/baks.png') top center no-repeat
+  //background-size: cover
+  .video_wrap
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    height: 720px
+    video
+      width: 100%
+      height: 100%
+      object-fit: cover
+    img
+      position: absolute
+      left: 0
+      bottom: -1px
+      right: 0
+      width: 100%
   @media (max-width: 990.98px)
-    padding-top: 60px
+    padding-top: 130px
+
+
+
+
+
+
+
+
 
 .beginers-bg
   padding-bottom: 253px
@@ -1129,11 +1162,10 @@ footer
   background: url('../img/Rectangle4.png') center bottom no-repeat
   background-size: cover
   @media (max-width: 990.98px)
-    padding-bottom: 100px
-    padding-top: 100px
+    padding-bottom: 120px
+    padding-top: 110px
     @media (max-width: 767.98px)
-      padding-bottom: 50px
-      padding-top: 50px
+      padding-top: 120px
 
 .broker-bg
   padding-top: 150px
@@ -1142,37 +1174,39 @@ footer
   @media (max-width: 990.98px)
     background: url('../img/Rectangle70_small.png') top center no-repeat
     background-size: 100% 650px
-    padding-top: 60px
+    padding-top: 130px
 
 
 .compare_bg
   padding-bottom: 200px
   padding-top: 150px
-  background: url('../img/bg_blue_simple.png') center bottom no-repeat
+  background: url('../img/icon_sm/Rectangle00004.svg') center bottom no-repeat
   background-size: cover
-  @media (max-width: 767.98px)
-    padding-bottom: 110px
-    padding-top: 110px
-    @media (max-width: 575.98px)
-      padding-bottom: 80px
-      padding-top: 80px
+  @media (max-width: 990.98px)
+    padding-top: 180px
+    @media (max-width: 767.98px)
+      padding-bottom: 110px
+      padding-top: 160px
+      @media (max-width: 575.98px)
+        padding-bottom: 80px
+        padding-top: 100px
 
 .book_bg
   padding-top: 150px
   padding-bottom: 200px
-  background: url('../img/Rectangle44.png') center bottom no-repeat
+  background: url('../img/icon_sm/Group10060.svg') center bottom no-repeat
   background-size: cover
   @media (max-width: 990.98px)
-    padding-top: 60px
+    padding-top: 100px
     padding-bottom: 140px
 
 .faq_bg
   padding-top: 150px
   @media (max-width: 990.98px)
-    padding-top: 60px
+    padding-top: 120px
   &:before
     content: ''
-    background: url('../img/answer.png') center bottom no-repeat
+    background: url('../img/icon_sm/faqq.svg') center bottom no-repeat
     background-size: cover
     position: absolute
     top: 0
@@ -1185,54 +1219,65 @@ footer
 .news-articl_bg
   padding-top: 150px
   padding-bottom: 150px
-  background: url('../img/article_bg.png') center bottom no-repeat
+  background: url('../img/icon_sm/MaskdddGroup.svg') center bottom no-repeat
   background-size: cover
   @media (max-width: 990.98px)
-    padding-top: 60px
+    padding-top: 130px
 
 .news_no_bg
   padding-top: 150px
   @media (max-width: 990.98px)
-    padding-top: 60px
+    padding-top: 100px
 
 .mt-7
   margin-top: 7rem
 
 
-
 //e-book + broker
 .last_book
-  background: url('../img/Rectangle57.png') top center no-repeat
+  background: url('../img/icon_sm/Rectangle57.svg') top center no-repeat
   background-size: cover
-  padding-top: 200px
+  padding-top: 250px
   padding-bottom: 200px
   @media (max-width: 990.98px)
+    background: url('../img/icon_sm/Frame0150.svg') no-repeat
+    background-size: cover
+    padding-top: 200px
     padding-bottom: 100px
-    @media (max-width: 767.98px)
-      background: url('../img/Rectangle57_small.png') no-repeat
-      background-size: cover
-      padding-top: 150px
-      padding-bottom: 100px
-    .full-rating
-      background-color: transparent
-      border: 1px solid silver
-      color: white
+  .full-rating
+    background-color: transparent
+    border: 1px solid silver
+    color: white
 
 //news + compare + faq + search_results
 .last_card
-  background: url('../img/Rectangle57.png') top center no-repeat
+  background: url('../img/icon_sm/Rectangle057.svg') top center no-repeat
   background-size: cover
-  padding-top: 100px
-  padding-bottom: 100px
+  padding-top: 120px
+  padding-bottom: 120px
+  @media (max-width: 990.98px)
+    padding-top: 70px
+    padding-bottom: 70px
+    @media (max-width: 767.98px)
+      padding-top: 50px
+      padding-bottom: 50px
 
 //beginers
 .book
-  background: url('../img/bg_footer_2.png') top center no-repeat
+  background: url('../img/icon_sm/Group00058.svg') top center no-repeat
   background-size: cover
+  padding-top: 120px
+  padding-bottom: 120px
+  @media (max-width: 990.98px)
+    padding-top: 70px
+    padding-bottom: 70px
 
-
-
-
+.row-1
+  margin-left: -.25rem
+  margin-right: -.25rem
+  > [class*="col"]
+    padding-left: .25rem
+    padding-right: .25rem
 
 
 
@@ -1368,6 +1413,6 @@ footer
       font-size: 26px
       line-height: 30px
       @media (max-width: 320px)
-        font-size: 22px
+        font-size: 20px
 
 //@media (max-width: 320px)
