@@ -95,14 +95,30 @@ h3
   top: 0
   width: 100%
   height: 100%
-  background: url('../img/loader.svg') center center no-repeat
   background-color: $Blue
   z-index: 999
   opacity: 1
   visibility: visible
+  video
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  img
+    position: relative
+    z-index: 2000
+  
+
   &.done
       opacity: 0
       visibility: hidden
+    
+
 
 @media (min-width: 1200px)
   .container
@@ -133,11 +149,6 @@ h3
 @media (max-width: 1200px)
   .owl-stage > .owl-item:first-child > .col-xl-3
     padding-left: 0
-
-.owl-stage-outer
-  padding-top: 6px
-  display: flex
-  align-items: flex-end
 
 @media (max-width: 1199.98px)
   .container-0 
@@ -541,13 +552,14 @@ h3
       margin-top: 1rem
 
     span
-      padding: 6px 10px
+      padding: 6px
       background: rgba(50, 66, 204, 0.1)
       border-radius: 39px
-      color: $Blue
+      color: #3242CC
       font-size: 12px
       line-height: 14px
       margin-right: 8px
+      margin-top: 8px
 
 footer
   background-color: white
@@ -1147,11 +1159,6 @@ footer
       width: 100%
   @media (max-width: 990.98px)
     padding-top: 130px
-
-
-
-
-
 
 
 
