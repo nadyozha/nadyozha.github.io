@@ -39,7 +39,6 @@ button, input, a, textarea
   &:focus
       outline: none 
 button
-
   transition: all 0.5s
   color: $Blue
   border: none
@@ -156,15 +155,7 @@ h3
     padding-left: 0
     padding-right: 0
 
-.btn-send
-  width: 150px
-
-@media (min-width: 768px)
-  .btn-send
-    width: 100px
-
 .btn-orange
-  display: block
   background: #E8A82D
   box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
   border-radius: 5px
@@ -182,7 +173,6 @@ h3
     line-height: 14px
 
 .btn-white
-  display: block
   background: white
   box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
   border-radius: 5px
@@ -497,17 +487,7 @@ h3
     &:hover
       box-shadow: 0px 10px 45px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
         
-.thert
-  h2
-    display: inline
-    padding-right: 1rem
-  button
-    height: 40px
-    padding: 12px 14px 
-    color: #0F385E
-    transition: 0.3s
-    &:hover
-      background: #F3F5F7
+
       
 .cart-blog
   background: #FFFFFF
@@ -635,7 +615,6 @@ footer
       margin-top: 1rem
 
     button
-      width: 50%
       margin-top: 1rem
 
 //e-book
@@ -667,6 +646,12 @@ footer
           opacity: 0.4
           padding-left: 0
           margin-bottom: 10px
+
+      .send
+        @media (max-width: 767.98px)
+          width: 100%
+          
+
 
   .invest-cards
     h2
@@ -729,6 +714,16 @@ footer
 
 .thert
   background: none
+  h2
+    padding-right: 1rem
+      
+  button.btn-white
+    height: 40px
+    padding: 12px 14px 
+    color: #0F385E
+    transition: 0.3s
+    &:hover
+      background: #F3F5F7
 
 .last_card
   .cart-white
@@ -738,7 +733,8 @@ footer
     border-radius: 10px
 
     button
-      width: 50%
+      @media (max-width: 768px)
+        width: 100%
 
 .background-img
   position: absolute
@@ -1126,7 +1122,6 @@ footer
     width: 100%
     z-index: 1
     transform: translateY(-50%)
-      
   .not_found_404
     .wrap-content 
       position: relative

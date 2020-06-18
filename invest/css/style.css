@@ -139,14 +139,7 @@ h3 {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0; } }
-.btn-send {
-  width: 150px; }
-
-@media (min-width: 768px) {
-  .btn-send {
-    width: 100px; } }
 .btn-orange {
-  display: block;
   background: #E8A82D;
   box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07);
   border-radius: 5px;
@@ -164,7 +157,6 @@ h3 {
     line-height: 14px; }
 
 .btn-white {
-  display: block;
   background: white;
   box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07);
   border-radius: 5px;
@@ -444,17 +436,6 @@ h3 {
     .little-carts-row .little-cart:hover {
       box-shadow: 0px 10px 45px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11); }
 
-.thert h2 {
-  display: inline;
-  padding-right: 1rem; }
-.thert button {
-  height: 40px;
-  padding: 12px 14px;
-  color: #0F385E;
-  transition: 0.3s; }
-  .thert button:hover {
-    background: #F3F5F7; }
-
 .cart-blog {
   background: #FFFFFF;
   box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11);
@@ -576,7 +557,6 @@ footer {
   color: #FBFBFB;
   margin-top: 1rem; }
 .book .book_content button {
-  width: 50%;
   margin-top: 1rem; }
 
 .e-book .e-book-first h1 {
@@ -603,6 +583,9 @@ footer {
     opacity: 0.4;
     padding-left: 0;
     margin-bottom: 10px; }
+  @media (max-width: 767.98px) {
+    .e-book .successful .get_now_form .send {
+      width: 100%; } }
 .e-book .invest-cards h2 {
   color: white; }
 .e-book .invest-cards .full-rating {
@@ -655,14 +638,24 @@ footer {
 
 .thert {
   background: none; }
+  .thert h2 {
+    padding-right: 1rem; }
+  .thert button.btn-white {
+    height: 40px;
+    padding: 12px 14px;
+    color: #0F385E;
+    transition: 0.3s; }
+    .thert button.btn-white:hover {
+      background: #F3F5F7; }
 
 .last_card .cart-white {
   background-color: #fbfbfb;
   padding: 3rem 2rem;
   box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11);
   border-radius: 10px; }
-  .last_card .cart-white button {
-    width: 50%; }
+  @media (max-width: 768px) {
+    .last_card .cart-white button {
+      width: 100%; } }
 
 .background-img {
   position: absolute;
