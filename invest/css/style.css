@@ -520,6 +520,15 @@ footer {
     background-color: #0F385E;
     opacity: 0.1; }
 
+.faq-my-8 {
+  margin: 8rem 0; }
+
+.mt-6 {
+  margin-top: 6rem; }
+  @media (max-width: 574.98px) {
+    .mt-6 {
+      margin-top: 9rem; } }
+
 .mt-sm-6 {
   margin-top: 90px; }
   @media (max-width: 767.98px) {
@@ -529,16 +538,10 @@ footer {
 @media (max-width: 767.98px) {
   .text-md-white {
     color: white; } }
-.beginners .second {
-  position: relative; }
-
 .pos-rel {
   position: relative;
   margin: 5rem 0;
   padding-top: 100px; }
-
-.faq-my-8 {
-  margin: 8rem 0; }
 
 @media (max-width: 767.98px) {
   .wrap-bg {
@@ -560,15 +563,12 @@ footer {
       left: -135px;
       transform: none; } }
 
-@media (max-width: 767.98px) {
-  .mt-6 {
-    margin-top: 14rem; } }
-.mt-6 .book .book_content h2 {
+.book .book_content h2 {
   color: #FBFBFB; }
-.mt-6 .book .book_content p {
+.book .book_content p {
   color: #FBFBFB;
   margin-top: 1rem; }
-.mt-6 .book .book_content button {
+.book .book_content button {
   width: 50%;
   margin-top: 1rem; }
 
@@ -1265,10 +1265,7 @@ footer {
   .last_card .cart-white {
     padding: 1rem; }
     .last_card .cart-white h2 {
-      font-size: 26px;
+      font-size: 20px;
       line-height: 30px; } }
-    @media (max-width: 575px) and (max-width: 320px) {
-      .last_card .cart-white h2 {
-        font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

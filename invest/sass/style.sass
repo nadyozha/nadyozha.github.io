@@ -39,6 +39,7 @@ button, input, a, textarea
   &:focus
       outline: none 
 button
+
   transition: all 0.5s
   color: $Blue
   border: none
@@ -574,6 +575,14 @@ footer
     opacity: 0.1
 
 //For beginners
+.faq-my-8
+  margin: 8rem 0
+
+.mt-6
+  margin-top: 6rem
+  @media (max-width: 574.98px)
+    margin-top: 9rem
+
 .mt-sm-6
   margin-top: 90px
   @media (max-width: 767.98px)
@@ -581,15 +590,11 @@ footer
 @media (max-width: 767.98px)
   .text-md-white
     color: white
-.beginners
-  .second
-    position: relative
 .pos-rel
   position: relative
   margin: 5rem 0
   padding-top: 100px
-.faq-my-8
-  margin: 8rem 0
+
 .wrap-bg
   @media (max-width: 767.98px)
     position: static
@@ -609,22 +614,17 @@ footer
       left: -135px
       transform: none
 
-.mt-6
-  @media (max-width: 767.98px)
-    margin-top: 14rem
+.book
+  .book_content
+    h2
+      color: #FBFBFB
+    p
+      color: #FBFBFB
+      margin-top: 1rem
 
-
-  .book
-    .book_content
-      h2
-        color: #FBFBFB
-      p
-        color: #FBFBFB
-        margin-top: 1rem
-
-      button
-        width: 50%
-        margin-top: 1rem
+    button
+      width: 50%
+      margin-top: 1rem
 
 //e-book
 .e-book
@@ -1410,9 +1410,7 @@ footer
     padding: 1rem
 
     h2
-      font-size: 26px
+      font-size: 20px
       line-height: 30px
-      @media (max-width: 320px)
-        font-size: 20px
 
 //@media (max-width: 320px)
