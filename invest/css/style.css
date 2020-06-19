@@ -1120,6 +1120,11 @@ footer {
       background-size: cover;
       padding-top: 200px;
       padding-bottom: 100px; } }
+  @media (max-width: 990.98px) and (max-width: 575.98px) {
+    .last_book {
+      padding-top: 140px;
+      padding-bottom: 65px; } }
+
   .last_book .full-rating {
     background-color: transparent;
     border: 1px solid silver;
