@@ -639,7 +639,8 @@ footer {
 .thert {
   background: none; }
   .thert h2 {
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    margin-bottom: 0; }
   .thert button.btn-white {
     height: 40px;
     padding: 12px 14px;
