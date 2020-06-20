@@ -57,7 +57,6 @@ $(function() {
     }
     $(window).resize(initializeMain);
     initializeMain();
-
-    
-
 });
+
+new WOW().init();

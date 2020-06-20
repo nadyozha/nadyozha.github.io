@@ -251,7 +251,7 @@ h3 {
       transition: 0.5s;
       line-height: 65px; }
       .menu-header nav ul.navbar-nav li.nav-item a.nav-link:hover {
-        border-bottom: 2px solid white; }
+        color: silver; }
     .menu-header nav ul.navbar-nav li.nav-item a.nav-link.active {
       border-bottom: 2px solid white; }
       @media (max-width: 991.98px) {
