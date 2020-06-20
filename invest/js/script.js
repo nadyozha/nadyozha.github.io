@@ -59,4 +59,4 @@ $(function() {
     initializeMain();
 });
 
-new WOW().init();
+
