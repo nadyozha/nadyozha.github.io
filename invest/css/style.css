@@ -603,7 +603,7 @@ footer {
   color: #0F385E;
   border-bottom: 2px solid transparent; }
   .menu-header-white .naw-white ul.navbar-nav li.nav-item a.nav-link:hover {
-    border-bottom: 2px solid #0F385E; }
+    color: black; }
   @media (max-width: 991px) {
     .menu-header-white .naw-white ul.navbar-nav li.nav-item a.nav-link {
       color: white; } }
