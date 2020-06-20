@@ -1182,7 +1182,8 @@ footer {
       align-items: center;
       visibility: hidden;
       opacity: 0;
-      transition: 0.5s; }
+      transition: 0.5s;
+      display: none; }
       .menu-header nav .nav-contente ul.navbar-nav {
         margin-right: 0;
         width: 25%; } }
@@ -1250,6 +1251,7 @@ footer {
 @media (max-width: 991px) {
     .menu-header nav .nav-contente-active {
       visibility: visible;
+      display: block;
       display: flex;
       opacity: 1;
       height: 100vh; }

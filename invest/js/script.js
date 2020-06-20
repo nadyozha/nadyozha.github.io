@@ -25,8 +25,7 @@ $(function() {
 
 	Waves.attach('.btn-orange', ['waves-button', 'waves-float']);
 	Waves.attach('.btn-white', ['waves-button', 'waves-float']);
-	Waves.init()
-
+	Waves.init();
 
     $owlMain = $('.owl-main');
     function initializeMain() {
@@ -59,38 +58,6 @@ $(function() {
     $(window).resize(initializeMain);
     initializeMain();
 
-    // $owlBlog = $('.owl-blog');
-    // function initializeBlog() {
-    //   if (window.matchMedia('(max-width: 1199.98px)').matches) {
-    //     $owlBlog.addClass('owl-carousel');
-    //     $owlBlog.owlCarousel({
-    //         responsive: {
-    //             0: {
-    //                 items: 1,
-    //             },
-    //             588: {
-    //                 items: 1,
-    //             },
-    //             768: {
-    //                 items: 2,
-    //             },
-    //             991: {
-    //                 items: 3,
-    //             },
-    //         },
-
-    //         dots: false,
-    //         smartSpeed: 1000,
-    //         stagePadding: 30,
-
-    //     });
-        
-    //     } else {
-    //         $owlBlog.trigger("destroy.owl.carousel").removeClass("owl-carousel owl-loaded");
-    //         $owlBlog.find(".owl-stage-outer").children().unwrap();
-    //     }
-    // }
-    // $(window).resize(initializeBlog);
-    // initializeBlog();
+    
 
 });
