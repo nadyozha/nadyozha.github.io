@@ -46,10 +46,13 @@
 								<a class="nav-link menu-close" href="FAQ.html">FAQ</a>
 							</li>
 						</ul>
-				    	<form>
-					    	<img class="d-lg-inline d-none" src="img/Group18.svg" alt="Search">
-					      	<input type="search" placeholder="Search">
-					    	<div class="d-block d-lg-none wrap-search" >
+				    	<form class="d-flex justify-content-between">
+					    	<img class="d-lg-inline d-none pr-3" src="img/Group18.svg" alt="Search">
+					      	<div class="group">
+					      		<input type="text" required>
+					      		<label>Search</label>
+					      	</div>
+					      	<div class="d-block d-lg-none wrap-search" >
 					      		<img src="img/Group18.svg" alt="Search">
 					    	</div>
 				    	</form>
@@ -72,7 +75,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="successful py-lg-4 py-3 px-2">
+		<section class="successful py-3 px-2">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-10">
@@ -91,8 +94,14 @@
 					<div class="col-md-5 get_now_form">
 						<h2>Get it now!</h2>
 						<form class="mt-4">
-				      		<input type="name" placeholder="Your name">
-				      		<input class="mt-4" type="e-mail" placeholder="Your e-mail">
+							<div class="group">
+					      		<input type="text" required>
+					      		<label>Your name</label>
+					      	</div>
+				      		<div class="group mt-4">
+					      		<input type="text" required>
+					      		<label>Your e-mail</label>
+					      	</div>
 				    	</form>
 				    	<button class="btn-orange btn-l d-flex justify-content-between send mt-4">Send
 				    		<img class="pl-3" src="img/arrow_white_r.svg" alt="send">
@@ -230,7 +239,7 @@
 						</ul>
 					</div>
 					<div class="col-md-2 text-md-right">
-						<a href="#">info@belli.com</a>
+						<span>info@belli.com</span>
 					</div>
 				</div>
 			</div>

@@ -70,11 +70,13 @@ p
   font-size: 14px
   line-height: 24px
   color: $Dark
+  @media (max-width: 767.98px)
+    font-size: 12px
 
 h1, h2, h3, h4, h5, h6,
   color: $Dark
 h2
-  font-weight: 600
+  font-weight: 500
   font-size: 44px
   line-height: 50px
   @media (max-width: 990.98px)
@@ -83,11 +85,12 @@ h2
     @media (max-width: 767.98px)
       font-size: 26px
 h3
-  font-weight: 600
+  font-weight: 500
   font-size: 24px
   line-height: 32px
   @media (max-width: 767.98px)
-    font-size: 19px
+    font-size: 18px
+
 
 //preloader
 .preloader
@@ -166,8 +169,8 @@ h3
   font-size: 12px
   line-height: 14px
   padding: 14px 16px
-  height: 42px
   transition: 0.3s
+  white-space: normal
   &:hover
     background: #edb957
     font-size: 12px
@@ -185,6 +188,7 @@ h3
   line-height: 14px
   padding: 14px 16px
   transition: 0.3s
+  white-space: normal
   &:hover
     background: #F3F5F7 !important
     font-size: 12px
@@ -261,6 +265,7 @@ h3
         opacity: .8
 
     ul.navbar-nav
+      margin-right: 1rem
       li.nav-item
         line-height: 26px
         margin-left: 30px
@@ -277,33 +282,50 @@ h3
             color: silver
 
         a.nav-link.active
-          border-bottom: 2px solid white
+          border-bottom: 1px solid white
           @media (max-width: 991.98px)
-            border-bottom: 2px solid transparent
+            border-bottom: 1px solid transparent
 
     form
       margin-left: auto
-
-      input
-        line-height: 26px
-        width: 100px
-        color: white
-        font-size: 12px
-
-      input::placeholder
-        color: white
+      box-sizing: border-box
+      .group
         position: relative
-        top: -1px
-        opacity: 0.6
-        font-weight: 300
-
+        width: 100%
+        label
+          position: absolute
+          pointer-events: none
+          transition: 0.2s ease all
+          color: white
+          top: 2px
+          opacity: 0.6
+          font-weight: 300
+          font-size: 12px
+          left: 0
+          @media (max-width: 990.98px)
+            top: 17px
+        input
+          color: white
+          font-size: 12px
+          width: 100%
+          &:focus, &:valid 
+            ~ label
+              color: white
+              top: -12px
+              font-size: 9px
+            
     button
       margin-left: auto
       color: $Blue
+      font-weight: 500
       transition: 0.3s
+      letter-spacing: 0
+      max-width: 330px
       &:hover
         background-color: #F3F5F7
         color: $Blue
+      @media (max-width: 1199.98px)
+        max-width: 175px
 
     .logo
       margin-right: 3rem
@@ -318,12 +340,11 @@ h3
       z-index: 100
         
   hr
-    height: 1px
+    border-top: 1px solid white
+    opacity: 0.5
     width: 100%
-    background-color: white
     margin: 0
     padding: 0
-    opacity: 0.2
     position: relative
     top: -2px
     z-index: 120
@@ -332,6 +353,11 @@ h3
 .first
   h1, p
     color: white
+
+  .full-rat_first
+    box-shadow: none
+    background-color: #fbfbfb
+    letter-spacing: 0
 
   .carts
     .cart:hover
@@ -369,7 +395,6 @@ h3
           display: block
           margin-top: 1rem
           background: #ebecfa
-          box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
           border-radius: 5px
           color: #3242CC
           font-weight: 500
@@ -385,7 +410,6 @@ h3
           color: #27AE60
           width: 100%
           display: block
-          box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
           border-radius: 5px
           font-weight: 500
           font-size: 12px
@@ -449,10 +473,9 @@ h3
 
 .second
   p
-    margin-top: 1rem
-
-  button
-    width: 50%
+    margin-top: 22px
+    @media (max-width: 767.98px)
+      margin-top: 16px
 
 .little-carts-row
   position: relative
@@ -484,8 +507,8 @@ h3
     .img-cart
       padding-right: 2px
       flex-basis: 30px
-      img 
-        width: 100%
+      img
+        min-width: 48px!important
     &:hover
       box-shadow: 0px 10px 45px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
         
@@ -528,7 +551,7 @@ h3
       margin-right: 16px
 
     h5
-      font-weight: 600
+      font-weight: 500
       font-size: 24px
       line-height: 32px
       margin-top: 1rem
@@ -542,13 +565,15 @@ h3
       line-height: 14px
       margin-right: 8px
       margin-top: 8px
+      a
+        color: #3242CC
 
 footer
   background-color: white
   position: relative
   
   a, span
-    font-weight: 300
+    font-weight: 500
     font-size: 12px
     line-height: 12px
     color: $Dark
@@ -564,7 +589,7 @@ footer
             padding-right: 10px
 
   hr
-    height: 1px
+    height: 0.5px
     background-color: $Dark
     opacity: 0.1
 
@@ -578,7 +603,7 @@ footer
     margin-top: 9rem
 
 .mt-sm-6
-  margin-top: 90px
+  margin-top: 150px
   @media (max-width: 767.98px)
     margin-top: 0
 @media (max-width: 767.98px)
@@ -595,7 +620,7 @@ footer
   &:after
     content: ""
     width: 3000px
-    height: 420px
+    height: 557px
     border-radius: 2000px 0 0 2000px
     background-color: $Blue
     position: absolute
@@ -629,25 +654,42 @@ footer
       margin-top: 1rem
 
   .successful
+    margin-top: 84px
+    @media (max-width: 767.98px)
+      margin-top: 15px
     .get_now_form
       position: relative
       @media (max-width: 767.98px)
         top: -100px
+      
       form
-        input
-          border-bottom: 1px solid silver
-          width: 70%
-          display: block
-          padding: 10px 16px
-          font-size: 12px
-          @media (max-width: 768px)
-            width: 100%
-
-        input::placeholder
-          color: $Dark
-          opacity: 0.4
-          padding-left: 0
-          margin-bottom: 10px
+        box-sizing: border-box
+        .group
+          position: relative
+          label
+            position: absolute
+            pointer-events: none
+            transition: 0.2s ease all
+            color: $Dark
+            top: 2px
+            opacity: 0.6
+            font-weight: 300
+            font-size: 12px
+            left: 0
+          input
+            border-bottom: 1px solid silver
+            color: $Dark
+            font-size: 12px
+            width: 70%
+            display: block
+            @media (max-width: 767.98px)
+              width: 100%
+            
+            &:focus, &:valid 
+              ~ label
+                color: $Dark
+                top: -12px
+                font-size: 9px
 
       .send
         @media (max-width: 767.98px)
@@ -679,26 +721,46 @@ footer
       li.nav-item
         a.nav-link
           color: $Dark
-          border-bottom: 2px solid transparent
+          border-bottom: 1px solid transparent
           &:hover
             color: black
           @media (max-width: 991px)
             color: white
         a.nav-link.active
-          border-bottom: 2px solid $Dark
+          border-bottom: 1px solid $Dark
           @media (max-width: 991.98px)
-            border-bottom: 2px solid transparent           
-    form
-      input
-        color: $Dark
-        @media (max-width: 991px)
-          color: white
+            border-bottom: 1px solid transparent           
 
-      input::placeholder
-        color: $Dark
-        font-weight: 300
-        @media (max-width: 991px)
+    form
+      margin-left: auto
+      box-sizing: border-box
+      .group
+        position: relative
+        width: 100%
+        label
+          position: absolute
+          pointer-events: none
+          transition: 0.2s ease all
           color: white
+          top: 2px
+          opacity: 0.6
+          font-weight: 300
+          font-size: 12px
+          left: 0
+          @media (max-width: 990.98px)
+            top: 17px
+        input
+          color: $Dark
+          font-size: 12px
+          width: 100%
+          &:focus, &:valid 
+            ~ label
+              color: $Dark
+              top: -12px
+              font-size: 9px
+        input
+          @media (max-width: 990.98px)
+            color: white
 
     .navbar-toggler
       color: $Dark
@@ -706,13 +768,14 @@ footer
     .oranj
       background: #E8A82D
       color: white
+      font-weight: 500
       @media (max-width: 991px)
         background-color: white
         color: $Dark
 
   hr
-    background-color: $Dark
-    opacity: 0.2
+    border-top: 1px solid $Dark
+    opacity: 0.5
 
 .thert
   background: none
@@ -721,12 +784,13 @@ footer
     margin-bottom: 0
       
   button.btn-white
-    height: 40px
     padding: 12px 14px 
     color: #0F385E
     transition: 0.3s
+    background-color: #fbfbfb
+    box-shadow: none
     &:hover
-      background: #F3F5F7
+      background-color: #F3F5F7
 
 .last_card
   .cart-white
@@ -772,7 +836,9 @@ footer
     color: white
     font-size: 12px
     line-height: 14px
-    margin-right: 8px    
+    margin-right: 8px
+    text-align: center
+          
     
 //compare_best
 .compare_best
@@ -932,6 +998,7 @@ footer
           line-height: 12px
           color: #3242CC
           margin: 0
+          font-weight: 500
 
         a, span
           font-size: 12px
@@ -1027,21 +1094,37 @@ footer
   .faq-search
     position: relative
     margin-top: 3rem
-    input
-      border-bottom: 1px solid silver
-      width: 100%
-      color: white
-      padding-left: 2rem
-      font-size: 12px
-      height: 30px
-    input::placeholder
-      color: white
-      font-weight: 300
+    
+  .faq-search
+    box-sizing: border-box
+    .group
       position: relative
-      top: -9px
-      left: -20px
+      label
+        position: absolute
+        pointer-events: none
+        transition: 0.2s ease all
+        color: white
+        top: -3px
+        opacity: 0.6
+        font-weight: 300
+        font-size: 12px
+        left: 20px
+      input
+        border-bottom: 1px solid silver
+        color: white
+        font-size: 12px
+        width: 100%
+        display: block
+        height: 25px
+        padding-left: 20px
+        
+        &:focus, &:valid 
+          ~ label
+            color: white
+            top: -12px
+            font-size: 9px
 
-    img
+    .poisk
       position: absolute
       top: 0
       left: 0
@@ -1076,6 +1159,7 @@ footer
       .card-header
         background: #FFFFFF
         transition: 0.3s
+        padding: 32px 40px
         span
           display: block
           width: 30px
@@ -1088,22 +1172,21 @@ footer
           background-color: white
           margin-right: 0
           padding: 7px
-          transform: rotate(180deg)
+          transform: rotate(0deg)
           transition: 0.3s
           user-select: none
           img
             opacity: 0.8
             width: 12px
             height: 12px
-
-      .card-header.collapsed
-        span
-          transform: rotate(0deg)
+            transition: 0.3s
+      .collapsed
+        img
+          transform: rotate(180deg)
 
       h5
-        font-weight: 400
+        font-weight: 600
         font-size: 16px
-        line-height: 24px
         color: $Dark
         margin: 0
 
@@ -1199,7 +1282,7 @@ footer
 .book_bg
   padding-top: 150px
   padding-bottom: 200px
-  background: url('../img/icon_sm/Group10060.svg') center bottom no-repeat
+  background: url('../img/icon_sm/777.svg') center bottom no-repeat
   background-size: cover
   @media (max-width: 990.98px)
     padding-top: 100px
@@ -1307,17 +1390,18 @@ footer
   .menu-header nav .logo
     margin-right: 1rem
 
-@media (max-width: 991px)
+@media (max-width: 990.98px)
   .menu-header
     padding-top: 1rem
 
     nav
+      transition: 0.3s
       .nav-contente
         position: fixed
         top: 0
         right: 0
         bottom: 0
-        left: 0
+        left: -100%
         z-index: 99
         height: 100vh
         background-color: $Blue
@@ -1325,15 +1409,14 @@ footer
         flex-direction: column
         justify-content: center
         align-items: center
-        visibility: hidden
+        transition: 0.3s
         opacity: 0
-        transition: .5s
-        display: none
+        max-width: 100%
         
 
         ul.navbar-nav
           margin-right: 0
-          width: 25% 
+          width: 90% 
           @media (max-height: 420px)
             margin-top: 2rem
           @media (max-height: 400px)
@@ -1351,18 +1434,17 @@ footer
                 font-size: 16px
               &:hover
                 border-bottom: 2px solid transparent
-              @media (max-width: 575px)
+              @media (max-width: 575.98px)
                 line-height: 10px
         form
           margin-top: 4rem
           margin-left: 0
           position: relative
-          width: 25%
-          @media (max-height: 420px)
+          width: 90%
+          @media (max-height: 419.98px)
             margin-top: 0
           
           input
-            width: 100%
             border-bottom: 1px solid #FBFBFB
             line-height: 30px
             height: 50px
@@ -1385,16 +1467,17 @@ footer
         button
           margin-left: 0
           margin-top: 2rem
-          width: 25%
-          @media (max-height: 420px)
+          width: 90%
+          max-width: 90%
+          @media (max-height: 419.98px)
             margin-top: 1rem
 
       .nav-contente-active
-        visibility: visible
         display: block
         display: flex
         opacity: 1
         height: 100vh
+        left: 0
 
     .border-bottom-nav
       margin-top: 1rem
@@ -1403,7 +1486,7 @@ footer
     button.btn-orange
       width: 100%
   
-@media (max-width: 768px)
+@media (max-width: 767.98px)
   .menu-header
     nav
       .nav-contente
@@ -1416,12 +1499,18 @@ footer
         button
           width: 90%  
 
-@media (max-width: 575px)
+@media (max-width: 575.98px)
   .last_card .cart-white
     padding: 1rem
 
     h2
       font-size: 20px
       line-height: 30px
+
+@media (min-width: 1200px)
+  .col-xl-500 
+    flex-basis: 500px
+    max-width: 500px
+
 
 //@media (max-width: 320px)
