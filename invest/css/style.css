@@ -67,7 +67,8 @@ p {
   color: #0F385E; }
   @media (max-width: 767.98px) {
     p {
-      font-size: 12px; } }
+      font-size: 12px;
+      line-height: 20px; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #0F385E; }
@@ -1064,6 +1065,8 @@ footer {
           width: 12px;
           height: 12px;
           transition: 0.3s; }
+    .FAQ .accordion .card [aria-expanded=true] img {
+      transform: rotate(180deg); }
     .FAQ .accordion .card h5 {
       font-weight: 600;
       font-size: 16px;
