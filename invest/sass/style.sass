@@ -46,8 +46,7 @@ button
   background-color: white
   border-radius: 5px
   font-size: 14px
-  box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
-  letter-spacing: 1px
+  letter-spacing: 0.5px
 
 button:hover
   cursor: pointer
@@ -77,7 +76,7 @@ p
 h1, h2, h3, h4, h5, h6,
   color: $Dark
 h2
-  font-weight: 500
+  font-weight: 600
   font-size: 44px
   line-height: 50px
   @media (max-width: 990.98px)
@@ -86,7 +85,7 @@ h2
     @media (max-width: 767.98px)
       font-size: 26px
 h3
-  font-weight: 500
+  font-weight: 600
   font-size: 24px
   line-height: 32px
   @media (max-width: 767.98px)
@@ -163,7 +162,6 @@ h3
 
 .btn-orange
   background: #E8A82D
-  box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
   border-radius: 5px
   color: white
   font-weight: 600
@@ -172,6 +170,7 @@ h3
   padding: 14px 16px
   transition: 0.3s
   white-space: normal
+  letter-spacing: 0.5px
   &:hover
     background: #edb957
     font-size: 12px
@@ -180,7 +179,6 @@ h3
 
 .btn-white
   background: white
-  box-shadow: 0px 8px 22px rgba(19, 44, 63, 0.07)
   border-radius: 5px
   border: 1px solid rgba(15, 56, 94, 0.2)
   color: $Dark
@@ -190,6 +188,7 @@ h3
   padding: 14px 16px
   transition: 0.3s
   white-space: normal
+  letter-spacing: 0.5px
   &:hover
     background: #F3F5F7 !important
     font-size: 12px
@@ -499,23 +498,35 @@ h3
     text-align: center
     transition: 0.3s
     cursor: pointer
-    padding: 24px 5px
+    padding: 24px 29px
     height: 100%
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: start
     min-height: 80px
     display: flex
     flex-wrap: wrap
+    @media (max-width: 1199.98px)
+      padding: 24px 16px
+      @media (max-width: 991.98px)
+        padding: 24px 2px
+        @media (max-width: 767.98px)
+          padding: 24px
+          @media (max-width: 340px)
+            padding: 14px
+
     .img-cart
       padding-right: 2px
       flex-basis: 30px
       img
         min-width: 48px!important
-        @media (max-width: 990.98px)
+        @media (max-width: 991.98px)
           min-width: 36px!important
           @media (max-width: 574.98px)
             min-width: 48px!important
+
+    span
+      font-weight: 500
     &:hover
       box-shadow: 0px 10px 45px rgba(19, 44, 63, 0.19), 0px 2px 1px rgba(0, 0, 0, 0.11)
         
@@ -584,6 +595,8 @@ footer
     font-size: 12px
     line-height: 12px
     color: $Dark
+    @media (max-width: 575.98px)
+      line-height: 38px
   .nav
     li
       a
@@ -599,6 +612,7 @@ footer
     border-top: 1px solid $Dark
     background-color: $Dark
     opacity: 0.1
+
 
 //For beginners
 .faq-my-8
@@ -620,7 +634,10 @@ footer
   position: relative
   margin: 5rem 0
   padding-top: 100px
-
+.mt-100
+  margin-top: 220px
+  @media (max-width: 575.98px)
+    margin-top: 80px
 .wrap-bg
   @media (max-width: 767.98px)
     position: static
@@ -632,10 +649,12 @@ footer
     background-color: $Blue
     position: absolute
     top: 50%
+    left: 30px
     transform: translateY(-50%)
     z-index: -1
     @media (max-width: 767.98px)
       top: 0
+      left: 0
       height: 658px
       left: -135px
       transform: none
@@ -650,6 +669,7 @@ footer
 
     button
       margin-top: 1rem
+      letter-spacing: 0.5px
 
 //e-book
 .e-book
@@ -848,7 +868,12 @@ footer
     line-height: 14px
     margin-right: 8px
     text-align: center
-          
+
+.h-320
+  height: 320px
+  padding-bottom: 10px
+  @media (max-width: 990.98px)   
+    height: 190px   
     
 //compare_best
 .compare_best
@@ -1435,14 +1460,14 @@ footer
           @media (max-height: 400px)
             margin-top: 3rem
           li.nav-item
-            padding: 15px 0
+            padding: 44px 0 0 0
             margin-left: 0
             @media (max-height: 420px)
               padding: 0 0 12px 0
             a.nav-link
               font-weight: 600
               font-size: 26px
-              line-height: 24px
+              line-height: normal
               @media (max-height: 420px)
                 font-size: 16px
               &:hover
