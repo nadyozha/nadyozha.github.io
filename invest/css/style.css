@@ -736,6 +736,8 @@ footer {
   padding: 3rem 2rem;
   box-shadow: 0px 6px 23px rgba(19, 44, 63, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.11);
   border-radius: 10px; }
+  .last_card .cart-white h2 {
+    font-weight: 600; }
   @media (max-width: 768px) {
     .last_card .cart-white button {
       width: 100%; } }
@@ -1372,7 +1374,7 @@ footer {
   .last_card .cart-white {
     padding: 1rem; }
     .last_card .cart-white h2 {
-      font-size: 20px;
+      font-size: 26px;
       line-height: 30px; } }
 @media (min-width: 1200px) {
   .col-xl-500 {
