@@ -857,7 +857,9 @@ footer {
     font-size: 12px;
     line-height: 14px;
     text-decoration-line: underline;
-    color: #0F385E; }
+    color: #0F385E;
+    display: inline-block;
+    margin-top: 14px; }
   .compare_best .long-carts .cart .btn-white {
     width: 100%; }
     .compare_best .long-carts .cart .btn-white img {
