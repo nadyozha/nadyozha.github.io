@@ -833,7 +833,7 @@ button {
   padding-top: 95px !important; }
 
 .card-news {
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
   position: relative;
   height: 377px;
@@ -1829,7 +1829,7 @@ footer {
 
   @media (max-width: 575.98px) {
     .preloader {
-      background-size: auto 430px; } }
+      background-size: auto 410px; } }
   @media (max-width: 575.98px) and (max-height: 340px) {
     .preloader {
       background-size: auto 250px; } }
