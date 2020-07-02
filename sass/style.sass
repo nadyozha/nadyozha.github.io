@@ -845,14 +845,30 @@ button
 	display: flex
 	flex-direction: column
 	justify-content: flex-end
-	transition: 0.4s
+	-webkit-transition: .5s
+	-moz-transition: .5s
+	-ms-transition: .5s
+	transition: .5s
 	box-sizing: border-box
 	max-width: 316px
+	z-index: 1
 	@media (max-width: 575.98px)
 		max-width: 290px
 	&:hover
+		-webkit-transition: .5s
+		-moz-transition: .5s
+		-ms-transition: .5s
+		transition: .5s
 		.img-wrap img
+			-webkit-transform: scale(1.2)
+			-moz-transform: scale(1.2)
+			-ms-transform: scale(1.2)
 			transform: scale(1.2)
+			-webkit-transition: .5s
+			-moz-transition: .5s
+			-ms-transition: .5s
+			transition: .5s
+
 		.cart-footer
 			bottom: 45px
 
@@ -886,15 +902,20 @@ button
 		right: 0
 		bottom: 40px
 		left: 0
+		z-index: 2
 		img
 			position: relative
 			top: 0
 			right: 0
 			bottom: 0
 			left: 0
-			width: 100%
-			transition: 0.3s
+			min-width: 100%
+			-webkit-transition: .5s
+			-moz-transition: .5s
+			-ms-transition: .5s
+			transition: .5s
 			border-radius: 15px
+			z-index: 3
 
 	.cart-footer
 		padding: 20px
