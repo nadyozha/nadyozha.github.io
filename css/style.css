@@ -1382,9 +1382,9 @@ footer {
       content: "";
       display: block;
       width: 90px;
-      height: 50px;
+      height: 35px;
       position: absolute;
-      top: 17px;
+      top: 24px;
       right: 123px;
       z-index: 2;
       background: linear-gradient(90deg, rgba(251, 251, 251, 0) 0%, #fbfbfb 100%); }
@@ -1590,9 +1590,9 @@ footer {
       content: "";
       display: block;
       width: 90px;
-      height: 48px;
+      height: 35px;
       position: absolute;
-      top: 1px;
+      top: 10px;
       right: 123px;
       z-index: 2;
       background: linear-gradient(90deg, rgba(30, 122, 212, 0) 0%, #1e7ad4 100%); }
@@ -1814,27 +1814,28 @@ footer {
   @media (max-width: 1199.98px) and (max-height: 790px) {
     .preloader {
       background-size: auto 600px; } }
-  @media (max-width: 1199.98px) and (max-width: 991.98px) {
+
+  @media (max-width: 991.98px) {
     .preloader {
       background-size: auto 700px; } }
-
-  @media (max-width: 1199.98px) and (max-width: 991.98px) and (max-height: 400px) {
+  @media (max-width: 991.98px) and (max-height: 400px) {
     .preloader {
       background-size: auto 320px; } }
-@media (max-width: 1199.98px) and (max-width: 991.98px) and (max-width: 767.98px) and (max-height: 430px) {
+
+@media (max-width: 767.98px) and (max-height: 430px) {
   .preloader {
     background-size: auto 320px; } }
-@media (max-width: 1199.98px) and (max-width: 991.98px) and (max-width: 767.98px) and (max-width: 575.98px) {
-  .preloader {
-    background-size: auto 430px; } }
 
-  @media (max-width: 1199.98px) and (max-width: 991.98px) and (max-width: 767.98px) and (max-width: 575.98px) and (max-height: 340px) {
+  @media (max-width: 575.98px) {
+    .preloader {
+      background-size: auto 430px; } }
+  @media (max-width: 575.98px) and (max-height: 340px) {
     .preloader {
       background-size: auto 250px; } }
-  @media (max-width: 1199.98px) and (max-width: 991.98px) and (max-width: 767.98px) and (max-width: 575.98px) and (max-width: 360px) {
+
+  @media (max-width: 360px) {
     .preloader {
       background-size: auto 300px; } }
-
   .preloader.done {
     opacity: 0;
     visibility: hidden; }

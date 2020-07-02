@@ -1001,6 +1001,7 @@ button
 	position: relative
 	input
 		height: 52px
+		line-height: 52px
 		background-color: transparent
 		border-radius: 26px
 		border: 1px solid #93c2ed
@@ -1020,6 +1021,7 @@ button
 				width: 100%
 
 	input::placeholder
+		line-height: 52px
 		font-size: 14px
 		text-decoration-line: underline
 		color: #FBFBFB
@@ -1412,9 +1414,9 @@ footer
 				content: ''
 				display: block
 				width: 90px
-				height: 35px
+				height: 50px
 				position: absolute
-				top: 24px
+				top: 17px
 				right: 123px
 				z-index: 2
 				background: linear-gradient(90deg, rgba(251,251,251,0) 0%, rgba(251,251,251,1) 100%)
@@ -1641,9 +1643,9 @@ footer
 				content: ''
 				display: block
 				width: 90px
-				height: 35px
+				height: 48px
 				position: absolute
-				top: 10px
+				top: 1px
 				right: 123px
 				z-index: 2
 				background: linear-gradient(90deg, rgba(30,122,212,0) 0%, rgba(30,122,212,1) 100%)
@@ -1679,11 +1681,11 @@ footer
 			background: #FFF
 			box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
 			border-radius: 15px
-			padding: 0 80px 16px 80px
+			padding: 0 80px
 			margin-top: 6rem
 			margin-bottom: 7rem
 			@media (max-width: 991.98px)
-				padding: 0 18px 16px 18px
+				padding: 0 18px
 				margin-top: 2rem
 				margin-bottom: 1rem
 			.accordion
@@ -1890,19 +1892,19 @@ footer
 			background-size: auto 800px
 		@media (max-height: 790px)
 			background-size: auto 600px
-	@media (max-width: 991.98px)
-		background-size: auto 700px
-		@media (max-height: 400px)
-			background-size: auto 320px
-	@media (max-width: 767.98px)
-		@media (max-height: 430px)
-			background-size: auto 320px
-	@media (max-width: 575.98px)
-		background-size: auto 430px
-		@media (max-height: 340px)
-			background-size: auto 250px
-	@media (max-width: 360px)
-		background-size: auto 300px
+		@media (max-width: 991.98px)
+			background-size: auto 700px
+			@media (max-height: 400px)
+				background-size: auto 320px
+			@media (max-width: 767.98px)
+				@media (max-height: 430px)
+					background-size: auto 320px
+				@media (max-width: 575.98px)
+					background-size: auto 450px
+					@media (max-height: 340px)
+						background-size: auto 250px
+					@media (max-width: 360px)
+						background-size: auto 300px
 				
 	&.done
 		opacity: 0
