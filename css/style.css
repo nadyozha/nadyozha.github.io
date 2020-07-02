@@ -988,7 +988,6 @@ button {
   position: relative; }
   .input_wrap input {
     height: 52px;
-    line-height: 52px;
     background-color: transparent;
     border-radius: 26px;
     border: 1px solid #93c2ed;
@@ -1009,7 +1008,6 @@ button {
       width: 100%; } }
 
   .input_wrap input::placeholder {
-    line-height: 52px;
     font-size: 14px;
     text-decoration-line: underline;
     color: #FBFBFB;
@@ -1627,12 +1625,12 @@ footer {
     background: #FFF;
     box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11);
     border-radius: 15px;
-    padding: 0 80px;
+    padding: 0 80px 16px 80px;
     margin-top: 6rem;
     margin-bottom: 7rem; }
     @media (max-width: 991.98px) {
       .faq .faq_first .cart-faq-block {
-        padding: 0 18px;
+        padding: 0 18px 16px 18px;
         margin-top: 2rem;
         margin-bottom: 1rem; } }
     .faq .faq_first .cart-faq-block .accordion {
@@ -1828,7 +1826,7 @@ footer {
     background-size: auto 320px; } }
 @media (max-width: 1199.98px) and (max-width: 991.98px) and (max-width: 767.98px) and (max-width: 575.98px) {
   .preloader {
-    background-size: auto 450px; } }
+    background-size: auto 430px; } }
 
   @media (max-width: 1199.98px) and (max-width: 991.98px) and (max-width: 767.98px) and (max-width: 575.98px) and (max-height: 340px) {
     .preloader {
