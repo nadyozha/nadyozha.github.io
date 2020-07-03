@@ -1922,6 +1922,9 @@ footer {
 @media (max-width: 340px) {
   .fz-l-10 {
     font-size: 14px; } }
+.star-opacity {
+  opacity: 0.2; }
+
 .bgs {
   position: relative;
   padding-top: 134px;
