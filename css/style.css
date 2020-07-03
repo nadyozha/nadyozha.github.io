@@ -713,7 +713,7 @@ button {
   padding-top: 270px;
   padding-bottom: 200px;
   position: relative; }
-  @media (min-width: 768px) {
+  @media (min-width: 460px) {
     .top_rated:before {
       clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
       background-color: #3394EE;
@@ -733,7 +733,7 @@ button {
     .top_rated {
       padding-top: 150px;
       padding-bottom: 150px; } }
-  @media (max-width: 767.98px) {
+  @media (max-width: 459.98px) {
     .top_rated {
       padding-top: 127px;
       padding-bottom: 0; }
@@ -742,11 +742,11 @@ button {
         position: absolute;
         display: block;
         width: 100%;
-        height: 620px;
+        height: 636px;
         top: 0;
         left: 0;
         z-index: -1;
-        background: url("../img/33.svg") center center;
+        background: url("../img/33.svg") center center no-repeat;
         background-size: cover; } }
   .top_rated h3 {
     color: #fff;
