@@ -58,18 +58,18 @@ $(function() {
 
      $('.owl-news').owlCarousel({
         stagePadding: 50,
-        loop:true,
+        loop:false,
         margin:10,
         nav:false,
         dots:false,
         responsive:{
             0:{
                 items:1,
-                stagePadding: 5
+                stagePadding: 0
             },
             374:{
                 items:1,
-                stagePadding: 25
+                stagePadding: 45
             },
             600:{
                 items:2
@@ -129,7 +129,7 @@ $(function() {
             dots: false,
             smartSpeed: 1000,
             stagePadding: 50,
-            loop:true,
+            loop:false,
 
         });
 

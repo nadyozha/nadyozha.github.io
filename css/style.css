@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   color: #253759; }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px; }
   @media (max-width: 991.98px) {
@@ -50,7 +50,7 @@ h1 {
       line-height: 32px; } }
 
 h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 36px;
   line-height: 42px; }
   @media (max-width: 991.98px) {
@@ -62,14 +62,14 @@ h2 {
 h3 {
   font-size: 36px;
   line-height: 42px;
-  font-weight: normal; }
+  font-weight: 400; }
   @media (max-width: 991.98px) {
     h3 {
       font-size: 26px;
       line-height: 30px; } }
 
 h4 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 24px;
   line-height: 30px; }
   @media (max-width: 991.98px) {
@@ -146,12 +146,9 @@ button {
   border: 1px solid rgba(15, 56, 94, 0.2);
   font-size: 12px;
   padding: 15px 36px; }
-  @media (max-width: 575.98px) {
-    .btn-transp-dark {
-      width: 100%; } }
   .btn-transp-dark:hover {
     color: #3394EE;
-    border: 1px solid #3394EE; }
+    border: 2px solid #3394EE; }
 
 .btn-arrow {
   justify-content: center;
@@ -389,11 +386,13 @@ button {
       background: #fff;
       padding: 9px 20px;
       border-radius: 38px;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      cursor: pointer; }
       .card-range .carde-title .button-chek img {
         margin-left: 10px;
         width: 18px;
-        height: 18px; }
+        height: 18px;
+        cursor: pointer; }
       @media (max-width: 991.98px) {
         .card-range .carde-title .button-chek {
           width: 100%;
@@ -431,7 +430,8 @@ button {
     bottom: calc(100% + 14px); }
 
 .noUi-connects {
-  overflow: visible; }
+  overflow: visible;
+  cursor: pointer; }
 
 .noUi-connect {
   background: #3194EE;
@@ -444,7 +444,8 @@ button {
   top: -9px !important;
   border: 4px solid #3194EE;
   border-radius: 100px;
-  box-shadow: none; }
+  box-shadow: none;
+  cursor: pointer; }
   @media (max-width: 991.98px) {
     .noUi-handle {
       width: 28px !important;
@@ -466,9 +467,11 @@ button {
     .noUi-tooltip-wrap {
       display: none; } }
   .noUi-tooltip-wrap:before {
-    content: "-"; }
+    content: "-";
+    cursor: pointer; }
   .noUi-tooltip-wrap:after {
-    content: "+"; }
+    content: "+";
+    cursor: pointer; }
 
 .noUi-tooltip {
   border-radius: 100px;
@@ -507,7 +510,8 @@ button {
 .checkbox {
   display: flex;
   align-items: center;
-  margin: 0; }
+  margin: 0;
+  cursor: pointer; }
   .checkbox input {
     display: none; }
     .checkbox input:checked ~ .custom-checkbox {
@@ -552,7 +556,7 @@ button {
     box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11);
     border-radius: 15px;
     padding: 30px 30px 30px 40px;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -634,6 +638,9 @@ button {
         height: 66px;
         border-radius: 33px;
         background: #f3f7fa; }
+        @media (min-width: 992px) {
+          .card-rente-wrap .card-rente .logo-stars .circul img.sant {
+            max-width: 130%; } }
         @media (max-width: 991.98px) {
           .card-rente-wrap .card-rente .logo-stars .circul {
             width: 100%;
@@ -1000,7 +1007,6 @@ button {
   .home_bottom h2 {
     font-weight: normal;
     font-size: 36px;
-    text-decoration-line: underline;
     color: #FBFBFB; }
     @media (max-width: 991.98px) {
       .home_bottom h2 {
@@ -1033,7 +1039,6 @@ button {
 
   .input_wrap input::placeholder {
     font-size: 14px;
-    text-decoration-line: underline;
     color: #FBFBFB;
     opacity: 0.8; }
     @media (max-width: 991.98px) {
@@ -1041,7 +1046,6 @@ button {
         text-decoration-line: none; } }
   .input_wrap button {
     font-weight: 300;
-    text-decoration-line: underline;
     color: #253759;
     padding: 10px 24px;
     position: absolute;
@@ -1053,8 +1057,7 @@ button {
         right: 275px; } }
   @media (max-width: 1199.98px) and (max-width: 991.98px) {
     .input_wrap button {
-      right: 10px;
-      text-decoration-line: none; } }
+      right: 10px; } }
 
 footer {
   background-color: #3394EE;
@@ -1665,7 +1668,7 @@ footer {
         .faq .faq_first .cart-faq-block .accordion .card .card-header {
           background: #FFFFFF;
           transition: 0.3s;
-          padding: 34px 20px;
+          padding: 34px 0;
           border: none;
           border-bottom: 2px solid silver; }
           @media (max-width: 991.98px) {
@@ -1699,13 +1702,13 @@ footer {
         .faq .faq_first .cart-faq-block .accordion .card h5 {
           font-weight: normal;
           font-size: 18px;
-          line-height: 22px;
+          line-height: 29px;
           opacity: 0.7;
           margin-bottom: 0; }
           @media (max-width: 991.98px) {
             .faq .faq_first .cart-faq-block .accordion .card h5 {
               font-size: 12px;
-              line-height: 22px; } }
+              line-height: 32px; } }
         .faq .faq_first .cart-faq-block .accordion .card .card-body {
           background: rgba(51, 148, 238, 0.05);
           border-radius: 15px;
@@ -1900,8 +1903,21 @@ footer {
 .img-crosss {
   position: absolute;
   top: 20px;
-  right: 20px; }
+  right: 20px;
+  cursor: pointer; }
 
+.wrap-h3-button {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 991.98px) {
+    .wrap-h3-button {
+      flex-direction: column;
+      align-items: start; } }
+
+@media (min-width: 1440px) {
+  .w-400px {
+    flex-basis: 430px;
+    min-width: 430px; } }
 @media (max-width: 1199.98px) {
   .container-0-sm {
     padding-left: 0;
@@ -1924,6 +1940,15 @@ footer {
     font-size: 14px; } }
 .star-opacity {
   opacity: 0.2; }
+
+@media (min-width: 1440px) {
+  .ml-cart {
+    margin-left: 73px; } }
+.mt-20px {
+  margin-top: 20px; }
+
+.home-contente h3 {
+  margin-bottom: 18px; }
 
 .bgs {
   position: relative;
