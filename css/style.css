@@ -595,7 +595,7 @@ button {
       margin-bottom: 0; }
     @media (max-width: 991.98px) {
       .card-rente-wrap .card-rente {
-        padding: 20px; } }
+        padding: 20px 15px; } }
     .card-rente-wrap .card-rente .number-carts {
       display: flex;
       width: 35px;
@@ -677,11 +677,11 @@ button {
       color: #9B9FA7; }
       @media (max-width: 991.98px) {
         .card-rente-wrap .card-rente .rente span {
-          font-size: 8px;
+          font-size: 10px;
           line-height: 12px; } }
   @media (max-width: 991.98px) and (max-width: 350px) {
     .card-rente-wrap .card-rente .rente span {
-      font-size: 7px; } }
+      font-size: 8px; } }
 
     .card-rente-wrap .card-rente .rente p {
       font-weight: 300;
