@@ -102,11 +102,9 @@ $(function() {
                 items:4
             },
             1199:{
-                items:5
+                items:5,
+                stagePadding: 50
             },
-            1600:{
-                items:6
-            }
         }
     })
 

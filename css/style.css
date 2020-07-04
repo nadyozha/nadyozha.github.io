@@ -149,6 +149,11 @@ button {
   .btn-transp-dark:hover {
     color: #3394EE;
     border: 2px solid #3394EE; }
+    .btn-transp-dark:hover a {
+      color: #3394EE; }
+  .btn-transp-dark a {
+    font-size: 12px;
+    color: #253759; }
 
 .btn-arrow {
   justify-content: center;
