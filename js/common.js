@@ -4,137 +4,67 @@ $(document).ready(function() {
 		return Number(str.replace(/[^0-9]/gim,''));
 	};
 
-	var sliderAmount = document.getElementById('slider-amount'),
-      inputAmount = document.getElementById('input-amount'),
-      inputAmountMinus = document.getElementById('input-amount-minus'),
-      inputAmountPlus = document.getElementById('input-amount-plus');
-  noUiSlider.create(sliderAmount, {
-    start: 4000,
-    step: 1,
-    connect: [true, false],
-    tooltips: true,
-    range: {
-      'min': 0,
-      'max': 7000
-    },
-    format: wNumb({
-      postfix: ' €',
-      decimals: 0,
-    })
-  });
-	sliderAmount.noUiSlider.on('update', function(values, handle) {
-    inputAmount.innerHTML = values[handle];
-	});
-	inputAmountMinus.addEventListener('click', function() {
-    sliderAmount.noUiSlider.set( numerValue(sliderAmount.noUiSlider.get()) - 1 );
-	});
-	inputAmountPlus.addEventListener('click', function() {
-		sliderAmount.noUiSlider.set( numerValue(sliderAmount.noUiSlider.get()) + 1 );
-	});
-
-	var sliderDuration = document.getElementById('slider-duration'),
-      inputDuration = document.getElementById('input-duration'),
-      inputDurationMinus = document.getElementById('input-duration-minus'),
-      inputDurationPlus = document.getElementById('input-duration-plus');
-  noUiSlider.create(sliderDuration, {
-    start: 45,
-    step: 1,
-    connect: [true, false],
-    tooltips: true,
-    range: {
-      'min': 0,
-      'max': 120
-    },
-    format: wNumb({
-      postfix: ' days',
-      decimals: 0,
-    })
-  });
-	sliderDuration.noUiSlider.on('update', function(values, handle) {
-    inputDuration.innerHTML = values[handle];
-	});
-	inputDurationMinus.addEventListener('click', function() {
-    sliderDuration.noUiSlider.set( numerValue(sliderDuration.noUiSlider.get()) - 1 );
-	});
-	inputDurationPlus.addEventListener('click', function() {
-		sliderDuration.noUiSlider.set( numerValue(sliderDuration.noUiSlider.get()) + 1 );
-	});
-
-	
-
-
-
-
-
-
-
-
-  function numerValue1(str) {
-    return Number(str.replace(/[^0-9]/gim,''));
+  function sliderUpdate(sld) {
+    sld.noUiSlider.on('update', function(values, handle) {
+      $(sld).closest('.slider-wrap').find('.input-value').html(values[handle]);
+    });
   };
 
-  var sliderAmount2 = document.getElementById('slider-amount1'),
-      inputAmount2 = document.getElementById('input-amount1'),
-      inputAmountMinus2 = document.getElementById('input-amount-minus1'),
-      inputAmountPlus2 = document.getElementById('input-amount-plus1');
-  noUiSlider.create(sliderAmount2, {
-    start: 4000,
-    step: 1,
-    connect: [true, false],
-    tooltips: true,
-    range: {
-      'min': 0,
-      'max': 7000
-    },
-    format: wNumb({
-      postfix: ' €',
-      decimals: 0,
-    })
-  });
-  
-  sliderAmount2.noUiSlider.on('update', function(values, handle) {
-    inputAmount2.innerHTML = values[handle];
-  });
-  inputAmountMinus2.addEventListener('click', function() {
-    sliderAmount2.noUiSlider.set( numerValue1(sliderAmount2.noUiSlider.get()) - 1 );
-  });
-  inputAmountPlus2.addEventListener('click', function() {
-    sliderAmount2.noUiSlider.set( numerValue1(sliderAmount2.noUiSlider.get()) + 1 );
+	var sliderAmount = document.querySelectorAll('.slider-amount');
+  sliderAmount.forEach(function(slider) {
+    noUiSlider.create(slider, {
+      start: 4000,
+      step: 1,
+      connect: [true, false],
+      tooltips: true,
+      range: {
+        'min': 0,
+        'max': 7000
+      },
+      format: wNumb({
+        postfix: ' €',
+        decimals: 0,
+      })
+    });
+    sliderUpdate(slider);
   });
 
-  var sliderDuration2 = document.getElementById('slider-duration1'),
-      inputDuration2 = document.getElementById('input-duration1'),
-      inputDurationMinus2 = document.getElementById('input-duration-minus1'),
-      inputDurationPlus2 = document.getElementById('input-duration-plus1');
-  noUiSlider.create(sliderDuration2, {
-    start: 45,
-    step: 1,
-    connect: [true, false],
-    tooltips: true,
-    range: {
-      'min': 0,
-      'max': 120
-    },
-    format: wNumb({
-      postfix: ' days',
-      decimals: 0,
-    })
-  });
-  sliderDuration2.noUiSlider.on('update', function(values, handle) {
-    inputDuration2.innerHTML = values[handle];
-  });
-  inputDurationMinus2.addEventListener('click', function() {
-    sliderDuration2.noUiSlider.set( numerValue1(sliderDuration2.noUiSlider.get()) - 1 );
-  });
-  inputDurationPlus2.addEventListener('click', function() {
-    sliderDuration2.noUiSlider.set( numerValue1(sliderDuration2.noUiSlider.get()) + 1 );
+	var sliderDuration = document.querySelectorAll('.slider-duration');
+  sliderDuration.forEach(function(slider) {
+    noUiSlider.create(slider, {
+      start: 45,
+      step: 1,
+      connect: [true, false],
+      tooltips: true,
+      range: {
+        'min': 0,
+        'max': 120
+      },
+      format: wNumb({
+        postfix: ' days',
+        decimals: 0,
+      })
+    });
+    sliderUpdate(slider);
+  });  
+
+  $('body').on('click', '.input-link', function() {
+    var slider = $(this).closest('.slider-wrap').find('.slider')[0];
+    if ($(this).hasClass('input-minus'))
+      slider.noUiSlider.set( numerValue(slider.noUiSlider.get()) - 1 );
+    else
+      slider.noUiSlider.set( numerValue(slider.noUiSlider.get()) + 1 );
   });
 
   $(".noUi-tooltip").wrap(function() {
     return "<div class='noUi-tooltip-wrap'></div>";
+  }).before(function() {
+    return "<span class='input-link input-minus'>-</span>";
+  }).after(function() {
+    return "<span class='input-link input-plus'>+</span>";
   });
-});
 
+});
 
 
 

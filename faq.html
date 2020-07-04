@@ -285,49 +285,53 @@
 								</div>
 							</div>
 							<div class="carde-body cont">
-								<div class="form-row align-items-center mb-1 mb-lg-2">
-									<div class="col">Loan amount</div>
-									<div class="col-auto text-blue d-lg-none">
-										<div class="form-row align-items-center">
-											<div class="col-auto">
-												<span class="input-link" id="input-amount-minus">-</span>
-											</div>
-											<div class="col">
-												<div class="input-amount" id="input-amount"></div>
-											</div>
-											<div class="col-auto">
-												<span class="input-link" id="input-amount-plus">+</span>
-											</div>
+						<div class="slider-wrap">
+							<div class="form-row align-items-center mb-1 mb-lg-2">
+								<div class="col">Loan amount</div>
+								<div class="col-auto text-blue d-lg-none">
+									<div class="form-row align-items-center">
+										<div class="col-auto">
+											<span class="input-link input-minus">-</span>
+										</div>
+										<div class="col">
+											<div class="input-amount input-value"></div>
+										</div>
+										<div class="col-auto">
+											<span class="input-link input-plus">+</span>
 										</div>
 									</div>
 								</div>
-								<div class="pt-4 pt-lg-5 pb-5 pb-lg-3">
-									<div class="mb-lg-3" id="slider-amount"></div>
-				        </div>
-				        <div class="form-row align-items-center mb-1 mb-lg-2">
-									<div class="col">Duration</div>
-									<div class="col-auto text-blue d-lg-none">
-										<div class="form-row align-items-center">
-											<div class="col-auto">
-												<span class="input-link" id="input-duration-minus">-</span>
-											</div>
-											<div class="col">
-												<div class="input-amount" id="input-duration"></div>
-											</div>
-											<div class="col-auto">
-												<span class="input-link" id="input-duration-plus">+</span>
-											</div>
-										</div>
-									</div>
-								</div>
-				        <div class="pt-4 pt-lg-5 pb-5 pb-lg-3">
-									<div class="mb-lg-3" id="slider-duration"></div>
-				        </div>
-				        <div class="text-center">
-				        	<button class="btn-blue btn-search" id="open-animate">Search
-				        	</button>
-				        </div>
 							</div>
+							<div class="pt-4 pt-lg-5 pb-5 pb-lg-3">
+								<div class="slider slider-amount mb-lg-3"></div>
+			        </div>
+		        </div>
+		        <div class="slider-wrap">
+			        <div class="form-row align-items-center mb-1 mb-lg-2">
+								<div class="col">Duration</div>
+								<div class="col-auto text-blue d-lg-none">
+									<div class="form-row align-items-center">
+										<div class="col-auto">
+											<span class="input-link input-minus">-</span>
+										</div>
+										<div class="col">
+											<div class="input-amount input-value"></div>
+										</div>
+										<div class="col-auto">
+											<span class="input-link input-plus">+</span>
+										</div>
+									</div>
+								</div>
+							</div>
+			        <div class="pt-4 pt-lg-5 pb-5 pb-lg-3">
+								<div class="slider slider-duration mb-lg-3"></div>
+			        </div>
+		        </div>
+		        <div class="text-center">
+		        	<button class="btn-blue btn-search" data-toggle="collapse" href="#collapseCart" id="open-animate">Search
+		        	</button>
+		        </div>
+					</div>
 						</div>
 		      </div>
 		    </div>
@@ -380,7 +384,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.js"></script>
     <script src="js/waves.min.js"></script>
-    <script src="js/common_2.js"></script>
+    <script src="js/common.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

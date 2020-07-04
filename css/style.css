@@ -435,8 +435,7 @@ button {
     bottom: calc(100% + 14px); }
 
 .noUi-connects {
-  overflow: visible;
-  cursor: pointer; }
+  overflow: visible; }
 
 .noUi-connect {
   background: #3194EE;
@@ -449,8 +448,7 @@ button {
   top: -9px !important;
   border: 4px solid #3194EE;
   border-radius: 100px;
-  box-shadow: none;
-  cursor: pointer; }
+  box-shadow: none; }
   @media (max-width: 991.98px) {
     .noUi-handle {
       width: 28px !important;
@@ -471,12 +469,9 @@ button {
   @media (max-width: 991.98px) {
     .noUi-tooltip-wrap {
       display: none; } }
-  .noUi-tooltip-wrap:before {
-    content: "-";
-    cursor: pointer; }
-  .noUi-tooltip-wrap:after {
-    content: "+";
-    cursor: pointer; }
+  .noUi-tooltip-wrap .input-link {
+    font-size: inherit;
+    color: #3194EE; }
 
 .noUi-tooltip {
   border-radius: 100px;
@@ -505,12 +500,15 @@ button {
   border: 1px solid #ACD4F9;
   border-radius: 100px;
   padding: 8px 20px;
-  color: #3394EE; }
+  color: #3194EE; }
 
 .input-link {
   font-size: 26px;
   cursor: pointer;
-  color: #3394EE; }
+  transition: 0.3s;
+  color: #3194EE; }
+  .input-link:hover {
+    opacity: 0.8; }
 
 .checkbox {
   display: flex;

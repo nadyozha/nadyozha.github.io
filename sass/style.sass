@@ -435,7 +435,6 @@ button
 		bottom: calc(100% + 14px)
 .noUi-connects
 	overflow: visible
-	cursor: pointer
 .noUi-connect
 	background: #3194EE
 	border-radius: 100px
@@ -447,7 +446,6 @@ button
 	border: 4px solid #3194EE
 	border-radius: 100px
 	box-shadow: none
-	cursor: pointer
 	@media (max-width: 991.98px)
 		width: 28px !important
 		height: 28px !important
@@ -467,12 +465,9 @@ button
 	padding: 4px 11px
 	@media (max-width: 991.98px)
 		display: none
-	&:before 
-		content: '-'
-		cursor: pointer
-	&:after 
-		content: '+'
-		cursor: pointer
+	.input-link
+		font-size: inherit
+		color: #3194EE
 
 .noUi-tooltip
 	border-radius: 100px
@@ -501,12 +496,15 @@ button
 	border: 1px solid #ACD4F9
 	border-radius: 100px
 	padding: 8px 20px
-	color: $Blue
+	color: #3194EE
 
 .input-link 
 	font-size: 26px
 	cursor: pointer
-	color: $Blue
+	transition: .3s
+	color: #3194EE
+	&:hover
+		opacity: .8
 
 //checkbox-custom
 
