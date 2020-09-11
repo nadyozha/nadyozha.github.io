@@ -152,16 +152,19 @@ button
 		@media (max-width: 340px)
 			line-height: 28px
 
-		.line-bg
+		&::after
+			content: ""
+			display: block
 			position: absolute
-			bottom: -10%
-			left: -2%
+			width: 102%
+			bottom: -8px
+			left: 50%
+			transform: translateX(-50%)
 			z-index: -1
 			height: 43px
-			width: 100%
-			background: $Light
+			background: #EAF1F9
 			border-radius: 20px
-			@media (max-width: 991px)
+			@media (max-width: 768px)
 				display: none
 
 

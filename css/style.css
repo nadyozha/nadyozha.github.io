@@ -137,17 +137,20 @@ button {
     @media (max-width: 340px) {
       .second h1 {
         line-height: 28px; } }
-    .second h1 .line-bg {
+    .second h1::after {
+      content: "";
+      display: block;
       position: absolute;
-      bottom: -10%;
-      left: -2%;
+      width: 102%;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: -1;
       height: 43px;
-      width: 100%;
       background: #EAF1F9;
       border-radius: 20px; }
-      @media (max-width: 991px) {
-        .second h1 .line-bg {
+      @media (max-width: 768px) {
+        .second h1::after {
           display: none; } }
   .second p {
     font-family: Roboto;
