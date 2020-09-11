@@ -407,6 +407,7 @@ button {
         width: 100%; } }
 
 .five {
+  position: relative;
   margin-top: 114px; }
   @media (max-height: 440px) {
     .five {
@@ -441,11 +442,26 @@ footer {
     text-transform: uppercase;
     color: #FFFFFF; }
 
-@media (max-width: 340px) {
+.bg-last {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0; }
+  @media (max-width: 1250px) {
+    .bg-last {
+      width: 300px; } }
+  @media (max-width: 991px) {
+    .bg-last {
+      width: 200px; } }
+  @media (max-width: 440px) {
+    .bg-last {
+      width: 70px; } }
+
+@media (max-width: 364px) {
   .displ-none-320 {
     display: none; } }
 
-@media (max-width: 340px) {
+@media (max-width: 364px) {
   .col-px-0 {
     padding-left: 2px;
     padding-right: 2px; } }

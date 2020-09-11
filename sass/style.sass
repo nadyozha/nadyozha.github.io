@@ -414,6 +414,7 @@ button
 				width: 100%	
 
 .five
+	position: relative
 	margin-top: 114px
 	@media (max-height: 440px)
 		margin-top: 20px
@@ -451,12 +452,26 @@ footer
 		color: #FFFFFF
 
 
+.bg-last
+	position: absolute
+	z-index: -1
+	right: 0
+	bottom: 0
+	@media (max-width: 1250px)
+		width: 300px
+	@media (max-width: 991px)
+		width: 200px
+	@media (max-width: 440px)
+		width: 70px
+
+
+
 .displ-none-320
-	@media (max-width: 340px)
+	@media (max-width: 364px)
 		display: none
 
 .col-px-0
-	@media (max-width: 340px)
+	@media (max-width: 364px)
 		padding-left: 2px
 		padding-right: 2px
 
