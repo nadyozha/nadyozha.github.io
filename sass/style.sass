@@ -110,6 +110,9 @@ button
 				margin-right: 30px
 				@media (max-width: 440px)
 					margin-right: 10px
+				@media (max-width: 360px)
+					padding: 12px
+					margin-right: 7px
 				&:hover
 					color: $Blue
 
@@ -132,9 +135,10 @@ button
 
 .second
 	margin-top: 60px
-
 	@media (max-width: 991px)
 		margin-top: 0
+	@media (min-width: 1900px)
+		margin-top: 180px
 
 	h1
 		font-family: JetBrainsMono
@@ -223,10 +227,12 @@ button
 	margin-top: 300px
 	@media (max-width: 440px)
 		margin-top: 10px
-	@media (max-width: 1900px)
+	@media (max-width: 1899px)
 		margin-top: 150px
 	@media (max-width: 1650px)
 		margin-top: 0
+	@media (min-width: 1900px)
+		margin-top: 80px
 
 
 	h2
@@ -235,6 +241,8 @@ button
 		line-height: 40px
 		font-family: JetBrainsMono
 		color: $Blue
+		@media (max-width: 991px)
+			font-size: 24px
 		@media (max-width: 440px)
 			font-size: 20px
 			line-height: 28px

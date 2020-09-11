@@ -94,6 +94,10 @@ button {
     @media (max-width: 440px) {
       .first .nav li a, .five .nav li a {
         margin-right: 10px; } }
+    @media (max-width: 360px) {
+      .first .nav li a, .five .nav li a {
+        padding: 12px;
+        margin-right: 7px; } }
     .first .nav li a:hover, .five .nav li a:hover {
       color: #1358A5; }
   .first .nav li a.active, .five .nav li a.active {
@@ -118,6 +122,9 @@ button {
   @media (max-width: 991px) {
     .second {
       margin-top: 0; } }
+  @media (min-width: 1900px) {
+    .second {
+      margin-top: 180px; } }
   .second h1 {
     font-family: JetBrainsMono;
     font-weight: 800;
@@ -209,18 +216,24 @@ button {
   @media (max-width: 440px) {
     .therth {
       margin-top: 10px; } }
-  @media (max-width: 1900px) {
+  @media (max-width: 1899px) {
     .therth {
       margin-top: 150px; } }
   @media (max-width: 1650px) {
     .therth {
       margin-top: 0; } }
+  @media (min-width: 1900px) {
+    .therth {
+      margin-top: 80px; } }
   .therth h2 {
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
     font-family: JetBrainsMono;
     color: #1358A5; }
+    @media (max-width: 991px) {
+      .therth h2 {
+        font-size: 24px; } }
     @media (max-width: 440px) {
       .therth h2 {
         font-size: 20px;
