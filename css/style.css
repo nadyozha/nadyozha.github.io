@@ -188,6 +188,8 @@ button {
     margin-top: 55px; }
     .second .social-wrap .social-wrapper {
       margin-bottom: 30px; }
+      .second .social-wrap .social-wrapper:last-child {
+        margin-bottom: 0; }
       @media (max-width: 440px) {
         .second .social-wrap .social-wrapper {
           margin-bottom: 8px; } }
@@ -512,7 +514,7 @@ body {
     @media (max-width: 1450px) {
       body:after {
         height: 1495px;
-        top: 220px; } }
+        top: 240px; } }
     @media (max-width: 991px) {
       body:after {
         height: 1600px;
