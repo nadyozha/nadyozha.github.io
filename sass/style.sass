@@ -1,0 +1,528 @@
+$Light: #EAF1F9
+$Black: #000000
+
+@font-face
+	font-family: JetBrainsMono
+	src: url(../fonts/JetBrainsMono-Bold.woff)
+
+img 
+	max-width: 100%
+	height: auto
+
+html 
+	width: 100%
+	height: 100%
+
+body
+	height: 100%
+	overflow-x: hidden
+	font-family: 'Roboto', sans-serif
+
+input::placeholder, textarea::placeholder
+	font-size: 16px
+	line-height: 19px
+	color: #4F5050
+	@media (max-width: 450px)
+		font-size: 12px
+	
+*
+	outline: none !important
+	transition: 0.4s ease
+	&:focus
+		box-shadow: none !important
+
+a:hover
+	text-decoration: none
+
+p
+	font-size: 14px
+	line-height: 16px
+	@media (max-width: 991.98px)
+		font-size: 12px
+
+h1
+	font-family: 'Playfair Display', sans-serif
+	font-weight: bold
+	font-size: 56px
+	line-height: 75px
+	color: #3A353B
+	@media (max-width: 991.98px)
+		font-size: 40px
+	@media (max-width: 767.98px)
+		line-height: 50px
+	@media (max-width: 575.98px)
+		font-size: 36px
+	@media (max-width: 330px)
+		font-size: 32px
+
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1068px
+
+
+//buttons
+
+button
+	transition: all 0.6s
+	font-family: Roboto
+	&:hover
+		cursor: pointer
+.btn
+	box-sizing: border-box
+	
+
+//first-faq
+.first-faq
+	background: #ECFDFD
+	padding: 38px 0 57px 0
+	@media (max-width: 767.98px)
+		padding: 30px 0
+
+	span
+		font-size: 14px
+		line-height: 16px
+		img
+			padding-right: 7px
+			padding-bottom: 2px
+
+	.input-block
+		margin-top: 32px
+		input
+			width: 100%
+			background: #FDFFFF
+			border: 1px solid #BFCACA
+			box-sizing: border-box
+			border-radius: 5px
+			padding: 10px 16px
+			@media (max-width: 575.98px)
+				margin-bottom: 10px
+
+		button
+			background: #3F85F4
+			border-radius: 4px
+			padding: 10px 15px
+			width: 100%
+			font-weight: bold
+			font-size: 16px
+			color: #FFFFFF
+			&:hover
+				opacity: 0.85
+				color: #FFFFFF
+
+.second-buttons
+	padding: 32px 0
+	@media (max-width: 767.98px)
+		padding: 20px 0
+
+	button
+		margin-bottom: 24px
+		border-radius: 5px
+		font-size: 14px
+		line-height: 16px
+		color: #3F85F4
+		width: 100%
+		padding: 15px
+		border: 1px solid #D4DAE3
+		&:hover
+			background: #3F85F4
+			color: #fff
+		@media (max-width: 767.98px)
+			margin-bottom: 10px
+		@media (max-width: 450px)
+			padding: 10px
+			font-size: 10px
+	.active
+		background: #3F85F4
+		color: #fff
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 1px
+			height: 44px
+			background: #3F85F4
+			transform: translateX(-50%)
+			bottom: -7px
+			left: 50%
+			@media (max-width: 767.98px)
+				display: none
+				
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 5px
+			height: 5px
+			background: #3F85F4
+			border-radius: 50%
+			transform: translateX(-50%)
+			bottom: -12px
+			left: 50%
+			@media (max-width: 767.98px)
+				display: none
+
+	.faq
+		background: #D2DCF6
+		padding: 49px 80px
+		margin-top: 9px
+		@media (max-width: 991.98px)
+			padding: 45px
+		@media (max-width: 767.98px)
+			padding: 20px
+		@media (max-width: 450px)
+			padding: 12px
+
+		.accordion
+			.card
+				border-radius: 8px
+				padding: 20px 30px
+				margin-bottom: 10px
+				@media (max-width: 575.98px)
+					padding: 16px
+
+				.card-header
+					padding: 0
+					background: #fff
+					border: none
+					h5
+						margin-bottom: 0
+						font-weight: bold
+						font-size: 14px
+						line-height: 16px
+						padding-left: 16px
+						@media (max-width: 450px)
+							font-size: 12px
+
+					span img
+						transform: rotateX(0deg)
+						transition: 0.8s
+
+				[aria-expanded=true]
+					span img
+						transform: rotateX(180deg)
+
+
+				.card-body
+					padding: 0
+					padding-top: 14px
+
+					p
+						font-size: 14px
+						line-height: 16px
+						margin-bottom: 0
+						padding-left: 29px
+						@media (max-width: 450px)
+							font-size: 10px
+
+
+//first-news
+.first-news
+	padding: 20px 0
+//second-news
+.second-news
+	button
+		background: #F2F2F2
+		border-radius: 8px
+		border: none
+		font-weight: bold
+		font-size: 24px
+		line-height: 28px
+		color: #333333
+		padding: 19px
+		margin-bottom: 0
+		position: relative
+		@media (max-width: 991.98px)
+			padding: 8px
+			font-size: 14px
+			img
+				max-height: 24px
+				padding-right: 16px
+		@media (max-width: 767.98px)
+			font-size: 10px
+		img
+			padding-right: 24px
+
+		@media (max-width: 575.98px)
+			margin-bottom: 12px
+
+	.actives
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 31px
+			height: 31px
+			background: #DCEDDD
+			transform: translateX(-50%) rotate(45deg)
+			bottom: -15px
+			left: 50%
+			z-index: -1
+			@media (max-width: 991.98px)
+				width: 22px
+				height: 22px
+				bottom: -11px
+			@media (max-width: 575.98px)
+				display: none
+				
+	.actives-rose
+		&:after
+			background: #f6ddd8
+
+	.actives-yellow
+		&:after
+			background: #fdf0da
+//thert
+
+
+.thert
+	background: #DCEDDD
+	padding: 40px 0
+
+
+	.cart
+		padding: 30px 35px
+		background: #fff
+		border: 1px solid #E5E5E5
+		box-sizing: border-box
+		border-radius: 8px
+		margin-bottom: 14px
+		@media (max-width: 767.98px)
+			padding: 16px
+
+		img
+			@media (max-width: 575.98px)
+				margin-bottom: 16px
+				min-width: 100%
+
+		h6
+			font-weight: bold
+			font-size: 14px
+			line-height: 16px
+			margin-bottom: 23px
+			@media (max-width: 767.98px)
+				font-size: 12px
+				margin-bottom: 6px
+
+		p
+			font-size: 12px
+			line-height: 14px
+			color: #4F4F4F
+			opacity: 0.75
+			margin-bottom: 13px
+			@media (max-width: 767.98px)
+				font-size: 10px
+
+		button
+			background: #3F85F4
+			border-radius: 4px
+			font-weight: bold
+			font-size: 12px
+			line-height: 14px
+			color: #FFFFFF
+			padding: 11px 26px
+			@media (max-width: 767.98px)
+				padding: 6px 26px
+				font-size: 10px
+			&:hover
+				opacity: 0.85
+
+
+		span
+			text-align: right
+			font-weight: bold
+			font-size: 10px
+			line-height: 12px
+			color: #828282
+			opacity: 0.75
+
+.thert-rose
+	background: #f6ddd8
+
+.thert-yellow
+	background: #fdf0da
+
+//pages
+.pages
+	padding-top: 27px
+	padding-left: 51px
+	@media (max-width: 767.98px)
+		padding-left: 22px
+		padding-top: 20px
+	nav
+		ul
+			li
+				padding: 9px
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 32px
+				width: 32px
+				border-radius: 4px
+				margin-right: 12px
+				border: 1px solid #4F4F4F
+				cursor: pointer
+
+				
+				a
+					font-size: 12px
+					color: $Black
+
+			.active
+				background: #413C42
+				a
+					color: #fff
+
+			li:last-child
+					margin-left: 12px
+
+//info
+.info
+	padding: 99px 0
+	@media (max-width: 991.98px)
+		padding: 50px 0
+	@media (max-width: 575.98px)
+		padding: 16px 0
+
+	.left-column
+		img.full
+			min-width: 100%
+
+		h2
+			font-weight: bold
+			font-size: 24px
+			line-height: 28px
+			margin-top: 17px
+			margin-bottom: 0
+
+		small
+			margin-top: 9px
+			font-weight: bold
+			font-size: 10px
+			line-height: 12px
+			color: #828282
+			opacity: 0.75
+
+		.row-left
+			margin-top: 36px
+			margin-bottom: 22px
+			@media (max-width: 767.98px)
+				margin-top: 16px
+			.social
+				a
+					background: #4F4F4F
+					border-radius: 3px
+					font-weight: bold
+					font-size: 10px
+					line-height: 12px
+					display: flex
+					align-items: center
+					justify-content: center
+					color: #FFFFFF
+					padding: 5px
+					margin-bottom: 10px
+					@media (max-width: 767.98px)
+						width: 100%
+						margin-right: 1rem
+						&:last-child
+							margin-right: 0
+					@media (max-width: 575.98px)
+						margin-bottom: 2rem
+
+					img, i
+						padding-right: 8px
+
+
+				.logo-2
+					background: #397ce7
+				.logo-3
+					background: #387bb8
+				.logo-4
+					background: #3274aa
+
+
+			p
+				font-size: 12px
+				line-height: 24px
+				color: #4F4F4F
+				opacity: 0.75
+				@media (max-width: 575.98px)
+					line-height: 18px
+
+	.cart-right
+		h3
+			font-weight: bold
+			font-size: 14px
+			line-height: 16px
+			margin-bottom: 32px
+
+		p
+			font-size: 12px
+			line-height: 14px
+			color: #4F4F4F
+			opacity: 0.75
+
+		.cart-right-footer
+			span
+				font-weight: bold
+				font-size: 10px
+				line-height: 12px
+				color: #828282
+				opacity: 0.75
+
+			.span-bg
+				background: url('../img/Union.svg') center no-repeat
+				background-size: cover
+				color: #FFFFFF
+				height: 14px
+				width: 67px
+				font-size: 8px
+				display: flex
+				align-items: center
+				justify-content: center
+
+			hr
+				background: #E5E5E5
+				margin-top: 20px
+
+//go-back
+.go-back
+	a
+		font-weight: bold
+		font-size: 14px
+		color: #00ACC1
+		span
+			display: flex
+			width: 60px
+			height: 60px
+			justify-content: center
+			align-items: center
+			border: 1px solid #CCCCCC
+			box-sizing: border-box
+			margin-right: 16px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
