@@ -107,7 +107,7 @@ button
 			font-size: 16px
 			color: #FFFFFF
 			&:hover
-				opacity: 0.85
+				background: darken(#3F85F4,5%)
 				color: #FFFFFF
 
 .second-buttons
@@ -125,7 +125,7 @@ button
 		padding: 15px
 		border: 1px solid #D4DAE3
 		&:hover
-			background: #3F85F4
+			background: darken(#3F85F4,5%)
 			color: #fff
 		@media (max-width: 767.98px)
 			margin-bottom: 10px
@@ -325,7 +325,7 @@ button
 				padding: 6px 26px
 				font-size: 10px
 			&:hover
-				opacity: 0.85
+				background: darken(#3F85F4,5%)
 
 
 		span
@@ -421,6 +421,9 @@ button
 					color: #FFFFFF
 					padding: 5px
 					margin-bottom: 10px
+					&:hover
+						background: darken(#4F4F4F,15%)
+
 					@media (max-width: 767.98px)
 						width: 100%
 						margin-right: 1rem
@@ -435,10 +438,16 @@ button
 
 				.logo-2
 					background: #397ce7
+					&:hover
+						background: darken(#397ce7,15%)
 				.logo-3
 					background: #387bb8
+					&:hover
+						background: darken(#387bb8,15%)
 				.logo-4
 					background: #3274aa
+					&:hover
+						background: darken(#3274aa,15%)
 
 
 			p
@@ -491,6 +500,13 @@ button
 		font-weight: bold
 		font-size: 14px
 		color: #00ACC1
+		&:hover
+			color: darken(#00ACC1,15%)
+			span
+				opacity: 0.7
+				img
+					opacity: 0.7
+
 		span
 			display: flex
 			width: 60px
