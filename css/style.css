@@ -123,7 +123,7 @@ button {
     padding: 15px;
     border: 1px solid #D4DAE3; }
     .second-buttons button:hover {
-      background: #2776f3;
+      background: #DCEDDD;
       color: #fff; }
     @media (max-width: 767.98px) {
       .second-buttons button {
@@ -355,6 +355,18 @@ button {
   @media (max-width: 575.98px) {
     .second-news .actives-yellow:after {
       display: none; } }
+
+#btn-green:hover {
+  background: #DCEDDD;
+  color: black; }
+
+#btn-rose:hover {
+  background: #f6ddd8;
+  color: black; }
+
+#btn-yellow:hover {
+  background: #fdf0da;
+  color: black; }
 
 .thert {
   padding: 40px 0; }
