@@ -116,7 +116,7 @@ button {
   .second-buttons button {
     margin-bottom: 24px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     color: #3F85F4;
     width: 100%;
@@ -125,6 +125,9 @@ button {
     .second-buttons button:hover {
       background: #3F85F4;
       color: #fff; }
+    @media (max-width: 991.98px) {
+      .second-buttons button {
+        font-size: 15px; } }
     @media (max-width: 767.98px) {
       .second-buttons button {
         margin-bottom: 10px; } }
