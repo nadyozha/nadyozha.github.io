@@ -190,12 +190,12 @@ button {
         .second-buttons .faq .accordion .card .card-header h5 {
           margin-bottom: 0;
           font-weight: bold;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 16px;
           padding-left: 16px; }
           @media (max-width: 450px) {
             .second-buttons .faq .accordion .card .card-header h5 {
-              font-size: 15px; } }
+              font-size: 16px; } }
         .second-buttons .faq .accordion .card .card-header span img {
           transform: rotateX(0deg);
           transition: 0.8s; }
@@ -209,15 +209,15 @@ button {
         padding-top: 14px; }
         @media (max-width: 575.98px) {
           .second-buttons .faq .accordion .card .card-body {
-            padding-top: 4px; } }
+            padding-top: 8px; } }
         .second-buttons .faq .accordion .card .card-body p {
-          font-size: 14px;
+          font-size: 15px;
           line-height: 16px;
           margin-bottom: 0;
           padding-left: 29px; }
           @media (max-width: 450px) {
             .second-buttons .faq .accordion .card .card-body p {
-              font-size: 12px; } }
+              font-size: 14px; } }
 
 .first-news {
   padding: 20px 0; }
