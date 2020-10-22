@@ -357,7 +357,6 @@ button {
       display: none; } }
 
 .thert {
-  background: #DCEDDD;
   padding: 40px 0; }
   @media (max-width: 767.98px) {
     .thert {
@@ -415,6 +414,9 @@ button {
       line-height: 12px;
       color: #828282;
       opacity: 0.75; }
+
+.thert-green {
+  background: #DCEDDD; }
 
 .thert-rose {
   background: #f6ddd8; }
