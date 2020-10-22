@@ -123,7 +123,7 @@ button {
     padding: 15px;
     border: 1px solid #D4DAE3; }
     .second-buttons button:hover {
-      background: #2776f3;
+      background: #3F85F4;
       color: #fff; }
     @media (max-width: 767.98px) {
       .second-buttons button {
