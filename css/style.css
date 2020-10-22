@@ -123,7 +123,7 @@ button {
     padding: 15px;
     border: 1px solid #D4DAE3; }
     .second-buttons button:hover {
-      background: #DCEDDD;
+      background: #2776f3;
       color: #fff; }
     @media (max-width: 767.98px) {
       .second-buttons button {
@@ -465,7 +465,7 @@ button {
     margin-left: 12px; }
 
 .info {
-  padding: 99px 0; }
+  padding: 83px 0; }
   @media (max-width: 991.98px) {
     .info {
       padding: 50px 0; } }
