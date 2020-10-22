@@ -52,7 +52,7 @@ h1 {
       line-height: 50px; } }
   @media (max-width: 575.98px) {
     h1 {
-      font-size: 36px; } }
+      font-size: 38px; } }
   @media (max-width: 330px) {
     h1 {
       font-size: 32px; } }
@@ -78,6 +78,9 @@ button {
   .first-faq span {
     font-size: 14px;
     line-height: 16px; }
+    @media (max-width: 575.98px) {
+      .first-faq span {
+        font-size: 16px; } }
     .first-faq span img {
       padding-right: 7px;
       padding-bottom: 2px; }
@@ -127,8 +130,7 @@ button {
         margin-bottom: 10px; } }
     @media (max-width: 450px) {
       .second-buttons button {
-        padding: 10px;
-        font-size: 10px; } }
+        padding: 10px; } }
   .second-buttons .active {
     background: #3F85F4;
     color: #fff; }
@@ -178,7 +180,8 @@ button {
       margin-bottom: 10px; }
       @media (max-width: 575.98px) {
         .second-buttons .faq .accordion .card {
-          padding: 16px; } }
+          padding: 10px;
+          margin-bottom: 4px; } }
       .second-buttons .faq .accordion .card .card-header {
         padding: 0;
         background: #fff;
@@ -191,15 +194,21 @@ button {
           padding-left: 16px; }
           @media (max-width: 450px) {
             .second-buttons .faq .accordion .card .card-header h5 {
-              font-size: 12px; } }
+              font-size: 15px; } }
         .second-buttons .faq .accordion .card .card-header span img {
           transform: rotateX(0deg);
           transition: 0.8s; }
+          @media (max-width: 450px) {
+            .second-buttons .faq .accordion .card .card-header span img {
+              margin-left: 4px; } }
       .second-buttons .faq .accordion .card [aria-expanded=true] span img {
         transform: rotateX(180deg); }
       .second-buttons .faq .accordion .card .card-body {
         padding: 0;
         padding-top: 14px; }
+        @media (max-width: 575.98px) {
+          .second-buttons .faq .accordion .card .card-body {
+            padding-top: 4px; } }
         .second-buttons .faq .accordion .card .card-body p {
           font-size: 14px;
           line-height: 16px;
@@ -207,7 +216,7 @@ button {
           padding-left: 29px; }
           @media (max-width: 450px) {
             .second-buttons .faq .accordion .card .card-body p {
-              font-size: 10px; } }
+              font-size: 12px; } }
 
 .first-news {
   padding: 20px 0; }
@@ -238,33 +247,120 @@ button {
   @media (max-width: 575.98px) {
     .second-news button {
       margin-bottom: 12px; } }
-.second-news .actives:after {
+.second-news .actives-green:before {
   content: "";
   display: block;
   position: absolute;
   width: 31px;
   height: 31px;
-  background: #DCEDDD;
+  background: #F2F2F2;
   transform: translateX(-50%) rotate(45deg);
+  bottom: -8px;
+  left: 50%;
+  z-index: -1; }
+  @media (max-width: 991.98px) {
+    .second-news .actives-green:before {
+      width: 22px;
+      height: 22px;
+      bottom: -6px; } }
+  @media (max-width: 575.98px) {
+    .second-news .actives-green:before {
+      display: none; } }
+.second-news .actives-green:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 29px;
+  background: url("../img/arrow-down.svg") center no-repeat;
+  transform: translateX(-50%);
+  bottom: -31px;
+  left: 50%;
+  z-index: -1; }
+  @media (max-width: 991.98px) {
+    .second-news .actives-green:after {
+      width: 20px;
+      bottom: -26px; } }
+  @media (max-width: 575.98px) {
+    .second-news .actives-green:after {
+      display: none; } }
+.second-news .actives-rose:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  background: #F2F2F2;
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -8px;
+  left: 50%;
+  z-index: -1; }
+  @media (max-width: 991.98px) {
+    .second-news .actives-rose:before {
+      width: 22px;
+      height: 22px;
+      bottom: -6px; } }
+  @media (max-width: 575.98px) {
+    .second-news .actives-rose:before {
+      display: none; } }
+.second-news .actives-rose:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 13px;
+  background: url("../img/arrow_rose.svg") center no-repeat;
+  transform: translateX(-50%);
   bottom: -15px;
   left: 50%;
   z-index: -1; }
   @media (max-width: 991.98px) {
-    .second-news .actives:after {
-      width: 22px;
-      height: 22px;
-      bottom: -11px; } }
+    .second-news .actives-rose:after {
+      bottom: -12px; } }
   @media (max-width: 575.98px) {
-    .second-news .actives:after {
+    .second-news .actives-rose:after {
       display: none; } }
-.second-news .actives-rose:after {
-  background: #f6ddd8; }
+.second-news .actives-yellow:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 33px;
+  background: #F3B33F;
+  transform: translateX(-50%);
+  bottom: -32px;
+  left: 50%; }
+  @media (max-width: 991.98px) {
+    .second-news .actives-yellow:before {
+      height: 29px;
+      bottom: -28px; } }
+  @media (max-width: 575.98px) {
+    .second-news .actives-yellow:before {
+      display: none; } }
 .second-news .actives-yellow:after {
-  background: #fdf0da; }
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #F3B33F;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  bottom: -34px;
+  left: 50%; }
+  @media (max-width: 991.98px) {
+    .second-news .actives-yellow:after {
+      bottom: -29px; } }
+  @media (max-width: 575.98px) {
+    .second-news .actives-yellow:after {
+      display: none; } }
 
 .thert {
   background: #DCEDDD;
   padding: 40px 0; }
+  @media (max-width: 767.98px) {
+    .thert {
+      margin-top: 6px; } }
   .thert .cart {
     padding: 30px 35px;
     background: #fff;
@@ -437,25 +533,27 @@ button {
     line-height: 14px;
     color: #4F4F4F;
     opacity: 0.75; }
-  .info .cart-right .cart-right-footer span {
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    color: #828282;
-    opacity: 0.75; }
-  .info .cart-right .cart-right-footer .span-bg {
-    background: url("../img/Union.svg") center no-repeat;
-    background-size: cover;
-    color: #FFFFFF;
-    height: 14px;
-    width: 67px;
-    font-size: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .info .cart-right .cart-right-footer hr {
-    background: #E5E5E5;
-    margin-top: 20px; }
+  .info .cart-right .cart-right-footer {
+    align-items: center; }
+    .info .cart-right .cart-right-footer span {
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      color: #828282;
+      opacity: 0.75; }
+    .info .cart-right .cart-right-footer .span-bg {
+      background: url("../img/Union.svg") center no-repeat;
+      background-size: cover;
+      color: #FFFFFF;
+      height: 20px;
+      width: 110px;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .info .cart-right .cart-right-footer hr {
+      background: #E5E5E5;
+      margin-top: 20px; }
 
 .go-back a {
   font-weight: bold;

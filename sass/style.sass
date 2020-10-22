@@ -51,7 +51,7 @@ h1
 	@media (max-width: 767.98px)
 		line-height: 50px
 	@media (max-width: 575.98px)
-		font-size: 36px
+		font-size: 38px
 	@media (max-width: 330px)
 		font-size: 32px
 
@@ -82,6 +82,8 @@ button
 	span
 		font-size: 14px
 		line-height: 16px
+		@media (max-width: 575.98px)
+			font-size: 16px
 		img
 			padding-right: 7px
 			padding-bottom: 2px
@@ -131,7 +133,6 @@ button
 			margin-bottom: 10px
 		@media (max-width: 450px)
 			padding: 10px
-			font-size: 10px
 	.active
 		background: #3F85F4
 		color: #fff
@@ -179,7 +180,8 @@ button
 				padding: 20px 30px
 				margin-bottom: 10px
 				@media (max-width: 575.98px)
-					padding: 16px
+					padding: 10px
+					margin-bottom: 4px
 
 				.card-header
 					padding: 0
@@ -192,11 +194,14 @@ button
 						line-height: 16px
 						padding-left: 16px
 						@media (max-width: 450px)
-							font-size: 12px
+							font-size: 15px
 
 					span img
 						transform: rotateX(0deg)
 						transition: 0.8s
+						@media (max-width: 450px)
+							margin-left: 4px
+
 
 				[aria-expanded=true]
 					span img
@@ -206,6 +211,8 @@ button
 				.card-body
 					padding: 0
 					padding-top: 14px
+					@media (max-width: 575.98px)
+						padding-top: 4px
 
 					p
 						font-size: 14px
@@ -213,7 +220,7 @@ button
 						margin-bottom: 0
 						padding-left: 29px
 						@media (max-width: 450px)
-							font-size: 10px
+							font-size: 12px
 
 
 //first-news
@@ -246,38 +253,123 @@ button
 		@media (max-width: 575.98px)
 			margin-bottom: 12px
 
-	.actives
-		&:after
+	.actives-green
+		&:before
 			content: ''
 			display: block
 			position: absolute
 			width: 31px
 			height: 31px
-			background: #DCEDDD
+			background: #F2F2F2
 			transform: translateX(-50%) rotate(45deg)
-			bottom: -15px
+			bottom: -8px
 			left: 50%
 			z-index: -1
 			@media (max-width: 991.98px)
 				width: 22px
 				height: 22px
-				bottom: -11px
+				bottom: -6px
+			@media (max-width: 575.98px)
+				display: none
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 24px
+			height: 29px
+			background: url('../img/arrow-down.svg') center no-repeat
+			transform: translateX(-50%) 
+			bottom: -31px
+			left: 50%
+			z-index: -1
+			@media (max-width: 991.98px)
+				width: 20px
+				bottom: -26px
+			@media (max-width: 575.98px)
+				display: none
+
+
+				
+	.actives-rose
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 31px
+			height: 31px
+			background: #F2F2F2
+			transform: translateX(-50%) rotate(45deg)
+			bottom: -8px
+			left: 50%
+			z-index: -1
+			@media (max-width: 991.98px)
+				width: 22px
+				height: 22px
+				bottom: -6px
+			@media (max-width: 575.98px)
+				display: none
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 10px
+			height: 13px
+			background: url('../img/arrow_rose.svg') center no-repeat
+			transform: translateX(-50%) 
+			bottom: -15px
+			left: 50%
+			z-index: -1
+			@media (max-width: 991.98px)
+				bottom: -12px
+			@media (max-width: 575.98px)
+				display: none
+
+
+
+
+
+
+
+	.actives-yellow
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 1px
+			height: 33px
+			background: #F3B33F
+			transform: translateX(-50%)
+			bottom: -32px
+			left: 50%
+			@media (max-width: 991.98px)
+				height: 29px
+				bottom: -28px
 			@media (max-width: 575.98px)
 				display: none
 				
-	.actives-rose
 		&:after
-			background: #f6ddd8
-
-	.actives-yellow
-		&:after
-			background: #fdf0da
+			content: ''
+			display: block
+			position: absolute
+			width: 5px
+			height: 5px
+			background: #F3B33F
+			border-radius: 50%
+			transform: translateX(-50%)
+			bottom: -34px
+			left: 50%
+			@media (max-width: 991.98px)
+				bottom: -29px
+			@media (max-width: 575.98px)
+				display: none
 //thert
 
 
 .thert
 	background: #DCEDDD
 	padding: 40px 0
+	@media (max-width: 767.98px)
+		margin-top: 6px
 
 
 	.cart
@@ -472,6 +564,8 @@ button
 			opacity: 0.75
 
 		.cart-right-footer
+			align-items: center
+
 			span
 				font-weight: bold
 				font-size: 10px
@@ -483,9 +577,9 @@ button
 				background: url('../img/Union.svg') center no-repeat
 				background-size: cover
 				color: #FFFFFF
-				height: 14px
-				width: 67px
-				font-size: 8px
+				height: 20px
+				width: 110px
+				font-size: 10px
 				display: flex
 				align-items: center
 				justify-content: center
