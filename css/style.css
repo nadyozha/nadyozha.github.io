@@ -164,13 +164,18 @@ button {
       @media (max-width: 767.98px) {
         .second-buttons .active:before {
           display: none; } }
+  .second-buttons .btn-1.active:after, .second-buttons .btn-2.active:after, .second-buttons .btn-3.active:after, .second-buttons .btn-4.active:after {
+    height: 108px;
+    bottom: -80px; }
+  .second-buttons .btn-1.active:before, .second-buttons .btn-2.active:before, .second-buttons .btn-3.active:before, .second-buttons .btn-4.active:before {
+    bottom: -84px; }
   .second-buttons .faq {
     background: #D2DCF6;
-    padding: 49px 80px;
+    padding: 30px 60px;
     margin-top: 9px; }
     @media (max-width: 991.98px) {
       .second-buttons .faq {
-        padding: 45px; } }
+        padding: 30px; } }
     @media (max-width: 767.98px) {
       .second-buttons .faq {
         padding: 20px; } }
@@ -179,7 +184,7 @@ button {
         padding: 12px; } }
     .second-buttons .faq .accordion .card {
       border-radius: 8px;
-      padding: 20px 30px;
+      padding: 14px 25px;
       margin-bottom: 10px; }
       @media (max-width: 575.98px) {
         .second-buttons .faq .accordion .card {
