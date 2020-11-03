@@ -1,3 +1,6 @@
+new WOW().init();
+
+
 $('#btn-rose').click(function(){
 $('#btn-rose').addClass('actives-rose');
 $('#btn-yellow').removeClass('actives-yellow');
@@ -94,4 +97,21 @@ $('.btn-3').removeClass('active');
 $('.btn-4').removeClass('active');
 $('.btn-5').removeClass('active');
 $('.btn-6').removeClass('active');
+});
+
+
+$('.team-img').click(function(){
+$(this).removeClass('active-img');
+$('.wrap-video').addClass('before-none');
+});
+
+
+
+
+$('.video-wrap').click(function(){
+$(this).addClass('before-none');
+});
+
+$('.max-dexter').click(function(){
+$(this).addClass('max-dexter-none');
 });
