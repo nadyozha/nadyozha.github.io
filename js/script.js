@@ -115,3 +115,12 @@ $(this).addClass('before-none');
 $('.max-dexter').click(function(){
 $(this).addClass('max-dexter-none');
 });
+
+
+
+//$(function(){
+	//if ($('#checkbox_1').is(':checked')){
+	//	$('#max-visible').addClass('max-visible')
+	//};
+//};
+

@@ -60,6 +60,10 @@ h1
 	.container
 		max-width: 1240px
 
+@media (max-width: 575.98px)
+	.container
+		padding: 0 24px
+
 @media (min-width: 1200px)
 	.container-970
 		max-width: 970px
@@ -662,7 +666,6 @@ button
 		font-size: 30px
 		line-height: 35px
 		color: #00ACC1
-		opacity: 0.9
 		margin-bottom: 30px
 		@media (max-width: 991.98px)
 			font-size: 36px
@@ -673,6 +676,7 @@ button
 		font-size: 16px
 		line-height: 25px
 		color: #4F4F4F
+		opacity: 0.75
 		@media (max-width: 991.98px)
 			font-size: 16px
 			line-height: 20px
@@ -1069,6 +1073,7 @@ button
 			min-height: 64px
 
 		h5
+			font-family: Playfair Display
 			font-weight: bold
 			font-size: 18px
 			line-height: 24px
@@ -1134,10 +1139,12 @@ button
 			width: 220px
 			margin-bottom: 12px
 		@media (max-width: 575.98px)
-			width: 165px
+			width: 160px
 			padding: 12px
+			margin-left: 4px
+			margin-right: 4px
 		@media (max-width: 374px)
-			width: 135px
+			width: 130px
 			padding: 6px
 
 		.cart-bg-wrap
@@ -1381,6 +1388,8 @@ button
 
 	button
 		font-weight: normal
+		font-size: 14px
+		padding: 10px 40px
 
 
 //affiliate-carts
@@ -1479,7 +1488,7 @@ button
 
 	.cart-bottom
 		margin-top: 82px
-		padding: 0px 12px
+		padding: 15px 12px
 		border: 1px solid #E0E7F0
 		box-sizing: border-box
 		border-radius: 4px
@@ -1490,18 +1499,24 @@ button
 		@media (max-width: 575.98px)
 			margin-top: 16px
 
-		a
-			font-size: 12px
-			line-height: 24px
-			color: #4F4F4F
-			opacity: 0.75
-			&:hover
-				color: black
-			@media (max-width: 991.98px)
+		hr
+			margin: 0
+
+		.h-50
+			min-height: 50px
+
+			a
 				font-size: 14px
-			@media (max-width: 330px)
-				font-size: 12px
-				line-height: 14px
+				line-height: 16px
+				color: #4F4F4F
+				opacity: 0.75
+				&:hover
+					color: black
+				@media (max-width: 991.98px)
+					font-size: 14px
+				@media (max-width: 330px)
+					font-size: 12px
+					line-height: 14px
 
 			img
 				padding-right: 12px
@@ -1532,6 +1547,9 @@ button
 			margin-bottom: 2rem
 		@media (max-width: 330px)
 			line-height: 18px
+
+		b
+			font-weight: 400
 
 	span.span-you
 		font-family: Playfair Display
@@ -1621,11 +1639,16 @@ button
 			width: 20px
 			height: 1px
 			background: #00ACC1
+			opacity: 0.5
 			transform: translateY(-50%)
 			top: 50%
 			left: -10px
 			@media (max-width: 767.98px)
 				display: none
+
+	.horizontal-line-blue:before
+		background: #3F85F4
+
 
 	.carts-long
 		margin-top: 60px
@@ -1640,6 +1663,11 @@ button
 				box-shadow: 0px -10px 24px -7px rgba(158,158,158,0.63)
 			@media (max-width: 991.98px)
 				padding: 30px 20px
+			@media (max-width: 575.98px)
+				min-height: 0
+				padding: 20px
+				box-shadow: none
+				margin-bottom: 16px
 
 			h6
 				font-weight: bold
@@ -1695,7 +1723,7 @@ button
 						padding: 10px 12px 10px 130px
 						line-height: 14px
 
-			
+
 
 			button.share
 				border: 2px solid #CCCCCC
@@ -1747,6 +1775,17 @@ button
 		.cart-blue
 			border-top: 4px solid #c7dcfb
 
+		.border-none
+			@media (max-width: 767.98px)
+				border-top: 1px solid transparent
+
+		.m-bottom-min
+			@media (max-width: 767.98px)
+				margin-bottom: 0
+				padding-bottom: 0
+
+			p
+				margin-bottom: 0
 //affiliate_end
 .affiliate_end
 	h3
@@ -1879,7 +1918,12 @@ footer
 		text-align: center
 		padding: 3px
 		@media (max-width: 565.98px)
-			display: none
+			width: 30px
+			height: 30px
+			left: 14px
+			top: 8px
+			font-size: 16px
+			line-height: 24px
 		
 
 
@@ -1917,7 +1961,12 @@ footer
 		text-align: center
 		padding: 3px
 		@media (max-width: 565.98px)
-			display: none
+			width: 30px
+			height: 30px
+			left: 14px
+			top: 8px
+			font-size: 16px
+			line-height: 24px
 
 .horizontal-line
 	position: relative
@@ -1970,7 +2019,12 @@ footer
 		padding: 3px
 		font-family: Roboto
 		@media (max-width: 565.98px)
-			display: none
+			width: 30px
+			height: 30px
+			left: -38px
+			top: 8px
+			font-size: 16px
+			line-height: 24px
 	
 .h2-before-2
 	position: relative
@@ -1993,7 +2047,12 @@ footer
 		padding: 3px
 		font-family: Roboto
 		@media (max-width: 565.98px)
-			display: none
+			width: 30px
+			height: 30px
+			left: -40px
+			top: 8px
+			font-size: 16px
+			line-height: 24px
 
 .h2-before-3
 	position: relative
@@ -2017,7 +2076,12 @@ footer
 		padding: 3px
 		font-family: Roboto
 		@media (max-width: 565.98px)
-			display: none
+			width: 30px
+			height: 30px
+			left: -40px
+			top: 8px
+			font-size: 16px
+			line-height: 24px
 			
 
 .horizontal-line-2
@@ -2092,12 +2156,20 @@ h2.first-steps-h2
 	color: #4F4F4F
 	opacity: 0.9
 	margin-bottom: 12px
+	@media (max-width: 565.98px)
+		margin-left: 28px
+		font-size: 28px
+	@media (max-width: 340px)
+		font-size: 26px
 
 p.first-steps-p
 	font-size: 14px
 	line-height: 24px
 	color: #4F4F4F
 	opacity: 0.75
+	@media (max-width: 565.98px)
+		margin-left: 28px
+		line-height: 20px
 
 
 //first_steps-deposit
@@ -2174,6 +2246,8 @@ p.first-steps-p
 .first_steps-invest
 	padding: 65px 40px 20px 40px
 	position: relative
+	width: 100%
+	overflow-x: hidden
 	@media (max-width: 991.98px)
 		padding: 65px 40px 20px 80px
 	@media (max-width: 767.98px)
@@ -2311,6 +2385,8 @@ p.first-steps-p
 		line-height: 24px
 		color: #00ACC1
 		opacity: 0.75
+		@media (max-width: 565.98px)
+			margin-left: 28px
 
 	.start
 		margin-top: 35px
@@ -2331,7 +2407,9 @@ p.first-steps-p
 
 	img
 		position: absolute
-		bottom: -10px
+		bottom: -44px
+		@media (max-width: 1199.98px)
+			bottom: -31px
 		@media (max-width: 991.98px)
 			display: none
 
@@ -2352,14 +2430,15 @@ p.first-steps-p
 		color: #3A353B
 		opacity: 0.95
 		margin-bottom: 12px
-		margin-top: 200px
-		@media (max-width: 991.98px)
-			margin-top: 50px
+		margin-top: 50px
 		@media (max-width: 767.98px)
 			font-size: 24px
 			margin-top: 16px
+		@media (max-width: 565.98px)
+			font-size: 24px
+			margin-bottom: 0
 		@media (max-width: 340px)
-			font-size: 20px
+			font-size: 18px
 
 	span.span-registr
 		font-size: 16px
@@ -2368,6 +2447,9 @@ p.first-steps-p
 		margin-bottom: 54px
 		@media (max-width: 767.98px)
 			margin-bottom: 16px
+		@media (max-width: 565.98px)
+			font-size: 14px
+			margin-bottom: 0
 		a
 			color: black
 
@@ -2413,8 +2495,13 @@ p.first-steps-p
 		img
 			height: 150px
 			width: 150px
-		
-		
+	
+	.max-visible
+		display: block
+
+	.max-hidden
+		display: none
+
 	.max-dexter
 		position: relative
 		transition: .3s
@@ -2588,6 +2675,15 @@ p.first-steps-p
 		line-height: 14px
 		color: #828282
 		margin: 0
+
+	span.language
+		cursor: pointer
+		&:hover
+			color: black
+
+		img
+			width: 32px
+			height: 16px
 
 
 
