@@ -118,9 +118,10 @@ $(this).addClass('max-dexter-none');
 
 
 
-//$(function(){
-	//if ($('#checkbox_1').is(':checked')){
-	//	$('#max-visible').addClass('max-visible')
-	//};
-//};
+
+$('#checkbox_1').on('change', function() {
+	if ( $(this).is(':checked') ) {
+		$('#max-visible').toggleClass('max-hidden');
+	}
+});
 
