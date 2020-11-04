@@ -2346,12 +2346,16 @@ p.first-steps-p {
   .girl-bg img {
     position: absolute;
     bottom: -44px; }
+    @media (max-width: 1620px) {
+      .girl-bg img {
+        right: 30px; } }
     @media (max-width: 1199.98px) {
       .girl-bg img {
-        bottom: -31px; } }
+        bottom: -31px;
+        right: 0; } }
     @media (max-width: 991.98px) {
       .girl-bg img {
-        display: none; } }
+        position: relative; } }
 
 .registr {
   background: #f2f2f2;
