@@ -680,7 +680,7 @@ button
 		color: #4F4F4F
 		@media (max-width: 991.98px)
 			font-size: 16px
-			line-height: 20px
+			line-height: 24px
 		@media (max-width: 767.98px)
 			margin-bottom: 3rem
 
@@ -737,9 +737,8 @@ button
 			opacity: 0.75
 			padding-left: 64px
 			@media (max-width: 991.98px)
-				font-size: 14px
 				padding-left: 20px
-				line-height: 20px
+				line-height: 24px
 			@media (max-width: 767.98px)
 				margin-top: 1rem
 				padding-left: 0
@@ -1874,12 +1873,33 @@ footer
 			height: 456px
 		@media (max-width: 767.98px)
 			display: none
+			
+
+
+
+	&:after
+		@media (max-width: 767.98px)
+			content: ''
+			background: url('../img/first_speps.png')
+			position: absolute
+			background-size: cover
+			display: block
+			bottom: 0
+			right: 0
+			width: 100%
+			height: 510px
+		@media (max-width: 565.98px)
+			height: 240px
 				
 	@media (max-width: 1199.98px)
 		padding: 60px 20px
+
+	@media (max-width: 767.98px)
+		padding-bottom: 530px
 		
 	@media (max-width: 565.98px)
 		padding: 40px 0
+		padding-bottom: 265px
 
 
 	h1
@@ -2479,6 +2499,8 @@ p.first-steps-p
 		background: url('../img/eye.svg') no-repeat
 		background-position: 97%
 		letter-spacing: 3px
+		&::placeholder
+			letter-spacing: 0
 
 	input.e-mail
 		background: url('../img/check_circle.svg') no-repeat

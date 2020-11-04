@@ -631,7 +631,7 @@ button {
     @media (max-width: 991.98px) {
       .about_us_founded p {
         font-size: 16px;
-        line-height: 20px; } }
+        line-height: 24px; } }
     @media (max-width: 767.98px) {
       .about_us_founded p {
         margin-bottom: 3rem; } }
@@ -682,9 +682,8 @@ button {
       padding-left: 64px; }
       @media (max-width: 991.98px) {
         .about_us_founded .video-ceo p {
-          font-size: 14px;
           padding-left: 20px;
-          line-height: 20px; } }
+          line-height: 24px; } }
       @media (max-width: 767.98px) {
         .about_us_founded .video-ceo p {
           margin-top: 1rem;
@@ -1767,12 +1766,30 @@ footer {
     @media (max-width: 767.98px) {
       .first_steps:before {
         display: none; } }
+  @media (max-width: 767.98px) {
+    .first_steps:after {
+      content: "";
+      background: url("../img/first_speps.png");
+      position: absolute;
+      background-size: cover;
+      display: block;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 510px; } }
+  @media (max-width: 565.98px) {
+    .first_steps:after {
+      height: 240px; } }
   @media (max-width: 1199.98px) {
     .first_steps {
       padding: 60px 20px; } }
+  @media (max-width: 767.98px) {
+    .first_steps {
+      padding-bottom: 530px; } }
   @media (max-width: 565.98px) {
     .first_steps {
-      padding: 40px 0; } }
+      padding: 40px 0;
+      padding-bottom: 265px; } }
   .first_steps h1 {
     font-family: Playfair Display;
     font-style: normal;
@@ -2378,6 +2395,8 @@ p.first-steps-p {
     background: url("../img/eye.svg") no-repeat;
     background-position: 97%;
     letter-spacing: 3px; }
+    .registr input.password::placeholder {
+      letter-spacing: 0; }
   .registr input.e-mail {
     background: url("../img/check_circle.svg") no-repeat;
     background-position: 97%; }
