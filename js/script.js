@@ -1,6 +1,5 @@
 new WOW().init();
 
-
 $('#btn-rose').click(function(){
 $('#btn-rose').addClass('actives-rose');
 $('#btn-yellow').removeClass('actives-yellow');
@@ -104,7 +103,6 @@ $('.team-img').click(function(){
 $(this).removeClass('active-img');
 $('.wrap-video').addClass('before-none');
 });
-
 
 
 
