@@ -12,6 +12,7 @@ img
 html 
 	width: 100%
 	height: 100%
+	overflow-x: hidden
 
 body
 	height: 100%
@@ -914,6 +915,28 @@ button
 	@media (max-width: 575.98px)
 		margin: 10px
 
+	.name-company
+		padding: 30px 8px
+		h5
+			font-family: Playfair Display
+			font-weight: bold
+			font-size: 32px
+			line-height: 43px
+			@media (max-width: 500px)
+				font-size: 28px
+			@media (max-width: 440px)
+				font-size: 26px
+			@media (max-width: 400px)
+				font-size: 22px
+
+		h6
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			color: #4F4F4F
+			opacity: 0.75
+
+
 	.img-bg-wrap
 		position: relative
 		h5
@@ -931,12 +954,8 @@ button
 				font-size: 20px
 				bottom: 30px
 			@media (max-width: 767.98px)
-				line-height: 28px
-				font-size: 18px
-				margin-bottom: 0
-			@media (max-width: 575.98px)
-				font-size: 14px
-				line-height: 12px
+				display: none
+				
 
 		h6
 			font-weight: bold
@@ -950,12 +969,7 @@ button
 			@media (max-width: 1199.98px)
 				bottom: 10px
 			@media (max-width: 767.98px)
-				line-height: 14px
-				font-size: 14px
-				margin-bottom: 0
-			@media (max-width: 575.98px)
-				font-size: 8px
-				line-height: 10px
+				display: none
 
 	.left-vertical-line-second
 		position: relative
@@ -993,7 +1007,7 @@ button
 		font-size: 32px
 		line-height: 43px
 		color: #4F4F4F
-		margin-bottom: 8px
+		margin-bottom: 18px
 		font-family: Playfair Display
 
 		@media (max-width: 991.98px)
@@ -1381,7 +1395,7 @@ button
 			margin-bottom: 28px
 
 	p
-		font-size: 14px
+		font-size: 16px
 		line-height: 26px
 		color: #4F4F4F
 		opacity: 0.75
@@ -1428,7 +1442,7 @@ button
 
 		h6
 			font-weight: bold
-			font-size: 14px
+			font-size: 16px
 			line-height: 18px
 			color: #4F4F4F
 			opacity: 0.75
@@ -1620,14 +1634,14 @@ button
 
 	h4
 		font-weight: normal
-		font-size: 16px
+		font-size: 18px
 		line-height: 24px
 		color: #00ACC1
 		opacity: 0.75
 		margin-bottom: 24px
 
 	h5
-		font-size: 14px
+		font-size: 16px
 		line-height: 24px
 		color: #4F4F4F
 		opacity: 0.75
@@ -1675,15 +1689,15 @@ button
 
 			h6
 				font-weight: bold
-				font-size: 16px
-				line-height: 19px
+				font-size: 18px
+				line-height: 20px
 				color: #00ACC1
 
 			.h6_blue_color
 				color: #3F85F4
 
 			p
-				font-size: 14px
+				font-size: 16px
 				line-height: 28px
 				color: #4F4F4F
 				opacity: 0.75
@@ -1851,13 +1865,28 @@ footer
 		background-size: cover
 		top: 0
 		right: 0
+		@media (max-width: 1275px)
+			height: 480px
 		@media (max-width: 1199.98px)
-			height: 386px
+			height: 408px
 			right: -30%
 		@media (max-width: 991.98px)
-			height: 434px
+			height: 456px
 		@media (max-width: 767.98px)
 			display: none
+
+	//&:after
+		//content: ''
+		//display: none
+		//position: absolute
+		//@media (max-width: 767.98px)
+		//	display: block
+		//	background: url('../img/steps.png') no-repeat
+		//	width: 100%
+			//bottom: 0
+			//right: 0
+			//height: 300px
+
 			
 			
 	@media (max-width: 1199.98px)
@@ -1882,7 +1911,7 @@ footer
 		color: #000000
 		margin-bottom: 22px
 	p
-		font-size: 14px
+		font-size: 16px
 		line-height: 24px
 		color: #4F4F4F
 		opacity: 0.75
@@ -2170,13 +2199,13 @@ h2.first-steps-h2
 		font-size: 26px
 
 p.first-steps-p
-	font-size: 14px
+	font-size: 16px
 	line-height: 24px
 	color: #4F4F4F
 	opacity: 0.75
 	@media (max-width: 565.98px)
 		margin-left: 28px
-		line-height: 20px
+		line-height: 22px
 
 
 //first_steps-deposit
@@ -2386,7 +2415,7 @@ p.first-steps-p
 
 	h6
 		font-weight: bold
-		font-size: 16px
+		font-size: 18px
 		line-height: 24px
 		color: #00ACC1
 		opacity: 0.75
@@ -2462,6 +2491,7 @@ p.first-steps-p
 	input.password
 		background: url('../img/eye.svg') no-repeat
 		background-position: 97%
+		letter-spacing: 3px
 
 	input.e-mail
 		background: url('../img/check_circle.svg') no-repeat
