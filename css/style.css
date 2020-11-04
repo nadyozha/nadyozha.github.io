@@ -616,7 +616,8 @@ button {
     font-size: 30px;
     line-height: 35px;
     color: #00ACC1;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    opacity: 0.9; }
     @media (max-width: 991.98px) {
       .about_us_founded h3 {
         font-size: 36px;
@@ -625,8 +626,7 @@ button {
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
-    color: #4F4F4F;
-    opacity: 0.75; }
+    color: #4F4F4F; }
     @media (max-width: 991.98px) {
       .about_us_founded p {
         font-size: 16px;
@@ -2457,6 +2457,13 @@ p.first-steps-p {
     border-bottom: 1px solid #a0a1a1;
     margin-top: 18px;
     transition: 0.3s; }
+    .registr input::placeholder {
+      font-weight: 300;
+      color: #4F5050;
+      opacity: 0.5; }
+  .registr #max-visible::placeholder {
+    color: #4F5050;
+    opacity: 1; }
   .registr .loading {
     margin-top: 14px; }
     .registr .loading img {
