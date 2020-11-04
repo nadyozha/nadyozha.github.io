@@ -119,8 +119,8 @@ $(this).addClass('max-dexter-none');
 
 
 $('#checkbox_1').on('change', function() {
-	if ( $(this).is(':checked') ) {
-		$('#max-visible').toggleClass('max-hidden');
-	}
+	$('#max-visible').toggleClass('max-hidden');
+	$('.bonus').toggleClass('max-hidden');
+	$('.gift').toggleClass('max-hidden');
 });
 
