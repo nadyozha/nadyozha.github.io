@@ -7,8 +7,7 @@ img {
 
 html {
   width: 100%;
-  height: 100%;
-  overflow-x: hidden; }
+  height: 100%; }
 
 body {
   height: 100%;
@@ -2153,17 +2152,30 @@ p.first-steps-p {
   .first_steps-deposit .laters .lat-btc {
     position: relative;
     top: -50px; }
+    @media (max-width: 1450px) {
+      .first_steps-deposit .laters .lat-btc {
+        width: 33%; } }
   .first_steps-deposit .laters .lat-eth {
     position: relative;
     top: -50px;
     left: 20px; }
+    @media (max-width: 1450px) {
+      .first_steps-deposit .laters .lat-eth {
+        width: 33%; } }
   .first_steps-deposit .laters .lat-p {
     position: relative;
     top: -50px;
     left: 50px; }
+    @media (max-width: 1450px) {
+      .first_steps-deposit .laters .lat-p {
+        right: 0;
+        width: 33%; } }
   .first_steps-deposit .laters .lat-pm {
     position: relative;
     left: 70px; }
+    @media (max-width: 1450px) {
+      .first_steps-deposit .laters .lat-pm {
+        position: static; } }
     @media (max-width: 1300px) {
       .first_steps-deposit .laters .lat-pm {
         left: 0; } }
@@ -2171,6 +2183,9 @@ p.first-steps-p {
     position: relative;
     left: 120px;
     top: -50px; }
+    @media (max-width: 1450px) {
+      .first_steps-deposit .laters .lat-lt {
+        position: static; } }
     @media (max-width: 1300px) {
       .first_steps-deposit .laters .lat-lt {
         left: 0; } }
@@ -2247,7 +2262,8 @@ p.first-steps-p {
         .first_steps-invest .cart a {
           font-size: 10px; } }
     .first_steps-invest .cart a.grey-a {
-      color: #D4DAE3; }
+      color: #D4DAE3;
+      text-decoration: line-through; }
       .first_steps-invest .cart a.grey-a:hover {
         color: #a6b2c5; }
   .first_steps-invest .cart-wrap-salat {
