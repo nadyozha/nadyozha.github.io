@@ -344,7 +344,8 @@ header {
 
 @media (max-width: 991.98px) {
   .active-header {
-    background: transparent; } }
+    background: transparent;
+    position: fixed; } }
 
 .date-wrap {
   display: flex;
