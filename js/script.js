@@ -1,124 +1,153 @@
-new WOW().init();
+$(function() {
 
-$('#btn-rose').click(function(){
-$('#btn-rose').addClass('actives-rose');
-$('#btn-yellow').removeClass('actives-yellow');
-$('#btn-green').removeClass('actives-green');
-$('#thert-color-bg').addClass('thert-rose');
-$('#thert-color-bg').removeClass('thert-yellow');
-$('#thert-color-bg').removeClass('thert-green');
+	$('#sandwich').click(function() {
+		$('body').toggleClass('menubar-in');
+		$('.logo').toggleClass('hidden');
+		$('.user').toggleClass('hidden');
+	});
+
+	$('.menu-close').click(function() {
+		$('.menubar-in').removeClass('menubar-in');
+		$('.logo').toggleClass('hidden');
+		$('.user').toggleClass('hidden');
+	});
+
+  $('.stylish-select').stylishSelect();
+
+  $('.stylish-select').on('change', function() {
+	  $('[href="' + this.value + '"]').trigger('click');
+	});
+
+  $('#language').click(function() {
+		$('.categories').toggleClass('categories-none');
+	});
+
+  var sliderAmount = document.querySelectorAll('.slider-amount');
+  sliderAmount.forEach(function(slider) {
+    noUiSlider.create(slider, {
+      start: 4000,
+      step: 1,
+      connect: [true, false],
+      tooltips: true,
+      range: {
+        'min': 0,
+        'max': 10000
+      },
+    });
+  });
+
+
+   $('.owl-top').owlCarousel({
+      stagePadding: 0,
+      loop:false,
+      margin:10,
+      nav:false,
+      dots:false,
+      responsive:{
+        319:{
+            items:1,
+            stagePadding: 40
+        },
+        374:{
+            items:1,
+            stagePadding: 55
+        },
+        574:{
+            items:2,
+            stagePadding: 15
+        },
+        767:{
+            items:3,
+            stagePadding: 25
+        },
+        1440:{
+            items:4
+        }
+      }
+    })
+
+   $('.owl-progress-bar').owlCarousel({
+      stagePadding: 0,
+      loop:false,
+      margin:10,
+      nav:false,
+      dots:false,
+      responsive:{
+        300:{
+            items:1,
+            stagePadding: 20
+        },
+        374:{
+            items:1,
+            stagePadding: 25
+        },
+        767:{
+            items:2,
+            stagePadding: 20
+        },
+        860:{
+            items:2,
+            stagePadding: 60
+        },
+        991:{
+            items:2,
+            stagePadding: 20
+        },
+        1120:{
+            items:2,
+            stagePadding: 70
+        },
+        1440:{
+            items:3
+        }
+      }
+    })
+
+    $('.owl-news').owlCarousel({
+    stagePadding: 0,
+    loop:false,
+    margin:10,
+    nav:false,
+    dots:false,
+    responsive:{
+        300:{
+            items:1,
+            stagePadding: 20,
+            dots:true
+        },
+        374:{
+            items:1,
+            stagePadding: 20,
+            dots:true
+        },
+        574:{
+            items:2,
+            stagePadding: 55,
+            dots:true
+        },
+        1100:{
+            items:3
+        }
+      }
+    })
+
 });
 
 
-$('#btn-yellow').click(function(){
-$('#btn-yellow').addClass('actives-yellow');
-$('#btn-rose').removeClass('actives-rose');
-$('#btn-green').removeClass('actives-green');
-$('#thert-color-bg').addClass('thert-yellow');
-$('#thert-color-bg').removeClass('thert-rose');
-$('#thert-color-bg').removeClass('thert-green');
-});
-
-$('#btn-green').click(function(){
-$('#btn-green').addClass('actives-green');
-$('#btn-yellow').removeClass('actives-yellow');
-$('#btn-rose').removeClass('actives-rose');
-$('#thert-color-bg').addClass('thert-green');
-$('#thert-color-bg').removeClass('thert-yellow');
-$('#thert-color-bg').removeClass('thert-rose');
-});
-
-$('.btn-7').click(function(){
-$('.btn-7').addClass('active');
-$('.btn-1').removeClass('active');
-$('.btn-2').removeClass('active');
-$('.btn-3').removeClass('active');
-$('.btn-4').removeClass('active');
-$('.btn-5').removeClass('active');
-$('.btn-6').removeClass('active');
-});
-
-$('.btn-6').click(function(){
-$('.btn-6').addClass('active');
-$('.btn-1').removeClass('active');
-$('.btn-2').removeClass('active');
-$('.btn-3').removeClass('active');
-$('.btn-4').removeClass('active');
-$('.btn-5').removeClass('active');
-$('.btn-7').removeClass('active');
-});
-
-$('.btn-5').click(function(){
-$('.btn-5').addClass('active');
-$('.btn-1').removeClass('active');
-$('.btn-2').removeClass('active');
-$('.btn-3').removeClass('active');
-$('.btn-4').removeClass('active');
-$('.btn-7').removeClass('active');
-$('.btn-6').removeClass('active');
-});
-
-$('.btn-4').click(function(){
-$('.btn-4').addClass('active');
-$('.btn-1').removeClass('active');
-$('.btn-2').removeClass('active');
-$('.btn-3').removeClass('active');
-$('.btn-7').removeClass('active');
-$('.btn-5').removeClass('active');
-$('.btn-6').removeClass('active');
-});
-
-$('.btn-3').click(function(){
-$('.btn-3').addClass('active');
-$('.btn-1').removeClass('active');
-$('.btn-2').removeClass('active');
-$('.btn-7').removeClass('active');
-$('.btn-4').removeClass('active');
-$('.btn-5').removeClass('active');
-$('.btn-6').removeClass('active');
-});
-
-$('.btn-2').click(function(){
-$('.btn-2').addClass('active');
-$('.btn-1').removeClass('active');
-$('.btn-7').removeClass('active');
-$('.btn-3').removeClass('active');
-$('.btn-4').removeClass('active');
-$('.btn-5').removeClass('active');
-$('.btn-6').removeClass('active');
-});
-
-$('.btn-1').click(function(){
-$('.btn-1').addClass('active');
-$('.btn-7').removeClass('active');
-$('.btn-2').removeClass('active');
-$('.btn-3').removeClass('active');
-$('.btn-4').removeClass('active');
-$('.btn-5').removeClass('active');
-$('.btn-6').removeClass('active');
-});
-
-
-$('.team-img').click(function(){
-$(this).removeClass('active-img');
-$('.wrap-video').addClass('before-none');
-});
 
 
 
-$('.video-wrap').click(function(){
-$(this).addClass('before-none');
-});
 
-$('.max-dexter').click(function(){
-$(this).addClass('max-dexter-none');
-});
-
+var $slider = $("#slider");
+var $fill = $(".bar .fill");
+function setBar() {
+	$fill.css("width", $slider.val() + "%");
+}
+$slider.on("input", setBar);
+setBar();
 
 
 $('#checkbox_1').on('change', function() {
-	$('#max-visible').toggleClass('max-hidden');
-	$('.bonus').toggleClass('max-hidden');
-	$('.gift').toggleClass('max-hidden');
+	$('#name-visible').toggleClass('name-hidden');
 });
 
