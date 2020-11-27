@@ -38,7 +38,7 @@
 		<aside>
 			<div id="menu">
 				<div class="nav">
-					<a data-toggle="pill" href="#pills-Home" class="menu-close active">
+					<a  class="menu-close active">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0)">
 								<path d="M15.8299 6.50198L8.24561 0.948949C8.09936 0.841887 7.90067 0.841887 7.75449 0.948949L0.170174 6.50198C-0.0150757 6.63764 -0.0553257 6.89776 0.0803306 7.08301C0.215987 7.26826 0.476143 7.30845 0.661362 7.17286L8.00002 1.79961L15.3387 7.17282C15.4127 7.22704 15.4987 7.25314 15.5839 7.25314C15.7119 7.25314 15.8382 7.19423 15.9197 7.08298C16.0554 6.89776 16.0151 6.63764 15.8299 6.50198Z" fill="white"/>
@@ -419,22 +419,22 @@
 										<h5>Make a deposit and invest</h5>
 										<div class="make-a-deposit d-flex make-a-deposit-mb-0">
 											<select class="stylish-select">
-											  <option>Perfect Money</option>
+											  <option value="#Make-a-Payment-PM">Perfect Money</option>
 											  <option>Payeer</option>
-											  <option>Bitcoin</option>
+											  <option value="#Make-a-Payment-Bitcoin">Bitcoin</option>
 											  <option>Litecoin</option>
 											  <option>Ethereum</option>
 											</select>
-											<button class="process-btn d-lg-block d-none">Process</button>
+											<button data-toggle="pill" href="#Make-a-Payment-PM" class="process-btn d-lg-block d-none">Process</button>
 										</div>
 									</div>
 									<div class="cart mt-lg-3 mt-0 h-100 align-self-stretch">
 										<h5 class="text">Invest from account balance:</h5>
 										<div class="make-a-deposit d-lg-block d-none">
 											<select class="stylish-select">
-											  <option>Perfect Money</option>
+											  <option value="#Make-a-Payment-PM">Perfect Money</option>
 											  <option>Payeer</option>
-											  <option>Bitcoin</option>
+											  <option value="#Make-a-Payment-Bitcoin">Bitcoin</option>
 											  <option>Litecoin</option>
 											  <option>Ethereum</option>
 											</select>
@@ -442,7 +442,7 @@
 										<h5 class="t-normal d-xl-block d-none">Choose amount from account balance</h5>
 										<div class="d-flex flex-lg-row flex-column">
 											<input class="choose-amount" type="text" placeholder="$500">
-											<button class="process-btn">Invest</button>
+											<button  data-toggle="pill" href="#Make-a-Payment-Bitcoin" class="process-btn">Invest</button>
 										</div>
 									</div>
 								</div>
@@ -1150,7 +1150,7 @@
 											<div class="col-xl-5 col">
 												<div class="daily-calendar border-right-line d-flex">
 													<span class="span">6f346738740902996cb851ede718c4</span>
-													<img src="img/copy-small.svg" class="ml-1 copy-img">
+													<img class="img-hover ml-xl-2 ml-1" src="img/copy-small.svg" class="ml-1 copy-img">
 												</div>
 											</div>
 											<div class="col-xl-3 col">
@@ -3416,7 +3416,7 @@
 							</div>
 							<div class="buttons">
 								<button class="process-btn">Process</button>
-								<button class="process-btn no-btn">Cancel</button>
+								<button data-toggle="pill" href="#pills-Deposit" class="process-btn no-btn">Cancel</button>
 							</div>
 						</div>
 					</div>
@@ -3481,7 +3481,7 @@
 								</div>
 							</div>
 							<div class="buttons">
-								<button class="process-btn no-btn m-0">Cancel</button>
+								<button  data-toggle="pill" href="#pills-Deposit" class="process-btn no-btn m-0">Cancel</button>
 							</div>
 						</div>
 					</div>
@@ -3597,7 +3597,7 @@
 					</div>
 					<div class="modal-wrap-footer-btn">
 						<button class="process-btn">Cancel my plan</button>
-						<button class="process-btn no-btn">Go back</button>
+						<button class="process-btn no-btn" data-dismiss="modal" aria-label="Close">Go back</button>
 					</div>
 				</div>
 			</div>

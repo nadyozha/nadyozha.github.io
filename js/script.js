@@ -4,12 +4,14 @@ $(function() {
 		$('body').toggleClass('menubar-in');
 		$('.logo').toggleClass('hidden');
 		$('.user').toggleClass('hidden');
+    $('header').toggleClass('active-header');
 	});
 
 	$('.menu-close').click(function() {
 		$('.menubar-in').removeClass('menubar-in');
 		$('.logo').toggleClass('hidden');
 		$('.user').toggleClass('hidden');
+    $('header').toggleClass('active-header');
 	});
 
   $('.stylish-select').stylishSelect();
