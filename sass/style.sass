@@ -222,11 +222,12 @@ body::before
 	right: 0
 	bottom: 0
 	left: 0
-	background: url('../img/bg-dashboard.svg') no-repeat center
-	background-size: cover
+	background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B
 	z-index: -1
+	@media (max-width: 991.98px)
+		background: url('../img/bg-dashboard.svg') no-repeat center
+		background-size: cover
 
-//registration
 #registration
 	header
 		@media (max-width: 991.98px)
@@ -342,7 +343,7 @@ header
 		padding: 18px
 		justify-content: start
 		border: none
-		background: rgba(6, 38, 115, 0.9)
+		background: rgba(6, 38, 115, 0.8)
 
 .active-header
 	@media (max-width: 991.98px)
@@ -468,6 +469,7 @@ aside
 	left: 0
 	width: 260px
 	padding: 80px 0
+	z-index: 5
 	@media (max-width: 1300px)
 		width: 240px
 	@media (max-width: 1198.98px)
@@ -481,7 +483,6 @@ aside
 		top: 0
 		bottom: 0
 		background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0F47AD 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B
-		z-index: 5
 		opacity: 0
 	@media (max-width: 370px)
 		padding: 70px 0 0 0
@@ -534,6 +535,8 @@ aside
 
 .contente
 	padding-left: 260px
+	position: relative
+	z-index: 1
 	@media (max-width: 1300px)
 		padding-left: 240px
 	@media (max-width: 1198.99px)

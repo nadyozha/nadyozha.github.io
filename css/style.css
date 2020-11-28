@@ -218,9 +218,12 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("../img/bg-dashboard.svg") no-repeat center;
-  background-size: cover;
+  background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B;
   z-index: -1; }
+  @media (max-width: 991.98px) {
+    body::before {
+      background: url("../img/bg-dashboard.svg") no-repeat center;
+      background-size: cover; } }
 
 @media (max-width: 991.98px) {
   #registration header {
@@ -340,7 +343,7 @@ header {
       padding: 18px;
       justify-content: start;
       border: none;
-      background: rgba(6, 38, 115, 0.9); } }
+      background: rgba(6, 38, 115, 0.8); } }
 
 @media (max-width: 991.98px) {
   .active-header {
@@ -473,7 +476,8 @@ aside {
   bottom: 0;
   left: 0;
   width: 260px;
-  padding: 80px 0; }
+  padding: 80px 0;
+  z-index: 5; }
   @media (max-width: 1300px) {
     aside {
       width: 240px; } }
@@ -490,7 +494,6 @@ aside {
       top: 0;
       bottom: 0;
       background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0F47AD 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B;
-      z-index: 5;
       opacity: 0; } }
   @media (max-width: 370px) {
     aside {
@@ -545,7 +548,9 @@ aside {
   min-height: 101vh; }
 
 .contente {
-  padding-left: 260px; }
+  padding-left: 260px;
+  position: relative;
+  z-index: 1; }
   @media (max-width: 1300px) {
     .contente {
       padding-left: 240px; } }
