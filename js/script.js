@@ -24,6 +24,25 @@ $(function() {
 		$('.categories').toggleClass('categories-none');
 	});
 
+  $('#cart-plan-2').click(function() {
+    $('#cart-plan-1-wrap').removeClass('active');
+    $('#cart-plan-2-wrap').addClass('active');
+    $('.coins-svg').addClass('coins-none');
+  });
+
+  $('#cart-plan-1').click(function() {
+    $('#cart-plan-2-wrap').removeClass('active');
+    $('#cart-plan-1-wrap').addClass('active');
+    $('.coins-svg').addClass('coins-none');
+  });
+
+ 
+
+
+
+    
+ 
+
   var sliderAmount = document.querySelectorAll('.slider-amount');
   sliderAmount.forEach(function(slider) {
     noUiSlider.create(slider, {
@@ -54,16 +73,17 @@ $(function() {
             items:1,
             stagePadding: 55
         },
-        574:{
+        560:{
             items:2,
-            stagePadding: 15
+            stagePadding: 25
         },
         767:{
             items:3,
             stagePadding: 25
         },
-        1440:{
-            items:4
+        1000:{
+            items:4,
+            stagePadding: 0
         }
       }
     })
@@ -122,7 +142,7 @@ $(function() {
             stagePadding: 20,
             dots:true
         },
-        574:{
+        560:{
             items:2,
             stagePadding: 55,
             dots:true
@@ -135,7 +155,7 @@ $(function() {
 
 });
 
-
+$('#menu-tabs a[href="#pills-Terms-and-Condition"]').tab('show')
 
 
 
