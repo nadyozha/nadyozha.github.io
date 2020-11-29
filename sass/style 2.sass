@@ -1,0 +1,2889 @@
+img 
+	max-width: 100%
+	height: auto
+
+html 
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+
+@media (min-width: 992px)
+	body::-webkit-scrollbar
+		background-color: transparent
+		width: 4px
+	body::-webkit-scrollbar-thumb
+		border-radius: 12px
+		background-color: #fff
+
+body
+	height: 100%
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	@media (max-width: 991.98px)
+		&.menubar-in
+			overflow: hidden
+
+
+
+//owl-corousel
+.container-0
+	padding: 0 35px
+	@media (max-width: 1199.98px)
+		padding: 0 16px
+	@media (max-width: 991.98px)
+		padding-left: 0
+		padding-right: 0
+
+.owl-carousel .owl-stage-outer .owl-stage 
+	padding-left: 0 !important
+	@media (max-width: 991.98px)
+		padding-left: 16px !important
+	.owl-item.active
+		@media (min-width: 1440px)
+			&:last-child
+				margin-right: 0!important
+
+.owl-news .owl-stage-outer .owl-stage .owl-item
+	padding-top: 0
+
+.owl-dots
+	display: flex
+	justify-content: center
+	margin-top: 10px
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot
+	width: 12px
+	height: 12px
+	background: rgba(156, 165, 255, 0.43)
+	border-radius: 6px
+	margin-left: 12px
+	&:first-child
+		margin-left: 0
+.owl-carousel button.owl-dot.active
+	background: #9CA5FF
+
+
+
+
+//placeholder input
+input::placeholder, textarea::placeholder
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+	color: #FFF
+	@media (max-width: 450px)
+		font-size: 14px
+input
+	background: transparent
+	border: none
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+	color: #FFF
+	padding: 0 8px
+	text-transform: normal
+	width: 100%
+
+*
+	outline: none !important
+	transition: 0.4s ease
+	&:focus
+		box-shadow: none !important
+
+a:hover
+	text-decoration: none
+
+.row-1
+	margin-left: -.25rem
+	margin-right: -.25rem
+	> [class*="col"]
+		padding-left: .25rem
+		padding-right: .25rem
+
+.row-2
+	margin-left: 0
+	margin-right: 0
+	> [class*="col"]
+		padding-left: 0
+		padding-right: 0
+
+@media (min-width: 1440px)
+	.container-740
+		max-width: 770px
+
+@media (min-width: 768px)
+	.container-586
+		max-width: 586px
+
+//buttons
+button
+	transition: all 0.6s
+	&:hover
+		cursor: pointer
+.plan-btn
+	background: #76FFFF
+	border: 0.5px solid #76FFFF
+	box-sizing: border-box
+	border-radius: 4px
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+	color: #172480
+	padding: 6px 16px
+	@media (max-width: 340px)
+		font-size: 14px
+.premium-btn
+	background: transparent
+	color: #76FFFF
+.process-btn
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+	color: #0A2C87
+	background: #00D7D7
+	border: 1.5px solid #00D7D7
+	box-sizing: border-box
+	box-shadow: 0px 4px 25px rgba(118, 255, 255, 0.33)
+	border-radius: 40px
+	padding: 12px 40px
+	&:hover
+		border: 1.5px solid #00D7D7
+		color: #00D7D7
+		background: transparent
+.no-btn
+	border: 1.5px solid #00D7D7
+	color: #00D7D7
+	background: transparent
+	&:hover
+		color: #0A2C87
+		background: #00D7D7
+		border: 1.5px solid #00D7D7
+
+.cacel-btn
+	background: transparent
+	color: #FF3A3A
+	border: 1.5px solid #FF3A3A
+	padding: 12px 14px
+	&:hover
+		background: #FF3A3A
+		color: #fff
+		border: 1.5px solid #FF3A3A
+
+.img-hover
+	cursor: pointer
+	&:hover
+		opacity: 0.8
+
+
+//checkbox
+
+.checkbox
+	display: flex
+	align-items: center
+	margin: 0
+	cursor: pointer
+	input
+		display: none
+		&:checked
+			& ~ .custom-checkbox
+				opacity: 1
+				border: 1px solid #FFF
+				box-sizing: border-box
+				border-radius: 4px
+				&:after
+					background: url('../img/check-icon.svg') no-repeat center	
+				
+.custom-checkbox
+	position: relative
+	margin-right: 8px
+	display: block
+	width: 16px
+	height: 16px
+	margin-bottom: 0
+	border: 1px solid rgba(255, 255, 255, 0.5)
+	box-sizing: border-box
+	border-radius: 4px
+	&:after
+		content: ''
+		position: absolute
+		top: 2px
+		right: 2px
+		bottom: 2px
+		left: 2px
+		transition: all linear .3s
+		
+		
+.custom-text
+	font-size: 14px
+	line-height: 16px
+	color: #FFF
+	margin-bottom: 0
+
+//body
+
+body
+	background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B
+	z-index: -1
+	@media (max-width: 991.98px)
+		background: url('../img/bg-dashboard.svg') no-repeat center
+		background-size: cover
+
+#registration
+	header
+		@media (max-width: 991.98px)
+			padding: 30px 16px
+			display: flex
+			justify-content: end
+			position: relative
+			.user
+				display: none
+			#sandwich
+				order: 2
+				margin-right: 0
+				display: none
+				
+			.logo
+				order: 1
+				img
+					height: 35px
+					width: 124px
+					display: flex
+					
+	.cart
+		padding: 24px
+		margin-top: 140px
+		background: rgba(47, 53, 158, 0.35)
+		border-radius: 12px
+		@media (max-width: 575.98px)
+			padding: 16px
+			margin-top: 12px
+		h2
+			font-weight: 300
+			font-size: 35px
+			color: #FFF
+			margin-bottom: 8px
+			@media (max-width: 991.98px)
+				font-size: 28px
+		.name-hidden
+			display: none	
+			
+		.input-wrap
+			position: relative
+			.span
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #FFF
+				display: block
+				margin-bottom: 17px
+				margin-top: 24px
+				@media (max-width: 991.98px)
+					margin-bottom: 8px
+					font-size: 16px
+			input
+				background: rgba(6, 38, 115, 0.5)
+				border: 1px solid rgba(255, 255, 255, 0.5)
+				box-sizing: border-box
+				border-radius: 4px
+				font-size: 18px
+				color: #FFF
+				padding: 12px 16px
+				width: 100%
+			input::placeholder
+				text-align: left
+				padding: 12px 8px
+				font-size: 18px
+			.error-input
+				border: 1px solid #FF3A3A
+			.error-span
+				font-size: 14px
+				line-height: 16px
+				color: #FF3A3A
+				position: absolute
+				left: 0
+				bottom: -18px
+				@media (max-width: 991.98px)
+					font-size: 12px
+		.checkbox
+			margin-top: 17px
+			.optional
+				font-weight: 300
+				color: #9CA5FF
+		.cart-footer
+			display: flex
+			flex-direction: column
+			text-align: center
+			margin-top: 28px
+			padding: 0 65px
+			@media (max-width: 991.98px)
+				padding: 0
+			span
+				font-weight: 300
+				font-size: 16px
+				color: #FFF
+				margin-bottom: 26px
+				a
+					color: #00D7D7
+			button
+				width: 168px
+				margin: 0 auto
+				@media (max-width: 991.98px)
+					width: 100%
+
+//header
+header
+	position: relative
+	left: 0
+	top: 0
+	right: 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 8px 24px
+	z-index: 10
+	border-bottom: 1px solid #76FFFF
+	@media (max-width: 991.98px)
+		position: sticky
+		padding: 18px
+		justify-content: start
+		border: none
+		background: rgba(6, 38, 115, 0.8)
+
+.active-header
+	@media (max-width: 991.98px)
+		background: transparent
+		position: fixed
+.date-wrap
+	display: flex
+	flex-direction: column
+	align-items: center
+	@media (max-width: 991.98px)
+		display: none
+		
+
+	span.date
+		font-weight: 300
+		font-size: 16px
+		color: #9CA5FF
+		@media (max-width: 991.98px)
+			font-size: 12px
+	span.time
+		font-weight: 300
+		font-size: 35px
+		color: #FFFF
+		@media (max-width: 991.98px)
+			font-size: 22px
+.user
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	z-index: 11
+	@media (max-width: 991.98px)
+		order: 2
+
+	.user-left
+		text-align: right
+		display: flex
+		flex-direction: column
+		padding-right: 24px
+		@media (max-width: 991.98px)
+			padding-right: 12px
+		span
+			font-weight: 300
+			font-size: 16px
+			color: rgba(255, 255, 255, 0.6)
+			@media (max-width: 991.98px)
+				font-size: 16px
+			@media (max-width: 340px)
+				font-size: 14px
+		.user-name
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			color: rgba(255, 255, 255, 0.8)
+			@media (max-width: 340px)
+				font-size: 16px
+	img
+		cursor: pointer
+
+.logo
+	img
+		@media (max-width: 991.98px)
+			display: none
+			
+.hidden
+	opacity: 1
+
+hr.hr-in-cart
+	border-top: 1px solid rgba(255, 255, 255, 0.1)
+	margin: 16px -24px
+	@media (max-width: 1380px)
+		margin: 16px -16px
+	@media (max-width: 1020px)
+		margin: 16px -12px
+
+hr.hr-in-cart-m-0
+	border-top: 1px solid rgba(255, 255, 255, 0.1)
+	margin: 0
+
+#sandwich
+	position: relative
+	width: 20px
+	height: 14px
+	cursor: pointer
+	transition: .3s
+	z-index: 99
+	@media (max-width: 991.98px)
+		order: 1
+		margin-right: auto
+	&:before, span, &:after
+		content: ''
+		background-color: #fff
+		position: absolute
+		height: 2px
+		left: 0
+		right: 0
+		transition: .3s   
+		border-radius: 100px    
+	&:before
+		top: 0
+		transform-origin: 15% center
+		.menubar-in &
+			transform: rotate(45deg)
+	span 
+		top: 6px
+		width: 20px
+		.menubar-in &
+			width: 0
+	&:after
+		bottom: 0
+		transform-origin: 15% center
+		.menubar-in &
+			transform: rotate(-45deg)
+			bottom: 2px
+	&:hover 
+		opacity: .8
+
+//aside
+aside
+	position: fixed
+	top: 93px
+	bottom: 0
+	left: 0
+	width: 260px
+	padding: 80px 0
+	z-index: 5
+	@media (max-width: 1300px)
+		width: 240px
+	@media (max-width: 1198.98px)
+		width: 220px
+		padding: 20px 0
+	@media (max-width: 991.98px)
+		width: 100%
+		height: 100vh
+		padding: 82px 0 0 0
+		left: -100%
+		top: 0
+		bottom: 0
+		background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0F47AD 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B
+		opacity: 0
+	@media (max-width: 370px)
+		padding: 70px 0 0 0
+	@media (max-height: 440px)
+		padding: 60px 0 0 0
+		overflow-y: scroll
+
+	#menu
+		.nav
+			flex-direction: column
+			a
+				font-size: 18px
+				line-height: 21px
+				color: #FFF
+				padding: 16px 8px 16px 28px
+				@media (max-width: 1191.98px)
+					font-size: 16px
+					@media (max-height: 670px)
+						padding: 10px 14px
+					@media (max-height: 570px)
+						padding: 8px 14px
+						font-size: 10px
+					@media (max-height: 440px)
+						padding: 8px 14px
+						font-size: 10px
+				svg
+					margin-right: 12px
+					position: relative
+					bottom: 2px
+				&:hover
+					color: #76FFFF
+					svg path
+						fill: #76FFFF
+			a.active
+				color: #76FFFF
+				svg path
+					fill: #76FFFF
+
+			hr
+				margin: 0
+				border-top: 1px solid rgba(255, 255, 255, 0.33)
+			hr.hr-light
+				border-top: 1px solid rgba(255, 255, 255, 0.1)
+
+.menubar-in
+	aside
+		left: 0
+		opacity: 1
+		min-height: 101vh
+
+.contente
+	padding-left: 260px
+	position: relative
+	z-index: 1
+	@media (max-width: 1300px)
+		padding-left: 240px
+	@media (max-width: 1198.99px)
+		padding-left: 220px
+	@media (max-width: 991.99px)
+		padding-left: 0
+.tab-content-wrap
+	color: #fff
+	padding: 36px 0
+	@media (max-width: 1450px)
+		padding: 18px 0
+
+	h2
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		text-transform: uppercase
+		color: rgba(255, 255, 255, 0.8)
+		margin-bottom: 24px
+		@media (max-width: 991.99px)
+			padding: 0 5px
+
+	.cart
+		background: rgba(47, 53, 158, 0.35)
+		border-radius: 12px
+		padding: 24px
+		@media (max-width: 1380px)
+			padding: 16px
+		@media (max-width: 991.98px)
+			padding: 16px 12px
+		
+		h3
+			font-weight: 300
+			font-size: 35px
+			color: #FFF
+			@media (max-width: 1198.99px)
+				font-size: 28px
+			@media (max-width: 340px)
+				font-size: 24px
+
+		.span-beruza
+			font-weight: 300
+			font-size: 16px
+			color: #76FFFF
+			@media (max-width: 340px)
+				font-size: 14px
+		.span
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			color: #FFF
+			@media (max-width: 1199.98px)
+				font-size: 16px
+
+		img.icon
+			padding-right: 8px
+			@media (max-width: 991.98px)
+				padding-right: 6px
+				max-height: 14px
+			@media (max-width: 500px)
+				padding-right: 2px
+
+	.cart-p-0 
+		padding: 24px 0
+		@media (max-width: 1380px)
+			padding: 16px 0
+		h3
+			padding: 0 24px
+			@media (max-width: 1380px)
+				padding: 0 16px
+		.crypto-market-price .row
+			padding: 16px 24px
+			cursor: pointer
+			@media (max-width: 1380px)
+				padding: 16px
+			@media (max-width: 1198.98px)
+				padding: 12px 16px
+			&:hover
+				background: rgba(14, 38, 123, 0.5)
+		.crypto-market-price .title-coin
+			&:hover
+				background: transparent
+
+	//cart-top-balance
+	.cart-top-balance
+		padding: 5px
+		cursor: pointer
+		width: 100%
+		.cart-wrapper
+			padding: 15px 10px
+			border: 1px solid transparent
+			box-sizing: border-box
+			border-radius: 8px
+			text-align: center
+			@media (max-width: 1700px)
+				text-align: left 
+			&:hover
+				border: 1px solid rgba(255, 255, 255, 0.2)
+				background: #0F328B
+			h3
+				font-size: 35
+				@media (max-width: 991.99px)
+					font-size: 35px
+				@media (max-width: 340px)
+					font-size: 28px
+			img
+				padding-right: 4px
+		.active
+			border: 1px solid rgba(255, 255, 255, 0.2)
+
+	//crypto-market-price
+	.crypto-market-price, .account-information
+		margin-top: 40px
+		@media (max-width: 1198.99px)
+			margin-top: 16px
+		@media (max-width: 767.99px)
+			margin-top: 0
+
+		img
+			margin-right: 8px
+
+		.span
+			@media (max-width: 991.98px)
+				font-size: 14px
+			@media (max-width: 340px)
+				font-size: 12px
+			@media (max-width: 340px)
+				font-size: 10px
+
+		.coin
+			color: #76FFFF
+
+		.price
+			color: #FFF
+			cursor: pointer
+		.procent-minus
+			color: #FF3A3A
+			font-size: 18px
+			@media (max-width: 991.98px)
+				font-size: 16px
+			@media (max-width: 340px)
+				font-size: 12px
+		.procent-plus
+			color: #4AFF3A
+			font-size: 18px
+			@media (max-width: 991.98px)
+				font-size: 16px
+			@media (max-width: 340px)
+				font-size: 12px
+		.not-added
+			font-weight: 300
+			font-size: 16px
+			color: #fff
+			@media (max-width: 1199.98px)
+				font-size: 14px
+			@media (max-width: 340px)
+				font-size: 10px
+		.added
+			font-weight: 300
+			font-size: 16px
+			color: #fff
+			@media (max-width: 1199.98px)
+				font-size: 14px
+			@media (max-width: 340px)
+				font-size: 12px
+		.title-coin
+			span
+				font-weight: 300
+				font-size: 16px
+				color: #9CA5FF
+				@media (max-width: 1198.98px)
+					font-size: 14px
+				@media (max-width: 340px)
+					font-size: 12px
+
+	.min-h-100
+		min-height: 100%
+	.h-100
+		height: 100%
+//pills-Deposit
+.stylish-select-container
+	width: 100%
+	.modal &
+		margin-bottom: 20px
+	> .stylish-select-selected
+		background: rgba(6, 38, 115, 0.5)
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		box-sizing: border-box
+		border-radius: 4px
+		color: inherit
+		padding: 12px 30px 12px 24px
+		background-image: url(../img/arrow.svg)
+		background-repeat: no-repeat
+		background-position: right 16px center
+		background-size: 16px 10px
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		box-shadow: none !important
+		@media (max-width: 1439px)
+			padding: 12px 30px 12px 12px
+			font-size: 14px
+			background-size: 12px 10px
+			background-position: right 10px center
+		@media (max-width: 1199.98px)
+			font-size: 18px
+		@media (max-width: 575.98px)
+			font-size: 16px
+			
+	&[data-select-state="open"] 
+		> .stylish-select-selected
+			border-bottom-left-radius: 0
+			border-bottom-right-radius: 0
+	> .stylish-select-list
+		color: #fff
+		max-height: none
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		border-radius: 0 0 5px 5px
+		background: rgba(6, 38, 115, 0.9)
+		max-height: 260px
+		overflow-y: scroll
+		&::-webkit-scrollbar
+			background-color: transparent
+			width: 2px
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #fff
+			max-height: 20px
+		> li 
+			padding: 8.5px 20px
+			line-height: inherit
+			border: 1px solid transparent
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+			background-color: transparent !important
+			transition: .3s
+			&:last-child
+				border-radius: 0 0 4px 4px
+				border-bottom: none
+			&:hover 
+				color: #fff
+				border-color: #fff
+
+#pills-Deposit, #pills-Withdrawal, #pills-History, #pills-Affiliate, #pills-Advertising, #pills-About, #pills-Calculate, #pills-FAQ, #pills-Settings, #Make-a-Payment-PM, #Make-a-Payment-Bitcoin, #pills-Terms-and-Condition
+	padding: 0 35px
+	@media (max-width: 1199.98px)
+		padding: 0 16px
+.section-p-x
+	padding: 0 35px
+	@media (max-width: 1199.98px)
+		padding: 0 16px
+
+//pills-Home		
+#pills-Home
+	.graphic-wrap
+		position: relative
+		@media (max-width: 991.98px)
+			height: 326px
+		svg
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: -1
+			width: 100%
+		svg.svg-graphic-1900
+			opacity: 1
+			@media (max-width: 1440px)
+				opacity: 0
+		svg.svg-graphic-1440
+			opacity: 0
+			@media (max-width: 1440px)
+				opacity: 1
+			@media (max-width: 390px)
+				opacity: 0
+		svg.svg-graphic-991
+			opacity: 0
+			@media (max-width: 390px)
+				opacity: 1
+
+		.count-y
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			color: #FFFFFF
+			padding: 16px 0
+			@media (max-width: 1198.98px)
+				padding: 10px 0
+			@media (max-width: 991.98px)
+				font-size: 16px
+				padding: 16px 0
+				line-height: 19px
+			span
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #FFFFFF
+				@media (max-width: 1198.98px)
+					font-size: 16px
+				@media (max-width: 991.98px)
+					font-size: 16px
+					line-height: 19px
+
+	//Crypto-Market-Prices					
+	.Crypto-Market-Prices
+		padding-bottom: 0
+		.crypto-market-price, .account-information
+			@media (max-width: 991.98px)
+			.coin
+				@media (max-width: 991.98px)
+					display: none
+			.hr-in-cart-m-0
+				@media (max-width: 991.98px)
+					&:last-child
+						display: none
+
+	//account-information
+	.account-information
+		.last-access
+			color: #76FFFF
+			margin-right: 12px
+		.session
+			align-items: center
+			margin-top: 21px
+			@media (max-width: 1439px)
+				flex-direction: column
+				align-items: start
+
+			.session-span-wrap
+				@media (max-width: 1439px)
+					margin-top: 16px
+				.border-white-radius
+					margin-left: 4px
+					padding: 6px
+					border: 0.5px solid #FFFFFF
+					box-sizing: border-box
+					border-radius: 4px
+					@media (max-width: 1439px)
+					&:first-child
+						@media (max-width: 1439px)
+							margin-left: 0
+
+	//deposits-small
+	.deposits-small
+		.span
+			@media (max-width: 1199.98px)
+				font-size: 18px
+		h5
+			margin-bottom: 12px
+			font-weight: 300
+			font-size: 16px
+			@media (max-width: 1439px)
+				font-size: 14px
+			@media (max-width: 1199.98px)
+				font-size: 16px
+				margin-bottom: 16px
+			@media (max-width: 340px)
+			font-size: 12px
+		.beruza
+			color: #76FFFF
+			@media (max-width: 1439px)
+				font-size: 14px
+			@media (max-width: 1199.98px)
+				font-size: 16px
+			@media (max-width: 340px)
+				font-size: 12px
+		.wpat-p
+			margin-top: 30px
+			@media (max-width: 1198.98px)
+				margin-top: 16px
+			@media (max-width: 991.98px)
+				display: none
+			p
+				font-weight: 300
+				font-size: 12px
+		.your-account
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 16px
+			h6
+				margin-bottom: 0
+				font-weight: 500
+				font-size: 16px
+				line-height: 19px
+				@media (max-width: 340px)
+					font-size: 14px
+				img
+					margin-right: 8px
+			span
+				font-weight: 300
+
+//pills-Deposit
+#pills-Deposit
+	.select-plan
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media (max-width: 1670px)
+			flex-direction: column
+			align-items: start
+			justify-content: start
+		h3
+			margin-bottom: 0
+
+		.button-wrap
+			@media (max-width: 1670px)
+				margin-top: 16px
+			@media (max-width: 991.98px)
+				display: flex
+				justify-content: space-between
+				width: 100%
+
+			button
+				margin-left: 16px
+				@media (max-width: 1670px)
+					margin-left: 0
+					margin-right: 16px
+				@media (max-width: 991.98px)
+					margin-right: 0
+				&:first-child
+					@media (max-width: 991.98px)
+						margin-right: 8px
+
+	.h6-under-h3
+		line-height: 16px
+		font-size: 14px
+		margin-top: 4px
+		font-weight: 300
+		padding: 0 16px
+		margin-bottom: 0
+		@media (max-width: 340px)
+			font-size: 12px
+
+	h5
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		text-transform: uppercase
+
+	.make-a-deposit
+		margin-top: 24px
+		margin-bottom: 27px
+		@media (max-width: 991.98px)
+			flex-direction: column
+	.make-a-deposit-mb-0
+		@media (max-width: 991.98px)
+			margin-bottom: 0
+	button
+		margin-left: 16px
+		@media (max-width: 991.98px)
+			margin-left: 0
+			margin-top: 12px
+			width: 100%
+
+	h5.t-normal
+		text-transform: none
+		margin-bottom: 18px
+
+	h5.text
+		@media (max-width: 991.98px)
+			text-transform: none
+
+	input.choose-amount
+		background: rgba(6, 38, 115, 0.5)
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		box-sizing: border-box
+		border-radius: 4px
+		padding: 12px 24px
+		@media (max-width: 991.98px)
+			padding: 12px
+	input.choose-amount::placeholder
+		text-align: center
+		@media (max-width: 1439px)
+			font-size: 14px
+		@media (max-width: 1199.98px)
+			font-size: 18px
+			text-align: left
+			padding: 12px
+
+	button.process-btn
+		min-width: 148px!important
+		@media (max-width: 991.98px)
+			margin-top: 32px
+
+	.cart-p-12
+		@media (max-width: 1670px)
+			padding: 12px
+
+	//cart-srandart-plane
+
+	.cart-srandart-plane
+		h5
+			@media (max-width: 1199.98px)
+				font-weight: 300
+				font-size: 28px
+				text-transform: none
+			
+.standart-plan
+	margin: 16px 0 0 0
+
+	.br-none
+		display: none
+		@media (max-width: 1439px)
+			display: block
+		@media (max-width: 1198.98px)
+			display: none
+			
+	h6
+		font-weight: 300
+		font-size: 16px
+		color: #9CA5FF
+		margin-bottom: 12px
+		@media (max-width: 1670px)
+			font-size: 14px
+		@media (max-width: 1442px)
+			font-size: 12px
+		@media (max-width: 1199.98px)
+			font-size: 14px
+		@media (max-width: 340px)
+			font-size: 12px
+
+	span
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		color: #76FFFF
+		@media (max-width: 1670px)
+			font-size: 16px
+		@media (max-width: 1439px)
+			font-size: 14px
+		@media (max-width: 1199.98px)
+			font-size: 16px
+		@media (max-width: 340px)
+			font-size: 14px
+	.h6-white
+		line-height: 19px
+		color: #FFFFFF
+		margin-top: 24px
+	&:last-child
+		margin: 32px 0
+		@media (max-width: 991.98px)
+			margin: 14px 0
+
+span.error-span
+	color: #FF3A3A
+	font-weight: 300
+	
+//choose-deposit
+.choose-deposit
+	background: rgba(6, 38, 115, 0.5)
+	border: 1px solid rgba(255, 255, 255, 0.5)
+	box-sizing: border-box
+	border-radius: 4px
+	margin-top: 34px
+	margin-bottom: 40px
+	display: flex
+	padding: 0
+	h4
+		margin-bottom: 0
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		padding: 12px 18px
+		border-right:  0.5px solid rgba(255, 255, 255, 0.1)
+		width: 244px
+		text-align: center
+		@media (max-width: 1439px)
+			font-size: 14px
+		@media (max-width: 1199.98px)
+			font-size: 18px
+			text-align: left
+			padding: 12px
+		@media (max-width: 340px)
+			font-size: 14px
+			width: 140px
+		
+//pills-Withdrawal
+#pills-Withdrawal, #pills-Investments
+	.process-btn
+		max-width: 275px
+		margin-left: auto
+		margin-right: auto
+		@media (max-width: 991.98px)
+			min-width: 100%
+	span.coin
+		font-size: 18px
+		@media (max-width: 1199.98px)
+			font-size: 14px
+		@media (max-width: 340px)
+			font-size: 10px
+	span.price
+		font-size: 18px
+		@media (max-width: 1199.98px)
+			font-size: 14px
+		@media (max-width: 340px)
+			font-size: 10px
+	.cart
+		.choose-deposit
+			@media (max-width: 991.98px)
+				margin-top: 16px
+			h4
+				@media (max-width: 991.98px)
+					width: 110px
+			input::placeholder
+				text-align: center
+				padding-left: 12px
+				@media (max-width: 991.98px)
+					font-size: 18px
+				@media (max-width: 340px)
+					font-size: 14px
+
+		.choose-deposit-error
+			border: 1px solid #FF3A3A
+		.error
+			font-size: 14px
+			line-height: 16px
+			color: #FF3A3A
+			@media (max-width: 991.98px)
+				font-size: 12px
+			@media (max-width: 340px)
+				font-size: 10px
+				
+//modal
+@media (min-width: 576px)
+.modal-dialog
+	max-width: 550px!important
+.modal-content
+	background: rgba(23, 45, 139, 0.7)
+	backdrop-filter: blur(4px)
+	border-radius: 12px
+	padding: 56px 70px
+	position: relative
+	@media (max-width: 991.98px)
+		padding: 32px 16px 16px 16px
+	
+	button.close
+		position: absolute
+		top: 27px
+		right: 27px
+		opacity: 1
+		@media (max-width: 991.98px)
+			top: 21px
+			right: 20px
+	.modal-body
+		text-align: center
+		padding: 0
+		h3
+			font-weight: 200
+			font-size: 45px
+			line-height: 53px
+			color: #00D7D7
+			margin-bottom: 24px
+		span
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			color: #FFF
+			margin-bottom: 32px
+			@media (max-width: 991.98px)
+				font-size: 16px
+				margin-bottom: 22px
+			img
+				margin-right: 16px
+		.fee
+			color: #00D7D7
+			line-height: 22px
+
+		.footer-button
+			button.process-btn
+				min-width: 130px
+				&:last-child
+					margin-left: 16px
+
+	.daily-calendar
+		@media (max-width: 991.98px)
+			font-size: 14px
+//modal-contente-details
+.modal-contente-details
+	padding: 24px
+	@media (max-width: 991.98px)
+	padding: 12px
+	h3
+		font-weight: 300
+		font-size: 35px
+		color: #FFF
+		@media (max-width: 991.98px)
+			font-size: 28px
+			margin: 0 4px
+	.standart-plan
+		@media (max-width: 991.98px)
+			margin: 14px 24px 0 24px
+		h6
+			@media (max-width: 991.98px)
+				margin-bottom: 8px
+		span
+			margin-bottom: 32px
+			display: block
+			@media (max-width: 991.98px)
+				margin-bottom: 24px
+			
+#pills-Investments
+	.cart-srandart-plane
+		.standart-plan:last-child
+				margin-bottom: 0
+		h5
+			font-size: 35px
+			font-weight: 300
+
+.cart-ptogressbar
+	display: flex
+	flex-direction: column
+	align-items: center
+	@media (max-width: 991.98px)
+		padding: 16px
+	.block-adress
+		padding: 0 80px
+		@media (max-width: 991.98px)
+			padding: 0 69px
+	.progress-bar-wrap
+		position: relative
+		.progress-inside
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			h4
+				font-weight: 300
+				font-size: 35px
+				margin-bottom: 0
+				@media (max-width: 991.98px)
+					font-size: 28px
+
+	.deposit-span
+		color: #9CA5FF
+		margin-bottom: 4px
+		font-weight: 300
+		@media (max-width: 991.98px)
+			font-size: 14px
+	.color-white-span
+		white-space: nowrap
+		text-overflow: ellipsis
+		overflow: hidden
+		font-size: 18px
+		color: #fff
+		@media (max-width: 991.98px)
+			font-size: 16px
+		img
+			position: relative
+			bottom: 1px!important
+	.text-white
+		font-weight: 300
+	.btn-wrap
+		padding: 0 40px
+		width: 100%
+		@media (max-width: 1300px)
+			padding: 0
+		button
+			box-shadow: none
+			width: 100%
+
+	//modal-progress
+.cart-ptogressbar-border
+	border: 1px solid rgba(255, 255, 255, 0.33)
+	box-sizing: border-box
+	border-radius: 12px
+	padding: 24px
+	@media (max-width: 991.98px)
+		padding: 24px 19px
+.span-beruz-color
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+	text-align: center
+	color: #00D7D7
+	margin-top: 24px
+.modal-wrap-footer-btn
+	margin-top: 30px
+	display: flex
+	justify-content: space-around
+	@media (max-width: 991.98px)
+		flex-direction: column
+		.no-btn
+			margin-top: 12px
+	button
+		box-shadow: none
+.cart-ptogressbar-p-0
+	@media (max-width: 991.98px)
+		padding: 0
+
+#Modal-Cancel-Plan
+	.color-white-span
+		font-size: 18px
+		
+	.color-white-span-first
+		@media (max-width: 991.98px)
+			margin-top: 26px
+	.cart-ptogressbar
+		.deposit-span
+			font-size: 16px
+
+//pills-History
+#pills-History
+	.cart-from-to
+		padding-left: 1px
+		padding-right: 1px
+	.pb-90
+		padding-bottom: 90px
+		@media (max-width: 575.98px)
+			padding-bottom: 16px
+		h5
+			font-size: 18px
+			margin-bottom: 16px
+			@media (max-width: 767.98px)
+				margin-bottom: 8px
+
+	button
+		@media (max-width: 767.98px)
+			width: 100%
+
+	.cart-p-0
+		.standart-plan
+			margin-bottom: 0
+			padding: 0 20px
+			@media (max-width: 767.98px)
+				padding: 0 8px
+			h6
+				font-size: 16px
+				@media (max-width: 767.98px)
+					font-size: 14px
+				@media (max-width: 565.98px)
+					margin-bottom: 8px
+		h3
+			@media (max-width: 767.98px)
+				padding-left: 8px
+
+.standart-plan-span
+	padding: 0 24px
+	background: #0F328B
+	@media (max-width: 767.98px)
+		padding: 0 12px
+	.daily-calendar
+		font-weight: 500
+		font-size: 18px
+		line-height: 45px
+		@media (max-width: 767.98px)
+			font-size: 12px
+			line-height: 36px
+		span.span
+			white-space: nowrap
+			text-overflow: ellipsis
+			overflow: hidden
+			@media (max-width: 767.98px)
+				font-size: 12px
+				line-height: 36px
+		.btc-img
+			@media (max-width: 767.98px)
+				width: 8px
+				height: 12px
+				line-height: 45px
+	.border-right-line
+		border-right: 1px solid rgba(255, 255, 255, 0.1)
+		@media (max-width: 1199.98px)
+			border: none
+						
+//pills-Affiliate
+#pills-Affiliate
+	.cart
+		.wrap-span-top
+			padding: 0 24px
+			text-align: right
+			span
+				font-weight: 300
+			@media (max-width: 1199.98px)
+				text-align: left
+				padding: 0 16px
+			@media (max-width: 991.98px)
+				flex-direction: column
+				h6
+					font-weight: 300
+					font-size: 16px
+					color: #9CA5FF
+					margin: 24px 0 4px 0
+
+		.link-wrap
+			padding: 14px 24px
+			background: #0F328B
+			margin-top: 24px
+			@media (max-width: 991.98px)
+				padding: 14px 16px
+				margin-top: 0
+			.span
+				display: inline-block
+				margin: 0 16px
+				@media (max-width: 991.98px)
+					font-size: 18px
+					margin: 0
+				@media (max-width: 340px)
+					font-size: 16px
+		.your-upline
+			padding: 0 24px
+			margin-top: 37px
+			@media (max-width: 1199.98px)
+				flex-direction: column
+			@media (max-width: 991.98px)
+				padding: 0 16px
+				margin-top: 24px
+			.media
+				@media (max-width: 1198.98px)
+					margin-bottom: 16px
+				@media (max-width: 991.98px)
+					&:last-child
+						margin-bottom: 0
+				.img-wrap
+					padding: 8px
+					background: rgba(9, 21, 105, 0.56)
+					border-radius: 4px
+					width: 40px
+					height: 40px
+					margin-right: 12px
+				.media-body
+					h6
+						font-weight: 300
+						font-size: 16px
+						color: #9CA5FF
+						margin-bottom: 4px
+						@media (max-width: 340px)
+							font-size: 14px
+					.span
+						@media (max-width: 991.98px)
+							font-size: 18px
+						@media (max-width: 340px)
+							font-size: 14px
+
+	.cart-fixed-width
+		@media (max-width: 1439px)
+			overflow-x: scroll
+		&::-webkit-scrollbar
+			background-color: #09186C
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #00D7D7
+			cursor: pointer
+		.cart-fixed-width-child
+			min-width: 1070px
+			@media (max-width: 767.98px)
+				min-width: 710px
+			.standart-plan
+				padding: 0 20px
+				@media (max-width: 991.98px)
+					padding: 0 18px
+				h6
+					font-size: 16px
+					@media (max-width: 575.98px)
+						margin-bottom: 6px
+					@media (max-width: 340px)
+						font-size: 12px
+			.standart-plan-extra
+				@media (max-width: 991.98px)
+					padding-left: 38px
+			.standart-plan-span
+				background: transparent
+				@media (max-width: 991.98px)
+					padding: 0 18px
+					img
+						height: 14px
+						width: 10px
+				b
+					font-weight: 500
+					@media (max-width: 991.98px)
+						display: none
+				.daily-calendar
+					@media (max-width: 991.98px)
+						font-size: 16px
+						line-height: 34px
+					@media (max-width: 340px)
+						font-size: 12px
+			.email
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden
+			.standart-plan-span-extra
+				@media (max-width: 991.98px)
+					padding-left: 38px
+					position: relative
+			.standart-plan-span-extra-before
+				@media (max-width: 991.98px)
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						top: 50%
+						left: 11px
+						transform: translateY(-50%)
+						background-image: url('../img/arrow-down.svg')
+						background-size: cover
+						background-repeat: no-repeat
+						background-position: center
+						width: 16px
+						height: 10px
+
+
+//pills-Advertising
+#pills-Advertising
+	.cart
+		padding: 16px 0
+		min-height: 100%
+		@media (max-width: 1375px)
+			padding: 14px 0
+		@media (max-width: 991.98px)
+			padding: 16px 0
+		@media (max-width: 767.98px)
+			padding: 14px 0
+		.title-span
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			color: #FFFFFF
+			padding: 0 16px
+			@media (max-width: 1375px)
+				padding: 0 14px
+			@media (max-width: 991.98px)
+				padding: 0 16px
+			@media (max-width: 767.98px)
+				padding: 0 14px
+		.img-wrap
+			margin: 16px 16px
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 155px
+		.download
+			margin: 16px 16px 0 16px
+			@media (max-width: 1375px)
+				margin: 12px 14px 0 14px
+			@media (max-width: 991.98px)
+				margin: 8px 12px 0 12px
+			.view-code
+				border-right: 1px solid rgba(255, 255, 255, 0.1)
+				padding-right: 5px
+				span
+					font-weight: 500
+					font-size: 14px
+					line-height: 14px
+					color: #9CA5FF
+					cursor: pointer
+					@media (max-width: 1400px)
+						font-size: 12px
+					@media (max-width: 991.98px)
+						font-size: 14px
+					@media (max-width: 340px)
+						font-size: 10px
+					&:hover
+						color: #fff
+				img
+					cursor: pointer
+					@media (max-width: 1400px)
+						height: 12px
+						width: 12px
+					@media (max-width: 991.98px)
+						height: 24px
+						width: 24px
+
+//input range
+.noUi-target
+	background: #5873be
+	border: none
+	box-shadow: none
+	height: 8px!important
+	cursor: pointer
+.noUi-horizontal
+	height: 2px
+	.noUi-connect
+		height: 200%
+		height: 8px
+	.noUi-tooltip-wrap
+		transform: translate(-50%, 0)
+		left: 50%
+		bottom: calc(100% + 14px)
+.noUi-connects
+	overflow: visible
+	border-radius: 12px
+.noUi-connect
+	background: #fff
+	border-radius: 100px
+	height: 8px!important
+.noUi-handle
+	width: 18px !important
+	height: 18px !important
+	right: -9px !important
+	top: -6px !important
+	border: none
+	border-radius: 100px
+	box-shadow: none
+	box-shadow: 0px 4px 10px rgba(32, 37, 91, 0.71)
+	cursor: pointer
+	&:before, &:after
+		display: none
+.noUi-tooltip
+	display: none
+
+//pills-Calculate
+#pills-Calculate
+	.cart
+		.calculator
+			margin-top: 30px
+			.calculator-input
+				display: flex
+				justify-content: space-between
+				align-items: center
+				position: relative
+				input.invest
+					width: 140px
+					background: rgba(6, 38, 115, 0.5)
+					border: 1px solid rgba(255, 255, 255, 0.5)
+					box-sizing: border-box
+					border-radius: 4px
+					padding: 12px
+					@media (max-width: 991.98px)
+						font-size: 14px
+						padding: 8px 12px
+					@media (max-width: 340px)
+						width: 120px
+						font-size: 12px
+				input::placeholder
+					text-align: left
+					@media (max-width: 991.98px)
+						font-size: 14px
+						padding: 8px 12px
+					@media (max-width: 340px)
+						font-size: 12px
+
+				.baks
+					position: absolute
+					right: 12px
+					top: 50%
+					transform: translateY(-50%)
+					@media (max-width: 991.98px)
+						font-size: 14px
+
+			.slider-container
+				margin-top: 16px
+				@media (max-width: 991.98px)
+					margin-top: 22px
+
+			.profit-input
+				margin: 35px 0 16px 0
+				@media (max-width: 991.98px)
+					margin: 30px 0 8px 0
+
+				.profit
+					font-weight: 300
+					font-size: 16px
+					color: #9CA5FF
+					line-height: 47px
+					@media (max-width: 575.98px)
+						font-size: 14px
+					@media (max-width: 340px)
+						font-size: 10px
+				.proczent
+					margin-left: auto
+					margin-right: 24px
+					@media (max-width: 575.98px)
+						margin-right: 8px
+						font-size: 14px
+					@media (max-width: 340px)
+						font-size: 10px
+
+		.cart-srandart-plane
+			@media (max-width: 1191.98px)
+				padding: 16px 12px
+		.standart-plan
+			@media (max-width: 991.98px)
+				&:last-child
+					margin-bottom: 0
+			h6
+				font-size: 16px
+				@media (max-width: 1191.98px)
+					font-size: 14px
+				@media (max-width: 340px)
+					font-size: 12px
+			.span
+				font-size: 18px
+				@media (max-width: 1191.98px)
+
+//pills-Payments
+#pills-Payments
+	.cart-p-0
+		@media (max-width: 991.98px)
+			padding: 16px 0
+			h3
+				padding: 0 16px
+				margin-bottom: 24px
+		.standart-plan
+			padding: 0 24px
+			@media (max-width: 1380px)
+				padding: 0 16px
+			@media (max-width: 575.98px)
+				padding: 0 8px
+			h6
+				font-size: 16px
+				@media (max-width: 1199.98px)
+					text-align: center
+				@media (max-width: 340px)
+					font-size: 10px
+					
+		.standart-plan-span
+			padding: 0 24px
+			cursor: pointer
+			&:hover
+				background: #0F328B
+			@media (max-width: 1380px)
+				padding: 0 16px
+			@media (max-width: 991.98px)
+				padding: 0 12px
+			.daily-calendar
+				line-height: 53px
+				@media (max-width: 1191.98px)
+					font-size: 16px
+					line-height: 40px
+				@media (max-width: 340px)
+					font-size: 14px
+		.hr-bold
+			margin: 0
+			border-top: 1px solid rgba(255, 255, 255, 0.4)
+
+		.total-end
+			margin: 16px 0 0 0
+			span
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #76FFFF
+				margin-left: 12px
+				@media (max-width: 340px)
+					font-size: 14px
+			h6
+				margin-bottom: 0
+				line-height: 21px
+				font-size: 16px
+				@media (max-width: 1191.98px)
+					font-size: 14px
+
+		.h-768
+			height: 650px
+			overflow-y: scroll
+			&::-webkit-scrollbar
+				background-color: transparent
+				width: 4px
+			&::-webkit-scrollbar-thumb
+				border-radius: 12px
+				background-color: #fff
+				max-height: 20px
+			@media (max-width: 1198.98px)
+				height: 500px
+
+//pills-Publications
+#pills-Publications
+	.filter-img
+		margin-bottom: 24px
+	.cart
+		height: 100%
+		h6
+			font-weight: 500
+			font-size: 18px
+			line-height: 21px
+			margin: 16px 0
+			@media (max-width: 1198.98px)
+				font-size: 16px
+			@media (max-width: 767.98px)
+				font-size: 18px
+			@media (max-width: 340px)
+				font-size: 16px
+		p
+			font-weight: 300
+			font-size: 16px
+			margin-bottom: 0
+			@media (max-width: 1198.98px)
+				font-size: 14px
+			@media (max-width: 767.98px)
+				font-size: 16px
+			@media (max-width: 340px)
+				font-size: 14px
+
+		button
+			margin-top: 56px
+			box-shadow: none
+			@media (max-width: 1198.98px)
+				margin-top: 32px
+			@media (max-width: 991.98px)
+				width: 100%
+
+	.number-pages
+		display: flex
+		justify-content: center
+		margin-top: 36px
+		ul
+			display: flex
+			width: 270px
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 0
+			padding: 0
+			li
+				list-style-type: none
+				margin: 0 1px
+				&:first-child
+					margin-right: 25px
+					margin-left: 0
+				&:last-child
+					margin-left: 25px
+					margin-right: 0
+			.number
+				a
+					font-weight: 500
+					font-size: 18px
+					line-height: 21px
+					color: #fff
+					height: 28px
+					width: 28px
+					border-radius: 14px
+					text-align: center
+					padding: 4px
+					display: block
+					
+				a.active
+					color: #0A0E57
+					background: #fff
+
+	.h-295
+		height: 325px
+		overflow-y: scroll
+		&::-webkit-scrollbar
+			background-color: transparent
+			width: 4px
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #fff
+			max-height: 20px
+		@media (max-width: 1191.98px)
+			height: 100%
+	.cart.cart-blog
+		padding-bottom: 0
+		h3
+			@media (max-width: 1191.98px)
+				padding: 0 11px
+		.standart-plan
+			padding: 0 20px
+			@media (max-width: 1191.98px)
+				padding: 0 12px
+			h6
+				font-weight: 300
+				font-size: 16px
+				@media (max-width: 1191.98px)
+					line-height: 14px
+					font-size: 14px
+					margin: 12px 0
+				@media (max-width: 340px)
+					font-size: 12px
+		.standart-plan-span
+			padding: 0 20px
+			@media (max-width: 1199.98px)
+				padding: 0 12px
+				background: transparent
+
+			.color-white-span
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden
+
+			.daily-calendar
+				font-weight: 500
+				font-size: 18px
+				line-height: 53px
+				@media (max-width: 1199.98px)
+					font-size: 12px
+					line-height: 48px
+				@media (max-width: 340px)
+					font-size: 10px
+				.color-white-span
+					white-space: nowrap
+					text-overflow: ellipsis
+					overflow: hidden
+
+				.green-circul
+					width: 13px
+					height: 13px
+					background: #4AFF3A
+					display: block
+					border-radius: 50%
+					@media (max-width: 1199.98px)
+						width: 10px
+						height: 10px
+					
+				.paing
+					font-weight: 500
+					font-size: 18px
+					line-height: 18px
+					color: #fff
+					border: 0.5px solid #FFF
+					box-sizing: border-box
+					border-radius: 4px
+					padding: 6px 8px
+					@media (max-width: 1199.98px)
+						font-size: 12px
+						line-height: 12px
+						padding: 4px 6px
+					@media (max-width: 340px)
+						font-size: 10px
+
+	.categories
+		position: absolute
+		top: 30px
+		right: 35px
+		width: 200px
+		height: 268px
+		background: rgba(23, 40, 133, 0.9)
+		backdrop-filter: blur(4px)
+		z-index: 2
+		padding: 12px 0
+		display: flex
+		flex-direction: column
+		opacity: 1
+		visibility: visible
+		transition: .4s ease
+		@media (max-width: 1199.98px)
+			right: 16px
+			height: 285px
+		h5
+			font-weight: 300
+			font-size: 16px
+			color: #9CA5FF
+			margin: 0 12px 4px 12px
+			@media (max-width: 1199.98px)
+				margin: 0 12px 12px 12px
+
+		hr
+			margin: 0
+			border-top: 1px solid rgba(255, 255, 255, 0.2)
+		.check-box-wrap
+			margin: 16px 12px 16px 12px
+			label
+				margin-bottom: 12px
+		.flags-wrap
+			margin: 16px 12px 16px 12px
+			display: flex
+			justify-content: space-between
+	.categories-none
+		z-index: -1
+		opacity: 0
+		visibility: hidden
+
+	.cart-p-25-wrap
+		padding: 0
+		.cart-p-25
+			padding: 24px
+			border-right: 1px solid rgba(255, 255, 255, 0.1)
+			@media (max-width: 1199.98px)
+				padding: 12px
+			@media (max-width: 1199.98px)
+				padding: 12px
+				border: none
+
+	.publications_2
+		.green-circul
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 24px
+			@media (max-width: 1199.98px)
+				right: 0
+				width: 12px
+				height: 12px
+
+
+		.cart-blog
+			.standart-plan h6
+				@media (max-width: 1199.98px)
+					font-size: 14px
+			.standart-plan-span
+				.daily-calendar
+					.red-circul
+						background: #FF3A3A
+					.light-circul
+						background: #C4C4C4
+
+	.cart-fixed-width
+		@media (max-width: 1439px)
+			overflow-x: scroll
+		&::-webkit-scrollbar
+			background-color: #09186C
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #00D7D7
+			cursor: pointer
+		.cart-fixed-width-child
+			min-width: 1070px
+			@media (max-width: 767.98px)
+				min-width: 710px
+//pills-About
+#pills-About
+	.team-gues
+		margin-top: 24px
+		.james
+			text-align: center
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			@media (max-width: 991.98px)
+				margin-bottom: 16px
+			span
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #FFF
+				margin-top: 16px
+				display: inline-block
+				@media (max-width: 991.98px)
+					font-size: 14px
+					margin-top: 12px
+				@media (max-width: 340px)
+					font-size: 12px
+					margin-top: 14px
+
+	.cart-about
+		@media (max-width: 991.98px)
+			padding: 16px
+
+	.h-600
+		height: 600px
+		overflow-y: scroll
+		&::-webkit-scrollbar
+			background-color: transparent
+			width: 4px
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #fff
+			max-height: 20px
+		@media (max-width: 1199.98px)
+			height: 830px
+		@media (max-width: 991.98px)
+			height: 100%
+		img
+			margin: 24px 0 16px 0
+			min-width: 100%
+		p
+			font-weight: 300
+			font-size: 16px
+			color: #FFF
+			@media (max-width: 340px)
+				font-size: 14px
+
+//pills-Settings
+#pills-Settings
+	.cart
+		.my-account
+			margin-top: 24px
+			@media (max-width: 340px)
+				margin-top: 14px
+			.span
+				@media (max-width: 1199.98px)
+					font-size: 18px
+				@media (max-width: 340px)
+					font-size: 16px
+			input
+				width: 100%
+				background: rgba(6, 38, 115, 0.5)
+				border: 1px solid rgba(255, 255, 255, 0.5)
+				box-sizing: border-box
+				border-radius: 4px
+				padding: 12px
+				margin-top: 16px
+				@media (max-width: 1199.98px)
+					font-size: 18px
+				@media (max-width: 340px)
+					font-size: 14px
+					margin-top: 6px
+			input::placeholder
+				text-align: left
+				@media (max-width: 1199.98px)
+					font-size: 18px
+				@media (max-width: 340px)
+					font-size: 14px
+
+		button
+			margin-top: 44px
+			@media (max-width: 767.98px)
+				width: 100%
+				display: block
+			@media (max-width: 340px)
+				margin-top: 22px
+
+//Make-a-Payment-PM
+#Make-a-Payment-PM, #Make-a-Payment-Bitcoin
+	.cart
+		@media (max-width: 1199.98px)
+			padding: 16px 0
+			h3
+				padding: 0 16px
+
+		.perfect-money
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-bottom: 1px solid rgba(255, 255, 255, 0.55)
+			@media (max-width: 1199.98px)
+				padding: 12px 16px
+			.user-name-span
+				font-weight: 300
+				font-size: 16px
+				color: #fff
+				line-height: 53px
+				@media (max-width: 1199.98px)
+					line-height: 22px
+					font-size: 14px
+			.span
+				b
+					font-weight: 500
+				@media (max-width: 1199.98px)
+					font-size: 14px
+		.buttons
+			margin-top: 40px
+			display: flex
+			justify-content: center
+			@media (max-width: 991.98px)
+				flex-direction: column
+				margin-top: 32px
+				padding: 0 16px
+			button
+				&:last-child
+					margin-left: 12px
+					box-shadow: none
+					@media (max-width: 991.98px)
+						margin-left: 0
+						margin-top: 12px
+
+	.cart-pay-btc
+		padding: 24px
+		@media (max-width: 991.98px)
+			padding: 16px 0
+		.qr-btc
+			margin-top: 24px
+			@media (max-width: 991.98px)
+				margin-top: 14px
+			.bitcoin-qr-cod
+				width: 130px
+				height: 130px
+				@media (max-width: 991.98px)
+					width: 170px
+					height: 170px
+					margin: 0 auto
+					margin-bottom: 24px
+					
+			.wrap-right-btc
+				margin-left: 24px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				@media (max-width: 991.98px)
+					margin-left: 0
+					padding: 0 16px
+				small
+					font-weight: 300
+					font-size: 16px
+				.span
+					@media (max-width: 991.98px)
+						font-size: 16px
+						white-space: nowrap
+						text-overflow: ellipsis
+						overflow: hidden
+			.span-btc
+				@media (max-width: 991.98px)
+					margin: 0 16px
+					font-size: 16px
+			.to.span-waiting
+				margin: 0
+				@media (max-width: 991.98px)
+					margin: 0 16px
+			.to
+				color: #00D7D7
+				font-weight: 500
+				margin: 16px 0
+				font-size: 18px
+				@media (max-width: 991.98px)
+					margin: 6px 0
+
+//pills-FAQ
+#pills-FAQ, #pills-Terms-and-Condition
+	.cart
+		margin-bottom: 32px
+		.accordion
+			.card-faq
+				border: none
+				cursor: pointer
+				.card-header
+					padding: 16px 24px
+					border: none
+					border-bottom: 1px solid rgba(255, 255, 255, 0.55)
+					@media (max-width: 1199.98px)
+						padding: 12px 16px
+					img
+						transform: rotate(0deg)
+				[aria-expanded=true]
+					border-bottom: 2px solid transparent
+					background: #0F3088
+					img
+						transform: rotate(180deg)
+				h5
+					font-weight: 500
+					font-size: 18px
+					line-height: 21px
+					margin-bottom: 0
+					@media (max-width: 1199.98px)
+						font-size: 14px
+						line-height: 16px
+					@media (max-width: 340px)
+						font-size: 12px
+				.cart-body
+					padding: 0 24px
+					background: #0F3088
+					border-bottom: 1px solid rgba(255, 255, 255, 0.55)
+					@media (max-width: 1199.98px)
+						padding: 0 16px
+					p
+						font-weight: 300
+						font-size: 16px
+						@media (max-width: 1199.98px)
+							font-size: 14px
+						@media (max-width: 340px)
+							font-size: 10px
+			.card-border-none
+				border-bottom: none
+		.accordion > :last-child
+			.card-header
+				border-bottom: none
+
+	.span-sm-fs-16
+		@media (max-width: 1199.98px)
+			font-size: 16px
+			margin: 0 14px
+
+	.h-700px
+		height: 650px
+		overflow-y: scroll
+		margin-top: 22px
+		padding: 0 24px
+		&::-webkit-scrollbar
+			background-color: transparent
+			width: 4px
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #fff
+			max-height: 20px
+		@media (max-width: 1199.98px)
+			margin-top: 16px
+			height: 600px
+			padding: 0 16px
+		p
+			font-weight: 300
+			font-size: 16px
+
+#pills-FAQ
+	padding: 0 20px
+	h2
+		margin-left: 15px
+		@media (max-width: 1199.98px)
+			margin-left: 8px
+	@media (max-width: 1199.98px)
+		padding: 0 8px
+	.full-h
+		height: 80vh
+		overflow-y: scroll
+		padding: 0 15px
+		@media (max-width: 1199.98px)
+			padding: 0 4px
+		&::-webkit-scrollbar
+			background-color: transparent
+			width: 4px
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #fff
+			max-height: 20px
+
+//home page
+html.stars
+	&::after
+		content: ''
+		display: block
+		width: 80%
+		height: 450px
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		background: url('../img/small-stars.svg') no-repeat center
+		z-index: -1
+		opacity: 0.5
+		@media (max-width: 1199.98px)
+			left: 0
+			right: 0
+			bottom: 0
+			transform: none
+			width: 100%
+			height: 100%
+	&::before
+		content: ''
+		display: block
+		width: 1232px
+		height: 430px
+		position: absolute
+		top: -30px
+		left: 50%
+		transform: translateX(-50%)
+		background: url('../img/blur-stars.svg') no-repeat center
+		z-index: -1
+		opacity: 0.5
+		@media (max-width: 1199.98px)
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transform: none
+			width: 100%
+			height: 100%
+
+body.home-page
+	.container-1450
+		@media (min-width: 1600px)
+			max-width: 1480px
+	.container-1440
+		@media (min-width: 1600px)
+			max-width: 1430px
+		header
+			border-bottom: none
+			padding-top: 38px
+			position: relative
+			z-index: 1
+			display: flex
+			justify-content: space-between
+			@media (max-width: 1199.98px)
+				padding: 16px 14px
+			@media (max-width: 991.98px)
+				background: transparent
+			.login-btn
+				border: 1.5px solid #00D7D7
+				box-sizing: border-box
+				border-radius: 40px
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #00D7D7
+				padding: 12px 50px
+				@media (max-width: 1199.98px)
+					padding: 10px 42px
+				&:hover
+					background: #00D7D7
+					color: rgb(47, 53, 158)
+			.logo img
+				display: block
+				@media (max-width: 1199.98px)
+					height: 34px
+	.spanp-with-our
+		display: none
+		@media (max-width: 1199.98px)
+			display: block
+			span
+				font-weight: 500
+				font-size: 16px
+				line-height: 19px
+				color: #FFF
+				display: none
+			h1
+				font-weight: 300
+				font-size: 26px
+				line-height: 30px
+				text-align: center
+				color: #FFF
+				margin-top: 16px
+			.logo-mobil
+				margin-top: 16px
+				position: relative
+				.coins-svg
+					position: relative
+					left: 50%
+					transform: translateX(-50%)
+				.logo-small-mobil
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+
+	.start-plan-wrap
+		position: relative
+		z-index: 5
+		margin-top: 50px
+		@media (max-width: 1199.98px)
+			margin-top: 16px
+		.coins-wrap
+			position: relative
+			@media (max-width: 1199.98px)
+				display: none !important
+				
+			.coins-svg
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				opacity: 1
+				@media (max-width: 1600px)
+					width: 80%
+				@media (max-width: 1199.98px)
+					width: 50%
+			.coin-logo
+				@media (max-width: 1600px)
+					width: 35%
+				@media (max-width: 1199.98px)
+					width: 100%
+			.coins-none
+				opacity: 0
+
+		.cart-wrap
+			padding: 12px 10px
+			border: 5px solid transparent
+			border-radius: 20px
+			position: relative
+			@media (max-width: 1199.98px)
+				padding: 0
+				border: 1px solid transparent
+
+
+			.coin-icon-active
+				position: absolute
+				opacity: 0
+				@media (max-width: 1199.98px)
+					display: none
+					
+			.active-euro
+				top: -40px
+				left: 182px
+			.active-btc
+				top: -51px
+				left: 271px
+			.active-pm
+				left: -48px
+				top: 151px
+			.active-payeer
+				bottom: -40px
+				left: 15px
+			.active-ltc
+				bottom: -31px
+				right: 95px
+			.active-dollar
+				right: -38px
+				bottom: 8px
+			.active-ether
+				right: -79px
+				bottom: 149px
+				@media (max-width: 1600px)
+				right: -44px
+			.active-pound
+				right: -141px
+				bottom: 95px
+				@media (max-width: 1600px)
+					right: -108px
+			.active-yen
+				right: -200px
+				bottom: 31px
+				@media (max-width: 1600px)
+					right: -102px
+
+
+
+
+
+			.cart
+				padding: 24px 10px
+				background: rgba(47, 53, 158, 0.35)
+				border-radius: 12px
+				box-sizing: border-box
+				cursor: pointer
+				@media (max-width: 1199.98px)
+					padding: 12px 8px
+				h2
+					font-weight: 200
+					font-size: 45px
+					line-height: 53px
+					color: #FFF
+					margin-left: 4px
+					@media (max-width: 1199.98px)
+						font-size: 28px
+						line-height: 30px
+				.standart-plan
+					margin: 30px 0
+					@media (max-width: 1199.98px)
+						margin: 16px 0
+					&:last-child
+						margin-bottom: 0
+					h6
+						font-size: 14px
+						line-height: 16px
+						@media (max-width: 1600px)
+							font-size: 12px
+						@media (max-width: 1199.98px)
+							font-size: 14px
+							margin-bottom: 8px
+					span
+						font-size: 18px
+						line-height: 21px
+						@media (max-width: 1600px)
+							font-size: 12px
+						@media (max-width: 1199.98px)
+							font-size: 14px
+				.standart-plan-first
+					@media (max-width: 1600px)
+						margin-top: 0
+			&:hover
+				border: 5px solid rgba(27, 229, 229, 0.7)
+				@media (max-width: 1199.98px)
+					border: 1px solid rgba(27, 229, 229, 0.7)
+		.active
+			border: 5px solid rgba(27, 229, 229, 0.7)
+			@media (max-width: 1199.98px)
+				border: 1px solid rgba(27, 229, 229, 0.7)
+			.coin-icon-active
+				opacity: 1
+
+		.cart-wrap-2
+			.active-euro
+				top: -35px
+				left: 54px
+			.active-btc
+				top: -42px
+				left: 228px
+			.active-pm
+				left: 417px
+				top: 27px
+				@media (max-width: 1600px)
+					left: 317px
+			.active-payeer
+				bottom: -33px
+				left: 297px
+			.active-ltc
+				bottom: -35px
+				left: 133px
+			.active-dollar
+				left: -46px
+				bottom: 138px
+			.active-ether
+				left: -92px
+				bottom: 39px
+			.active-pound
+				left: -141px
+				bottom: 95px
+				@media (max-width: 1600px)
+					left: -108px
+			.active-yen
+				left: -200px
+				bottom: 31px
+				@media (max-width: 1600px)
+					left: -37px
+					bottom: 0
+					
+
+	.withdraw-h3
+		@media (max-width: 1199.98px)
+			display: none
+			
+		h3
+			font-size: 16px
+			line-height: 19px
+			color: #FFF
+			margin-bottom: 5px
+			margin-top: 32px
+			&:last-child
+				color: #00D7D7
+				margin-top: 0
+	.your-email
+		padding: 21px 0
+		margin-top: 10px
+		background: linear-gradient(269.58deg, #161C74 10.26%, #173293 50.37%), #C4C4C4
+		.input-button-wrap
+			display: flex
+			justify-content: space-between
+			@media (max-width: 1199.98px)
+				justify-content: center
+			@media (max-width: 767.98px)
+				flex-direction: column
+			input
+				background: #062673
+				border: 1px solid rgba(255, 255, 255, 0.7)
+				box-sizing: border-box
+				border-radius: 40px
+				max-width: 344px
+				padding: 8px 16px
+				@media (max-width: 1600px)
+					width: 50%
+					margin-right: 10px
+				@media (max-width: 767.98px)
+					min-width: 100%
+					height: 48px
+					margin-right: 0
+					margin-bottom: 10px
+				&::placeholder
+					font-size: 18px
+					line-height: 21px
+					color: #9CA5FF
+
+	.section-button-cards
+		.cart
+			padding: 48px 0 0 0
+			position: relative
+			height: 100%
+			display: flex
+			flex-direction: column
+			position: relative
+			@media (max-width: 1199.98px)
+				padding: 24px 0 0 0
+			&::before
+				content: ''
+				width: 1px
+				height: 100vh
+				position: absolute
+				bottom: 0
+				left: 0
+				background: rgba(255, 255, 255, 0.1)
+				z-index: -1
+				@media (max-width: 1199.98px)
+					display: none
+			
+			.cart-header
+				display: flex
+				align-items: center
+				padding: 0 20px
+				@media (max-width: 1600px)
+					padding: 0 12px
+				h4
+					font-weight: 500
+					font-size: 18px
+					line-height: 21px
+					text-transform: uppercase
+					color: #FFF
+					padding-left: 16px
+					margin-bottom: 0
+					@media (max-width: 1600px)
+						font-size: 14px
+					@media (max-width: 1199.98px)
+						font-size: 18px
+				img
+					width: 28px
+					height: 25px
+			hr
+				margin: 24px 0 0 0
+				border-top: 1px solid #76FFFF
+				@media (max-width: 1199.98px)
+					margin: 16px 0 0 0
+			
+			.cart-body
+				display: flex
+				padding: 14px 20px
+				align-items: center	
+				flex-grow: 1
+				@media (max-width: 1600px)
+					padding: 14px 12px
+				@media (max-width: 1199.98px)
+					padding: 16px 12px 0 12px
+				.number
+					font-weight: 300
+					font-size: 35px
+					color: #FFF
+				.register
+					display: flex
+					flex-direction: column
+					margin-left: 12px
+				.reg-span
+					font-weight: 500
+					font-size: 16px
+					color: #FFF
+					line-height: 20px
+					@media (max-width: 1600px)
+						font-size: 14px
+					@media (max-width: 1199.98px)
+						font-size: 16px
+				.fw-200
+					font-weight: 300
+					line-height: 20px
+					color: #FFF
+					@media (max-width: 1600px)
+						font-size: 12px
+					@media (max-width: 1199.98px)
+						font-size: 16px
+			.cart-body-2
+				flex-direction: column
+				align-items: start
+				img
+					margin-right: 18px
+				.reg-span
+					margin: 10px 0
+			.cart-body-3, .cart-body-4
+				flex-direction: column
+				text-align: center
+				@media (max-width: 1199.98px)
+					text-align: left
+					align-items: start
+					.reg-span
+						font-weight: 300
+						font-size: 16px
+						line-height: 19px
+					.reg-span-bold
+						font-weight: 500
+				p
+					font-weight: 300
+					font-size: 16px
+					line-height: 19px
+					color: #FFF
+					margin: 35px 0 24px 0
+					@media (max-width: 1600px)
+						font-size: 14px
+					@media (max-width: 1199.98px)
+						margin: 12px 0 16px 0
+			
+			.cart-body-4
+				@media (max-width: 1199.98px)
+					align-items: center
+				.procsent-4-2-1
+					font-weight: 500
+					font-size: 35px
+					color: #FFF
+				p
+					margin-top: 10px
+					margin-bottom: 0
+					b
+						font-weight: 300
+					@media (max-width: 1199.98px)
+						text-align: center
+						font-size: 16px
+
+			.cart-footer
+				background: rgba(47, 53, 158, 0.25)
+				padding: 20px 16px
+				border-right: 1px solid rgba(255, 255, 255, 0.7)
+				cursor: pointer
+				@media (max-width: 1199.98px)
+					display: none
+				&:hover
+					span
+						opacity: 1
+				span
+					font-weight: 500
+					font-size: 18px
+					line-height: 21px
+					color: #FFF
+					opacity: 0.6
+					b
+						color: #76FFFF
+					@media (max-width: 1600px)
+						font-size: 16px
+	.footer-network
+		margin-top: 40px
+		@media (max-width: 1199.98px)
+			margin-top: 16px
+		.network
+			font-size: 15px
+			line-height: 18px
+			color: #76FFFF
+			margin-right: 24px
+		a.social
+			margin-right: 16px
+			&:last-child
+				margin: 0
+	a.terms-link
+		font-size: 12px
+		line-height: 14px
+		text-decoration-line: underline
+		color: #76FFFF
+		margin-top: 8px
+
+	.cart-input
+		margin-top: 32px
+		input
+			background: #062673
+			border: 1px solid rgba(255, 255, 255, 0.7)
+			box-sizing: border-box
+			border-radius: 40px
+			width: 100%
+			padding: 8px 16px
+			font-size: 16px
+			height: 44px
+			&::placeholder
+				font-size: 18px
+				line-height: 21px
+				color: #9CA5FF
+				padding: 0 16px
+		button
+			width: 100%
+			margin: 16px 0 8px 0
+
+	.vertical-line-span
+		display: none
+		@media (max-width: 1199.98px)
+			display: block
+			width: 1px
+			position: absolute
+			height: 100vh
+			border-left: 1px solid rgba(255, 255, 255, 0.1)
+			top: 0
+			z-index: -1
+	.vertical-line-left
+		left: 16px	
+	.vertical-line-span-midle
+		left: 50%
+	.vertical-line-right
+		right: 16px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
