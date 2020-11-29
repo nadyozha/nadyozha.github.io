@@ -2965,9 +2965,10 @@ body.home-page .vertical-line-span {
       display: block;
       width: 1px;
       position: absolute;
-      height: 100vh;
+      height: 100%;
       border-left: 1px solid rgba(255, 255, 255, 0.1);
       top: 0;
+      bottom: 0;
       z-index: -1; } }
 body.home-page .vertical-line-left {
   left: 16px; }
