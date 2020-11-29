@@ -226,7 +226,8 @@ body {
   #registration header {
     padding: 30px 16px;
     display: flex;
-    justify-content: end; }
+    justify-content: end;
+    position: relative; }
     #registration header .user {
       display: none; }
     #registration header #sandwich {
