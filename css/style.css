@@ -226,14 +226,15 @@ body {
   #registration header {
     padding: 30px 16px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: end; }
     #registration header .user {
       display: none; }
     #registration header #sandwich {
-      order: 1;
-      margin-right: 0; }
+      order: 2;
+      margin-right: 0;
+      display: none; }
     #registration header .logo {
-      order: 2; }
+      order: 1; }
       #registration header .logo img {
         height: 35px;
         width: 124px;
