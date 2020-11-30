@@ -131,9 +131,15 @@ button
 	padding: 6px 16px
 	@media (max-width: 340px)
 		font-size: 14px
+	&:hover
+		background: transparent
+		color: #76FFFF
 .premium-btn
 	background: transparent
 	color: #76FFFF
+	&:hover
+		background: #76FFFF
+		color: #172480
 .process-btn
 	font-weight: 500
 	font-size: 18px
@@ -331,7 +337,7 @@ body
 
 //header
 header
-	position: relative
+	position: sticky
 	left: 0
 	top: 0
 	right: 0
@@ -569,7 +575,7 @@ aside
 		@media (max-width: 1380px)
 			padding: 16px
 		@media (max-width: 991.98px)
-			padding: 16px 12px
+			padding: 16px
 		
 		h3
 			font-weight: 300
@@ -795,52 +801,48 @@ aside
 #pills-Home
 	.graphic-wrap
 		position: relative
-		@media (max-width: 991.98px)
-			height: 326px
-		svg
+		padding: 0
+		padding-top: 24px
+		overflow: hidden
+		@media (max-width: 1380px)
+			padding-top: 16px
+		h3
+			padding: 0 24px
+			@media (max-width: 1380px)
+				padding: 0 16px
+		canvas
+			margin-top: 16px
+		.canvas-value
 			position: absolute
-			left: 0
-			right: 0
 			bottom: 0
-			z-index: -1
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			padding: 83px 24px 24px 24px
 			width: 100%
-		svg.svg-graphic-1900
-			opacity: 1
-			@media (max-width: 1440px)
-				opacity: 0
-		svg.svg-graphic-1440
-			opacity: 0
-			@media (max-width: 1440px)
-				opacity: 1
-			@media (max-width: 390px)
-				opacity: 0
-		svg.svg-graphic-991
-			opacity: 0
-			@media (max-width: 390px)
-				opacity: 1
-
-		.count-y
-			font-weight: 500
-			font-size: 18px
-			line-height: 21px
-			color: #FFFFFF
-			padding: 16px 0
-			@media (max-width: 1198.98px)
-				padding: 10px 0
-			@media (max-width: 991.98px)
-				font-size: 16px
-				padding: 16px 0
-				line-height: 19px
-			span
+			height: 100%
+			@media (max-width: 1380px)
+				padding: 75px 16px 16px 16px
+				
+			.canvas-span
 				font-weight: 500
 				font-size: 18px
 				line-height: 21px
-				color: #FFFFFF
-				@media (max-width: 1198.98px)
-					font-size: 16px
-				@media (max-width: 991.98px)
+				@media (max-width: 1199.98px)
 					font-size: 16px
 					line-height: 19px
+				@media (max-width: 340px)
+					font-size: 12px
+					line-height: 12px
+			.canvas-x-span-wrap
+				display: flex
+				justify-content: space-between
+				.canvas-span
+					margin-top: 0
+
+
+
+
 
 	//Crypto-Market-Prices					
 	.Crypto-Market-Prices
@@ -1749,7 +1751,7 @@ span.error-span
 			padding: 0 24px
 			cursor: pointer
 			&:hover
-				background: #0F328B
+				background: #0F329B
 			@media (max-width: 1380px)
 				padding: 0 16px
 			@media (max-width: 991.98px)
@@ -1900,6 +1902,11 @@ span.error-span
 					font-size: 12px
 		.standart-plan-span
 			padding: 0 20px
+			background: rgba(47, 53, 158, 0.35)
+			cursor: pointer
+			&:hover
+				background: rgba(47, 53, 158, 0.45)
+
 			@media (max-width: 1199.98px)
 				padding: 0 12px
 				background: transparent
@@ -2411,6 +2418,9 @@ body.home-page
 				line-height: 19px
 				color: #FFF
 				display: none
+			.dn-span
+				display: block
+				
 			h1
 				font-weight: 300
 				font-size: 26px
@@ -2418,9 +2428,14 @@ body.home-page
 				text-align: center
 				color: #FFF
 				margin-top: 16px
+				display: block
+			
+				
 			.logo-mobil
 				margin-top: 16px
 				position: relative
+				display: block
+				
 				.coins-svg
 					position: relative
 					left: 50%
@@ -2430,6 +2445,8 @@ body.home-page
 					left: 50%
 					top: 50%
 					transform: translate(-50%, -50%)
+			.db-span
+				display: none
 
 	.start-plan-wrap
 		position: relative
@@ -2448,6 +2465,7 @@ body.home-page
 				top: 50%
 				transform: translate(-50%, -50%)
 				opacity: 1
+				visibility: visible
 				@media (max-width: 1600px)
 					width: 80%
 				@media (max-width: 1199.98px)
@@ -2473,6 +2491,7 @@ body.home-page
 			.coin-icon-active
 				position: absolute
 				opacity: 0
+				visibility: hidden
 				@media (max-width: 1199.98px)
 					display: none
 					
@@ -2509,10 +2528,6 @@ body.home-page
 				bottom: 31px
 				@media (max-width: 1600px)
 					right: -102px
-
-
-
-
 
 			.cart
 				padding: 24px 10px
@@ -2565,6 +2580,7 @@ body.home-page
 				border: 1px solid rgba(27, 229, 229, 0.7)
 			.coin-icon-active
 				opacity: 1
+				visibility: visible
 
 		.cart-wrap-2
 			.active-euro
@@ -2855,7 +2871,12 @@ body.home-page
 		right: 16px
 
 
-
+#pills-Terms-and-Condition
+	padding: 0
+	.cart
+		margin-top: 0
+		padding-left: 0
+		padding-right: 0
 
 
 

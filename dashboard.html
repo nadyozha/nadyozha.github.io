@@ -37,7 +37,7 @@
 
 		<aside>
 			<div id="menu">
-				<div class="nav" id="menu-tabs">
+				<div class="nav">
 					<a data-toggle="pill" href="#pills-Home" class="menu-close active">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0)">
@@ -207,8 +207,6 @@
 						</svg>Personal Settings
 					</a>
 					<hr class="hr-light">
-					<a data-toggle="pill" href="#pills-Terms-and-Condition" class="menu-close d-none">f
-					</a>
 				</div>
 			</div>
 		</aside>
@@ -257,45 +255,20 @@
 							<div class="col-md-6">
 								<div class="cart graphic-wrap min-h-100">
 									<h3>Live Trading Activity</h3>
-									<div class="count-y">100</div>
-									<div class="count-y">75</div>
-									<div class="count-y">50</div>
-									<div class="count-y">25</div>
-									<div class="count-y d-flex justify-content-between pb-0">
-										<span>0</span>
-										<span>50</span>
-										<span>100</span>
-										<span>150</span>
-										<span>200</span>
-										<span>250</span>
+									<canvas id="myChart"></canvas>
+									<div class="canvas-value">
+										<span class="canvas-span">100</span>
+										<span class="canvas-span">75</span>
+										<span class="canvas-span">50</span>
+										<span class="canvas-span">25</span>
+										<div class="canvas-x-span-wrap">
+											<span class="canvas-span">0</span>
+											<span class="canvas-span">50</span>
+											<span class="canvas-span">100</span>
+											<span class="canvas-span">150</span>
+											<span class="canvas-span">200</span>
+										</div>
 									</div>
-									<svg class="svg-graphic-1900" viewBox="0 0 738 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 29.9381V244C0 250.627 5.37257 256 12 256H726C732.627 256 738 250.627 738 244V69.9899L659.099 7.17837C651.828 1.3898 642.292 -0.700826 633.244 1.42184C607.062 7.56379 551.917 19.9605 527.252 21.4545C494.299 23.4507 378.579 2.99033 346.393 3.48936C314.206 3.98839 239.103 33.4313 202.318 33.9304C165.533 34.4294 112.654 16.4642 82.7664 17.4623C52.8785 18.4603 0 29.9381 0 29.9381Z" fill="url(#paint0_linear)" fill-opacity="0.5"/>
-										<defs>
-										<linearGradient id="paint0_linear" x1="477.529" y1="3.48936" x2="477.529" y2="265.82" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#07FFFF"/>
-										<stop offset="1" stop-color="#183699"/>
-										</linearGradient>
-										</defs>
-									</svg>
-									<svg class="svg-graphic-1440" viewBox="0 0 540 254" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 27.9381V242C0 248.627 5.37258 254 12 254H528C534.627 254 540 248.627 540 242V67.9899L487.008 10.3352C478.994 1.61611 466.604 -1.56552 455.302 1.97057C434.5 8.47858 401.597 18.1463 385.794 19.4545C361.682 21.4507 277.009 0.990329 253.458 1.48936C229.907 1.98839 174.953 31.4313 148.037 31.9304C121.121 32.4294 82.4299 14.4642 60.5607 15.4623C38.6916 16.4603 0 27.9381 0 27.9381Z" fill="url(#paint0_linear)" fill-opacity="0.5"/>
-										<defs>
-										<linearGradient id="paint0_linear" x1="349.412" y1="1.48936" x2="349.412" y2="263.82" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#07FFFF"/>
-										<stop offset="1" stop-color="#183699"/>
-										</linearGradient>
-										</defs>
-									</svg>
-									<svg class="svg-graphic-991" viewBox="0 0 343 253" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 26.9381V241C0 247.627 5.37258 253 12 253H331C337.627 253 343 247.627 343 241V66.9899L315.47 19.8353C307.365 5.95259 289.783 0.991471 275.146 7.63804C263.999 12.6995 251.955 17.5547 245.051 18.4545C229.735 20.4507 175.952 -0.00967121 160.993 0.489362C146.033 0.988395 111.128 30.4313 94.0312 30.9304C76.9346 31.4294 52.3583 13.4642 38.4673 14.4623C24.5763 15.4603 0 26.9381 0 26.9381Z" fill="url(#paint0_linear)" fill-opacity="0.5"/>
-										<defs>
-										<linearGradient id="paint0_linear" x1="221.941" y1="0.489362" x2="221.941" y2="262.82" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#07FFFF"/>
-										<stop offset="1" stop-color="#183699"/>
-										</linearGradient>
-										</defs>
-									</svg>
 								</div>
 							</div>
 							<div class="col-md-6 mt-md-0 mt-3">
@@ -1205,7 +1178,7 @@
 									<div class="d-flex align-items-center link-wrap">
 										<img src="img/link.svg" class="d-lg-block d-none" alt="">
 										<span class="span">https://whalix.com/?ref=Vita</span>
-										<img src="img/copy-small.svg" alt="">
+										<img class="img-hover" src="img/copy-small.svg" alt="">
 									</div>
 									<div class="d-flex justify-content-between your-upline">
 									
@@ -3514,17 +3487,6 @@
 						</div>
 					</div>
 
-					<div class="tab-pane fade" id="pills-Terms-and-Condition">
-						<h2>Terms and Condition</h2>
-						<div class="cart cart-p-0 ">
-							<h3>Terms and Condition</h3>
-							<div class="h-700px">
-								<p>Welcome to Website Name!<br><br>These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.<br><br>By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page.<br><br>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.<br><br>
-								<b>Cookies</b><br><br>We employ the use of cookies. By accessing Website Name, you agreed to use cookies in agreement with the Company Name's Privacy Policy.<br><br>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.<br><br><b>License</b><br><br>Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Website Name. All intellectual property rights are reserved. You may access this from Website Name for your own personal use subjected to restrictions set in these terms and conditions.<br><br><b>You must not:</b><br><br>-Republish material from Website Name<br>-Sell, rent or sub-license material from Website Name<br>-Reproduce, duplicate or copy material from Website Name<br>-Redistribute content from Website Name<br>-This Agreement shall begin on the date hereof.<br><br>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Company Name does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Company Name,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Company Name shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.<br><br>Company Name reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.<br><br><b>You warrant and represent that:</b><br><br>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;<br>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;<br>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy.<br><br>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.<br><br>You hereby grant Company Name a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.<br><br><b>Hyperlinking to our Content</b><br><br>The following organizations may link to our Website without prior written approval:<br><br>-Government agencies;<br>-Search engines;<br>-News organizations;<br>-Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and<br>-System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.<br><br>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.<br><br><b>We may consider and approve other link requests from the following types of organizations:</b><br><br>-commonly-known consumer and/or business information sources;<br>-dot.com community sites;<br>-associations or other groups representing charities;<br>-online directory distributors;<br>-internet portals;<br>-accounting, law and consulting firms; and<br>-educational institutions and trade associations.<br><br>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Company Name; and (d) the link is in the context of general resource information.<br><br>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.<br><br>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Company Name. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.<br><br><b>Approved organizations may hyperlink to our Website as follows:</b><br><br>-By use of our corporate name; or<br>-By use of the uniform resource locator being linked to; or<br>-By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.<br><br>No use of Company Name's logo or other artwork will be allowed for linking absent a trademark license agreement.<br><br><b>iFrames</b><br><br>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.<br><br><b>Content Liability</b><br><br>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.<br><br><b>Reservation of Rights</b><br><br>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.<br><br><b>Removal of links from our website</b><br><br>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.<br><br>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.<br><br><b>Disclaimer</b><br><br>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:<br><br>limit or exclude our or your liability for death or personal injury;<br>limit or exclude our or your liability for fraud or fraudulent misrepresentation;<br>limit any of our or your liabilities in any way that is not permitted under applicable law; or<br>exclude any of our or your liabilities that may not be excluded under applicable law.<br>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.<br><br>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</section>
@@ -3637,6 +3599,7 @@
 		<script src="libs/themeable-stylish-select/stylish-select.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
