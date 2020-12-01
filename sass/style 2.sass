@@ -7,14 +7,13 @@ html
 	height: 100%
 	overflow-x: hidden
 
-body::-webkit-scrollbar
-	background-color: transparent
-	width: 4px
-body::-webkit-scrollbar-thumb
-	border-radius: 12px
-	background-color: #fff
-body::-webkit-scrollbar-track
-	background: transparent
+@media (min-width: 992px)
+	body::-webkit-scrollbar
+		background-color: transparent
+		width: 4px
+	body::-webkit-scrollbar-thumb
+		border-radius: 12px
+		background-color: #fff
 
 body
 	height: 100%
@@ -335,8 +334,6 @@ body
 				margin: 0 auto
 				@media (max-width: 991.98px)
 					width: 100%
-
-body.dashboard
 
 //header
 header
@@ -989,18 +986,6 @@ aside
 		margin-bottom: 27px
 		@media (max-width: 991.98px)
 			flex-direction: column
-	.in-cart-select
-		position: relative
-		height: 42px
-		z-index: 5
-	.select-box-wrap
-		position: absolute
-		height: 42px
-		top: 0
-		left: 0
-		right: 0
-		z-index: 6
-
 	.make-a-deposit-mb-0
 		@media (max-width: 991.98px)
 			margin-bottom: 0
@@ -1620,40 +1605,42 @@ span.error-span
 						width: 24px
 
 //input range
-//активная полоса прогресса
-.noUi-connect
-	background: #fff
-	border-radius: 12px 0 0 12px
-	height: 8px
-//длинна инпута
-.noUi-base
-	background: #5771C0
-	border-radius: 12px
-//главная полоса инпута
 .noUi-target
-	height: 8px
-	background: #5771C0
-	border-radius: 12px
+	background: #5873be
 	border: none
 	box-shadow: none
-//блок для ползунка
-.noUi-horizontal .noUi-handle
-	width: 18px
-	height: 18px
-	top: -5px
-	right: -10px
+	height: 8px!important
+	cursor: pointer
+.noUi-horizontal
+	height: 2px
+	.noUi-connect
+		height: 200%
+		height: 8px
+	.noUi-tooltip-wrap
+		transform: translate(-50%, 0)
+		left: 50%
+		bottom: calc(100% + 14px)
+.noUi-connects
+	overflow: visible
+	border-radius: 12px
+.noUi-connect
+	background: #fff
+	border-radius: 100px
+	height: 8px!important
+.noUi-handle
+	width: 18px !important
+	height: 18px !important
+	right: -9px !important
+	top: -6px !important
 	border: none
-	border-radius: 9px
+	border-radius: 100px
+	box-shadow: none
 	box-shadow: 0px 4px 10px rgba(32, 37, 91, 0.71)
 	cursor: pointer
 	&:before, &:after
 		display: none
-//ползунок
-.noUi-touch-area
+.noUi-tooltip
 	display: none
-
-
-
 
 //pills-Calculate
 #pills-Calculate
@@ -2892,126 +2879,8 @@ body.home-page
 		padding-right: 0
 
 
-//costom select option
 
-div#selectBox
-	position: relative
-	cursor: pointer
-	overflow: hidden
-	transition: .3s
-	background: rgba(6, 38, 115, 0.5)
-	border: 1px solid rgba(255, 255, 255, 0.5)
-	box-sizing: border-box
-	border-radius: 4px
-	height: 45px
-	max-height: 230px
 
-div#selectBox div.valueTag
-	cursor: pointer
-	transition: .2s
-	font-weight: 500
-	font-size: 18px
-	color: #FFF
-	margin: 0
-	line-height: 42px
-	padding: 0 24px
-	border-bottom: 1px solid rgba(255, 255, 255, 0.4)
-	@media (max-width: 1439px)
-		font-size: 14px
-		padding: 0 12px
-	img
-		padding-right: 12px
-		line-height: 21px
-	span	
-		font-weight: 500
-		font-size: 18px
-		color: #00D7D7
-		line-height: 42px
-		margin-left: 20px
-		position: absolute
-		width: 250px
-		right: 0
-		@media (max-width: 1565px)
-			width: 210px
-		@media (max-width: 1439px)
-			width: 200px
-			font-size: 14px
-		@media (max-width: 1350px)
-			width: 158px
-			font-size: 14px
-
-div#selectBox > img.arrow
-	position: absolute
-	right: 16px
-	width: 16px
-	top: 16px
-
-ul#selectMenuBox::-webkit-scrollbar
-	background: transparent
-	width: 0
-	position: absolute
-
-ul#selectMenuBox::-webkit-scrollbar-track
-	background: transparent
-	position: absolute
-	z-index: -2
-
-ul#selectMenuBox::-webkit-scrollbar-thumb
-	border-radius: 100px
-	background: transparent
-
-ul#selectMenuBox
-	background: #062673
-	transition: .3s
-	width: 100%
-	height: 185px
-	overflow-y: auto
-	overflow-x: hidden !important
-	position: absolute
-	margin-top: 0px
-	display: block
-	padding-inline-start: 0
-	margin-block-end: 0
-
-ul#selectMenuBox > li
-	display: block
-	border-radius: 0px
-	cursor: pointer
-
-ul#selectMenuBox > li.option
-	font-weight: 500
-	font-size: 18px
-	line-height: 21px
-	color: #FFF
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1)
-	padding: 12px 24px
-	position: relative
-	@media (max-width: 1439px)
-		padding: 12px
-		font-size: 14px
-	img
-		padding-right: 12px
-		line-height: 21px
-	span	
-		font-weight: 500
-		font-size: 18px
-		color: #00D7D7
-		line-height: 21px
-		margin-left: 20px
-		position: absolute
-		width: 250px
-		right: 0
-		@media (max-width: 1565px)
-			width: 210px
-		@media (max-width: 1439px)
-			width: 200px
-			font-size: 14px
-		@media (max-width: 1350px)
-			width: 158px
-			font-size: 14px
-
-ul#selectMenuBox > li.option:hover
-	background: #062678
 
 
 
