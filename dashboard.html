@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.css">
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.css">
+		<link href="css/nouislider.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Whalix - Dashboard</title>
 	</head>
@@ -429,16 +430,24 @@
 											<button data-toggle="pill" href="#Make-a-Payment-PM" class="process-btn d-lg-block d-none">Process</button>
 										</div>
 									</div>
-									<div class="cart mt-lg-3 mt-0 h-100 align-self-stretch">
+									<div class="cart mt-3 h-100 align-self-stretch">
 										<h5 class="text">Invest from account balance:</h5>
-										<div class="make-a-deposit d-lg-block d-none">
-											<select class="stylish-select">
-											  <option value="#Make-a-Payment-PM">Perfect Money</option>
-											  <option>Payeer</option>
-											  <option value="#Make-a-Payment-Bitcoin">Bitcoin</option>
-											  <option>Litecoin</option>
-											  <option>Ethereum</option>
-											</select>
+										<div class="make-a-deposit in-cart-select d-xl-block d-none">
+											<div class="select-box-wrap">
+												<div id=selectBox>
+							            <img src="img/arrow.svg" alt="" class="arrow"/>
+							            <!-- текст, который будет виден в боксе -->
+							            <div class=valueTag name=select><img src="img/PM small.svg" alt="">Perfect Money<span> Available: $12345</span></div>
+							              <!-- тот самый выпадающий список -->
+							             <ul id=selectMenuBox>
+							               <li class=option><img src="img/payeer small.svg" alt="">Payeer<span> Available: $12345</span></li>
+							               <li class=option><img src="img/Bitcoin small.svg" alt="">Bitcoin<span> Available: 00000.123</span></li>
+							               <li class=option><img src="img/Litecoin small.svg" alt="">Litecoin<span> Available: 00000.123</span></li>
+							               <li class=option><img src="img/Ethereum small.svg" alt="">Ethereum<span> Available: 00000.123</span></li>
+							               <li class=option><img src="img/PM small.svg" alt="">Perfect Money<span> Available: $12345</span></li>
+							             </ul>
+							          </div>
+											</div>
 										</div>
 										<h5 class="t-normal d-xl-block d-none">Choose amount from account balance</h5>
 										<div class="d-flex flex-lg-row flex-column">
@@ -1689,8 +1698,8 @@
 											<span class="baks">$</span>
 										</div>
 										
-										<div class="slider-container">
-											<div class="slider slider-amount mb-lg-3"></div>
+										<div class="slider-container mb-lg-3">
+											<div id="slider-connect"></div>
 										</div>
 
 										<div class="calculator-input profit-input">
@@ -3597,9 +3606,9 @@
 		<script src="libs/owlcarousel2/owl.carousel.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<script src="libs/themeable-stylish-select/stylish-select.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/nouislider.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/script-options.js"></script>
 	</body>
 </html>

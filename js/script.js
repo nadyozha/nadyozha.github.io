@@ -226,17 +226,19 @@ $(function() {
 });
 
 
+var connectSlider = document.getElementById('slider-connect');
+noUiSlider.create(connectSlider, {
+  start: 40,
+  connect: 'lower',
+  range: {
+    'min': 0,
+    'max': 100
+  }
+});
 
 
 
 
-var $slider = $("#slider");
-var $fill = $(".bar .fill");
-function setBar() {
-	$fill.css("width", $slider.val() + "%");
-}
-$slider.on("input", setBar);
-setBar();
 
 
 $('#checkbox_1').on('change', function() {
