@@ -87,7 +87,7 @@ input {
 
 * {
   outline: none !important;
-  transition: 0.4s ease; }
+  transition: 0.3s ease; }
   *:focus {
     box-shadow: none !important; }
 
@@ -769,14 +769,22 @@ aside {
     border-radius: 4px;
     color: inherit;
     padding: 12px 30px 12px 24px;
-    background-image: url(../img/arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right 16px center;
     background-size: 16px 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     box-shadow: none !important; }
+    .stylish-select-container > .stylish-select-selected:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 10px;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../img/arrow.svg);
+      background-repeat: no-repeat; }
     @media (max-width: 1439px) {
       .stylish-select-container > .stylish-select-selected {
         padding: 12px 30px 12px 12px;
@@ -1683,7 +1691,8 @@ span.error-span {
 .noUi-connect {
   background: #fff;
   border-radius: 12px 0 0 12px;
-  height: 8px; }
+  height: 8px;
+  transition: none; }
 
 .noUi-base {
   background: #5771C0;
@@ -1696,6 +1705,9 @@ span.error-span {
   border: none;
   box-shadow: none; }
 
+.noUi-origin {
+  transition: none; }
+
 .noUi-horizontal .noUi-handle {
   width: 18px;
   height: 18px;
@@ -1704,7 +1716,8 @@ span.error-span {
   border: none;
   border-radius: 9px;
   box-shadow: 0px 4px 10px rgba(32, 37, 91, 0.71);
-  cursor: pointer; }
+  cursor: pointer;
+  transition: none; }
   .noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
     display: none; }
 
@@ -3065,7 +3078,7 @@ ul#selectMenuBox::-webkit-scrollbar-thumb {
   background: transparent; }
 
 ul#selectMenuBox {
-  background: #062673;
+  background: rgba(6, 38, 115, 0.8);
   transition: 0.3s;
   width: 100%;
   height: 185px;
