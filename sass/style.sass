@@ -1,12 +1,10 @@
 img 
 	max-width: 100%
 	height: auto
-
 html 
 	width: 100%
 	height: 100%
 	overflow-x: hidden
-
 body::-webkit-scrollbar
 	background-color: transparent
 	width: 4px
@@ -15,7 +13,6 @@ body::-webkit-scrollbar-thumb
 	background-color: #fff
 body::-webkit-scrollbar-track
 	background: transparent
-
 body
 	height: 100%
 	font-family: 'Roboto', sans-serif
@@ -23,9 +20,6 @@ body
 	@media (max-width: 991.98px)
 		&.menubar-in
 			overflow: hidden
-
-
-
 //owl-corousel
 .container-0
 	padding: 0 35px
@@ -34,7 +28,6 @@ body
 	@media (max-width: 991.98px)
 		padding-left: 0
 		padding-right: 0
-
 .owl-carousel .owl-stage-outer .owl-stage 
 	padding-left: 0 !important
 	@media (max-width: 991.98px)
@@ -43,10 +36,8 @@ body
 		@media (min-width: 1440px)
 			&:last-child
 				margin-right: 0!important
-
 .owl-news .owl-stage-outer .owl-stage .owl-item
 	padding-top: 0
-
 .owl-dots
 	display: flex
 	justify-content: center
@@ -61,10 +52,6 @@ body
 		margin-left: 0
 .owl-carousel button.owl-dot.active
 	background: #9CA5FF
-
-
-
-
 //placeholder input
 input::placeholder, textarea::placeholder
 	font-weight: 500
@@ -83,38 +70,31 @@ input
 	padding: 0 8px
 	text-transform: normal
 	width: 100%
-
 *
 	outline: none !important
 	transition: 0.3s ease
 	&:focus
 		box-shadow: none !important
-
 a:hover
 	text-decoration: none
-
 .row-1
 	margin-left: -.25rem
 	margin-right: -.25rem
 	> [class*="col"]
 		padding-left: .25rem
 		padding-right: .25rem
-
 .row-2
 	margin-left: 0
 	margin-right: 0
 	> [class*="col"]
 		padding-left: 0
 		padding-right: 0
-
 @media (min-width: 1440px)
 	.container-740
 		max-width: 770px
-
 @media (min-width: 768px)
 	.container-586
 		max-width: 586px
-
 //buttons
 button
 	transition: all 0.6s
@@ -152,6 +132,8 @@ button
 	box-shadow: 0px 4px 25px rgba(118, 255, 255, 0.33)
 	border-radius: 40px
 	padding: 12px 40px
+	@media (max-width: 330px)
+		font-size: 14px
 	&:hover
 		border: 1.5px solid #00D7D7
 		color: #00D7D7
@@ -164,7 +146,6 @@ button
 		color: #0A2C87
 		background: #00D7D7
 		border: 1.5px solid #00D7D7
-
 .cacel-btn
 	background: transparent
 	color: #FF3A3A
@@ -174,15 +155,11 @@ button
 		background: #FF3A3A
 		color: #fff
 		border: 1.5px solid #FF3A3A
-
 .img-hover
 	cursor: pointer
 	&:hover
 		opacity: 0.8
-
-
 //checkbox
-
 .checkbox
 	display: flex
 	align-items: center
@@ -197,8 +174,7 @@ button
 				box-sizing: border-box
 				border-radius: 4px
 				&:after
-					background: url('../img/check-icon.svg') no-repeat center	
-				
+					background: url('../img/check-icon.svg') no-repeat center			
 .custom-checkbox
 	position: relative
 	margin-right: 8px
@@ -216,24 +192,19 @@ button
 		right: 2px
 		bottom: 2px
 		left: 2px
-		transition: all linear .3s
-		
-		
+		transition: all linear .3s	
 .custom-text
 	font-size: 14px
 	line-height: 16px
 	color: #FFF
 	margin-bottom: 0
-
 //body
-
 body
 	background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B
 	z-index: -1
 	@media (max-width: 991.98px)
 		background: url('../img/bg-dashboard.svg') no-repeat center
 		background-size: cover
-
 #registration
 	header
 		@media (max-width: 991.98px)
@@ -246,15 +217,13 @@ body
 			#sandwich
 				order: 2
 				margin-right: 0
-				display: none
-				
+				display: none		
 			.logo
 				order: 1
 				img
 					height: 35px
 					width: 124px
-					display: flex
-					
+					display: flex			
 	.cart
 		padding: 24px
 		margin-top: 140px
@@ -272,7 +241,6 @@ body
 				font-size: 28px
 		.name-hidden
 			display: none	
-			
 		.input-wrap
 			position: relative
 			.span
@@ -335,9 +303,6 @@ body
 				margin: 0 auto
 				@media (max-width: 991.98px)
 					width: 100%
-
-body.dashboard
-
 //header
 header
 	position: sticky
@@ -356,7 +321,6 @@ header
 		justify-content: start
 		border: none
 		background: rgba(6, 38, 115, 0.8)
-
 .active-header
 	@media (max-width: 991.98px)
 		background: transparent
@@ -367,8 +331,6 @@ header
 	align-items: center
 	@media (max-width: 991.98px)
 		display: none
-		
-
 	span.date
 		font-weight: 300
 		font-size: 16px
@@ -389,7 +351,6 @@ header
 	z-index: 11
 	@media (max-width: 991.98px)
 		order: 2
-
 	.user-left
 		text-align: right
 		display: flex
@@ -414,15 +375,12 @@ header
 				font-size: 16px
 	img
 		cursor: pointer
-
 .logo
 	img
 		@media (max-width: 991.98px)
-			display: none
-			
+			display: none	
 .hidden
 	opacity: 1
-
 hr.hr-in-cart
 	border-top: 1px solid rgba(255, 255, 255, 0.1)
 	margin: 16px -24px
@@ -430,11 +388,9 @@ hr.hr-in-cart
 		margin: 16px -16px
 	@media (max-width: 1020px)
 		margin: 16px -12px
-
 hr.hr-in-cart-m-0
 	border-top: 1px solid rgba(255, 255, 255, 0.1)
 	margin: 0
-
 #sandwich
 	position: relative
 	width: 20px
@@ -472,7 +428,6 @@ hr.hr-in-cart-m-0
 			bottom: 2px
 	&:hover 
 		opacity: .8
-
 //aside
 aside
 	position: fixed
@@ -501,7 +456,6 @@ aside
 	@media (max-height: 440px)
 		padding: 60px 0 0 0
 		overflow-y: scroll
-
 	#menu
 		.nav
 			flex-direction: column
@@ -532,19 +486,16 @@ aside
 				color: #76FFFF
 				svg path
 					fill: #76FFFF
-
 			hr
 				margin: 0
 				border-top: 1px solid rgba(255, 255, 255, 0.33)
 			hr.hr-light
 				border-top: 1px solid rgba(255, 255, 255, 0.1)
-
 .menubar-in
 	aside
 		left: 0
 		opacity: 1
 		min-height: 101vh
-
 .contente
 	padding-left: 260px
 	position: relative
@@ -560,7 +511,6 @@ aside
 	padding: 36px 0
 	@media (max-width: 1450px)
 		padding: 18px 0
-
 	h2
 		font-weight: 500
 		font-size: 18px
@@ -570,7 +520,6 @@ aside
 		margin-bottom: 24px
 		@media (max-width: 991.99px)
 			padding: 0 5px
-
 	.cart
 		background: rgba(47, 53, 158, 0.35)
 		border-radius: 12px
@@ -579,7 +528,6 @@ aside
 			padding: 16px
 		@media (max-width: 991.98px)
 			padding: 16px
-		
 		h3
 			font-weight: 300
 			font-size: 35px
@@ -588,7 +536,6 @@ aside
 				font-size: 28px
 			@media (max-width: 340px)
 				font-size: 24px
-
 		.span-beruza
 			font-weight: 300
 			font-size: 16px
@@ -602,7 +549,6 @@ aside
 			color: #FFF
 			@media (max-width: 1199.98px)
 				font-size: 16px
-
 		img.icon
 			padding-right: 8px
 			@media (max-width: 991.98px)
@@ -610,7 +556,6 @@ aside
 				max-height: 14px
 			@media (max-width: 500px)
 				padding-right: 2px
-
 	.cart-p-0 
 		padding: 24px 0
 		@media (max-width: 1380px)
@@ -631,7 +576,6 @@ aside
 		.crypto-market-price .title-coin
 			&:hover
 				background: transparent
-
 	//cart-top-balance
 	.cart-top-balance
 		padding: 5px
@@ -658,7 +602,6 @@ aside
 				padding-right: 4px
 		.active
 			border: 1px solid rgba(255, 255, 255, 0.2)
-
 	//crypto-market-price
 	.crypto-market-price, .account-information
 		margin-top: 40px
@@ -666,10 +609,8 @@ aside
 			margin-top: 16px
 		@media (max-width: 767.99px)
 			margin-top: 0
-
 		img
 			margin-right: 8px
-
 		.span
 			@media (max-width: 991.98px)
 				font-size: 14px
@@ -677,10 +618,8 @@ aside
 				font-size: 12px
 			@media (max-width: 340px)
 				font-size: 10px
-
 		.coin
 			color: #76FFFF
-
 		.price
 			color: #FFF
 			cursor: pointer
@@ -723,7 +662,6 @@ aside
 					font-size: 14px
 				@media (max-width: 340px)
 					font-size: 12px
-
 	.min-h-100
 		min-height: 100%
 	.h-100
@@ -797,7 +735,6 @@ aside
 			&:hover 
 				color: #fff
 				border-color: #fff
-
 #pills-Deposit, #pills-Withdrawal, #pills-History, #pills-Affiliate, #pills-Advertising, #pills-About, #pills-Calculate, #pills-FAQ, #pills-Settings, #Make-a-Payment-PM, #Make-a-Payment-Bitcoin, #pills-Terms-and-Condition
 	padding: 0 35px
 	@media (max-width: 1199.98px)
@@ -806,7 +743,6 @@ aside
 	padding: 0 35px
 	@media (max-width: 1199.98px)
 		padding: 0 16px
-
 //pills-Home		
 #pills-Home
 	.graphic-wrap
@@ -832,8 +768,7 @@ aside
 			width: 100%
 			height: 100%
 			@media (max-width: 1380px)
-				padding: 75px 16px 16px 16px
-				
+				padding: 75px 16px 16px 16px	
 			.canvas-span
 				font-weight: 500
 				font-size: 18px
@@ -849,11 +784,6 @@ aside
 				justify-content: space-between
 				.canvas-span
 					margin-top: 0
-
-
-
-
-
 	//Crypto-Market-Prices					
 	.Crypto-Market-Prices
 		padding-bottom: 0
@@ -866,7 +796,6 @@ aside
 				@media (max-width: 991.98px)
 					&:last-child
 						display: none
-
 	//account-information
 	.account-information
 		.last-access
@@ -878,7 +807,6 @@ aside
 			@media (max-width: 1439px)
 				flex-direction: column
 				align-items: start
-
 			.session-span-wrap
 				@media (max-width: 1439px)
 					margin-top: 16px
@@ -892,7 +820,6 @@ aside
 					&:first-child
 						@media (max-width: 1439px)
 							margin-left: 0
-
 	//deposits-small
 	.deposits-small
 		.span
@@ -942,7 +869,6 @@ aside
 					margin-right: 8px
 			span
 				font-weight: 300
-
 //pills-Deposit
 #pills-Deposit
 	.select-plan
@@ -955,7 +881,6 @@ aside
 			justify-content: start
 		h3
 			margin-bottom: 0
-
 		.button-wrap
 			@media (max-width: 1670px)
 				margin-top: 16px
@@ -963,7 +888,6 @@ aside
 				display: flex
 				justify-content: space-between
 				width: 100%
-
 			button
 				margin-left: 16px
 				@media (max-width: 1670px)
@@ -974,7 +898,6 @@ aside
 				&:first-child
 					@media (max-width: 991.98px)
 						margin-right: 8px
-
 	.h6-under-h3
 		line-height: 16px
 		font-size: 14px
@@ -984,13 +907,11 @@ aside
 		margin-bottom: 0
 		@media (max-width: 340px)
 			font-size: 12px
-
 	h5
 		font-weight: 500
 		font-size: 18px
 		line-height: 21px
 		text-transform: uppercase
-
 	.make-a-deposit
 		margin-top: 24px
 		margin-bottom: 27px
@@ -1007,7 +928,6 @@ aside
 		left: 0
 		right: 0
 		z-index: 6
-
 	.make-a-deposit-mb-0
 		@media (max-width: 991.98px)
 			margin-bottom: 0
@@ -1017,15 +937,12 @@ aside
 			margin-left: 0
 			margin-top: 12px
 			width: 100%
-
 	h5.t-normal
 		text-transform: none
 		margin-bottom: 18px
-
 	h5.text
 		@media (max-width: 991.98px)
 			text-transform: none
-
 	input.choose-amount
 		background: rgba(6, 38, 115, 0.5)
 		border: 1px solid rgba(255, 255, 255, 0.5)
@@ -1042,35 +959,28 @@ aside
 			font-size: 18px
 			text-align: left
 			padding: 12px
-
 	button.process-btn
 		min-width: 148px!important
 		@media (max-width: 991.98px)
 			margin-top: 32px
-
 	.cart-p-12
 		@media (max-width: 1670px)
 			padding: 12px
-
 	//cart-srandart-plane
-
 	.cart-srandart-plane
 		h5
 			@media (max-width: 1199.98px)
 				font-weight: 300
 				font-size: 28px
-				text-transform: none
-			
+				text-transform: none	
 .standart-plan
 	margin: 16px 0 0 0
-
 	.br-none
 		display: none
 		@media (max-width: 1439px)
 			display: block
 		@media (max-width: 1198.98px)
-			display: none
-			
+			display: none		
 	h6
 		font-weight: 300
 		font-size: 16px
@@ -1084,7 +994,6 @@ aside
 			font-size: 14px
 		@media (max-width: 340px)
 			font-size: 12px
-
 	span
 		font-weight: 500
 		font-size: 18px
@@ -1106,11 +1015,9 @@ aside
 		margin: 32px 0
 		@media (max-width: 991.98px)
 			margin: 14px 0
-
 span.error-span
 	color: #FF3A3A
 	font-weight: 300
-	
 //choose-deposit
 .choose-deposit
 	background: rgba(6, 38, 115, 0.5)
@@ -1139,7 +1046,6 @@ span.error-span
 		@media (max-width: 340px)
 			font-size: 14px
 			width: 140px
-		
 //pills-Withdrawal
 #pills-Withdrawal, #pills-Investments
 	.process-btn
@@ -1174,7 +1080,6 @@ span.error-span
 					font-size: 18px
 				@media (max-width: 340px)
 					font-size: 14px
-
 		.choose-deposit-error
 			border: 1px solid #FF3A3A
 		.error
@@ -1184,8 +1089,7 @@ span.error-span
 			@media (max-width: 991.98px)
 				font-size: 12px
 			@media (max-width: 340px)
-				font-size: 10px
-				
+				font-size: 10px			
 //modal
 @media (min-width: 576px)
 .modal-dialog
@@ -1198,7 +1102,6 @@ span.error-span
 	position: relative
 	@media (max-width: 991.98px)
 		padding: 32px 16px 16px 16px
-	
 	button.close
 		position: absolute
 		top: 27px
@@ -1230,13 +1133,11 @@ span.error-span
 		.fee
 			color: #00D7D7
 			line-height: 22px
-
 		.footer-button
 			button.process-btn
 				min-width: 130px
 				&:last-child
 					margin-left: 16px
-
 	.daily-calendar
 		@media (max-width: 991.98px)
 			font-size: 14px
@@ -1263,7 +1164,7 @@ span.error-span
 			display: block
 			@media (max-width: 991.98px)
 				margin-bottom: 24px
-			
+//#pills-Investments					
 #pills-Investments
 	.cart-srandart-plane
 		.standart-plan:last-child
@@ -1271,7 +1172,6 @@ span.error-span
 		h5
 			font-size: 35px
 			font-weight: 300
-
 .cart-ptogressbar
 	display: flex
 	flex-direction: column
@@ -1295,7 +1195,6 @@ span.error-span
 				margin-bottom: 0
 				@media (max-width: 991.98px)
 					font-size: 28px
-
 	.deposit-span
 		color: #9CA5FF
 		margin-bottom: 4px
@@ -1323,7 +1222,6 @@ span.error-span
 		button
 			box-shadow: none
 			width: 100%
-
 	//modal-progress
 .cart-ptogressbar-border
 	border: 1px solid rgba(255, 255, 255, 0.33)
@@ -1352,18 +1250,15 @@ span.error-span
 .cart-ptogressbar-p-0
 	@media (max-width: 991.98px)
 		padding: 0
-
 #Modal-Cancel-Plan
 	.color-white-span
 		font-size: 18px
-		
 	.color-white-span-first
 		@media (max-width: 991.98px)
 			margin-top: 26px
 	.cart-ptogressbar
 		.deposit-span
 			font-size: 16px
-
 //pills-History
 #pills-History
 	.cart-from-to
@@ -1378,11 +1273,9 @@ span.error-span
 			margin-bottom: 16px
 			@media (max-width: 767.98px)
 				margin-bottom: 8px
-
 	button
 		@media (max-width: 767.98px)
 			width: 100%
-
 	.cart-p-0
 		.standart-plan
 			margin-bottom: 0
@@ -1398,7 +1291,6 @@ span.error-span
 		h3
 			@media (max-width: 767.98px)
 				padding-left: 8px
-
 .standart-plan-span
 	padding: 0 24px
 	background: #0F328B
@@ -1426,8 +1318,7 @@ span.error-span
 	.border-right-line
 		border-right: 1px solid rgba(255, 255, 255, 0.1)
 		@media (max-width: 1199.98px)
-			border: none
-						
+			border: none			
 //pills-Affiliate
 #pills-Affiliate
 	.cart
@@ -1446,7 +1337,6 @@ span.error-span
 					font-size: 16px
 					color: #9CA5FF
 					margin: 24px 0 4px 0
-
 		.link-wrap
 			padding: 14px 24px
 			background: #0F328B
@@ -1496,7 +1386,6 @@ span.error-span
 							font-size: 18px
 						@media (max-width: 340px)
 							font-size: 14px
-
 	.cart-fixed-width
 		@media (max-width: 1439px)
 			overflow-x: scroll
@@ -1563,8 +1452,6 @@ span.error-span
 						background-position: center
 						width: 16px
 						height: 10px
-
-
 //pills-Advertising
 #pills-Advertising
 	.cart
@@ -1625,7 +1512,6 @@ span.error-span
 					@media (max-width: 991.98px)
 						height: 24px
 						width: 24px
-
 //input range
 //активная полоса прогресса
 .noUi-connect
@@ -1664,9 +1550,6 @@ span.error-span
 .noUi-touch-area
 	display: none
 
-
-
-
 //pills-Calculate
 #pills-Calculate
 	.cart
@@ -1697,7 +1580,6 @@ span.error-span
 						padding: 8px 12px
 					@media (max-width: 340px)
 						font-size: 12px
-
 				.baks
 					position: absolute
 					right: 12px
@@ -1705,17 +1587,14 @@ span.error-span
 					transform: translateY(-50%)
 					@media (max-width: 991.98px)
 						font-size: 14px
-
 			.slider-container
 				margin-top: 16px
 				@media (max-width: 991.98px)
 					margin-top: 22px
-
 			.profit-input
 				margin: 35px 0 16px 0
 				@media (max-width: 991.98px)
 					margin: 30px 0 8px 0
-
 				.profit
 					font-weight: 300
 					font-size: 16px
@@ -1733,7 +1612,6 @@ span.error-span
 						font-size: 14px
 					@media (max-width: 340px)
 						font-size: 10px
-
 		.cart-srandart-plane
 			@media (max-width: 1191.98px)
 				padding: 16px 12px
@@ -1750,7 +1628,6 @@ span.error-span
 			.span
 				font-size: 18px
 				@media (max-width: 1191.98px)
-
 //pills-Payments
 #pills-Payments
 	.cart-p-0
@@ -1770,8 +1647,7 @@ span.error-span
 				@media (max-width: 1199.98px)
 					text-align: center
 				@media (max-width: 340px)
-					font-size: 10px
-					
+					font-size: 10px	
 		.standart-plan-span
 			padding: 0 24px
 			cursor: pointer
@@ -1791,7 +1667,6 @@ span.error-span
 		.hr-bold
 			margin: 0
 			border-top: 1px solid rgba(255, 255, 255, 0.4)
-
 		.total-end
 			margin: 16px 0 0 0
 			span
@@ -1808,7 +1683,6 @@ span.error-span
 				font-size: 16px
 				@media (max-width: 1191.98px)
 					font-size: 14px
-
 		.h-768
 			height: 650px
 			overflow-y: scroll
@@ -1821,7 +1695,6 @@ span.error-span
 				max-height: 20px
 			@media (max-width: 1198.98px)
 				height: 500px
-
 //pills-Publications
 #pills-Publications
 	.filter-img
@@ -1849,7 +1722,6 @@ span.error-span
 				font-size: 16px
 			@media (max-width: 340px)
 				font-size: 14px
-
 		button
 			margin-top: 56px
 			box-shadow: none
@@ -1857,7 +1729,6 @@ span.error-span
 				margin-top: 32px
 			@media (max-width: 991.98px)
 				width: 100%
-
 	.number-pages
 		display: flex
 		justify-content: center
@@ -1890,11 +1761,9 @@ span.error-span
 					text-align: center
 					padding: 4px
 					display: block
-					
 				a.active
 					color: #0A0E57
 					background: #fff
-
 	.h-295
 		height: 325px
 		overflow-y: scroll
@@ -1931,16 +1800,13 @@ span.error-span
 			cursor: pointer
 			&:hover
 				background: rgba(47, 53, 158, 0.45)
-
 			@media (max-width: 1199.98px)
 				padding: 0 12px
 				background: transparent
-
 			.color-white-span
 				white-space: nowrap
 				text-overflow: ellipsis
 				overflow: hidden
-
 			.daily-calendar
 				font-weight: 500
 				font-size: 18px
@@ -1954,7 +1820,6 @@ span.error-span
 					white-space: nowrap
 					text-overflow: ellipsis
 					overflow: hidden
-
 				.green-circul
 					width: 13px
 					height: 13px
@@ -1964,7 +1829,6 @@ span.error-span
 					@media (max-width: 1199.98px)
 						width: 10px
 						height: 10px
-					
 				.paing
 					font-weight: 500
 					font-size: 18px
@@ -1980,7 +1844,6 @@ span.error-span
 						padding: 4px 6px
 					@media (max-width: 340px)
 						font-size: 10px
-
 	.categories
 		position: absolute
 		top: 30px
@@ -2006,7 +1869,6 @@ span.error-span
 			margin: 0 12px 4px 12px
 			@media (max-width: 1199.98px)
 				margin: 0 12px 12px 12px
-
 		hr
 			margin: 0
 			border-top: 1px solid rgba(255, 255, 255, 0.2)
@@ -2022,7 +1884,6 @@ span.error-span
 		z-index: -1
 		opacity: 0
 		visibility: hidden
-
 	.cart-p-25-wrap
 		padding: 0
 		.cart-p-25
@@ -2033,7 +1894,6 @@ span.error-span
 			@media (max-width: 1199.98px)
 				padding: 12px
 				border: none
-
 	.publications_2
 		.green-circul
 			position: absolute
@@ -2044,8 +1904,6 @@ span.error-span
 				right: 0
 				width: 12px
 				height: 12px
-
-
 		.cart-blog
 			.standart-plan h6
 				@media (max-width: 1199.98px)
@@ -2056,7 +1914,6 @@ span.error-span
 						background: #FF3A3A
 					.light-circul
 						background: #C4C4C4
-
 	.cart-fixed-width
 		@media (max-width: 1439px)
 			overflow-x: scroll
@@ -2095,11 +1952,9 @@ span.error-span
 				@media (max-width: 340px)
 					font-size: 12px
 					margin-top: 14px
-
 	.cart-about
 		@media (max-width: 991.98px)
 			padding: 16px
-
 	.h-600
 		height: 600px
 		overflow-y: scroll
@@ -2123,7 +1978,6 @@ span.error-span
 			color: #FFF
 			@media (max-width: 340px)
 				font-size: 14px
-
 //pills-Settings
 #pills-Settings
 	.cart
@@ -2155,7 +2009,6 @@ span.error-span
 					font-size: 18px
 				@media (max-width: 340px)
 					font-size: 14px
-
 		button
 			margin-top: 44px
 			@media (max-width: 767.98px)
@@ -2163,7 +2016,6 @@ span.error-span
 				display: block
 			@media (max-width: 340px)
 				margin-top: 22px
-
 //Make-a-Payment-PM
 #Make-a-Payment-PM, #Make-a-Payment-Bitcoin
 	.cart
@@ -2171,7 +2023,6 @@ span.error-span
 			padding: 16px 0
 			h3
 				padding: 0 16px
-
 		.perfect-money
 			display: flex
 			justify-content: space-between
@@ -2207,7 +2058,6 @@ span.error-span
 					@media (max-width: 991.98px)
 						margin-left: 0
 						margin-top: 12px
-
 	.cart-pay-btc
 		padding: 24px
 		@media (max-width: 991.98px)
@@ -2223,8 +2073,7 @@ span.error-span
 					width: 170px
 					height: 170px
 					margin: 0 auto
-					margin-bottom: 24px
-					
+					margin-bottom: 24px				
 			.wrap-right-btc
 				margin-left: 24px
 				display: flex
@@ -2257,7 +2106,6 @@ span.error-span
 				font-size: 18px
 				@media (max-width: 991.98px)
 					margin: 6px 0
-
 //pills-FAQ
 #pills-FAQ, #pills-Terms-and-Condition
 	.cart
@@ -2307,12 +2155,10 @@ span.error-span
 		.accordion > :last-child
 			.card-header
 				border-bottom: none
-
 	.span-sm-fs-16
 		@media (max-width: 1199.98px)
 			font-size: 16px
 			margin: 0 14px
-
 	.h-700px
 		height: 650px
 		overflow-y: scroll
@@ -2332,7 +2178,6 @@ span.error-span
 		p
 			font-weight: 300
 			font-size: 16px
-
 #pills-FAQ
 	padding: 0 20px
 	h2
@@ -2354,7 +2199,6 @@ span.error-span
 			border-radius: 12px
 			background-color: #fff
 			max-height: 20px
-
 //home page
 html.stars
 	&::after
@@ -2396,7 +2240,6 @@ html.stars
 			transform: none
 			width: 100%
 			height: 100%
-
 body.home-page
 	.container-1450
 		@media (min-width: 1600px)
@@ -2415,6 +2258,8 @@ body.home-page
 				padding: 16px 14px
 			@media (max-width: 991.98px)
 				background: transparent
+			@media (max-width: 330px)
+				padding: 14px 0
 			.login-btn
 				border: 1.5px solid #00D7D7
 				box-sizing: border-box
@@ -2426,6 +2271,9 @@ body.home-page
 				padding: 12px 50px
 				@media (max-width: 1199.98px)
 					padding: 10px 42px
+				@media (max-width: 330px)
+					padding: 6px 32px
+					font-size: 14px
 				&:hover
 					background: #00D7D7
 					color: rgb(47, 53, 158)
@@ -2443,9 +2291,10 @@ body.home-page
 				line-height: 19px
 				color: #FFF
 				display: none
+				@media (max-width: 330px)
+					font-size: 14px
 			.dn-span
-				display: block
-				
+				display: block			
 			h1
 				font-weight: 300
 				font-size: 26px
@@ -2454,13 +2303,12 @@ body.home-page
 				color: #FFF
 				margin-top: 16px
 				display: block
-			
-				
+				@media (max-width: 330px)
+					font-size: 24px		
 			.logo-mobil
 				margin-top: 16px
 				position: relative
-				display: block
-				
+				display: block			
 				.coins-svg
 					position: relative
 					left: 50%
@@ -2472,7 +2320,6 @@ body.home-page
 					transform: translate(-50%, -50%)
 			.db-span
 				display: none
-
 	.start-plan-wrap
 		position: relative
 		z-index: 5
@@ -2482,8 +2329,7 @@ body.home-page
 		.coins-wrap
 			position: relative
 			@media (max-width: 1199.98px)
-				display: none !important
-				
+				display: none !important			
 			.coins-svg
 				position: absolute
 				left: 50%
@@ -2502,7 +2348,6 @@ body.home-page
 					width: 100%
 			.coins-none
 				opacity: 0
-
 		.cart-wrap
 			padding: 12px 10px
 			border: 5px solid transparent
@@ -2511,15 +2356,12 @@ body.home-page
 			@media (max-width: 1199.98px)
 				padding: 0
 				border: 1px solid transparent
-
-
 			.coin-icon-active
 				position: absolute
 				opacity: 0
 				visibility: hidden
 				@media (max-width: 1199.98px)
-					display: none
-					
+					display: none			
 			.active-euro
 				top: -40px
 				left: 182px
@@ -2553,7 +2395,6 @@ body.home-page
 				bottom: 31px
 				@media (max-width: 1600px)
 					right: -102px
-
 			.cart
 				padding: 24px 10px
 				background: rgba(47, 53, 158, 0.35)
@@ -2567,7 +2408,7 @@ body.home-page
 					font-size: 45px
 					line-height: 53px
 					color: #FFF
-					margin-left: 4px
+					margin-left: 4
 					@media (max-width: 1199.98px)
 						font-size: 28px
 						line-height: 30px
@@ -2580,17 +2421,18 @@ body.home-page
 					h6
 						font-size: 14px
 						line-height: 16px
-						@media (max-width: 1600px)
-							font-size: 12px
 						@media (max-width: 1199.98px)
-							font-size: 14px
 							margin-bottom: 8px
+						@media (max-width: 330px)
+							font-size: 10px
 					span
 						font-size: 18px
 						line-height: 21px
 						@media (max-width: 1600px)
-							font-size: 12px
+							font-size: 14px
 						@media (max-width: 1199.98px)
+							font-size: 16px
+						@media (max-width: 330px)
 							font-size: 14px
 				.standart-plan-first
 					@media (max-width: 1600px)
@@ -2606,7 +2448,6 @@ body.home-page
 			.coin-icon-active
 				opacity: 1
 				visibility: visible
-
 		.cart-wrap-2
 			.active-euro
 				top: -35px
@@ -2642,12 +2483,9 @@ body.home-page
 				@media (max-width: 1600px)
 					left: -37px
 					bottom: 0
-					
-
 	.withdraw-h3
 		@media (max-width: 1199.98px)
-			display: none
-			
+			display: none		
 		h3
 			font-size: 16px
 			line-height: 19px
@@ -2687,7 +2525,6 @@ body.home-page
 					font-size: 18px
 					line-height: 21px
 					color: #9CA5FF
-
 	.section-button-cards
 		.cart
 			padding: 48px 0 0 0
@@ -2698,6 +2535,8 @@ body.home-page
 			position: relative
 			@media (max-width: 1199.98px)
 				padding: 24px 0 0 0
+			@media (max-width: 330px)
+				padding: 14px 0 0 0
 			&::before
 				content: ''
 				width: 1px
@@ -2708,8 +2547,7 @@ body.home-page
 				background: rgba(255, 255, 255, 0.1)
 				z-index: -1
 				@media (max-width: 1199.98px)
-					display: none
-			
+					display: none		
 			.cart-header
 				display: flex
 				align-items: center
@@ -2728,6 +2566,8 @@ body.home-page
 						font-size: 14px
 					@media (max-width: 1199.98px)
 						font-size: 18px
+					@media (max-width: 330px)
+						font-size: 15px
 				img
 					width: 28px
 					height: 25px
@@ -2735,8 +2575,7 @@ body.home-page
 				margin: 24px 0 0 0
 				border-top: 1px solid #76FFFF
 				@media (max-width: 1199.98px)
-					margin: 16px 0 0 0
-			
+					margin: 16px 0 0 0		
 			.cart-body
 				display: flex
 				padding: 14px 20px
@@ -2746,6 +2585,8 @@ body.home-page
 					padding: 14px 12px
 				@media (max-width: 1199.98px)
 					padding: 16px 12px 0 12px
+				@media (max-width: 330px)
+					padding: 12px 12px 0 12px
 				.number
 					font-weight: 300
 					font-size: 35px
@@ -2763,6 +2604,8 @@ body.home-page
 						font-size: 14px
 					@media (max-width: 1199.98px)
 						font-size: 16px
+					@media (max-width: 330px)
+						font-size: 14px
 				.fw-200
 					font-weight: 300
 					line-height: 20px
@@ -2771,11 +2614,15 @@ body.home-page
 						font-size: 12px
 					@media (max-width: 1199.98px)
 						font-size: 16px
+					@media (max-width: 330px)
+						font-size: 14px
 			.cart-body-2
 				flex-direction: column
 				align-items: start
 				img
 					margin-right: 18px
+					@media (max-width: 330px)
+						margin-right: 8px
 				.reg-span
 					margin: 10px 0
 			.cart-body-3, .cart-body-4
@@ -2788,6 +2635,8 @@ body.home-page
 						font-weight: 300
 						font-size: 16px
 						line-height: 19px
+						@media (max-width: 330px)
+							font-size: 14px
 					.reg-span-bold
 						font-weight: 500
 				p
@@ -2799,8 +2648,7 @@ body.home-page
 					@media (max-width: 1600px)
 						font-size: 14px
 					@media (max-width: 1199.98px)
-						margin: 12px 0 16px 0
-			
+						margin: 12px 0 16px 0			
 			.cart-body-4
 				@media (max-width: 1199.98px)
 					align-items: center
@@ -2816,7 +2664,6 @@ body.home-page
 					@media (max-width: 1199.98px)
 						text-align: center
 						font-size: 16px
-
 			.cart-footer
 				background: rgba(47, 53, 158, 0.25)
 				padding: 20px 16px
@@ -2856,9 +2703,10 @@ body.home-page
 		text-decoration-line: underline
 		color: #76FFFF
 		margin-top: 8px
-
 	.cart-input
 		margin-top: 32px
+		@media (max-width: 330px)
+			margin-top: 14px
 		input
 			background: #062673
 			border: 1px solid rgba(255, 255, 255, 0.7)
@@ -2873,10 +2721,13 @@ body.home-page
 				line-height: 21px
 				color: #9CA5FF
 				padding: 0 16px
+				@media (max-width: 330px)
+					font-size: 14px
+			@media (max-width: 330px)
+				font-size: 14px
 		button
 			width: 100%
 			margin: 16px 0 8px 0
-
 	.vertical-line-span
 		display: none
 		@media (max-width: 1199.98px)
@@ -2894,18 +2745,14 @@ body.home-page
 		left: 50%
 	.vertical-line-right
 		right: 16px
-
-
+//#pills-Terms-and-Condition
 #pills-Terms-and-Condition
 	padding: 0
 	.cart
 		margin-top: 0
 		padding-left: 0
 		padding-right: 0
-
-
 //costom select option
-
 div#selectBox
 	position: relative
 	cursor: pointer
@@ -2917,7 +2764,6 @@ div#selectBox
 	border-radius: 4px
 	height: 45px
 	max-height: 230px
-
 div#selectBox div.valueTag
 	cursor: pointer
 	transition: .2s
@@ -2951,27 +2797,22 @@ div#selectBox div.valueTag
 		@media (max-width: 1350px)
 			width: 158px
 			font-size: 14px
-
 div#selectBox > img.arrow
 	position: absolute
 	right: 16px
 	width: 16px
 	top: 16px
-
 ul#selectMenuBox::-webkit-scrollbar
 	background: transparent
 	width: 0
 	position: absolute
-
 ul#selectMenuBox::-webkit-scrollbar-track
 	background: transparent
 	position: absolute
 	z-index: -2
-
 ul#selectMenuBox::-webkit-scrollbar-thumb
 	border-radius: 100px
 	background: transparent
-
 ul#selectMenuBox
 	background: rgba(6, 38, 115, 0.8)
 	transition: .3s
@@ -2984,12 +2825,10 @@ ul#selectMenuBox
 	display: block
 	padding-inline-start: 0
 	margin-block-end: 0
-
 ul#selectMenuBox > li
 	display: block
 	border-radius: 0px
 	cursor: pointer
-
 ul#selectMenuBox > li.option
 	font-weight: 500
 	font-size: 18px
@@ -3021,7 +2860,6 @@ ul#selectMenuBox > li.option
 		@media (max-width: 1350px)
 			width: 158px
 			font-size: 14px
-
 ul#selectMenuBox > li.option:hover
 	background: #062678
 
