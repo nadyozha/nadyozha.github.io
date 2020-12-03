@@ -29,10 +29,13 @@ $(document).ready(function(){
    if(height >36){
       $('header').addClass('header-scroll');
     } else{
-    /*Если меньше 100px удаляем класс для header*/
+    /*Если меньше 36px удаляем класс для header*/
       $('header').removeClass('header-scroll');
     }
   });
+  //подключение плагина для стилизации scroll
+  //$(".").mCustomScrollbar();
+
 
  
     
