@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function(){
   //header menu
   $('#sandwich').click(function() {
   	$('body').toggleClass('menubar-in');
@@ -23,6 +23,19 @@ $(function() {
   $('.stylish-select-list li').click(function() {
     $('.stylish-select-selected').toggleClass('rotate-icon');
   });
+  //scroll header opacity
+  $('body').scroll(function(){
+   var height = $('body').scrollTop();
+   if(height >36){
+      $('header').addClass('header-scroll');
+    } else{
+    /*Если меньше 100px удаляем класс для header*/
+      $('header').removeClass('header-scroll');
+    }
+  });
+
+ 
+    
 
   
 
@@ -147,8 +160,9 @@ $(function() {
           items:3
         }
       }
+    
     })
-  });
+});
 
 
 
