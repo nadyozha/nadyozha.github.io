@@ -5,14 +5,22 @@ html
 	width: 100%
 	height: 100%
 	overflow-x: hidden
-body::-webkit-scrollbar
+*::-webkit-scrollbar
 	background-color: transparent
 	width: 4px
-body::-webkit-scrollbar-thumb
+*::-webkit-scrollbar-thumb
 	border-radius: 12px
 	background-color: #fff
-body::-webkit-scrollbar-track
+*::-webkit-scrollbar-track
 	background: transparent
+.contente::-webkit-scrollbar
+	background-color: transparent
+	width: 0
+.contente::-webkit-scrollbar-thumb
+	background-color: transparent
+.contente::-webkit-scrollbar-track
+	background: transparent
+
 body
 	height: 100%
 	font-family: 'Roboto', sans-serif
@@ -20,6 +28,8 @@ body
 	@media (max-width: 991.98px)
 		&.menubar-in
 			overflow: hidden
+input[type=password]
+	letter-spacing: 4px
 //owl-corousel
 .container-0
 	padding: 0 35px
@@ -200,13 +210,16 @@ button
 	margin-bottom: 0
 //body
 body
-	background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B
+	background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%)
 	z-index: -1
 	@media (max-width: 991.98px)
 		background: url('../img/bg-dashboard.svg') no-repeat center
 		background-size: cover
+
 #registration
 	header
+		.user
+			visibility: hidden
 		@media (max-width: 991.98px)
 			padding: 30px 16px
 			display: flex
@@ -305,7 +318,7 @@ body
 					width: 100%
 //header
 header
-	position: sticky
+	position: relative
 	left: 0
 	top: 0
 	right: 0
@@ -499,12 +512,18 @@ aside
 .contente
 	padding-left: 260px
 	position: relative
+	overflow-y: scroll
+	overflow-x: hidden
+	max-height: 92vh
 	z-index: 1
 	@media (max-width: 1300px)
 		padding-left: 240px
-	@media (max-width: 1198.99px)
+	@media (max-width: 1199.98px)
 		padding-left: 220px
-	@media (max-width: 991.99px)
+	@media (max-width: 1023px)
+		max-height: 100%
+		overflow: visible
+	@media (max-width: 991.98px)
 		padding-left: 0
 .tab-content-wrap
 	color: #fff
@@ -712,7 +731,7 @@ aside
 		max-height: none
 		border: 1px solid rgba(255, 255, 255, 0.5)
 		border-radius: 0 0 5px 5px
-		background: rgba(6, 38, 115, 0.9)
+		background: rgba(6, 38, 115, 0.98)
 		max-height: 260px
 		overflow-y: scroll
 		&::-webkit-scrollbar
@@ -729,6 +748,14 @@ aside
 			border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 			background-color: transparent !important
 			transition: .3s
+			@media (max-width: 1439px)
+				padding: 12px 30px 12px 12px
+				font-size: 14px
+			@media (max-width: 1199.98px)
+				font-size: 18px
+			@media (max-width: 575.98px)
+				font-size: 16px
+
 			&:last-child
 				border-radius: 0 0 4px 4px
 				border-bottom: none
@@ -1095,7 +1122,7 @@ span.error-span
 .modal-dialog
 	max-width: 550px!important
 .modal-content
-	background: rgba(23, 45, 139, 0.7)
+	background: rgba(23, 45, 139, 0.85)
 	backdrop-filter: blur(4px)
 	border-radius: 12px
 	padding: 56px 70px
@@ -1337,10 +1364,19 @@ span.error-span
 					font-size: 16px
 					color: #9CA5FF
 					margin: 24px 0 4px 0
+		h6.share
+			margin-top: 24px
+			margin-bottom: 0
+			padding: 0 24px
+			@media (max-width: 991.98px)
+				padding: 0 12px
+				margin-top: 0
+				margin-bottom: 8px
+				font-size: 14px
 		.link-wrap
 			padding: 14px 24px
 			background: #0F328B
-			margin-top: 24px
+			margin-top: 12px
 			@media (max-width: 991.98px)
 				padding: 14px 16px
 				margin-top: 0
@@ -1361,6 +1397,9 @@ span.error-span
 				padding: 0 16px
 				margin-top: 24px
 			.media
+				img
+					height: 24px
+					width: 24px
 				@media (max-width: 1198.98px)
 					margin-bottom: 16px
 				@media (max-width: 991.98px)
@@ -1560,7 +1599,7 @@ span.error-span
 				justify-content: space-between
 				align-items: center
 				position: relative
-				input.invest
+				.invest
 					width: 140px
 					background: rgba(6, 38, 115, 0.5)
 					border: 1px solid rgba(255, 255, 255, 0.5)
@@ -1955,20 +1994,6 @@ span.error-span
 	.cart-about
 		@media (max-width: 991.98px)
 			padding: 16px
-	.h-600
-		height: 600px
-		overflow-y: scroll
-		&::-webkit-scrollbar
-			background-color: transparent
-			width: 4px
-		&::-webkit-scrollbar-thumb
-			border-radius: 12px
-			background-color: #fff
-			max-height: 20px
-		@media (max-width: 1199.98px)
-			height: 830px
-		@media (max-width: 991.98px)
-			height: 100%
 		img
 			margin: 24px 0 16px 0
 			min-width: 100%
@@ -2814,7 +2839,7 @@ ul#selectMenuBox::-webkit-scrollbar-thumb
 	border-radius: 100px
 	background: transparent
 ul#selectMenuBox
-	background: rgba(6, 38, 115, 0.8)
+	background: rgba(6, 38, 115, 0.9)
 	transition: .3s
 	width: 100%
 	height: 185px
