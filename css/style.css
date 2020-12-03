@@ -38,6 +38,8 @@ body {
 
 input[type=password] {
   letter-spacing: 4px; }
+  input[type=password]::placeholder {
+    letter-spacing: 0; }
 
 .container-0 {
   padding: 0 35px; }
