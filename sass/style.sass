@@ -21,9 +21,9 @@ html
 .contente::-webkit-scrollbar-track
 	background: transparent
 body
-	height: 100%
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
+	height: 100%
 	@media (max-width: 991.98px)
 		&.menubar-in
 			overflow: hidden
@@ -212,11 +212,7 @@ button
 //body
 body
 	background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%)
-	z-index: -1
-	@media (max-width: 991.98px)
-		background: url('../img/bg-dashboard.svg') no-repeat center
-		background-size: cover
-
+	//z-index: -1
 #registration
 	header
 		.user
@@ -1279,6 +1275,15 @@ span.error-span
 #Modal-Cancel-Plan
 	.color-white-span
 		font-size: 18px
+	.copy-text
+		@media (max-width: 5000px)
+			max-width: 465px
+		@media (max-width: 767.98px)
+			max-width: 400px
+		@media (max-width: 575.98px)
+			max-width: 300px
+		@media (max-width: 400px)
+			max-width: 230px
 	.color-white-span-first
 		@media (max-width: 991.98px)
 			margin-top: 26px

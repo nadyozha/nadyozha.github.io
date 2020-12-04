@@ -29,9 +29,9 @@ html {
   background: transparent; }
 
 body {
-  height: 100%;
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
   @media (max-width: 991.98px) {
     body.menubar-in {
       overflow: hidden; } }
@@ -242,12 +242,7 @@ button {
   margin-bottom: 0; }
 
 body {
-  background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%);
-  z-index: -1; }
-  @media (max-width: 991.98px) {
-    body {
-      background: url("../img/bg-dashboard.svg") no-repeat center;
-      background-size: cover; } }
+  background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%); }
 
 #registration header .user {
   visibility: hidden; }
@@ -1432,6 +1427,18 @@ span.error-span {
 
 #Modal-Cancel-Plan .color-white-span {
   font-size: 18px; }
+@media (max-width: 5000px) {
+  #Modal-Cancel-Plan .copy-text {
+    max-width: 465px; } }
+@media (max-width: 767.98px) {
+  #Modal-Cancel-Plan .copy-text {
+    max-width: 400px; } }
+@media (max-width: 575.98px) {
+  #Modal-Cancel-Plan .copy-text {
+    max-width: 300px; } }
+@media (max-width: 400px) {
+  #Modal-Cancel-Plan .copy-text {
+    max-width: 230px; } }
 @media (max-width: 991.98px) {
   #Modal-Cancel-Plan .color-white-span-first {
     margin-top: 26px; } }
