@@ -243,6 +243,12 @@ button {
 
 body {
   background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0877BE 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%); }
+  @media (max-width: 991.98px) {
+    body {
+      background: url("../img/Home.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; } }
 
 #registration header .user {
   visibility: hidden; }
@@ -398,7 +404,7 @@ header {
   .date-wrap span.time {
     font-weight: 300;
     font-size: 35px;
-    color: #FFFF; }
+    color: #FFF; }
     @media (max-width: 991.98px) {
       .date-wrap span.time {
         font-size: 22px; } }
@@ -524,7 +530,10 @@ aside {
       left: -100%;
       top: 0;
       bottom: 0;
-      background: radial-gradient(70.28% 70.28% at 52.11% 36.3%, #0F47AD 0%, #0B40A2 7.81%, #090E5F 55.58%, #0A0D4F 67.44%, #04043C 81.25%), #01020B;
+      background: url("../img/Home.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       opacity: 0; } }
   @media (max-width: 370px) {
     aside {
