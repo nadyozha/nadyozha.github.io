@@ -24,31 +24,42 @@ $(document).ready(function(){
     $('.stylish-select-selected').toggleClass('rotate-icon');
   });
   //scroll header opacity
-  $('body').scroll(function(){
-   var height = $('body').scrollTop();
-   if(height > 36){
-      $('header').addClass('header-scroll');
-    } else{
+  //$('body').scroll(function(){
+   //var height = $('body').scrollTop();
+   //if(height > 36){
+     //$('header').addClass('header-scroll');
+   //} else{
     /*Если меньше 36px удаляем класс для header*/
-      $('header').removeClass('header-scroll');
-    }
-  });
+     //$('header').removeClass('header-scroll');
+    //}
+  //});
+ 
+  var Scrollbar = window.Scrollbar;
+  Scrollbar.init(document.querySelector('.my-scrollbar'));
+
+
   //подключение плагина для стилизации scroll
   //$("body").mCustomScrollbar({
     //callbacks:{
-     // onScroll:function(){
-      //  myCustomFn(this);
+      //onScroll:function(){
+        //myCustomFn(this);
       //}
     //}
   //});
-  function myCustomFn(el){
-    if(el.mcs.top < -36){
-      $('header').addClass('header-scroll');
-    } else{
-      $('header').removeClass('header-scroll');
-    }
-  };
+
+  //function myCustomFn(el){
+    //if(el.mcs.top < -36){
+      //$('header').addClass('header-scroll');
+    //} else{
+      //$('header').removeClass('header-scroll');
+    //}
+  //};
   //$(".h-700px, .h-295, .h-768, .full-h").mCustomScrollbar({});
+
+
+
+
+
   //click to copy svg
   $(function() {
     // copy content to clipboard
@@ -66,17 +77,6 @@ $(document).ready(function(){
     });
   });
   
-
-
-
-  
-
-
- 
-    
-
-  
-
 
 
   //language block hidden in dashboard
