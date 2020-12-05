@@ -2503,7 +2503,7 @@ span.error-span {
     background: url("../img/small-stars.svg") no-repeat center; }
     @media (max-width: 1199.98px) {
       #stars > div:first-child {
-        background: url("../img/small-stars-2.svg") no-repeat center cover;
+        background: url("../img/small-stars-2.svg") no-repeat center;
         top: 0 !important;
         left: 0 !important;
         right: 0;
@@ -2523,7 +2523,7 @@ span.error-span {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
     @media (max-width: 1199.98px) {
       #stars > div:last-child {
-        background: url("../img/blur-star-2.svg") no-repeat center cover;
+        background: url("../img/blur-star-2.svg") no-repeat center;
         top: 0 !important;
         left: 0 !important;
         right: 0;
