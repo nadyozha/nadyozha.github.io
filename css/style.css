@@ -2626,24 +2626,188 @@ body.home-page .start-plan-wrap {
   @media (max-width: 1199.98px) {
     body.home-page .start-plan-wrap {
       margin-top: 16px; } }
+  body.home-page .start-plan-wrap .coin-icon-active {
+    position: absolute; }
+    @media (max-width: 1199.98px) {
+      body.home-page .start-plan-wrap .coin-icon-active {
+        display: none; } }
+  body.home-page .start-plan-wrap .active-euro {
+    top: 60px;
+    left: 583px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-euro {
+        left: 436px; } }
+  body.home-page .start-plan-wrap .active-btc {
+    top: -34px;
+    left: 629px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-btc {
+        left: 458px;
+        top: -14px; } }
+  body.home-page .start-plan-wrap .active-ether {
+    top: -16px;
+    left: 736px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-ether {
+        left: 536px; } }
+  body.home-page .start-plan-wrap .active-pm {
+    top: 20px;
+    left: 823px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-pm {
+        left: 623px; } }
+  body.home-page .start-plan-wrap .active-payeer {
+    top: 105px;
+    left: 883px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-payeer {
+        left: 659px; } }
+  body.home-page .start-plan-wrap .active-ltc {
+    top: 228px;
+    left: 755px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-ltc {
+        left: 554px;
+        top: 200px; } }
+  body.home-page .start-plan-wrap .active-dollar {
+    top: 137px;
+    left: 535px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-dollar {
+        left: 409px; } }
+  body.home-page .start-plan-wrap .active-pound {
+    top: 167px;
+    left: 837px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-pound {
+        left: 637px; } }
+  body.home-page .start-plan-wrap .active-yen {
+    top: 204px;
+    left: 619px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap .active-yen {
+        left: 475px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-euro {
+    top: -34px;
+    left: 175px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-euro {
+        left: 100px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-btc {
+    top: -45px;
+    left: 338px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-btc {
+        left: 258px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-ether {
+    top: 67px;
+    left: 480px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-ether {
+        left: 371px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-dollar {
+    top: 188px;
+    left: 439px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-dollar {
+        top: 167px;
+        left: 329px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-ltc {
+    top: 248px;
+    left: 278px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-ltc {
+        top: 238px;
+        left: 222px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-payeer {
+    top: 261px;
+    left: 80px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-payeer {
+        top: 242px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-pm {
+    top: 154px;
+    left: -27px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-pm {
+        top: 127px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-pound {
+    top: 151px;
+    left: 537px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-pound {
+        left: 415px; } }
+  body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-yen {
+    top: 217px;
+    left: 607px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-1-wrap:hover ~ .active-yen {
+        left: 472px;
+        top: 194px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-euro {
+    top: -34px;
+    left: 1340px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-euro {
+        left: 1024px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-btc {
+    top: -45px;
+    left: 1108px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-btc {
+        left: 820px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-ether {
+    top: 67px;
+    left: 963px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-ether {
+        left: 663px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-dollar {
+    top: 188px;
+    left: 957px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-dollar {
+        top: 197px;
+        left: 738px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-ltc {
+    top: 248px;
+    left: 1075px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-ltc {
+        top: 238px;
+        left: 875px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-payeer {
+    top: 261px;
+    left: 1368px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-payeer {
+        top: 242px;
+        left: 1048px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-pm {
+    top: 154px;
+    left: 1424px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-pm {
+        top: 127px;
+        left: 1088px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-pound {
+    top: 151px;
+    left: 900px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-pound {
+        left: 687px; } }
+  body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-yen {
+    top: 217px;
+    left: 806px; }
+    @media (max-width: 1600px) {
+      body.home-page .start-plan-wrap #cart-plan-2-wrap:hover ~ .active-yen {
+        top: 194px;
+        left: 609px; } }
   body.home-page .start-plan-wrap .coins-wrap {
     position: relative; }
     @media (max-width: 1199.98px) {
       body.home-page .start-plan-wrap .coins-wrap {
         display: none !important; } }
-    body.home-page .start-plan-wrap .coins-wrap .coins-svg {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 1;
-      visibility: visible; }
-      @media (max-width: 1600px) {
-        body.home-page .start-plan-wrap .coins-wrap .coins-svg {
-          width: 80%; } }
-      @media (max-width: 1199.98px) {
-        body.home-page .start-plan-wrap .coins-wrap .coins-svg {
-          width: 50%; } }
     @media (max-width: 1600px) {
       body.home-page .start-plan-wrap .coins-wrap .coin-logo {
         width: 35%; } }
@@ -2661,47 +2825,6 @@ body.home-page .start-plan-wrap {
       body.home-page .start-plan-wrap .cart-wrap {
         padding: 0;
         border: 1px solid transparent; } }
-    body.home-page .start-plan-wrap .cart-wrap .coin-icon-active {
-      position: absolute;
-      opacity: 0;
-      visibility: hidden; }
-      @media (max-width: 1199.98px) {
-        body.home-page .start-plan-wrap .cart-wrap .coin-icon-active {
-          display: none; } }
-    body.home-page .start-plan-wrap .cart-wrap .active-euro {
-      top: -40px;
-      left: 182px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-btc {
-      top: -51px;
-      left: 271px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-pm {
-      left: -48px;
-      top: 151px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-payeer {
-      bottom: -40px;
-      left: 15px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-ltc {
-      bottom: -31px;
-      right: 95px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-dollar {
-      right: -38px;
-      bottom: 8px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-ether {
-      right: -79px;
-      bottom: 149px;
-      right: -44px; }
-    body.home-page .start-plan-wrap .cart-wrap .active-pound {
-      right: -141px;
-      bottom: 95px; }
-      @media (max-width: 1600px) {
-        body.home-page .start-plan-wrap .cart-wrap .active-pound {
-          right: -108px; } }
-    body.home-page .start-plan-wrap .cart-wrap .active-yen {
-      right: -200px;
-      bottom: 31px; }
-      @media (max-width: 1600px) {
-        body.home-page .start-plan-wrap .cart-wrap .active-yen {
-          right: -102px; } }
     body.home-page .start-plan-wrap .cart-wrap .cart {
       padding: 24px 10px;
       background: rgba(47, 53, 158, 0.35);

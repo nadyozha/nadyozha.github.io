@@ -2364,21 +2364,165 @@ body.home-page
 		margin-top: 50px
 		@media (max-width: 1199.98px)
 			margin-top: 16px
+		.coin-icon-active
+			position: absolute
+			@media (max-width: 1199.98px)
+				display: none
+						
+		.active-euro
+			top: 60px
+			left: 583px
+			@media (max-width: 1600px)
+				left: 436px
+		.active-btc
+			top: -34px
+			left: 629px
+			@media (max-width: 1600px)
+				left: 458px
+				top: -14px
+		.active-ether
+			top: -16px
+			left: 736px
+			@media (max-width: 1600px)
+				left: 536px
+		.active-pm
+			top: 20px
+			left: 823px
+			@media (max-width: 1600px)
+				left: 623px
+		.active-payeer
+			top: 105px
+			left: 883px
+			@media (max-width: 1600px)
+				left: 659px
+		.active-ltc
+			top: 228px
+			left: 755px
+			@media (max-width: 1600px)
+				left: 554px
+				top: 200px
+		.active-dollar
+			top: 137px
+			left: 535px
+			@media (max-width: 1600px)
+				left: 409px
+		.active-pound
+			top:  167px
+			left: 837px
+			@media (max-width: 1600px)
+				left: 637px
+		.active-yen
+			top: 204px
+			left: 619px
+			@media (max-width: 1600px)
+				left: 475px
+		
+		#cart-plan-1-wrap:hover
+			~	.active-euro
+					top: -34px
+					left: 175px
+					@media (max-width: 1600px)
+						left: 100px
+			~ .active-btc
+					top: -45px
+					left: 338px
+					@media (max-width: 1600px)
+						left: 258px
+			~	.active-ether
+					top: 67px
+					left: 480px
+					@media (max-width: 1600px)
+						left: 371px
+			~ .active-dollar
+					top: 188px
+					left: 439px
+					@media (max-width: 1600px)
+						top: 167px
+						left: 329px
+			~ .active-ltc
+					top: 248px
+					left: 278px
+					@media (max-width: 1600px)
+						top: 238px
+						left: 222px
+			~ .active-payeer
+					top: 261px
+					left: 80px
+					@media (max-width: 1600px)
+						top: 242px
+			~ .active-pm
+					top: 154px
+					left: -27px
+					@media (max-width: 1600px)
+						top: 127px
+			~ .active-pound
+					top:  151px
+					left: 537px
+					@media (max-width: 1600px)
+						left: 415px
+			~ .active-yen
+					top: 217px
+					left: 607px
+					@media (max-width: 1600px)
+						left: 472px
+						top: 194px
+
+		#cart-plan-2-wrap:hover
+			~	.active-euro
+					top: -34px
+					left: 1340px
+					@media (max-width: 1600px)
+						left: 1024px
+			~ .active-btc
+					top: -45px
+					left: 1108px
+					@media (max-width: 1600px)
+						left: 820px
+			~	.active-ether
+					top: 67px
+					left: 963px
+					@media (max-width: 1600px)
+						left: 663px
+			~ .active-dollar
+					top: 188px
+					left: 957px
+					@media (max-width: 1600px)
+						top: 197px
+						left: 738px
+			~ .active-ltc
+					top: 248px
+					left: 1075px
+					@media (max-width: 1600px)
+						top: 238px
+						left: 875px
+			~ .active-payeer
+					top: 261px
+					left: 1368px
+					@media (max-width: 1600px)
+						top: 242px
+						left: 1048px
+			~ .active-pm
+					top: 154px
+					left: 1424px
+					@media (max-width: 1600px)
+						top: 127px
+						left: 1088px
+			~ .active-pound
+					top:  151px
+					left: 900px
+					@media (max-width: 1600px)
+						left: 687px
+			~ .active-yen
+					top: 217px
+					left: 806px
+					@media (max-width: 1600px)
+						top: 194px
+						left: 609px
+
 		.coins-wrap
 			position: relative
 			@media (max-width: 1199.98px)
-				display: none !important			
-			.coins-svg
-				position: absolute
-				left: 50%
-				top: 50%
-				transform: translate(-50%, -50%)
-				opacity: 1
-				visibility: visible
-				@media (max-width: 1600px)
-					width: 80%
-				@media (max-width: 1199.98px)
-					width: 50%
+				display: none !important
 			.coin-logo
 				@media (max-width: 1600px)
 					width: 35%
@@ -2394,45 +2538,6 @@ body.home-page
 			@media (max-width: 1199.98px)
 				padding: 0
 				border: 1px solid transparent
-			.coin-icon-active
-				position: absolute
-				opacity: 0
-				visibility: hidden
-				@media (max-width: 1199.98px)
-					display: none			
-			.active-euro
-				top: -40px
-				left: 182px
-			.active-btc
-				top: -51px
-				left: 271px
-			.active-pm
-				left: -48px
-				top: 151px
-			.active-payeer
-				bottom: -40px
-				left: 15px
-			.active-ltc
-				bottom: -31px
-				right: 95px
-			.active-dollar
-				right: -38px
-				bottom: 8px
-			.active-ether
-				right: -79px
-				bottom: 149px
-				@media (max-width: 1600px)
-				right: -44px
-			.active-pound
-				right: -141px
-				bottom: 95px
-				@media (max-width: 1600px)
-					right: -108px
-			.active-yen
-				right: -200px
-				bottom: 31px
-				@media (max-width: 1600px)
-					right: -102px
 			.cart
 				padding: 24px 10px
 				background: rgba(47, 53, 158, 0.35)
