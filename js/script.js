@@ -34,13 +34,13 @@ $(document).ready(function(){
     }
   });
   //подключение плагина для стилизации scroll
-  $("body").mCustomScrollbar({
-    callbacks:{
-      onScroll:function(){
-        myCustomFn(this);
-      }
-    }
-  });
+  //$("body").mCustomScrollbar({
+    //callbacks:{
+     // onScroll:function(){
+      //  myCustomFn(this);
+      //}
+    //}
+  //});
   function myCustomFn(el){
     if(el.mcs.top < -36){
       $('header').addClass('header-scroll');
@@ -48,7 +48,7 @@ $(document).ready(function(){
       $('header').removeClass('header-scroll');
     }
   };
-  $(".h-700px, .h-295, .h-768, .full-h").mCustomScrollbar({});
+  //$(".h-700px, .h-295, .h-768, .full-h").mCustomScrollbar({});
   //click to copy svg
   $(function() {
     // copy content to clipboard
