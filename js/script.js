@@ -38,7 +38,8 @@ $(document).ready(function(){
   Scrollbar.init(document.querySelector('.my-scrollbar'));
 
 
-  //подключение плагина для стилизации scroll
+
+  ////подключение плагина для стилизации scroll
   //$("body").mCustomScrollbar({
     //callbacks:{
       //onScroll:function(){

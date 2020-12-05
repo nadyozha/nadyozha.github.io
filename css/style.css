@@ -3358,6 +3358,15 @@ ul#selectMenuBox > li.option {
 ul#selectMenuBox > li.option:hover {
   background: #062678; }
 
+.scrollbar-track-y {
+  background: transparent !important;
+  width: 4px; }
+  .scrollbar-track-y .scrollbar-thumb {
+    width: 4px;
+    background: #fff;
+    border: none;
+    padding-right: 15px; }
+
 .mCSB_container {
   overflow: visible; }
 
@@ -3372,7 +3381,7 @@ ul#selectMenuBox > li.option:hover {
     display: none; }
 
 .h-700px.mCustomScrollbar {
-  padding-right: 0 !important; }
+  padding-right: 0; }
   .h-700px.mCustomScrollbar > .mCustomScrollBox {
     padding-right: 24px; }
     @media (max-width: 1199.98px) {
