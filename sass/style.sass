@@ -2236,47 +2236,48 @@ span.error-span
 			background-color: #fff
 			max-height: 20px
 //home page
-html.stars
-	&::after
-		content: ''
-		display: block
-		width: 80%
-		height: 450px
-		position: absolute
-		top: 0
-		left: 50%
-		transform: translateX(-50%)
-		background: url('../img/small-stars.svg') no-repeat center
-		z-index: -1
-		opacity: 0.7
-		@media (max-width: 1199.98px)
-			left: 0
-			right: 0
-			bottom: 0
-			transform: none
-			width: 100%
-			height: 100%
-	&::before
-		content: ''
-		display: block
-		width: 1232px
-		height: 430px
-		position: absolute
-		top: -30px
-		left: 50%
-		transform: translateX(-50%)
-		background: url('../img/blur-stars.svg') no-repeat center
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-		z-index: -1
-		opacity: 0.7
-		@media (max-width: 1199.98px)
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
-			transform: none
-			width: 100%
-			height: 100%
+#stars
+	position: fixed !important
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: -1
+	opacity: 0.7
+	> div
+		&:first-child
+			width: 1220px
+			height: 453px
+			position: absolute !important
+			top: 4px !important
+			left: 50% !important
+			margin-left: -610px
+			background: url('../img/small-stars.svg') no-repeat center
+			@media (max-width: 1199.98px)
+				top: 0 !important
+				left: 0 !important
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				margin-left: 0
+		&:last-child
+			width: 1232px
+			height: 483px
+			position: absolute !important
+			top: -9px !important
+			left: 50% !important
+			margin-left: -616px
+			background: url('../img/blur-stars.svg') no-repeat center
+			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+			@media (max-width: 1199.98px)
+				top: 0 !important
+				left: 0 !important
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				margin-left: 0
 body.home-page
 	.container-1450
 		@media (min-width: 1600px)
@@ -2926,8 +2927,34 @@ ul#selectMenuBox > li.option:hover
 
 
 
+.mCSB_container
+	overflow: visible
+.mCSB_inside > .mCSB_container
+	margin-right: 0
+.mCSB_scrollTools
+	width: 12px
+	.mCSB_dragger .mCSB_dragger_bar
+		background-color: #fff
+	.mCSB_draggerRail
+		display: none
 
+.h-700px
+	&.mCustomScrollbar
+		padding-right: 0 !important
+		> .mCustomScrollBox
+			padding-right: 24px
+			@media (max-width: 1199.98px)
+				padding-right: 16px
 
+.full-h
+	&.mCustomScrollbar
+		padding-right: 0 !important
+		> .mCustomScrollBox
+			padding-right: 15px
+
+.h-700px, .h-295, .h-768, .full-h
+	&.mCustomScrollbar
+		overflow-y: auto !important
 
 
 

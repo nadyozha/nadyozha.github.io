@@ -26,7 +26,7 @@ $(document).ready(function(){
   //scroll header opacity
   $('body').scroll(function(){
    var height = $('body').scrollTop();
-   if(height >36){
+   if(height > 36){
       $('header').addClass('header-scroll');
     } else{
     /*Если меньше 36px удаляем класс для header*/
@@ -34,7 +34,21 @@ $(document).ready(function(){
     }
   });
   //подключение плагина для стилизации scroll
-  //$(".").mCustomScrollbar();
+  $("body").mCustomScrollbar({
+    callbacks:{
+      onScroll:function(){
+        myCustomFn(this);
+      }
+    }
+  });
+  function myCustomFn(el){
+    if(el.mcs.top < -36){
+      $('header').addClass('header-scroll');
+    } else{
+      $('header').removeClass('header-scroll');
+    }
+  };
+  $(".h-700px, .h-295, .h-768, .full-h").mCustomScrollbar({});
   //click to copy svg
   $(function() {
     // copy content to clipboard
@@ -185,7 +199,13 @@ $(document).ready(function(){
         }
       }
     
-    })
+    });
+
+  var scene = document.getElementById('stars');
+  var parallaxInstance = new Parallax(stars, {
+    relativeInput: true
+  });
+
 });
 
 
