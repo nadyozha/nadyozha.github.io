@@ -30,8 +30,10 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
-  height: 100%; }
+  height: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column; }
   @media (max-width: 991.98px) {
     body.menubar-in {
       overflow: hidden; } }
@@ -601,10 +603,10 @@ aside {
 
 .tab-content-wrap {
   color: #fff;
-  padding: 36px 0; }
+  padding: 36px 15px; }
   @media (max-width: 1450px) {
     .tab-content-wrap {
-      padding: 18px 0; } }
+      padding: 18px 5px; } }
   .tab-content-wrap h2 {
     font-weight: 500;
     font-size: 18px;
@@ -2500,7 +2502,8 @@ span.error-span {
     top: 4px !important;
     left: 50% !important;
     margin-left: -610px;
-    background: url("../img/small-stars.svg") no-repeat center; }
+    background: url("../img/small-stars.svg") no-repeat center;
+    animation: anim-1 2.7s linear infinite; }
     @media (max-width: 1199.98px) {
       #stars > div:first-child {
         background: url("../img/small-stars-2.svg") no-repeat center;
@@ -2511,7 +2514,8 @@ span.error-span {
         width: 100%;
         height: 100%;
         margin-left: 0;
-        opacity: 0.5; } }
+        opacity: 0.5;
+        animation: anim-1-1 2.7s linear infinite; } }
   #stars > div:last-child {
     width: 1232px;
     height: 483px;
@@ -2520,7 +2524,8 @@ span.error-span {
     left: 50% !important;
     margin-left: -616px;
     background: url("../img/blur-stars.svg") no-repeat center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    animation: anim-2 3s linear infinite; }
     @media (max-width: 1199.98px) {
       #stars > div:last-child {
         background: url("../img/blur-star-2.svg") no-repeat center;
@@ -2532,6 +2537,15 @@ span.error-span {
         height: 100%;
         margin-left: 0; } }
 
+@keyframes anim-1 {
+  50% {
+    margin-left: -630px; } }
+@keyframes anim-1-1 {
+  50% {
+    margin-left: -20px; } }
+@keyframes anim-2 {
+  50% {
+    margin-top: 15px; } }
 @media (min-width: 1600px) {
   body.home-page .container-1450 {
     max-width: 1480px; } }
@@ -2630,7 +2644,8 @@ body.home-page .start-plan-wrap {
     body.home-page .start-plan-wrap {
       margin-top: 16px; } }
   body.home-page .start-plan-wrap .coin-icon-active {
-    position: absolute; }
+    position: absolute;
+    pointer-events: none; }
     @media (max-width: 1199.98px) {
       body.home-page .start-plan-wrap .coin-icon-active {
         display: none; } }
@@ -3358,42 +3373,37 @@ ul#selectMenuBox > li.option {
 ul#selectMenuBox > li.option:hover {
   background: #062678; }
 
-.scrollbar-track-y {
+.dashboard header {
+  position: fixed; }
+.dashboard .contente {
+  padding-top: 93px; }
+  @media (max-width: 991.98px) {
+    .dashboard .contente {
+      padding-top: 81px; } }
+
+.my-scrollbar {
+  flex-grow: 1; }
+
+.scrollbar-track {
+  opacity: 0.6 !important;
   background: transparent !important;
-  width: 4px; }
+  transition: 0.3s !important; }
+  .scrollbar-track.show, .scrollbar-track:hover {
+    opacity: 1 !important; }
+
+.scrollbar-thumb {
+  background: #fff !important; }
+
+.scrollbar-track-x {
+  height: 12px !important; }
+  .scrollbar-track-x .scrollbar-thumb {
+    top: 4px !important;
+    height: 4px !important; }
+
+.scrollbar-track-y {
+  width: 12px !important; }
   .scrollbar-track-y .scrollbar-thumb {
-    width: 4px;
-    background: #fff;
-    border: none;
-    padding-right: 15px; }
-
-.mCSB_container {
-  overflow: visible; }
-
-.mCSB_inside > .mCSB_container {
-  margin-right: 0; }
-
-.mCSB_scrollTools {
-  width: 12px; }
-  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #fff; }
-  .mCSB_scrollTools .mCSB_draggerRail {
-    display: none; }
-
-.h-700px.mCustomScrollbar {
-  padding-right: 0; }
-  .h-700px.mCustomScrollbar > .mCustomScrollBox {
-    padding-right: 24px; }
-    @media (max-width: 1199.98px) {
-      .h-700px.mCustomScrollbar > .mCustomScrollBox {
-        padding-right: 16px; } }
-
-.full-h.mCustomScrollbar {
-  padding-right: 0 !important; }
-  .full-h.mCustomScrollbar > .mCustomScrollBox {
-    padding-right: 15px; }
-
-.h-700px.mCustomScrollbar, .h-295.mCustomScrollbar, .h-768.mCustomScrollbar, .full-h.mCustomScrollbar {
-  overflow-y: auto !important; }
+    left: 4px !important;
+    width: 4px !important; }
 
 /*# sourceMappingURL=style.css.map */
