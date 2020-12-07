@@ -1178,7 +1178,7 @@ span.error-span
 .modal-contente-details
 	padding: 24px
 	@media (max-width: 991.98px)
-	padding: 12px
+		padding: 12px
 	h3
 		font-weight: 300
 		font-size: 35px
@@ -1192,7 +1192,7 @@ span.error-span
 		h6
 			@media (max-width: 991.98px)
 				margin-bottom: 8px
-		span
+		span, img
 			margin-bottom: 32px
 			display: block
 			@media (max-width: 991.98px)
@@ -1301,6 +1301,35 @@ span.error-span
 	.cart-ptogressbar
 		.deposit-span
 			font-size: 16px
+//#Modal-View-Links
+#Modal-View-Links
+	.modal-dialog
+		max-width: 350px!important
+		.modal-content
+			padding: 45px 22px 16px 22px
+			.code-div
+				font-weight: 300
+				font-size: 16px
+				color: #FFF
+			.modal-link
+				display: flex
+				align-items: center
+				justify-content: space-between
+				a, span
+					font-weight: 500
+					font-size: 18px
+					line-height: 21px
+					color: #26EDED
+					white-space: nowrap
+					text-overflow: ellipsis
+					overflow: hidden
+					@media (max-width: 330px)
+						font-size: 16px
+				img
+					margin-left: 8px
+					cursor: pointer
+					&:hover
+						opacity: 0.7
 //pills-History
 #pills-History
 	.cart-from-to
@@ -1333,6 +1362,13 @@ span.error-span
 		h3
 			@media (max-width: 767.98px)
 				padding-left: 8px
+
+
+
+
+
+
+
 .standart-plan-span
 	padding: 0 24px
 	background: #0F328B
@@ -1542,8 +1578,9 @@ span.error-span
 			@media (max-width: 991.98px)
 				margin: 8px 12px 0 12px
 			.view-code
-				border-right: 1px solid rgba(255, 255, 255, 0.1)
-				padding-right: 5px
+				cursor: pointer
+				&:hover
+					opacity: 0.8
 				span
 					font-weight: 500
 					font-size: 14px
@@ -1556,8 +1593,7 @@ span.error-span
 						font-size: 14px
 					@media (max-width: 340px)
 						font-size: 10px
-					&:hover
-						color: #fff
+					
 				img
 					cursor: pointer
 					@media (max-width: 1400px)
@@ -2620,11 +2656,11 @@ body.home-page
 			&:hover
 				border: 5px solid rgba(27, 229, 229, 0.7)
 				@media (max-width: 1199.98px)
-					border: 1px solid rgba(27, 229, 229, 0.7)
+					border: 3px solid rgba(27, 229, 229, 0.7)
 		.active
 			border: 5px solid rgba(27, 229, 229, 0.7)
 			@media (max-width: 1199.98px)
-				border: 1px solid rgba(27, 229, 229, 0.7)
+				border: 3px solid rgba(27, 229, 229, 0.7)
 			.coin-icon-active
 				opacity: 1
 				visibility: visible
@@ -3054,10 +3090,6 @@ ul#selectMenuBox > li.option:hover
 
 
 
-.flex-grow-1
-	display: flex
-	flex-direction: column
-	flex-grow: 1
 
 .dashboard
 	header 

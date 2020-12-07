@@ -1320,8 +1320,10 @@ span.error-span {
       font-size: 14px; } }
 
 .modal-contente-details {
-  padding: 24px;
-  padding: 12px; }
+  padding: 24px; }
+  @media (max-width: 991.98px) {
+    .modal-contente-details {
+      padding: 12px; } }
   .modal-contente-details h3 {
     font-weight: 300;
     font-size: 35px;
@@ -1336,11 +1338,11 @@ span.error-span {
   @media (max-width: 991.98px) {
     .modal-contente-details .standart-plan h6 {
       margin-bottom: 8px; } }
-  .modal-contente-details .standart-plan span {
+  .modal-contente-details .standart-plan span, .modal-contente-details .standart-plan img {
     margin-bottom: 32px;
     display: block; }
     @media (max-width: 991.98px) {
-      .modal-contente-details .standart-plan span {
+      .modal-contente-details .standart-plan span, .modal-contente-details .standart-plan img {
         margin-bottom: 24px; } }
 
 #pills-Investments .cart-srandart-plane .standart-plan:last-child {
@@ -1458,6 +1460,35 @@ span.error-span {
     margin-top: 26px; } }
 #Modal-Cancel-Plan .cart-ptogressbar .deposit-span {
   font-size: 16px; }
+
+#Modal-View-Links .modal-dialog {
+  max-width: 350px !important; }
+  #Modal-View-Links .modal-dialog .modal-content {
+    padding: 45px 22px 16px 22px; }
+    #Modal-View-Links .modal-dialog .modal-content .code-div {
+      font-weight: 300;
+      font-size: 16px;
+      color: #FFF; }
+    #Modal-View-Links .modal-dialog .modal-content .modal-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      #Modal-View-Links .modal-dialog .modal-content .modal-link a, #Modal-View-Links .modal-dialog .modal-content .modal-link span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #26EDED;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+        @media (max-width: 330px) {
+          #Modal-View-Links .modal-dialog .modal-content .modal-link a, #Modal-View-Links .modal-dialog .modal-content .modal-link span {
+            font-size: 16px; } }
+      #Modal-View-Links .modal-dialog .modal-content .modal-link img {
+        margin-left: 8px;
+        cursor: pointer; }
+        #Modal-View-Links .modal-dialog .modal-content .modal-link img:hover {
+          opacity: 0.7; }
 
 #pills-History .cart-from-to {
   padding-left: 1px;
@@ -1727,8 +1758,9 @@ span.error-span {
       #pills-Advertising .cart .download {
         margin: 8px 12px 0 12px; } }
     #pills-Advertising .cart .download .view-code {
-      border-right: 1px solid rgba(255, 255, 255, 0.1);
-      padding-right: 5px; }
+      cursor: pointer; }
+      #pills-Advertising .cart .download .view-code:hover {
+        opacity: 0.8; }
       #pills-Advertising .cart .download .view-code span {
         font-weight: 500;
         font-size: 14px;
@@ -1744,8 +1776,6 @@ span.error-span {
         @media (max-width: 340px) {
           #pills-Advertising .cart .download .view-code span {
             font-size: 10px; } }
-        #pills-Advertising .cart .download .view-code span:hover {
-          color: #fff; }
       #pills-Advertising .cart .download .view-code img {
         cursor: pointer; }
         @media (max-width: 1400px) {
@@ -2902,12 +2932,12 @@ body.home-page {
         border: 5px solid rgba(27, 229, 229, 0.7); }
         @media (max-width: 1199.98px) {
           body.home-page .start-plan-wrap .cart-wrap:hover {
-            border: 1px solid rgba(27, 229, 229, 0.7); } }
+            border: 3px solid rgba(27, 229, 229, 0.7); } }
     body.home-page .start-plan-wrap .active {
       border: 5px solid rgba(27, 229, 229, 0.7); }
       @media (max-width: 1199.98px) {
         body.home-page .start-plan-wrap .active {
-          border: 1px solid rgba(27, 229, 229, 0.7); } }
+          border: 3px solid rgba(27, 229, 229, 0.7); } }
       body.home-page .start-plan-wrap .active .coin-icon-active {
         opacity: 1;
         visibility: visible; }
@@ -3377,11 +3407,6 @@ ul#selectMenuBox > li.option {
 
 ul#selectMenuBox > li.option:hover {
   background: #062678; }
-
-.flex-grow-1 {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; }
 
 .dashboard header {
   position: fixed; }
