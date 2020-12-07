@@ -32,15 +32,33 @@ button {
   button:hover {
     cursor: pointer; }
 
-input {
-  background: transparent;
-  border: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFF;
-  padding: 0 8px;
-  width: 100%; }
+.group {
+  position: relative;
+  flex-grow: 1; }
+  .group label {
+    position: absolute;
+    pointer-events: none;
+    top: 12px;
+    left: 24px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #9CA5FF; }
+  .group input {
+    width: 100%;
+    height: 48px;
+    background: #062673;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 22px 24px 6px 24px; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      font-size: 12px;
+      line-height: 14px;
+      top: 8px; }
 
 .row-2 {
   margin-left: 0;
@@ -613,27 +631,24 @@ body.home-page {
       @media (max-width: 767.98px) {
         body.home-page .your-email .input-button-wrap {
           flex-direction: column; } }
-      body.home-page .your-email .input-button-wrap input {
-        background: #062673;
-        border: 1px solid rgba(255, 255, 255, 0.7);
-        box-sizing: border-box;
-        border-radius: 40px;
-        max-width: 344px;
-        padding: 8px 16px; }
+      body.home-page .your-email .input-button-wrap .group {
+        margin-right: 16px; }
         @media (max-width: 1600px) {
-          body.home-page .your-email .input-button-wrap input {
-            width: 50%;
-            margin-right: 10px; } }
+          body.home-page .your-email .input-button-wrap .group label {
+            left: 12px; } }
+        @media (max-width: 1600px) {
+          body.home-page .your-email .input-button-wrap .group input {
+            padding: 22px 12px 6px 12px; } }
         @media (max-width: 767.98px) {
-          body.home-page .your-email .input-button-wrap input {
-            min-width: 100%;
-            height: 48px;
+          body.home-page .your-email .input-button-wrap .group input {
             margin-right: 0;
             margin-bottom: 10px; } }
-        body.home-page .your-email .input-button-wrap input::placeholder {
-          font-size: 18px;
-          line-height: 21px;
-          color: #9CA5FF; }
+      body.home-page .your-email .input-button-wrap button {
+        width: 220px;
+        padding: 12px 16px; }
+        @media (max-width: 1600px) {
+          body.home-page .your-email .input-button-wrap button {
+            width: 200px; } }
   body.home-page .section-button-cards .cart {
     padding: 48px 0 0 0;
     position: relative;
@@ -842,26 +857,6 @@ body.home-page {
     @media (max-width: 330px) {
       body.home-page .cart-input {
         margin-top: 14px; } }
-    body.home-page .cart-input input {
-      background: #062673;
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      box-sizing: border-box;
-      border-radius: 40px;
-      width: 100%;
-      padding: 8px 16px;
-      font-size: 16px;
-      height: 44px; }
-      body.home-page .cart-input input::placeholder {
-        font-size: 18px;
-        line-height: 21px;
-        color: #9CA5FF;
-        padding: 0 16px; }
-        @media (max-width: 330px) {
-          body.home-page .cart-input input::placeholder {
-            font-size: 14px; } }
-      @media (max-width: 330px) {
-        body.home-page .cart-input input {
-          font-size: 14px; } }
     body.home-page .cart-input button {
       width: 100%;
       margin: 16px 0 8px 0; }
