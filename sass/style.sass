@@ -239,7 +239,9 @@ body
 				img
 					height: 35px
 					width: 124px
-					display: flex			
+					display: flex	
+		@media (max-width: 575.98px)
+			padding: 16px	
 	.cart
 		padding: 24px
 		margin-top: 140px
@@ -2257,7 +2259,6 @@ span.error-span
 			background: url('../img/small-stars.svg') no-repeat center
 			animation: anim-1 2.7s linear infinite
 			@media (max-width: 1199.98px)
-				background: url('../img/small-stars-2.svg') no-repeat center
 				top: 0 !important
 				left: 0 !important
 				right: 0
@@ -2278,7 +2279,6 @@ span.error-span
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 			animation: anim-2 3s linear infinite
 			@media (max-width: 1199.98px)
-				background: url('../img/blur-star-2.svg') no-repeat center
 				top: 0 !important
 				left: 0 !important
 				right: 0
@@ -2295,7 +2295,23 @@ span.error-span
 @keyframes anim-2
 	50%
 		margin-top: 15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body.home-page
+	min-height: 100vh
 	.container-1450
 		@media (min-width: 1600px)
 			max-width: 1480px
@@ -2349,7 +2365,7 @@ body.home-page
 				@media (max-width: 330px)
 					font-size: 14px
 			.dn-span
-				display: block			
+				display: block
 			h1
 				font-weight: 300
 				font-size: 26px
@@ -2359,7 +2375,9 @@ body.home-page
 				margin-top: 16px
 				display: block
 				@media (max-width: 330px)
-					font-size: 24px		
+					font-size: 24px	
+			.db-span
+				display: none		
 			.logo-mobil
 				margin-top: 16px
 				position: relative
@@ -2368,13 +2386,14 @@ body.home-page
 					position: relative
 					left: 50%
 					transform: translateX(-50%)
+				.coins-none
+					display: none
 				.logo-small-mobil
 					position: absolute
 					left: 50%
 					top: 50%
 					transform: translate(-50%, -50%)
-			.db-span
-				display: none
+			
 	.start-plan-wrap
 		position: relative
 		z-index: 5
@@ -3035,7 +3054,10 @@ ul#selectMenuBox > li.option:hover
 
 
 
-
+.flex-grow-1
+	display: flex
+	flex-direction: column
+	flex-grow: 1
 
 .dashboard
 	header 
@@ -3066,39 +3088,6 @@ ul#selectMenuBox > li.option:hover
 	.scrollbar-thumb
 		left: 4px !important
 		width: 4px !important
-
-
-
-
-
-// .mCSB_container
-// 	overflow: visible
-// .mCSB_inside > .mCSB_container
-// 	margin-right: 0
-// .mCSB_scrollTools
-// 	width: 12px
-// 	.mCSB_dragger .mCSB_dragger_bar
-// 		background-color: #fff
-// 	.mCSB_draggerRail
-// 		display: none
-
-// .h-700px
-// 	&.mCustomScrollbar
-// 		padding-right: 0 
-// 		> .mCustomScrollBox
-// 			padding-right: 24px
-// 			@media (max-width: 1199.98px)
-// 				padding-right: 16px
-
-// .full-h
-// 	&.mCustomScrollbar
-// 		padding-right: 0 !important
-// 		> .mCustomScrollBox
-// 			padding-right: 15px
-
-// .h-700px, .h-295, .h-768, .full-h
-// 	&.mCustomScrollbar
-// 		overflow-y: auto !important
 
 
 
