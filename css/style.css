@@ -2486,11 +2486,12 @@ span.error-span {
     border-radius: 12px;
     background-color: #fff;
     max-height: 20px; }
-  @media (max-width: 1199.98px) {
+  @media (max-width: 991.98px) {
     #pills-FAQ .h-700px, #pills-Terms-and-Condition .h-700px {
-      margin-top: 16px;
-      height: 600px;
-      padding: 0 16px; } }
+      height: 100%;
+      padding: 0 16px;
+      overflow: visible;
+      margin-top: 16px; } }
   #pills-FAQ .h-700px p, #pills-Terms-and-Condition .h-700px p {
     font-weight: 300;
     font-size: 16px; }
