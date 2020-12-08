@@ -167,7 +167,9 @@ button {
     @media (max-width: 767.98px) {
       #stars > div:first-child {
         background: url("../img/mobile-srats.svg") no-repeat center;
-        opacity: 0.6; } }
+        opacity: 0.6;
+        top: 20px;
+        bottom: 20px; } }
   #stars > div:last-child {
     width: 1232px;
     height: 483px;
@@ -190,7 +192,9 @@ button {
         margin-left: 0; } }
     @media (max-width: 767.98px) {
       #stars > div:last-child {
-        background: url("../img/Group-80-iphone.svg") no-repeat center; } }
+        background: url("../img/Group-80-iphone.svg") no-repeat center;
+        top: 20px;
+        bottom: 20px; } }
 
 @keyframes anim-1 {
   50% {
