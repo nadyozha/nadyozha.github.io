@@ -20,7 +20,7 @@
               // тогда мы открываем список и выбираем нужный элемент.
               $('#selectBox').height("250px");  // «точка остановки анимации»
               // здесь стилизуем нашу стрелку и делаем анимацию средствами CSS3 
-              //$('img.arrow').css({borderRadius: "1000px", transition: ".2s", transform: "rotate(180deg)"});
+              $('img.arrow').css({borderRadius: "1000px", transition: ".2s", transform: "rotate(180deg)"});
           }
 
 
@@ -29,7 +29,7 @@
          // и присваиваем блоку первоначальную высоту + поворот стрелки в начальное положение
           if (currentHeight >= 250) {
             $('#selectBox').height(selectDefaultHeight);
-            //$('img.arrow').css({transform: rotateDefault});
+            $('img.arrow').css({transform: rotateDefault});
           }
       });
 
@@ -37,7 +37,7 @@
      // и меняем текст абзаца на текст элемента в списке
       $('li.option').click(function() {
         $('#selectBox').height(selectDefaultHeight);
-       //$('img.arrow').css({transform: rotateDefault});
+        $('img.arrow').css({transform: rotateDefault});
         $('div.valueTag').html($(this).html());
       });
   };

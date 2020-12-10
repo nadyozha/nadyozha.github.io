@@ -267,17 +267,16 @@ body {
       margin-right: 0;
       display: none; }
     #registration header .logo {
-      order: 1; }
-      #registration header .logo img {
-        height: 35px;
-        width: 124px;
-        display: flex; } }
+      order: 1;
+      height: 35px;
+      width: 124px;
+      display: flex; } }
 @media (max-width: 575.98px) {
   #registration header {
     padding: 16px; } }
 #registration .cart {
   padding: 24px;
-  margin-top: 140px;
+  margin-top: 70px;
   background: rgba(47, 53, 158, 0.35);
   border-radius: 12px; }
   @media (max-width: 575.98px) {
@@ -333,6 +332,19 @@ body {
       @media (max-width: 991.98px) {
         #registration .cart .input-wrap .error-span {
           font-size: 12px; } }
+    #registration .cart .input-wrap .email-input {
+      position: relative; }
+      #registration .cart .input-wrap .email-input:after {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        background: url("../img/ok.svg") no-repeat center;
+        background-size: 18px 18px; }
   #registration .cart .checkbox {
     margin-top: 17px; }
     #registration .cart .checkbox .optional {
@@ -360,6 +372,32 @@ body {
       @media (max-width: 991.98px) {
         #registration .cart .cart-footer button {
           width: 100%; } }
+#registration #Modal-Registration-Done h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 35px;
+  margin-top: 24px;
+  margin-bottom: 16px; }
+  @media (max-width: 575.98px) {
+    #registration #Modal-Registration-Done h2 {
+      font-size: 32px; } }
+  @media (max-width: 330px) {
+    #registration #Modal-Registration-Done h2 {
+      font-size: 24px; } }
+#registration #Modal-Registration-Done p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFF;
+  margin-bottom: 24px; }
+  @media (max-width: 330px) {
+    #registration #Modal-Registration-Done p {
+      font-size: 14px; } }
+#registration #Modal-Registration-Done a {
+  width: 150px;
+  margin: 0 auto; }
+  @media (max-width: 575.98px) {
+    #registration #Modal-Registration-Done a {
+      width: 100%; } }
 
 header {
   position: sticky;
@@ -453,7 +491,7 @@ header {
     cursor: pointer; }
 
 @media (max-width: 991.98px) {
-  .logo img {
+  .logo {
     display: none; } }
 
 .hidden {
@@ -629,7 +667,7 @@ aside {
         padding: 16px; } }
     @media (max-width: 991.98px) {
       .tab-content-wrap .cart {
-        padding: 16px; } }
+        padding: 11px; } }
     .tab-content-wrap .cart h3 {
       font-weight: 300;
       font-size: 35px;
@@ -725,6 +763,9 @@ aside {
         margin-top: 0; } }
     .tab-content-wrap .crypto-market-price img, .tab-content-wrap .account-information img {
       margin-right: 8px; }
+      @media (max-width: 340px) {
+        .tab-content-wrap .crypto-market-price img, .tab-content-wrap .account-information img {
+          margin-right: 4px; } }
     @media (max-width: 991.98px) {
       .tab-content-wrap .crypto-market-price .span, .tab-content-wrap .account-information .span {
         font-size: 14px; } }
@@ -761,9 +802,16 @@ aside {
       font-weight: 300;
       font-size: 16px;
       color: #fff; }
+      .tab-content-wrap .crypto-market-price .not-added img, .tab-content-wrap .account-information .not-added img {
+        width: 10px;
+        height: 10px; }
       @media (max-width: 1199.98px) {
         .tab-content-wrap .crypto-market-price .not-added, .tab-content-wrap .account-information .not-added {
-          font-size: 14px; } }
+          font-size: 14px; }
+          .tab-content-wrap .crypto-market-price .not-added img, .tab-content-wrap .account-information .not-added img {
+            width: 6px;
+            height: 6px;
+            margin-right: 2px; } }
       @media (max-width: 340px) {
         .tab-content-wrap .crypto-market-price .not-added, .tab-content-wrap .account-information .not-added {
           font-size: 10px; } }
@@ -807,7 +855,8 @@ aside {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    box-shadow: none !important; }
+    box-shadow: none !important;
+    transition: 0.3s; }
     .stylish-select-container > .stylish-select-selected:after {
       content: "";
       display: block;
@@ -818,7 +867,8 @@ aside {
       top: 50%;
       transform: translateY(-50%);
       background-image: url(../img/arrow.svg);
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      transition: 0.3s; }
     @media (max-width: 1439px) {
       .stylish-select-container > .stylish-select-selected {
         padding: 12px 30px 12px 12px;
@@ -872,6 +922,9 @@ aside {
       .stylish-select-container > .stylish-select-list > li:hover {
         color: #fff;
         border-color: #fff; }
+
+[data-select-state=open] .stylish-select-selected:after {
+  transform: translateY(-50%) rotate(180deg); }
 
 #pills-Deposit, #pills-Withdrawal, #pills-History, #pills-Affiliate, #pills-Advertising, #pills-About, #pills-Calculate, #pills-FAQ, #pills-Settings, #Make-a-Payment-PM, #Make-a-Payment-Bitcoin, #pills-Terms-and-Condition {
   padding: 0 35px; }
@@ -1200,7 +1253,7 @@ span.error-span {
     line-height: 21px;
     padding: 12px 18px;
     border-right: 0.5px solid rgba(255, 255, 255, 0.1);
-    width: 244px;
+    width: 270px;
     text-align: center; }
     @media (max-width: 1439px) {
       .choose-deposit h4 {
@@ -1209,12 +1262,28 @@ span.error-span {
       .choose-deposit h4 {
         font-size: 18px;
         text-align: left;
-        padding: 12px; } }
+        padding: 12px;
+        width: 245px; } }
+    @media (max-width: 991.98px) {
+      .choose-deposit h4 {
+        width: 245px; } }
     @media (max-width: 340px) {
       .choose-deposit h4 {
         font-size: 14px;
         width: 140px; } }
 
+@media (max-width: 1470px) {
+  #pills-Withdrawal .cart-cryto-market h3, #pills-Investments .cart-cryto-market h3 {
+    font-size: 32px; } }
+@media (max-width: 1345px) {
+  #pills-Withdrawal .cart-cryto-market h3, #pills-Investments .cart-cryto-market h3 {
+    font-size: 28px; } }
+@media (max-width: 1199.98px) {
+  #pills-Withdrawal .cart-cryto-market h3, #pills-Investments .cart-cryto-market h3 {
+    font-size: 22px; } }
+@media (max-width: 575.98px) {
+  #pills-Withdrawal .cart-cryto-market h3, #pills-Investments .cart-cryto-market h3 {
+    font-size: 20px; } }
 #pills-Withdrawal .process-btn, #pills-Investments .process-btn {
   max-width: 275px;
   margin-left: auto;
@@ -1244,8 +1313,36 @@ span.error-span {
 @media (max-width: 991.98px) {
   #pills-Withdrawal .cart .choose-deposit h4, #pills-Investments .cart .choose-deposit h4 {
     width: 110px; } }
+#pills-Withdrawal .cart .choose-deposit .h4-choose, #pills-Investments .cart .choose-deposit .h4-choose {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 12px 18px;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+  width: 270px;
+  text-align: center; }
+  @media (max-width: 1439px) {
+    #pills-Withdrawal .cart .choose-deposit .h4-choose, #pills-Investments .cart .choose-deposit .h4-choose {
+      font-size: 14px; } }
+  @media (max-width: 1199.98px) {
+    #pills-Withdrawal .cart .choose-deposit .h4-choose, #pills-Investments .cart .choose-deposit .h4-choose {
+      font-size: 18px;
+      text-align: left;
+      padding: 12px;
+      width: 245px; } }
+  @media (max-width: 991.98px) {
+    #pills-Withdrawal .cart .choose-deposit .h4-choose, #pills-Investments .cart .choose-deposit .h4-choose {
+      width: 245px; } }
+  @media (max-width: 575.98px) {
+    #pills-Withdrawal .cart .choose-deposit .h4-choose, #pills-Investments .cart .choose-deposit .h4-choose {
+      width: 160px; } }
+  @media (max-width: 340px) {
+    #pills-Withdrawal .cart .choose-deposit .h4-choose, #pills-Investments .cart .choose-deposit .h4-choose {
+      font-size: 14px;
+      width: 140px; } }
 #pills-Withdrawal .cart .choose-deposit input::placeholder, #pills-Investments .cart .choose-deposit input::placeholder {
-  text-align: center;
+  text-align: left;
   padding-left: 12px; }
   @media (max-width: 991.98px) {
     #pills-Withdrawal .cart .choose-deposit input::placeholder, #pills-Investments .cart .choose-deposit input::placeholder {
@@ -1836,27 +1933,28 @@ span.error-span {
       border: 1px solid rgba(255, 255, 255, 0.5);
       box-sizing: border-box;
       border-radius: 4px;
-      padding: 12px; }
+      padding: 12px 20px; }
       @media (max-width: 991.98px) {
         #pills-Calculate .cart .calculator .calculator-input .invest {
           font-size: 14px;
-          padding: 8px 12px; } }
+          padding: 8px 20px; } }
       @media (max-width: 340px) {
         #pills-Calculate .cart .calculator .calculator-input .invest {
           width: 120px;
           font-size: 12px; } }
     #pills-Calculate .cart .calculator .calculator-input input::placeholder {
-      text-align: left; }
+      text-align: left;
+      font-size: 16px; }
       @media (max-width: 991.98px) {
         #pills-Calculate .cart .calculator .calculator-input input::placeholder {
           font-size: 14px;
-          padding: 8px 12px; } }
+          padding: 8px 0px; } }
       @media (max-width: 340px) {
         #pills-Calculate .cart .calculator .calculator-input input::placeholder {
           font-size: 12px; } }
     #pills-Calculate .cart .calculator .calculator-input .baks {
       position: absolute;
-      right: 12px;
+      right: 122px;
       top: 50%;
       transform: translateY(-50%); }
       @media (max-width: 991.98px) {
@@ -2527,6 +2625,45 @@ span.error-span {
     margin-top: 0;
     padding-left: 0;
     padding-right: 0; }
+
+.group-terms {
+  position: relative;
+  flex-grow: 1; }
+  .group-terms label {
+    position: absolute;
+    pointer-events: none;
+    top: 12px;
+    left: 24px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #9CA5FF; }
+  .group-terms input {
+    width: 100%;
+    height: 48px;
+    background: #062673;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 22px 24px 6px 24px; }
+    .group-terms input:focus ~ label, .group-terms input:valid ~ label {
+      font-size: 12px;
+      line-height: 14px;
+      top: 8px; }
+
+.terms-h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px; }
+  @media (max-width: 1199.98px) {
+    .terms-h1 {
+      font-size: 32px; } }
+  @media (max-width: 991.98px) {
+    .terms-h1 {
+      font-size: 28px; } }
 
 div#selectBox {
   position: relative;

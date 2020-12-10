@@ -11,9 +11,7 @@
 	<body id="registration">
 
 		<header>
-			<a href="#" class="logo">
-				<img  src="img/logo-white.svg" alt="">
-			</a>
+			<img class="logo" src="img/logo-white.svg" alt="">
 			<div class="date-wrap">
 				<span class="date">October 23, 2020</span>
 				<span class="time">14:40:58 utc</span>
@@ -45,7 +43,9 @@
 					</div>
 					<div class="input-wrap">
 						<span class="span">Email</span>
-						<input class="" type="text">
+						<div class="email-input">
+							<input type="email">
+						</div>
 						<span class="error-span d-none">Error text must be here lorem ipsum dolor sit amet</span>
 					</div>
 					<div class="input-wrap">
@@ -62,11 +62,21 @@
 					</div>
 					<div class="cart-footer">
 						<span>By registering, you agree to Whalix's <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>,<br class="d-lg-none d-block"> and <a href="#">Cookie Policy</a>.</span>
-						<button class="process-btn">Register</button>
+						<button class="process-btn" data-toggle="modal" data-target="#Modal-Registration-Done">Register</button>
 					</div>
 				</div>
 			</div>
 
+		</div>
+		<div class="modal fade" id="Modal-Registration-Done">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content Modal-Registration-Done d-flex flex-column text-center">
+					<img src="img/ok.svg" alt="">
+					<h2>Registration Complete!</h2>
+					<p>Thank you for registering on our platform. From now on, you can start using your account actively and make your first deposit.</p>
+					<a href="login.html" class="process-btn">Log in</a>
+				</div>
+			</div>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
