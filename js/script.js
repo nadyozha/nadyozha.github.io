@@ -49,10 +49,7 @@ $(document).ready(function(){
     });
   });
 
-  $('[href*="#"]:not([data-toggle="tab"])').on('shown.bs.tab', function (e) {
-    e.target // newly activated tab
-    e.relatedTarget // previous active tab
-  })
+  
   $('.cancel-active-tab').click(function() {
     $('.tab-link-btn').removeClass('active');
   });
