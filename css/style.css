@@ -743,8 +743,7 @@ aside {
         .tab-content-wrap .cart-top-balance .cart-wrapper {
           text-align: left; } }
       .tab-content-wrap .cart-top-balance .cart-wrapper:hover {
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background: #0F328B; }
+        border: 1px solid rgba(255, 255, 255, 0.2); }
       .tab-content-wrap .cart-top-balance .cart-wrapper h3 {
         font-size: 35; }
         @media (max-width: 991.99px) {
