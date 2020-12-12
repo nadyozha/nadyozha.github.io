@@ -36,8 +36,8 @@ $(document).ready(function(){
     margin:10,
     nav:false,
     dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
+    //autoplay:true,
+    //autoplayTimeout:3000,
     responsive:{
       300:{
           items:1,
@@ -98,4 +98,10 @@ $(document).ready(function(){
       }
     
     });
+
+  var slider = $('.owl-carousel');
+  $('.nextItem').click(function () {
+      slider.trigger('next.owl.carousel');
+  });
+
 });
