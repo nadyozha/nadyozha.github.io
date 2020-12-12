@@ -36,6 +36,8 @@ $(document).ready(function(){
     margin:10,
     nav:false,
     dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
     responsive:{
       300:{
           items:1,
@@ -62,7 +64,8 @@ $(document).ready(function(){
           stagePadding: 70
       },
       1440:{
-          items:3
+          items:3,
+          stagePadding: 30
       }
     }
   })
