@@ -30,6 +30,7 @@ body
 		&.menubar-in
 			overflow: hidden
 input[type=password]
+
 	letter-spacing: 4px
 	&::placeholder
 		letter-spacing: 0
@@ -2569,5 +2570,13 @@ ul#selectMenuBox > li.option:hover
 		width: 4px !important
 
 
+.row-plans
+	@media (max-width: 1024px)
+		overflow-x: hidden
+		width: 100%
+		margin-left: 0
+		margin-right: 0
+		> [class*="col"]
+			padding: 0
 
 

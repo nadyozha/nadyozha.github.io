@@ -2828,4 +2828,13 @@ ul#selectMenuBox > li.option:hover {
     left: 4px !important;
     width: 4px !important; }
 
+@media (max-width: 1024px) {
+  .row-plans {
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .row-plans > [class*="col"] {
+      padding: 0; } }
+
 /*# sourceMappingURL=style.css.map */

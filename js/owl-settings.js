@@ -100,7 +100,7 @@ $(document).ready(function(){
     });
 
   var slider = $('.owl-carousel');
-  $('.nextItem').click(function () {
+  $('.owl-item').not('.active').click(function () {
       slider.trigger('next.owl.carousel');
   });
 
