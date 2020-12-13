@@ -219,7 +219,7 @@
 				<div class="container-fluid tab-content-wrap">
 					<div class="tab-content">
 
-						<div class="tab-pane fade show active" id="pills-Home">
+						<div class="tab-pane fade" id="pills-Home">
 							<div class="section-p-x">
 								<h2>Dashboard</h2>
 							</div>
@@ -3089,7 +3089,7 @@
 							</div>
 						</div>
 
-						<div class="tab-pane" id="pills-FAQ">
+						<div class="tab-pane fade" id="pills-FAQ">
 							<h2>FREQUENTLY ASKED QUESTIONS</h2>
 							<div data-scrollbar class="full-h">
 								<div class="cart cart-p-0">
@@ -3295,79 +3295,127 @@
 							</div>
 						</div>
 
-						<div class="tab-pane fade" id="pills-Settings">
+						<div class="tab-pane fade show active" id="pills-Settings">
 							<h2>Account History</h2>
-							<div class="form-row">
-								<div class="col-12">
-									<div class="cart">
-										<h3>My Account</h3>
-										<div class="row">
-											<div class="col-md-6">
-												<div class="my-account">
-													<span class="span">Registration Date</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Current Email</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Change Password</span>
-													<input type="password" placeholder="15">
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="my-account">
-													<span class="span">Username</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Add your new email</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Confirm New Password</span>
-													<input type="password" placeholder="15">
-												</div>
-											</div>
+							
+							<div class="cart">
+								<h3>My Account</h3>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="my-account">
+											<span class="span">Registration Date</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Current Email</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Change Password</span>
+											<input type="password" placeholder="15">
 										</div>
 									</div>
-								</div>
-								<div class="col-12 mt-3">
-									<div class="cart">
-										<h3>Payment Account</h3>
-										<div class="row">
-											<div class="col-md-6">
-												<div class="my-account">
-													<span class="span">PerfectMoney Account</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Bitcoin Account</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Ethereum Account</span>
-													<input type="text" placeholder="15">
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="my-account">
-													<span class="span">Payeer Account</span>
-													<input type="text" placeholder="15">
-												</div>
-												<div class="my-account">
-													<span class="span">Litecoin Account</span>
-													<input type="text" placeholder="15">
-												</div>
-											</div>
-											<div class="col-12 text-center">
-												<button class="process-btn">Save Changes</button>
-											</div>
+									<div class="col-md-6">
+										<div class="my-account">
+											<span class="span">Username</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Add your new email</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Confirm New Password</span>
+											<input type="password" placeholder="15">
 										</div>
 									</div>
 								</div>
 							</div>
+						
+							<div class="cart mt-3">
+								<h3>Payment Account</h3>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="my-account">
+											<span class="span">PerfectMoney Account</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Bitcoin Account</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Ethereum Account</span>
+											<input type="text" placeholder="15">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="my-account">
+											<span class="span">Payeer Account</span>
+											<input type="text" placeholder="15">
+										</div>
+										<div class="my-account">
+											<span class="span">Litecoin Account</span>
+											<input type="text" placeholder="15">
+										</div>
+									</div>
+									<div class="col-12 text-center">
+										<button class="process-btn">Save Changes</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="cart mt-3">
+								<h3>Email Notifications</h3>
+								<div class="email-notifications-row">
+									<span class="span">Daily profits</span>
+									<div class="active-status">
+										<h5 class="active-color">activate</h5>
+										<h5>deactivate</h5>
+									</div>
+								</div>
+
+								<div class="email-notifications-row">
+									<span class="span">New person referred</span>
+									<div class="active-status">
+										<h5>activate</h5>
+										<h5 class="active-color">deactivate</h5>
+									</div>
+								</div>
+
+								<div class="email-notifications-row">
+									<span class="span">Referral commission is paid</span>
+									<div class="active-status">
+										<h5>activate</h5>
+										<h5 class="active-color">deactivate</h5>
+									</div>
+								</div>
+
+								<div class="email-notifications-row">
+									<span class="span">Company news & updates</span>
+									<div class="active-status">
+										<h5>activate</h5>
+										<h5 class="active-color">deactivate</h5>
+									</div>
+								</div>
+
+								<div class="email-notifications-row">
+									<span class="span">Deposit notification</span>
+									<div class="active-status">
+										<h5>activate</h5>
+										<h5 class="active-color">deactivate</h5>
+									</div>
+								</div>
+
+								<div class="email-notifications-row">
+									<span class="span">Withdraw notification</span>
+									<div class="active-status">
+										<h5>activate</h5>
+										<h5 class="active-color">deactivate</h5>
+									</div>
+								</div>
+							</div>
+								
 						</div>
 
 						<div class="tab-pane fade" id="Make-a-Payment-PM">

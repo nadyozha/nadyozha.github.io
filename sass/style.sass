@@ -591,10 +591,12 @@ aside
 		background: rgba(47, 53, 158, 0.35)
 		border-radius: 12px
 		padding: 24px
+		.row
+			padding: 0
 		@media (max-width: 1380px)
 			padding: 16px
-		@media (max-width: 991.98px)
-			padding: 11px
+		//@media (max-width: 991.98px)
+			//padding: 11px
 		h3
 			font-weight: 300
 			font-size: 35px
@@ -2188,6 +2190,36 @@ span.error-span
 				display: block
 			@media (max-width: 340px)
 				margin-top: 22px
+	.email-notifications-row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 16px 0
+		border-bottom: 1px solid rgba(239, 249, 255, 0.1)
+		&:last-child
+			border: none
+			padding-bottom: 0
+		span
+			@media (max-width: 575.98px)
+				font-size: 14px
+		.active-status
+			display: flex
+			@media (max-width: 575.98px)
+				flex-direction: column
+				text-align: right
+			h5
+				margin-bottom: 0
+				text-transform: uppercase
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #8797C3
+				@media (max-width: 575.98px)
+					font-size: 16px
+				&:last-child
+					margin-left: 16px
+			.active-color
+				color: #76FFFF
 //Make-a-Payment-PM
 #Make-a-Payment-PM, #Make-a-Payment-Bitcoin
 	.cart
