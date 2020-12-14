@@ -68,6 +68,12 @@ $(document).ready(function(){
     }
   });
 
+
+  $('.active-status h5').click(function() {
+    $(this).addClass('active-color');
+    $(this).siblings("h5").removeClass('active-color');
+  });
+
 });
 
 
