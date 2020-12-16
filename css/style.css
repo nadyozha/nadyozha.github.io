@@ -501,8 +501,7 @@ header {
       width: 93px;
       padding: 8px 16px;
       text-align: center;
-      background: rgba(47, 53, 158, 0.35);
-      backdrop-filter: blur(10px);
+      background: #19206d;
       opacity: 0;
       visibility: hidden;
       cursor: pointer; }
