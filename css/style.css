@@ -491,6 +491,31 @@ header {
       @media (max-width: 340px) {
         .user .user-left .user-name {
           font-size: 16px; } }
+  .user .user-right {
+    position: relative; }
+    .user .user-right .log-out {
+      position: absolute;
+      right: 0;
+      top: 43px;
+      border-radius: 15px 0 15px 15px;
+      width: 93px;
+      padding: 8px 16px;
+      text-align: center;
+      background: rgba(47, 53, 158, 0.35);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer; }
+      .user .user-right .log-out a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #CECFDC; }
+      .user .user-right .log-out:hover a {
+        color: #fff; }
+    .user .user-right .log-out-visibl {
+      opacity: 1;
+      visibility: visible; }
   .user img {
     cursor: pointer; }
 
@@ -1634,6 +1659,12 @@ span.error-span {
     font-weight: 500;
     font-size: 18px;
     line-height: 45px; }
+    @media (max-width: 1439px) {
+      .standart-plan-span .daily-calendar {
+        font-size: 16px; } }
+    @media (max-width: 1199.98px) {
+      .standart-plan-span .daily-calendar {
+        font-size: 18px; } }
     @media (max-width: 767.98px) {
       .standart-plan-span .daily-calendar {
         font-size: 12px;
@@ -2026,9 +2057,13 @@ span.error-span {
       padding: 0 8px; } }
   #pills-Payments .cart-p-0 .standart-plan h6 {
     font-size: 16px; }
+    @media (max-width: 1439px) {
+      #pills-Payments .cart-p-0 .standart-plan h6 {
+        font-size: 13px; } }
     @media (max-width: 1199.98px) {
       #pills-Payments .cart-p-0 .standart-plan h6 {
-        text-align: center; } }
+        text-align: center;
+        font-size: 16px; } }
     @media (max-width: 340px) {
       #pills-Payments .cart-p-0 .standart-plan h6 {
         font-size: 10px; } }
@@ -2043,8 +2078,17 @@ span.error-span {
   @media (max-width: 991.98px) {
     #pills-Payments .cart-p-0 .standart-plan-span {
       padding: 0 12px; } }
+  @media (max-width: 1380px) {
+    #pills-Payments .cart-p-0 .standart-plan-span .row .col:last-child .daily-calendar {
+      font-size: 14px; } }
+  @media (max-width: 1225px) {
+    #pills-Payments .cart-p-0 .standart-plan-span .row .col:last-child .daily-calendar {
+      font-size: 12px; } }
   #pills-Payments .cart-p-0 .standart-plan-span .daily-calendar {
     line-height: 53px; }
+    @media (max-width: 1600px) {
+      #pills-Payments .cart-p-0 .standart-plan-span .daily-calendar {
+        font-size: 16px; } }
     @media (max-width: 1191.98px) {
       #pills-Payments .cart-p-0 .standart-plan-span .daily-calendar {
         font-size: 16px;

@@ -68,13 +68,33 @@ $(document).ready(function(){
     }
   });
 
-
+  //actibe status buttons in settings page
   $('.active-status h5').click(function() {
     $(this).addClass('active-color');
     $(this).siblings("h5").removeClass('active-color');
   });
 
+  //log out dropdown
+  
+  $('.log-out').click(function() {
+    $(this).removeClass('log-out-visibl');
+  });
+
+  $(document).mouseup(function (r){ // событие клика по веб-документу
+    var div = $(".log-out"); // тут указываем ID элемента
+    if (!div.is(r.target) // если клик был не по нашему блоку
+        && div.has(r.target).length === 0) { // и не по его дочерним элементам
+        $(".log-out").removeClass('log-out-visibl');
+        $('.img-account-user').click(function() {
+          $('.log-out').toggleClass('log-out-visibl');
+        });
+    }
+  });
+
 });
+
+
+
 
 
 
