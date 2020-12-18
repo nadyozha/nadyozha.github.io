@@ -865,12 +865,11 @@ body.home-page {
     display: none; }
     @media (max-width: 1199.98px) {
       body.home-page .vertical-line-span {
-        display: none;
+        display: block;
         width: 1px;
-        position: absolute;
+        position: fixed;
         height: 100%;
         border-left: 1px solid rgba(255, 255, 255, 0.1);
-        top: 0;
         bottom: 0;
         z-index: -1; } }
   body.home-page .vertical-line-left {
