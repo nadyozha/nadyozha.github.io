@@ -336,9 +336,9 @@ body {
       @media (max-width: 991.98px) {
         #registration .cart .input-wrap .error-span {
           font-size: 12px; } }
-    #registration .cart .input-wrap .email-input {
+    #registration .cart .input-wrap .block-input.success {
       position: relative; }
-      #registration .cart .input-wrap .email-input:after {
+      #registration .cart .input-wrap .block-input.success:after {
         content: "";
         display: block;
         width: 18px;
@@ -370,11 +370,11 @@ body {
       margin-bottom: 26px; }
       #registration .cart .cart-footer span a {
         color: #00D7D7; }
-    #registration .cart .cart-footer button {
+    #registration .cart .cart-footer a, #registration .cart .cart-footer button {
       width: 168px;
       margin: 0 auto; }
       @media (max-width: 991.98px) {
-        #registration .cart .cart-footer button {
+        #registration .cart .cart-footer a, #registration .cart .cart-footer button {
           width: 100%; } }
 #registration #Modal-Registration-Done h2 {
   color: #fff;
@@ -2731,6 +2731,10 @@ span.error-span {
       font-size: 12px;
       line-height: 14px;
       top: 8px; }
+
+.a-registration {
+  display: block;
+  text-align: center; }
 
 .terms-h1 {
   color: #fff;
