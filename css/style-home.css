@@ -862,7 +862,11 @@ body.home-page {
 .wrap-blue-bg-input {
   background: linear-gradient(269.58deg, #161C74 10.26%, #173293 50.37%), #C4C4C4;
   padding: 24px 16px;
-  margin-top: 32px; }
+  margin-top: 32px;
+  display: none; }
+  @media (max-width: 1199.98px) {
+    .wrap-blue-bg-input {
+      display: block; } }
   @media (max-width: 991.98px) {
     .wrap-blue-bg-input {
       margin-top: 40px;
