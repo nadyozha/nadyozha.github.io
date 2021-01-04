@@ -91,6 +91,22 @@ $(document).ready(function(){
     }
   });
 
+
+  $('.hover-exit').hover(function() {
+    $('.log-out-2').addClass('log-out-visibl');
+  });
+  $('.log-out-2').hover(function() {
+    $(this).addClass('log-out-visibl');
+  });
+
+  $(document).mouseup(function (r){ // событие клика по веб-документу
+    var div = $(".log-out-2"); // тут указываем ID элемента
+    if (!div.is(r.target) // если клик был не по нашему блоку
+      && div.has(r.target).length === 0) { // и не по его дочерним элементам
+      $(".log-out-2").removeClass('log-out-visibl');
+    }
+  });
+
 });
 
 

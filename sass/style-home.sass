@@ -810,3 +810,58 @@ body.home-page
 	left: 50%
 .vertical-line-right
 	right: 16px
+
+.hover-exit
+	position: absolute
+	background: transparent
+	cursor: pointer
+	z-index: 5
+.hover-exit-top
+	right: 0
+	top: 0
+	width: 270px
+	height: 25px
+	@media (max-width: 1199.98px)
+		height: 15px
+.hover-exit-left
+	left: 110px
+	top: 0
+	width: 170px
+	height: 25px
+	@media (max-width: 1199.98px)
+		height: 15px
+	@media (max-width: 1199.98px)
+		left: 0
+.hover-exit-right
+	right: 0
+	top: 0
+	width: 25px
+	height: 80px
+
+.log-out-2
+	position: absolute
+	right: 15px
+	top: 43px
+	border-radius: 15px 0 15px 15px
+	width: 93px
+	padding: 8px 16px
+	text-align: center
+	background: #19206d
+	opacity: 0
+	visibility: hidden
+	cursor: pointer
+	z-index: 5
+	@media (max-width: 1199.98px)
+		top: 18px
+	a
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		color: #CECFDC
+	&:hover a
+		color: #fff
+.log-out-visibl
+	visibility: visible
+	opacity: 1
+
+	
