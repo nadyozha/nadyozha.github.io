@@ -969,7 +969,7 @@ body.home-page {
       max-width: 880px !important; } }
   #Modal-intent-exit .modal-dialog .modal-content {
     position: relative;
-    background: rgba(47, 53, 158, 0.7);
+    background: rgba(47, 53, 158, 0.85);
     backdrop-filter: blur(4px);
     border-radius: 12px;
     padding-top: 55px; }
