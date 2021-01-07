@@ -53,3 +53,18 @@ $('#checkbox_1').on('change', function() {
 	$('.gift').toggleClass('max-hidden');
 });
 
+
+$('.eye-icon').click(function(){
+	var $pass = $('.password');
+  if ($pass.attr('type', "password")){
+      $pass.removeAttr('type', "password");
+      $pass.attr('type', "text");
+      console.log('text')
+  } else {
+  		$pass.removeAttr('type', "text");
+      $pass.attr('type', "password");
+      console.log('password')
+  };
+});
+
+

@@ -2399,6 +2399,19 @@ p.first-steps-p {
     .group input:focus ~ label, .group input:valid ~ label {
       font-size: 12px;
       bottom: 26px; }
+  .group .eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    cursor: pointer; }
+
+.position-relative {
+  position: relative; }
+  .position-relative .eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    cursor: pointer; }
 
 .registr {
   background: #f2f2f2;
@@ -2439,8 +2452,6 @@ p.first-steps-p {
     .registr span.span-registr a {
       color: black; }
   .registr input.password {
-    background: url("../img/eye.svg") no-repeat;
-    background-position: 97%;
     letter-spacing: 3px;
     font-size: 24px; }
     .registr input.password::placeholder {
