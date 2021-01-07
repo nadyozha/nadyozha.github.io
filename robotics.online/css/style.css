@@ -2413,6 +2413,9 @@ p.first-steps-p {
     top: 50%;
     cursor: pointer; }
 
+.eye-icon-active path {
+  fill: #4F4F4F; }
+
 .registr {
   background: #f2f2f2;
   padding-top: 16px; }
