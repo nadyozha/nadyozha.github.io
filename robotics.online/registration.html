@@ -22,24 +22,27 @@
 					<h3>Let's create an account for you</h3>
 					<span class="span-registr">Already have an account? <a href="log_in.html">Login here</a></span>
 					<form action="#">
-						<div>
-							<input class="w-100" type="text" placeholder="Email">
+						<div class="group">
+							<input type="text" required>
+							<label>Email</label>
 						</div>
-						<div>
-							<input class="w-100" type="text" placeholder="Full Name">
+						<div class="group">
+							<input type="text" required>
+							<label>Full name</label>
 						</div>
-						<div>
-							<input class="w-100 password" type="password" placeholder="Password">
+						<div class="group">
+							<input class="password" type="Password" required>
+							<label>Password</label>
 						</div>
 					</form>
-					<div class="loading d-flex justify-content-end">
+					<div class="loading justify-content-end d-none">
 						<img src="img/Rectangle-196.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 					</div>
-					<div class="text-right load-span">
+					<div class="text-right load-span d-none">
 						<span>Crack time: <b>2 seconds</b></span>
 					</div>
 					<div class="d-flex align-items-center wrap-check">
@@ -51,7 +54,10 @@
 							</label>
 						</div>
 					</div>
-					<input class="w-100" id="max-visible" type="text" placeholder="Max Dreamer">
+					<div class="group">
+						<input id="max-visible" type="text" required>
+						<label id="your-friend">Username of your Friend</label>
+					</div>
 					<p>By clicking on Agree & Register you agree to the user agreement, the privacy policy and the cookie policy of <b>Robotics.Online.</b></p>
 					<button class="btn btn-blue">Continue</button>
 				</div>

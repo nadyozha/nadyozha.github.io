@@ -2373,6 +2373,33 @@ p.first-steps-p {
       .girl-bg img {
         position: relative; } }
 
+.group {
+  position: relative; }
+  .group label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 4px;
+    left: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4F4F4F;
+    font-weight: 300; }
+    @media (max-width: 450px) {
+      .group label {
+        font-size: 12px; } }
+  .group input {
+    width: 100%;
+    height: 48px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    padding: 22px 24px 6px 24px; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      font-size: 12px;
+      bottom: 26px; }
+
 .registr {
   background: #f2f2f2;
   padding-top: 16px; }
@@ -2414,7 +2441,8 @@ p.first-steps-p {
   .registr input.password {
     background: url("../img/eye.svg") no-repeat;
     background-position: 97%;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-size: 24px; }
     .registr input.password::placeholder {
       letter-spacing: 0; }
   .registr input.e-mail {
@@ -2516,7 +2544,7 @@ p.first-steps-p {
     padding: 12px;
     border: none;
     border-bottom: 1px solid #a0a1a1;
-    margin-top: 18px;
+    margin-top: 14px;
     transition: 0.3s; }
     .registr input::placeholder {
       font-weight: 300;
@@ -2582,7 +2610,7 @@ p.first-steps-p {
   height: 16px;
   border-radius: 5px;
   border: 2px solid #2196F3;
-  opacity: 0.2;
+  opacity: 0.8;
   transition: all linear 0.3s;
   margin-bottom: 0; }
   .custom-checkbox:after {
@@ -2600,7 +2628,7 @@ p.first-steps-p {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
-  opacity: 0.4;
+  opacity: 0.8;
   transition: all linear 0.3s;
   margin-bottom: 0;
   font-weight: 300; }

@@ -48,6 +48,7 @@ $(this).addClass('max-dexter-none');
 
 $('#checkbox_1').on('change', function() {
 	$('#max-visible').toggleClass('max-hidden');
+	$('#your-friend').toggleClass('max-hidden');
 	$('.bonus').toggleClass('max-hidden');
 	$('.gift').toggleClass('max-hidden');
 });

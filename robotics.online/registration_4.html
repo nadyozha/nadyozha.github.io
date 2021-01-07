@@ -25,11 +25,13 @@
 						<img src="img/face.png" alt="">
 					</div>
 					<form action="#">
-						<div>
-							<input class="w-100 e-mail" type="text" placeholder="max@gmail.com">
+						<div class="group">
+							<input class="e-mail" type="text" required>
+							<label>max@gmail.com</label>
 						</div>
-						<div class="max-dexter">
-							<input class="w-100 full-name" type="text" placeholder="Max Dexter">
+						<div class="group max-dexter">
+							<input class="full-name" type="text" required>
+							<label>Max Dexter</label>
 						</div>
 						<div>
 							<input class="w-100 password" type="password" placeholder="****">
@@ -55,7 +57,10 @@
 						</div>
 					</div>
 					<h6 class="bonus">Bonus from</h6>
-					<input class="w-100"  id="max-visible" type="text" placeholder="Max Dreamer">
+					<div class="group">
+						<input id="max-visible" type="text" required>
+						<label id="your-friend">Username of your Friend</label>
+					</div>
 					<div class="gift">
 						Max gifts you 2.5% of all your investments made in the first 90 days.
 					</div>

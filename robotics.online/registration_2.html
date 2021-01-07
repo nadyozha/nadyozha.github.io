@@ -22,24 +22,26 @@
 					<h3>Let's create an account for you</h3>
 					<span class="span-registr">Already have an account? <a href="log_in.html">Login here</a></span>
 					<form action="#">
-						<div>
-							<input class="w-100 e-mail" type="text" placeholder="max@gmail.com">
+						<div class="group">
+							<input class="e-mail" type="text" required>
+							<label>max@gmail.com</label>
 						</div>
-						<div class="max-dexter">
-							<input class="w-100 full-name" type="text" placeholder="Max Dexter">
+						<div class="group max-dexter">
+							<input class="full-name" type="text" required>
+							<label>Max Dexter</label>
 						</div>
 						<div>
 							<input class="w-100 password" type="password" placeholder="****">
 						</div>
 					</form>
-					<div class="loading d-flex justify-content-end">
+					<div class="loading d-none justify-content-end">
 						<img src="img/Rectangle-196.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 						<img src="img/Rectangle-195.svg" alt="">
 					</div>
-					<div class="text-right load-span">
+					<div class="text-right load-span d-none">
 						<span>Crack time: <b>2 seconds</b></span>
 					</div>
 					<div class="d-flex align-items-center wrap-check">
@@ -51,7 +53,10 @@
 							</label>
 						</div>
 					</div>
-					<input class="w-100"  id="max-visible" type="text" placeholder="Max Dreamer">
+					<div class="group">
+						<input id="max-visible" type="text" required>
+						<label id="your-friend">Username of your Friend</label>
+					</div>
 					<p>By clicking on Agree & Register you agree to the user agreement, the privacy policy and the cookie policy of <b>Robotics.Online.</b></p>
 					<button class="btn btn-blue">Continue</button>
 				</div>
