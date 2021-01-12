@@ -65,4 +65,7 @@ $('.eye-icon').click(function(){
   }
 });
 
-
+$('.left-block-btn').click(function(){
+  $(this).addClass('active-mobile');
+  $(this).siblings().removeClass('active-mobile');
+});
