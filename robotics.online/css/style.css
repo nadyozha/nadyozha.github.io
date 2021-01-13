@@ -2455,7 +2455,7 @@ p.first-steps-p {
     .registr span.span-registr a {
       color: black; }
   .registr input.password {
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     font-size: 24px; }
     .registr input.password::placeholder {
       letter-spacing: 0; }
@@ -2555,7 +2555,7 @@ p.first-steps-p {
     font-size: 16px;
     line-height: 19px;
     color: black;
-    padding: 12px;
+    padding: 12px 12px 8px 12px;
     border: none;
     border-bottom: 1px solid #a0a1a1;
     margin-top: 14px;
@@ -2599,6 +2599,12 @@ p.first-steps-p {
   .registr button {
     display: block;
     min-width: 100%; }
+
+.login-body input {
+  font-weight: 300;
+  color: #4F5050;
+  font-size: 16px;
+  line-height: 19px; }
 
 .checkbox {
   display: flex;
@@ -2685,7 +2691,7 @@ p.first-steps-p {
     font-weight: bold;
     font-size: 54px;
     line-height: 64px;
-    color: #3A353B;
+    color: #4F4F4F;
     opacity: 0.95;
     margin-bottom: 22px; }
     @media (max-width: 1230px) {
@@ -2705,7 +2711,8 @@ p.first-steps-p {
         line-height: 34px; } }
   .win-up p {
     font-size: 18px;
-    line-height: 30px; }
+    line-height: 30px;
+    color: #4F4F4F; }
     @media (max-width: 575.98px) {
       .win-up p {
         font-size: 16px;
@@ -2720,6 +2727,18 @@ p.first-steps-p {
     .win-big p br {
       display: none; } }
 
+.how-it-works h2 {
+  color: #4F4F4F;
+  font-size: 56px; }
+  @media (max-width: 1230px) {
+    .how-it-works h2 {
+      font-size: 40px; } }
+  @media (max-width: 575.98px) {
+    .how-it-works h2 {
+      font-size: 28px; } }
+  @media (max-width: 330px) {
+    .how-it-works h2 {
+      font-size: 24px; } }
 .how-it-works .mobile-block {
   margin-top: 67px; }
   @media (max-width: 991.98px) {
@@ -2801,7 +2820,8 @@ p.first-steps-p {
         font-weight: bold;
         margin-left: 16px;
         font-size: 18px;
-        display: inline-block; }
+        display: inline-block;
+        color: #4F4F4F; }
         @media (max-width: 1199.98px) {
           .how-it-works .mobile-block .left-block-btn .left-btn span {
             font-size: 14px; } }
@@ -2837,7 +2857,8 @@ p.first-steps-p {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    margin: 17px 0 13px 24px; }
+    margin: 17px 0 13px 24px;
+    color: #4F4F4F; }
     @media (max-width: 1199.98px) {
       .how-it-works .mobile-block h6 {
         font-size: 22px; } }
@@ -2854,24 +2875,19 @@ p.first-steps-p {
         margin: 0 0 12px 0px; } }
   .how-it-works .mobile-block p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
+    color: #4F4F4F;
     margin-left: 24px; }
-    @media (max-width: 1199.98px) {
-      .how-it-works .mobile-block p {
-        font-size: 16px;
-        line-height: 18px; } }
     @media (max-width: 991.98px) {
       .how-it-works .mobile-block p {
-        font-size: 18px;
-        line-height: 24px;
         margin-left: 0; } }
     @media (max-width: 575.98px) {
       .how-it-works .mobile-block p {
-        line-height: 20px; } }
+        font-size: 16px;
+        line-height: 22px; } }
     @media (max-width: 330px) {
       .how-it-works .mobile-block p {
-        font-size: 14px;
-        line-height: 16px; } }
+        font-size: 12px; } }
   @media (max-width: 1199.98px) {
     .how-it-works .mobile-block .arrow-to-screen {
       margin-left: 16px; } }
