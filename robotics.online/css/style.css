@@ -2422,7 +2422,7 @@ p.first-steps-p {
   .registr h3 {
     font-family: Playfair Display;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 37px;
     color: #3A353B;
     opacity: 0.95;
@@ -2430,17 +2430,17 @@ p.first-steps-p {
     margin-top: 50px; }
     @media (max-width: 767.98px) {
       .registr h3 {
-        font-size: 24px;
+        font-size: 26px;
         margin-top: 16px; } }
     @media (max-width: 565.98px) {
       .registr h3 {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 0; } }
     @media (max-width: 340px) {
       .registr h3 {
         font-size: 18px; } }
   .registr span.span-registr {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     color: #4F4F4F;
     margin-bottom: 54px;
@@ -2450,13 +2450,12 @@ p.first-steps-p {
         margin-bottom: 16px; } }
     @media (max-width: 565.98px) {
       .registr span.span-registr {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 0; } }
     .registr span.span-registr a {
       color: black; }
   .registr input.password {
-    letter-spacing: 6px;
-    font-size: 24px; }
+    letter-spacing: 6px; }
     .registr input.password::placeholder {
       letter-spacing: 0; }
   .registr input.e-mail {
@@ -2544,9 +2543,9 @@ p.first-steps-p {
     color: #4F4F4F;
     font-weight: 300;
     display: block;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    margin-left: 8px; }
+    margin-top: 14px;
+    margin-left: 8px;
+    text-align: left; }
     .registr .login-a b {
       font-weight: 500;
       color: black; }
@@ -2601,9 +2600,7 @@ p.first-steps-p {
     min-width: 100%; }
 
 .login-body input {
-  font-weight: 300;
-  color: #4F5050;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px; }
 
 .checkbox {
@@ -2692,7 +2689,7 @@ p.first-steps-p {
     font-size: 54px;
     line-height: 64px;
     color: #4F4F4F;
-    opacity: 0.95;
+    opacity: 0.9;
     margin-bottom: 22px; }
     @media (max-width: 1230px) {
       .win-up h1, .win-up h2 {
@@ -2712,7 +2709,8 @@ p.first-steps-p {
   .win-up p {
     font-size: 18px;
     line-height: 30px;
-    color: #4F4F4F; }
+    color: #4F4F4F;
+    opacity: 0.75; }
     @media (max-width: 575.98px) {
       .win-up p {
         font-size: 16px;
@@ -2729,7 +2727,9 @@ p.first-steps-p {
 
 .how-it-works h2 {
   color: #4F4F4F;
-  font-size: 56px; }
+  opacity: 0.9;
+  font-size: 56px;
+  font-family: Playfair Display; }
   @media (max-width: 1230px) {
     .how-it-works h2 {
       font-size: 40px; } }
@@ -2821,7 +2821,8 @@ p.first-steps-p {
         margin-left: 16px;
         font-size: 18px;
         display: inline-block;
-        color: #4F4F4F; }
+        color: #4F4F4F;
+        opacity: 0.75; }
         @media (max-width: 1199.98px) {
           .how-it-works .mobile-block .left-block-btn .left-btn span {
             font-size: 14px; } }
@@ -2858,7 +2859,8 @@ p.first-steps-p {
     font-size: 24px;
     line-height: 28px;
     margin: 17px 0 13px 24px;
-    color: #4F4F4F; }
+    color: #4F4F4F;
+    opacity: 0.75; }
     @media (max-width: 1199.98px) {
       .how-it-works .mobile-block h6 {
         font-size: 22px; } }
@@ -2877,7 +2879,8 @@ p.first-steps-p {
     font-size: 18px;
     line-height: 30px;
     color: #4F4F4F;
-    margin-left: 24px; }
+    margin-left: 24px;
+    opacity: 0.75; }
     @media (max-width: 991.98px) {
       .how-it-works .mobile-block p {
         margin-left: 0; } }
