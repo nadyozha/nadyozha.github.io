@@ -947,7 +947,8 @@ button {
   font-weight: bold;
   font-size: 32px;
   line-height: 43px;
-  color: #4F4F4F;
+  color: #3A353B;
+  opacity: 0.95;
   margin-bottom: 18px;
   font-family: Playfair Display; }
   @media (max-width: 991.98px) {
@@ -961,7 +962,7 @@ button {
       font-size: 30px;
       line-height: 32px; } }
 .you-want small {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: #4F4F4F;
@@ -979,7 +980,7 @@ button {
   background: #3F85F4;
   border-radius: 4px;
   max-width: 240px;
-  padding: 10px 30px; }
+  padding: 15px 30px; }
   .btn-blue:hover {
     background: #2776f3;
     color: #FFFFFF; }
@@ -1226,7 +1227,7 @@ button {
     font-size: 16px;
     line-height: 17px;
     color: #4F5050;
-    padding: 12px 16px;
+    padding: 18px 16px;
     margin-top: 18px; }
   .get-srarted button {
     display: block;
@@ -2454,10 +2455,11 @@ p.first-steps-p {
         margin-bottom: 0; } }
     .registr span.span-registr a {
       color: black; }
-  .registr input.password {
-    letter-spacing: 6px; }
-    .registr input.password::placeholder {
-      letter-spacing: 0; }
+  .registr input.password::placeholder {
+    letter-spacing: 0; }
+  .registr input.password-text {
+    letter-spacing: normal;
+    font-size: 18px; }
   .registr input.e-mail {
     background: url("../img/check_circle.svg") no-repeat;
     background-position: 97%; }
@@ -2688,8 +2690,8 @@ p.first-steps-p {
     font-weight: bold;
     font-size: 54px;
     line-height: 64px;
-    color: #4F4F4F;
-    opacity: 0.9;
+    color: #3A353B;
+    opacity: 0.95;
     margin-bottom: 22px; }
     @media (max-width: 1230px) {
       .win-up h1, .win-up h2 {
@@ -2726,8 +2728,8 @@ p.first-steps-p {
       display: none; } }
 
 .how-it-works h2 {
-  color: #4F4F4F;
-  opacity: 0.9;
+  color: #3A353B;
+  opacity: 0.95;
   font-size: 56px;
   font-family: Playfair Display; }
   @media (max-width: 1230px) {
@@ -2754,7 +2756,8 @@ p.first-steps-p {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 100%; }
     @media (max-width: 991.98px) {
       .how-it-works .mobile-block .left-block-btn {
         margin-bottom: 0; } }
@@ -2821,8 +2824,8 @@ p.first-steps-p {
         margin-left: 16px;
         font-size: 18px;
         display: inline-block;
-        color: #4F4F4F;
-        opacity: 0.75; }
+        color: #3A353B;
+        opacity: 0.95; }
         @media (max-width: 1199.98px) {
           .how-it-works .mobile-block .left-block-btn .left-btn span {
             font-size: 14px; } }
@@ -2859,8 +2862,8 @@ p.first-steps-p {
     font-size: 24px;
     line-height: 28px;
     margin: 17px 0 13px 24px;
-    color: #4F4F4F;
-    opacity: 0.75; }
+    color: #3A353B;
+    opacity: 0.95; }
     @media (max-width: 1199.98px) {
       .how-it-works .mobile-block h6 {
         font-size: 22px; } }
