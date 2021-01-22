@@ -2455,6 +2455,9 @@ p.first-steps-p {
         margin-bottom: 0; } }
     .registr span.span-registr a {
       color: black; }
+  .registr input[type=password] {
+    font-size: 22px;
+    letter-spacing: 4px; }
   .registr input.password::placeholder {
     letter-spacing: 0; }
   .registr input.password-text {
