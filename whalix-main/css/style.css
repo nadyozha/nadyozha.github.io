@@ -11,8 +11,6 @@ img {
   height: auto; }
 
 html {
-  width: 100%;
-  overflow-x: hidden;
   font-family: "Montserrat", sans-serif; }
 
 body {
@@ -24,7 +22,9 @@ body {
   z-index: 0;
   padding-top: 152px;
   height: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden; }
   @media (max-width: 991.98px) {
     body {
       padding-top: 100px; }
@@ -253,7 +253,8 @@ button {
   display: flex;
   align-items: center;
   background: transparent;
-  border: none; }
+  border: none;
+  padding-left: 0; }
   .back-btn span {
     margin-left: 12px;
     font-weight: 500;
@@ -301,10 +302,21 @@ button {
 .bg-home .bg-elipse-64 {
   left: 0;
   top: 0; }
+  @media (max-width: 991.98px) {
+    .bg-home .bg-elipse-64 {
+      top: -200px;
+      height: 350px; } }
+  @media (max-width: 767.98px) {
+    .bg-home .bg-elipse-64 {
+      left: -100px;
+      height: 200px; } }
 .bg-home .bg-elipse-7 {
   left: 0;
   top: 260px;
   height: 700px; }
+  @media (max-width: 575.98px) {
+    .bg-home .bg-elipse-7 {
+      top: 60px; } }
 .bg-home .bg-elipse-67 {
   left: 0;
   bottom: 300px; }
@@ -320,6 +332,10 @@ button {
 .bg-home .bg-elipse-62 {
   top: 750px;
   right: 0; }
+  @media (max-width: 575.98px) {
+    .bg-home .bg-elipse-62 {
+      top: 500px;
+      height: 400px; } }
 .bg-home .bg-elipse-65 {
   top: 700px;
   right: 0; }
@@ -350,7 +366,7 @@ button {
   transform: translateX(-50%); }
   @media (max-width: 575.98px) {
     .bg-home .stars-2 {
-      top: 350px; } }
+      top: 320px; } }
 .bg-home .coins-btc {
   left: 636px;
   top: 367px; }
@@ -836,7 +852,7 @@ section {
       margin-top: 80px; } }
   @media (max-width: 575.98px) {
     #sign-up {
-      padding-top: 40px; } }
+      padding-top: 0; } }
   #sign-up .coins-block {
     display: flex;
     justify-content: space-around;
