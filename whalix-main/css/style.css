@@ -58,7 +58,8 @@ header {
 
 @media (max-width: 991.98px) {
   .header-first-active {
-    background: #000D16; } }
+    background: #000D16;
+    opacity: 0.9; } }
 
 input[type=password] {
   letter-spacing: 2px; }
