@@ -11,7 +11,9 @@ img {
   height: auto; }
 
 html {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%; }
 
 body {
   display: flex;
@@ -1503,7 +1505,7 @@ footer {
           margin-bottom: 8px; } }
       @media (max-width: 991.98px) {
         .calculate-block .diapazon-price h6 {
-          font-size: 22px; } }
+          font-size: 20px; } }
       @media (max-width: 330px) {
         .calculate-block .diapazon-price h6 {
           line-height: 20px;
@@ -1770,6 +1772,22 @@ footer {
       #v-pills-Withdrawal h6, #v-pills-Affiliate h6, #v-pills-Deposit h6 {
         font-size: 18px;
         line-height: 28px; } }
+  #v-pills-Withdrawal .diapazon-price, #v-pills-Affiliate .diapazon-price, #v-pills-Deposit .diapazon-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; }
+    #v-pills-Withdrawal .diapazon-price h6, #v-pills-Affiliate .diapazon-price h6, #v-pills-Deposit .diapazon-price h6 {
+      font-size: 32px; }
+      @media (max-width: 1499px) {
+        #v-pills-Withdrawal .diapazon-price h6, #v-pills-Affiliate .diapazon-price h6, #v-pills-Deposit .diapazon-price h6 {
+          font-size: 28px; } }
+      @media (max-width: 991.98px) {
+        #v-pills-Withdrawal .diapazon-price h6, #v-pills-Affiliate .diapazon-price h6, #v-pills-Deposit .diapazon-price h6 {
+          font-size: 20px; } }
+      @media (max-width: 330px) {
+        #v-pills-Withdrawal .diapazon-price h6, #v-pills-Affiliate .diapazon-price h6, #v-pills-Deposit .diapazon-price h6 {
+          line-height: 20px;
+          font-size: 16px; } }
   #v-pills-Withdrawal .mt-70, #v-pills-Affiliate .mt-70, #v-pills-Deposit .mt-70 {
     margin: 70px 0 18px 0; }
     @media (max-width: 767.98px) {
@@ -2505,14 +2523,11 @@ footer {
       font-size: 42px; } }
   @media (max-width: 991.98px) {
     .noUi-tooltip {
-      font-size: 32px;
-      bottom: 110% !important; } }
+      font-size: 26px;
+      bottom: 80% !important; } }
   @media (max-width: 575.98px) {
     .noUi-tooltip {
       font-size: 24px; } }
-  @media (max-width: 330px) {
-    .noUi-tooltip {
-      bottom: 80% !important; } }
 
 #settings .registration {
   padding-top: 30px; }
