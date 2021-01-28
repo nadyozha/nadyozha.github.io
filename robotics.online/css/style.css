@@ -2666,11 +2666,11 @@ p.first-steps-p {
     line-height: 14px;
     color: #828282;
     margin: 0; }
-  .footer-registration span.language {
+  .footer-registration .language {
     cursor: pointer; }
-    .footer-registration span.language:hover {
+    .footer-registration .language:hover {
       color: black; }
-    .footer-registration span.language img {
+    .footer-registration .language img {
       width: 32px;
       height: 16px; }
 
