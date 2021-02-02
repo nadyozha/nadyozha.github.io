@@ -174,13 +174,13 @@ $(document).ready(function(){
 	//go to reinvest
 	$('.go-to-reinvest').click(function() {
 		$('#withdrawalMain').addClass('d-none');
-		$('#withdrawalReinvest').addClass('d-block')
+		$('#withdrawalReinvest').removeClass('d-none')
 	});
 
 	//btn back to the main withdrawa
 	$('.back-to-main-withdr').click(function() {
 		$('#withdrawalMain').removeClass('d-none');
-		$('#withdrawalReinvest').removeClass('d-block')
+		$('#withdrawalReinvest').addClass('d-none')
 	});
 
 	//$('.go-to-have-you').click(function() {
@@ -191,27 +191,24 @@ $(document).ready(function(){
 	//get the bonus
 	$('.get-bonus').click(function() {
 		$('#withdrawaSecond').removeClass('d-none');
-		$('#withdrawalReinvest').removeClass('d-block')
+		$('#withdrawalReinvest').addClass('d-none')
 	});
 	
 	//btn back to reinvest
 	$('.back-to-reinvest').click(function() {
 		$('#withdrawaSecond').addClass('d-none');
-		$('#withdrawalReinvest').addClass('d-block')
+		$('#withdrawalReinvest').removeClass('d-none')
 	});
 
 	//go to the confirm and claim
 	$('.go-to-confirm-claim').click(function() {
 		$('#confirmOrClaim').removeClass('d-none');
-		$('#withdrawalReinvest').removeClass('d-block')
+		$('#withdrawalReinvest').addClass('d-none')
+		$('#WaitAndReceive').addClass('d-none')
 	});
 
 	//btn back to reinvest from confirm and claim
-	//btn back to reinvest
-	$('.back-to-reinvest-from-claim').click(function() {
-		$('#confirmOrClaim').addClass('d-none');
-		$('#withdrawalReinvest').addClass('d-block')
-	});
+	
 
 	//go to Withdrawal is pending
 	$('.confirm-withdrawal').click(function() {
@@ -226,9 +223,9 @@ $(document).ready(function(){
 	});
 	
 	//go to Good Job Withdrawal
-	$('.go-to-Good-Job-Withdrawal').click(function() {
+	$('.go-to-WaitAndReceive').click(function() {
 		$('#confirmOrClaim').addClass('d-none');
-		$('#GoodJobWithdrawal').removeClass('d-none')
+		$('#WaitAndReceive').removeClass('d-none')
 	});
 
 	//btn back to claim from Good Job Withdrawal
@@ -236,6 +233,36 @@ $(document).ready(function(){
 		$('#confirmOrClaim').removeClass('d-none');
 		$('#GoodJobWithdrawal').addClass('d-none')
 	});
+
+	//btn back to main-claim from #WaitAndReceive
+	$('.back-to-main-claim-2').click(function() {
+		$('#WaitAndReceive').addClass('d-none');
+		$('#confirmOrClaim').removeClass('d-none')
+	});
+
+	//go to Good Job Withdrawal
+	$('.go-to-goog-job').click(function() {
+		$('#withdrawalIsPending').addClass('d-none');
+		$('#GoodJobWithdrawal').removeClass('d-none')
+	});
+
+	//
+	$('.go-to-withdrawaSecond').click(function() {
+		$('#withdrawalReinvest').addClass('d-none');
+		$('#withdrawaSecond').removeClass('d-none')
+	});
+
+	$('.go-to-confirmOrClaim').click(function() {
+		$('#withdrawaSecond').addClass('d-none');
+		$('#confirmOrClaim').removeClass('d-none')
+	})
+
+	//btn back to 
+	$('.back-to-reinvest-from-claim').click(function() {
+		$('#withdrawaSecond').removeClass('d-none');
+		$('#confirmOrClaim').addClass('d-none')
+	});
+
 
 });
 
