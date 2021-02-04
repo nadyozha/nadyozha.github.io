@@ -13,6 +13,8 @@ $(document).ready(function(){
 		$('#name-visible').toggleClass('name-hidden');
 	});
 
+
+
 	$(function() {
     // copy content to clipboard
     function copyToClipboard(element) {
@@ -22,20 +24,33 @@ $(document).ready(function(){
       document.execCommand("copy");
       $temp.remove();
     }
+
+
     // copy coupone code to clipboard
-    $('.copy-btn').on("click", function() {
+    $('.copy-btn').click(function() {
       var $brat = $(this).siblings(".copy-text");
       copyToClipboard($brat);
+      $(this).siblings(".copied").addClass('copied-visible');
+			setTimeout(function() {
+				$(this).siblings(".copied").removeClass('copied-visible');
+		}, 2000);
     });
   });
 
 
-	$('.copy-btn').click(function() {
-		$(this).siblings(".copied").addClass('copied-visible');
-			setTimeout(function() {
-				$(this).siblings(".copied").removeClass('copied-visible');
-		}, 2000);
-	});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	$(document).mouseup(function (r){ // событие клика по веб-документу
