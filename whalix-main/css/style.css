@@ -1359,15 +1359,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media (max-width: 1199.98px) {
-      footer .left-footer a .logo-img, footer .right-footer a .logo-img {
-        height: 42px; } }
-    @media (max-width: 575.98px) {
-      footer .left-footer a .logo-img, footer .right-footer a .logo-img {
-        height: 30px; } }
+    footer .left-footer a .logo-img, footer .right-footer a .logo-img {
+      height: 30px; }
+      @media (max-width: 575.98px) {
+        footer .left-footer a .logo-img, footer .right-footer a .logo-img {
+          height: 20px; } }
     @media (max-width: 575.98px) {
       footer .left-footer a .telegram-icon, footer .right-footer a .telegram-icon {
-        height: 25px; } }
+        height: 20px; } }
     footer .left-footer h6, footer .right-footer h6 {
       margin: 0 0 0 62px;
       font-size: 18px;
