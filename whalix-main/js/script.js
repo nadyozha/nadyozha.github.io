@@ -29,6 +29,15 @@ $(document).ready(function(){
     });
   });
 
+
+	$('.copy-btn').click(function() {
+		$(this).siblings(".copied").addClass('copied-visible');
+			setTimeout(function() {
+				$(this).siblings(".copied").removeClass('copied-visible');
+		}, 2000);
+	});
+
+
 	$(document).mouseup(function (r){ // событие клика по веб-документу
 	var div = $(".log-out"); // тут указываем ID элемента
 		if (!div.is(r.target) // если клик был не по нашему блоку
@@ -261,6 +270,10 @@ $(document).ready(function(){
 	$('.back-to-reinvest-from-claim').click(function() {
 		$('#withdrawaSecond').removeClass('d-none');
 		$('#confirmOrClaim').addClass('d-none')
+	});
+
+	$('.hover-exit').hover(function() {
+		$('#exit-popap').modal('show');
 	});
 
 

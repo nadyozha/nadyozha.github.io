@@ -16,6 +16,9 @@
 		<img class="bg ellipse-52-2" src="img/Ellipse 52 2.svg" alt="">
 		<img class="bg bg-elipse-68" src="img/Ellipse 68.svg" alt="">
 		<img class="bg stars-2" src="img/stars.svg" alt="">
+
+		<div class="hover-exit hover-exit-top"></div>
+		<div class="hover-exit hover-exit-right"></div>
 		
 		<div class="header-first">
 			<div class="container">
@@ -122,9 +125,10 @@
 
 											<div class="cart-dash cart-d-left">
 												<h6>Your <br class="d-xl-none">referral Link</h6>
-												<div class="link-copy-block hover">
+												<div class="link-copy-block link-copy-block-main hover">
 													<h5 class="white-space-text beruz-color hover copy-text">https://appname.com/?...</h5>
 													<img src="img/icons8-copy 1.svg" class="copy-btn ml-2" alt="">
+													<span class="copied">Copied</span>
 												</div>
 											</div>
 
@@ -336,7 +340,6 @@
 										</div>
 									</div>
 								</div>
-
 							</div>
 
 							<div class="tab-pane fade" id="v-pills-Deposit">
@@ -737,9 +740,10 @@
 														<div class="col">22.06.2020 12:12 am</div>
 														<div class="col"><img class="mr-2" src="img/Bitcoin small.svg" alt="">Bitcoin</div>
 														<div class="col">
-															<div class="d-flex align-items-center">
+															<div class="d-flex align-items-center pos-rel">
 																<span class="white-space-text copy-text">0xa99d12aa...</span>
 																<img src="img/copy-white.svg" class="copy-btn ml-2" alt="">
+																<span class="copied">Copied</span>
 															</div>
 														</div>
 														<div class="col">$20 123.45</div>
@@ -1082,18 +1086,20 @@
 													<span>Please pay the exact amount:</span>
 
 													<div class="d-flex">
-														<div class="link-copy-block hover">
+														<div class="link-copy-block block-1 hover">
 															<h5 class="white-space-text beruz-color hover copy-text">0,005</h5>
 															<h5 class="ml-2 beruz-color">ВТС</h5>
 															<img src="img/icons8-copy 1.svg" class="copy-btn ml-2" alt="">
+															<span class="copied">Copied</span>
 														</div>
 													</div>
 
 													<span class="mt-lg-5 mt-3">Wallet ID:</span>
 
-													<div class="link-copy-block link-copy-block-long hover">
+													<div class="link-copy-block block-2 link-copy-block-long hover">
 														<h5 class="white-space-text beruz-color hover copy-text">0xa2841f818242e8446d4108eddbd28558bbc3a480 </h5>
 														<img src="img/icons8-copy 1.svg" class="copy-btn ml-2" alt="">
+														<span class="copied">Copied</span>
 													</div>
 
 													<button class="btn-modal open-qr-code">Popover QR Code</button>
@@ -1397,9 +1403,10 @@
 														<div class="col-2">$20 123.45</div>
 														<div class="col-2">Waiting</div>
 														<div class="col-2">		
-															<div class="d-flex align-items-center">
+															<div class="d-flex align-items-center pos-rel">
 																<span class="white-space-text copy-text">0xa99d12aa...</span>
 																<img src="img/copy-white.svg" class="copy-btn ml-2" alt="">
+																<span class="copied">Copied</span>
 															</div>
 														</div>
 													</div>
@@ -1536,6 +1543,7 @@
 													<div class="link-copy-block hover">
 														<h5 class="white-space-text beruz-color hover copy-text">129HeocmcR6nxK5j8fuv52uC93c345</h5>
 														<img src="img/icons8-copy 1.svg" class="copy-btn ml-2" alt="">
+														<span class="copied">Copied</span>
 													</div>
 												</div>
 												
@@ -1734,9 +1742,10 @@
 									<div class="col-xl-10 text-center steps-carts-wrap">
 										<div class="link-border">
 											<h4>Your Referral link:</h4>
-											<div class="link-block hover">
+											<div class="link-block pos-rel hover">
 												<span class="white-space-text copy-text">https://appname.com/?ref=Vita</span>
 												<img src="img/icons8-copy 1 2.svg" class="copy-btn ml-2" alt="">
+												<span class="copied">Copied</span>
 											</div>
 										</div>
 
@@ -1899,17 +1908,19 @@
 													<hr>
 													<div class="wrap-cart-block">
 														<span class="beruz-color">IMG link:</span>
-														<div class="cart-block hover">
+														<div class="cart-block hover pos-rel">
 															<span class="white-space-text copy-text">[url=https://localhost:444?id...</span>
 															<img src="img/icons8-copy 1 2.svg" class="copy-btn" alt="">
+															<span class="copied">Copied</span>
 														</div>
 													</div>
 													<hr>
 													<div class="wrap-cart-block">
 														<span class="beruz-color">HTML link:</span>
-														<div class="cart-block hover">
+														<div class="cart-block hover pos-rel">
 															<span class="white-space-text copy-text">[url=https://localhost:444?id...</span>
 															<img src="img/icons8-copy 1 2.svg" class="copy-btn" alt="">
+															<span class="copied">Copied</span>
 														</div>
 													</div>
 												</div>
@@ -1998,6 +2009,40 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal fade" id="exit-popap">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="top-block">
+						<button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+							<img src="img/cross.svg" alt="">
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="before-you">
+							<h6>Before you go!</h6>
+							<img src="img/logo.svg" alt="">
+						</div>
+						<div class="row px-0">
+							<div class="col-xl-6 col-lg-7 px-lg-0">
+								<h2>You want to start earning money, right?</h2>
+								<p>Start with our + 5% bonus within <br class="d-lg-block d-none">the first 24 hours of registration!</p>
+								<div class="btn-wrap">
+									<a href="registration.html" class="join-now">Register now for free!</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footerr">
+						
+						<span><img class="mr-2" src="img/modal-footer.svg" alt="">Trusted by over <b>63</b> active, experienced and non-professional investors around the world.</span>
+					</div>
+					<img class="modal-bg" src="img/modal-bg.svg" alt="">
+				</div>
+			</div>
+		</div>
+
 
 		<div class="modal fade" id="successfully-2">
 			<div class="modal-dialog modal-dialog-centered">

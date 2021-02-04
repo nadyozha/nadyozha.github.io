@@ -109,6 +109,9 @@ a:hover
 	.container
 		max-width: 1470px
 
+.pos-rel
+	position: relative
+
 .cart
 	background: rgba(255, 255, 255, 0.1)
 	border-radius: 12px
@@ -127,6 +130,45 @@ a:hover
 	@media (max-width: 1499px)
 		padding: 8px 10px
 		font-size: 18px
+
+.hover-exit
+	position: absolute
+	background: transparent
+	cursor: pointer
+	z-index: 5
+.hover-exit-top
+	right: 0
+	left: 0
+	top: 0
+	width: 100%
+	height: 25px
+	@media (max-width: 1199.98px)
+		height: 15px
+.hover-exit-right
+	right: 0
+	top: 0
+	width: 25px
+	height: 80px
+.copied
+	position: absolute
+	right: 0
+	bottom: -28px
+	display: inline-block
+	font-size: 16px!important
+	line-height: 13px!important
+	background: rgba(255, 255, 255, 0.2)
+	border-radius: 0 12px 12px 12px
+	padding: 8px!important
+	opacity: 0
+	z-index: 2
+	@media (max-width: 1499px)
+		border-radius: 12px
+		font-size: 14px
+	@media (max-width: 575.98px)
+		font-size: 12px
+		padding: 6px 8px
+.copied-visible
+	opacity: 1
 
 //modal
 .modal
@@ -154,6 +196,114 @@ a:hover
 				font-size: 26px
 				margin-bottom: 24px
 				margin-top: 6px
+
+#exit-popap
+	.modal-dialog
+		@media (min-width: 576px)
+			max-width: 90%!important
+		@media (min-width: 1200px)
+			max-width: 1034px!important
+		.modal-content
+			background: rgba(255, 255, 255, 0.1)
+			padding: 0
+			overflow: hidden
+			position: relative
+			.top-block
+				padding: 26px
+				@media (max-width: 575.98px)
+					padding: 16px 16px 8px 16px
+			.modal-bg
+				position: absolute
+				right: 0
+				bottom: 80px
+				z-index: 2
+				@media (max-width: 991.98px)
+					bottom: 95px
+				@media (max-width: 575.98px)
+					height: 200px
+					bottom: 62px
+
+				
+			.modal-body
+				padding: 0 82px 104px 82px
+				@media (max-width: 991.98px)
+					padding: 0 24px 350px 24px
+				@media (max-width: 575.98px)
+					padding: 0 16px 210px 16px
+				.before-you
+					display: flex
+					justify-content: space-between
+					align-items: center
+					margin-bottom: 62px
+					@media (max-width: 575.98px)
+						margin-bottom: 28px
+					h6
+						margin-bottom: 0
+						font-weight: 600
+						font-size: 28px
+						line-height: 34px
+						text-transform: uppercase
+						color: $beruz
+						@media (max-width: 575.98px)
+							font-size: 20px
+						@media (max-width: 330px)
+							font-size: 16px
+							
+					img
+						height: 30px
+						@media (max-width: 575.98px)
+							height: 24px
+						@media (max-width: 330px)
+							height: 20px
+				h2
+					font-weight: 600
+					font-size: 44px
+					line-height: 54px
+					margin-bottom: 16px
+					@media (max-width: 767.98px)
+						font-size: 40px
+					@media (max-width: 575.98px)
+						font-size: 30px
+						line-height: 40px
+					@media (max-width: 330px)
+						font-size: 24px
+						line-height: 32px
+				p
+					font-size: 28px
+					line-height: 34px
+					margin-bottom: 40px
+					@media (max-width: 767.98px)
+						font-size: 24px
+					@media (max-width: 575.98px)
+						font-size: 18px
+						line-height: 28px
+						margin-bottom: 24px
+					@media (max-width: 330px)
+						font-size: 16px
+						line-height: 22px
+
+				.btn-wrap .join-now
+					@media (max-width: 575.98px)
+						text-align: center
+						font-size: 16px
+			.modal-footerr
+				background: #4554F0
+				padding: 17px 82px
+				text-align: center
+				@media (max-width: 575.98px)
+					padding: 12px 16px
+				span
+					font-size: 18px
+					line-height: 22px
+					display: inline-block
+					@media (max-width: 1199.98px)
+						font-size: 16px
+					@media (max-width: 575.98px)
+						font-size: 12px
+						line-height: 10px
+					@media (max-width: 330px)
+						line-height: 18px
+						font-size: 10px
 //buttons
 button
 	transition: all 0.6s
@@ -1214,6 +1364,16 @@ footer
 				line-height: 53px
 				font-weight: 500
 				font-size: 18px
+				.pos-rel
+					.copied
+						bottom: -16px
+						@media (max-width: 1499px)
+							right: 24px
+						@media (max-width: 575.98px)
+							right: 38px
+
+					
+				
 				.white-space-text
 					white-space: nowrap
 					text-overflow: ellipsis
@@ -1226,6 +1386,8 @@ footer
 					font-size: 12px
 					img
 						display: none
+					.copy-btn
+						display: block
 				@media (max-width: 330px)
 					font-size: 10px
 					line-height: 40px
@@ -1549,6 +1711,15 @@ footer
 	.link-copy-block
 		display: flex
 		align-items: center
+		position: relative
+	.link-copy-block-main
+		.copied
+			@media (max-width: 1499px)
+				right: 30px
+				bottom: -32px
+			@media (max-width: 1199.98px)
+				right: 0
+
 	.white-space-text
 		white-space: nowrap
 		text-overflow: ellipsis
@@ -2198,6 +2369,9 @@ footer
 				line-height: 32px
 				@media (max-width: 575.98px)
 					font-size: 16px
+			.copied
+				bottom: -34px
+				background: rgba(255, 255, 255, 0.5)
 
 	.baner-block
 		.cart
@@ -2228,6 +2402,8 @@ footer
 					padding-top: 22px
 				.cart-block
 					padding: 18px 0 25px 0
+				.copied
+					bottom: -10px
 			.wrap-banner-125
 				text-align: center
 				margin-top: 45px
@@ -2694,8 +2870,6 @@ footer
 
 			.color-yel
 				color: $yel
-			.pos-rel
-				position: relative
 				small
 					position: absolute
 					left: 0
@@ -2710,6 +2884,7 @@ footer
 					@media (max-width: 330px)
 						bottom: -20px
 						font-size: 12px
+
 	.MakeYourBitcoinPayment
 		.cart
 			position: relative
@@ -2748,6 +2923,25 @@ footer
 				margin-top: 18px
 			@media (max-width: 575.98px)
 				margin-bottom: 4px
+		.block-1
+			.copied
+				bottom: -50px
+				@media (max-width: 575.98px)
+					bottom: -30px
+					background: #000D16
+		.block-2
+			.copied
+				right: 75px
+				bottom: -45px
+				@media (max-width: 1499px)
+					right: 40px
+				@media (max-width: 1199.98px)
+					right: 117px
+				@media (max-width: 767.98px)
+					right: 0
+				@media (max-width: 575.98px)
+					bottom: -35px
+					background: #000D16
 		.link-copy-block
 			display: flex
 			align-items: center
@@ -2755,6 +2949,7 @@ footer
 			border: 1.5px solid #98FEFE
 			box-sizing: border-box
 			border-radius: 35px
+			position: relative
 			@media (max-width: 575.98px)
 				padding: 8px 14px
 			h5
@@ -3163,11 +3358,20 @@ footer
 		@media (max-width: 330px)
 			font-size: 14px
 
-
-
-
-
-
+#withdrawaSecond
+	.copied
+		right: 235px
+		@media (max-width: 1499px)
+			right: 125px
+		@media (max-width: 1199.98px)
+			right: 175px
+		@media (max-width: 991.98px)
+			right: 95px
+		@media (max-width: 767.98px)
+			right: 24px
+		@media (max-width: 575.98px)
+			right: 0
+			background: #000D16
 
 
 
