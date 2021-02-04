@@ -32,9 +32,10 @@ $(document).ready(function(){
       copyToClipboard($brat);
       $(this).siblings(".copied").addClass('copied-visible');
 			setTimeout(function() {
-				$(this).siblings(".copied").removeClass('copied-visible');
-		}, 2000);
+				$('.copied-visible').removeClass('copied-visible');
+		}, 200);
     });
+
   });
 
 
