@@ -71,6 +71,17 @@ h1
 @media (min-width: 1200px)
 	.container-870
 		max-width: 950px
+
+@media (min-width: 1200px)
+	.container-1055
+		max-width: 1055px
+
+.row-1
+	margin-left: -.25rem
+	margin-right: -.25rem
+	> [class*="col"]
+		padding-left: .25rem
+		padding-right: .25rem
 //buttons
 
 button
@@ -3014,10 +3025,343 @@ p.first-steps-p
 			@media (max-width: 767.98px)
 				display: none
 
+.p-text
+	font-size: 16px
+	line-height: 24px
+	margin-bottom: 30px
+	color: #4F4F4F
+	opacity: 0.75
+	@media (max-width: 575.98px)
+		margin-bottom: 20px
+		line-height: 20px
+		margin-bottom: 0
+
+.hover-img
+	cursor: pointer
+	&:hover
+		opacity: 0.9
+.task-2
+	padding: 50px 0 0 0
+	h1
+		font-size: 40px
+		line-height: 53px
+		margin-bottom: 35px
+		@media (max-width: 1199.98px)
+			font-size: 32px
+		@media (max-width: 575.98px)
+			font-size: 20px
+			line-height: 34px
+			margin-bottom: 20px
+	
+	.input-block
+		margin-bottom: 33px
+	.watch-video
+		.right-block-video
+			display: flex
+			flex-direction: column
+			align-items: center
+			height: 100%
+			@media (max-width: 1199.98px)
+				justify-content: center
+			img
+				margin-top: auto
+				@media (max-width: 1199.98px)
+					margin-top: 0
+			span
+				display: inline-block
+				margin-top: 57px
+				margin-bottom: 26px
+				font-size: 15px
+				line-height: 18px
+				color: #3F85F4
+				@media (max-width: 1199.98px)
+					margin-bottom: 12px
+					margin-top: 20px
+				@media (max-width: 575.98px)
+					font-size: 12px
+					margin-top: 0
+.globus-section
+	padding: 75px 0
+	@media (max-width: 575.98px)
+		padding-bottom: 34px
+	.arrow-left-block
+		padding: 30px 5px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background: url('../img/strelka.svg') center no-repeat
+		@media (max-width: 1199.98px)
+			background: none
+			padding: 0
+		span
+			font-size: 32px
+			line-height: 43px
+			color: #3A353B
+			font-family: Playfair Display
+			font-weight: normal
+			@media (max-width: 991.98px)
+				font-size: 28px
+			@media (max-width: 330px)
+				font-size: 24px
+			b
+				font-weight: bold
+	.arrow-left-block-2
+		flex-direction: row
+		b
+			font-weight: bold
+			font-size: 60px
+			line-height: 60px
+			color: #00ACC1
+			opacity: 0.95
+		.left
+			span
+				font-size: 14px
+				line-height: 16px
+				color: #8AC6C6
+				@media (max-width: 575.98px)
+					font-size: 10px
+		.midle
+			width: 1px
+			height: 94px
+			background: #E0E7F0
+			margin: 0	24px
+
+
+
+
+.profit-section
+	border-bottom: 1px solid #E0E7F0
+	padding-bottom: 26px
+.profit-block
+	h2
+		font-weight: bold
+		font-size: 32px
+		line-height: 43px
+		font-family: Playfair Display
+		color: #4F4F4F
+		opacity: 0.95
+		@media (max-width: 1199.98px)
+			margin-bottom: 28px
+		@media (max-width: 767.98px)
+			font-size: 22px
+		@media (max-width: 575.98px)
+			font-size: 14px
+			margin-bottom: 0
+			text-align: center
+		@media (max-width: 330px)
+			font-size: 13px
+		span
+			font-weight: 700
+			font-size: 48px
+			color: #00ACC1
+			@media (max-width: 767.98px)
+				font-size: 36px
+			@media (max-width: 575.98px)
+				font-size: 20px
+	.today
+		font-weight: bold
+		font-size: 10px
+		width: 91px
+		height: 20px
+		line-height: 12px
+		display: flex
+		justify-content: center
+		align-items: center
+		text-transform: uppercase
+		color: #3F85F4
+		padding: 11px
+		background: url('../img/Rectangle150.svg') center no-repeat
+		background-size: content
+.stolbs-wrap
+	position: relative
+	display: flex
+	justify-content: center
+	padding: 0 30px
+	.bg-stolbs
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 48px
+		z-index: -1
+		width: 100%
+		@media (max-width: 575.98px)
+			bottom: 38px
+	.stolb
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 0 8px
+		height: 100%
+		justify-content: flex-end
+		@media (max-width: 991.98px)
+			padding: 0 16px
+		@media (max-width: 575.98px)
+			padding: 0 10px
+		.top-span
+			font-weight: bold
+			font-size: 14px
+			line-height: 16px
+			color: #00ACC1
+			margin-top: auto
+			@media (max-width: 575.98px)
+				font-size: 10px
+			
+
+		h6
+			margin-top: 33px
+			font-weight: bold
+			font-size: 12px
+			line-height: 14px
+			color: #4F4F4F
+			margin-bottom: 3px
+			@media (max-width: 575.98px)
+				margin-top: 16px
+		.date
+			font-weight: bold
+			font-size: 12px
+			line-height: 14px
+			color: #8AC6C6
+			@media (max-width: 575.98px)
+				font-size: 10px
+		.color-bl
+			color: #3F85F4
+
+.h2-text
+	font-weight: bold
+	font-size: 32px
+	line-height: 43px
+	font-family: Playfair Display
+	color: #4F4F4F
+	opacity: 0.95
+	@media (max-width: 1199.98px)
+		margin-bottom: 28px
+	@media (max-width: 767.98px)
+		font-size: 22px
+	@media (max-width: 575.98px)
+		font-size: 16px
+		margin-bottom: 0
+
+.h6-green
+	font-weight: bold
+	font-size: 18px
+	line-height: 21px
+	color: #00ACC1
+	opacity: 0.95
+	margin-bottom: 0
+	text-align: center
+	font-family: Playfair Display
+
+.multiply-section
+	padding: 75px 0 60px 0
+	border-bottom: 1px solid #E0E7F0
+	@media (max-width: 991.98px)
+		text-align: center
+	.robar
+		width: 100%
+	.p-text
+		margin-bottom: 36px
+	.stolbs-wrap
+		padding: 0
+		flex-direction: column
+		justify-content: end
+		.stolb
+			margin-top: auto
+			padding: 0 4px
+			h6
+				margin-top: 0
+				@media (max-width: 575.98px)
+					font-size: 10px
+
+//slider
+//активная полоса прогресса
+.noUi-connect
+	height: 14px
+	background: #8AC6C6
+	border-radius: 7px 0 0 7px
+//длинна инпута
+.noUi-base
+	background: #E5E5E5
+	border-radius: 7px
+//главная полоса инпута
+.noUi-target
+	height: 14px
+	background: #E5E5E5
+	border-radius: 7px
+	border: none
+	box-shadow: none
+//блок для ползунка
+.noUi-horizontal
+	.noUi-handle
+		width: 26px
+		height: 26px
+		background: #00ACC1
+		background-image: url('../img/bg-range.svg')
+		background-position: center
+		background-repeat: no-repeat
+		top: -6px
+		right: -11px
+		border-radius: 13px
+		border: none
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+		&:before, &:after
+			display: none
+//ползунок
+.noUi-touch-area
+	display: none
+//noUi-tooltip
+.noUi-tooltip
+	background: #00ACC1
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1)
+	border: none
+	font-weight: bold
+	font-size: 12px
+	line-height: 14px
+	padding: 6px 10px
+	color: #fff
+	bottom: -130%!important
+	&:before
+		content: '$'
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 8px
+		height: 8px
+		transform: rotate(45deg) translateX(-50%)
+		top: 0
+		left: 50%
+		background: #00ACC1
+		
 
 
 
 
 
+
+
+.how-match
+	padding: 75px 0 60px 0
+	border-bottom: 1px solid #E0E7F0
+	.range
+		@media (max-width: 575.98px)
+			margin-top: 16px
+	.under-range
+		display: flex
+		justify-content: space-between
+		padding: 0 4px
+		margin-top: 2px
+		.poloska
+			display: block
+			width: 2px
+			height: 5px
+			background: #8AC6C6
+			border-radius: 0px 0px 2px 2px
+		.poloska-grey
+			background: #E5E5E5
+
+.weekly-lottery
+	padding: 75px 0 60px 0
+	border-bottom: 1px solid #E0E7F0
 
 
