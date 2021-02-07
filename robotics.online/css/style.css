@@ -453,6 +453,13 @@ button {
       color: #828282;
       opacity: 0.75; }
 
+.show-all {
+  color: #3A353B;
+  opacity: 0.95; }
+  .show-all:hover {
+    color: #3A353B;
+    opacity: 0.6; }
+
 .thert-green {
   background: #DCEDDD; }
 
@@ -2981,51 +2988,35 @@ p.first-steps-p {
   @media (max-width: 575.98px) {
     .globus-section {
       padding-bottom: 34px; } }
-  .globus-section .arrow-left-block {
-    padding: 30px 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("../img/strelka.svg") center no-repeat; }
-    @media (max-width: 1199.98px) {
-      .globus-section .arrow-left-block {
-        background: none;
-        padding: 0; } }
-    .globus-section .arrow-left-block span {
-      font-size: 32px;
-      line-height: 43px;
-      color: #3A353B;
-      font-family: Playfair Display;
-      font-weight: normal; }
-      @media (max-width: 991.98px) {
-        .globus-section .arrow-left-block span {
-          font-size: 28px; } }
-      @media (max-width: 330px) {
-        .globus-section .arrow-left-block span {
-          font-size: 24px; } }
-      .globus-section .arrow-left-block span b {
-        font-weight: bold; }
-  .globus-section .arrow-left-block-2 {
-    flex-direction: row; }
-    .globus-section .arrow-left-block-2 b {
-      font-weight: bold;
-      font-size: 60px;
-      line-height: 60px;
-      color: #00ACC1;
-      opacity: 0.95; }
-    .globus-section .arrow-left-block-2 .left span {
-      font-size: 14px;
-      line-height: 16px;
-      color: #8AC6C6; }
-      @media (max-width: 575.98px) {
-        .globus-section .arrow-left-block-2 .left span {
-          font-size: 10px; } }
-    .globus-section .arrow-left-block-2 .midle {
-      width: 1px;
-      height: 94px;
-      background: #E0E7F0;
-      margin: 0 24px; }
+  .globus-section .cercul {
+    width: 263px;
+    height: 268px;
+    background: url("../img/Group 212-2.svg") center no-repeat;
+    background-size: cover;
+    position: relative; }
+    .globus-section .cercul .text-block {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .globus-section .cercul .text-block small {
+        font-size: 18px;
+        line-height: 16px;
+        color: #00ACC1;
+        position: relative;
+        top: 13px; }
+      .globus-section .cercul .text-block h4 {
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 64px;
+        color: #00ACC1;
+        opacity: 0.95;
+        margin-bottom: 0; }
 
 .profit-section {
   border-bottom: 1px solid #E0E7F0;
@@ -3244,8 +3235,7 @@ p.first-steps-p {
     background: #00ACC1; }
 
 .how-match {
-  padding: 75px 0 60px 0;
-  border-bottom: 1px solid #E0E7F0; }
+  padding: 75px 0 60px 0; }
   @media (max-width: 575.98px) {
     .how-match .range {
       margin-top: 16px; } }
@@ -3266,5 +3256,44 @@ p.first-steps-p {
 .weekly-lottery {
   padding: 75px 0 60px 0;
   border-bottom: 1px solid #E0E7F0; }
+
+.carts-review .cart-rev {
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  padding: 16px; }
+  .carts-review .cart-rev .cart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px; }
+    .carts-review .cart-rev .cart-top img {
+      padding: 0 2px; }
+      @media (max-width: 575.98px) {
+        .carts-review .cart-rev .cart-top img {
+          height: 15px; } }
+    .carts-review .cart-rev .cart-top h6 {
+      margin-bottom: 0;
+      font-size: 20px;
+      color: #3A353B;
+      opacity: 0.95;
+      font-weight: bold; }
+  .carts-review .cart-rev p {
+    margin-bottom: 0; }
+
+.bottom-block {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 32px; }
+  .bottom-block .p-text {
+    margin-bottom: 12px;
+    font-size: 14px; }
+    @media (max-width: 575.98px) {
+      .bottom-block .p-text {
+        font-size: 10px;
+        margin-bottom: 6px; } }
+  .bottom-block .p-block {
+    padding-left: 24px; }
+    @media (max-width: 575.98px) {
+      .bottom-block .p-block {
+        padding-left: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
