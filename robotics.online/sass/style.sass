@@ -89,9 +89,23 @@ button
 	font-family: Roboto
 	&:hover
 		cursor: pointer
-.btn
+.btn-blue
+	background: #3F85F4
+	border-radius: 4px
+	padding: 18px 15px
+	width: 100%
+	font-weight: bold
+	font-size: 14px
+	line-height: 16px
+	max-width: 240px
+	border: none
 	box-sizing: border-box
-	
+	color: #FFFFFF
+	@media (max-width: 991.98px)
+		min-width: 100%
+	&:hover
+		background: darken(#3F85F4,5%)
+		color: #FFFFFF
 //first-faq
 .first-faq
 	background: #ECFDFD
@@ -107,31 +121,6 @@ button
 		img
 			padding-right: 7px
 			padding-bottom: 2px
-
-	.input-block
-		margin-top: 32px
-		input
-			width: 100%
-			background: #FDFFFF
-			border: 1px solid #BFCACA
-			box-sizing: border-box
-			border-radius: 5px
-			padding: 10px 16px
-			@media (max-width: 575.98px)
-				margin-bottom: 10px
-
-		button
-			background: #3F85F4
-			border-radius: 4px
-			padding: 10px 15px
-			width: 100%
-			font-weight: bold
-			font-size: 16px
-			color: #FFFFFF
-			&:hover
-				background: darken(#3F85F4,5%)
-				color: #FFFFFF
-
 .second-buttons
 	padding: 32px 0
 	@media (max-width: 767.98px)
@@ -1045,27 +1034,6 @@ button
 		@media (max-width: 575.98px)
 			font-size: 16px
 			line-height: 20px
-
-.btn-blue
-	font-weight: bold
-	font-size: 16px
-	color: #FFFFFF
-	background: #3F85F4
-	border-radius: 4px
-	max-width: 240px
-	padding: 15px 30px
-	&:hover
-		background: darken(#3F85F4,5%)
-		color: #FFFFFF
-
-
-
-
-
-
-
-
-
 //first-fees
 .first-fees
 	padding: 40px 0
@@ -1419,13 +1387,6 @@ button
 		margin-bottom: 42px
 		@media (max-width: 575.98px)
 			margin-bottom: 28px
-
-	button
-		font-weight: normal
-		font-size: 14px
-		padding: 10px 40px
-
-
 //affiliate-carts
 .affiliate-carts
 	padding: 40px 0
@@ -3387,10 +3348,32 @@ p.first-steps-p
 			padding-left: 12px
 
 
+.input-block
+	margin-top: 32px
+	//input
+		//width: 100%
+		//background: #FDFFFF
+		//border: 1px solid #BFCACA
+		//box-sizing: border-box
+		//border-radius: 5px
+		//padding: 10px 16px
+		//@media (max-width: 575.98px)
+			//margin-bottom: 10px
+	.group
+		input
+			border: 1px solid #BFCACA
+			box-sizing: border-box
+			border-radius: 5px
+			height: 52px
+			padding: 22px 24px 6px 16px
 
-
-
-
+			&:focus, &:valid 
+				~	label
+						bottom: 20px
+						left: 16px
+		label
+			left: 16px
+			bottom: 8px
 
 
 

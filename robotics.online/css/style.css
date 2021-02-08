@@ -86,8 +86,24 @@ button {
   button:hover {
     cursor: pointer; }
 
-.btn {
-  box-sizing: border-box; }
+.btn-blue {
+  background: #3F85F4;
+  border-radius: 4px;
+  padding: 18px 15px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 240px;
+  border: none;
+  box-sizing: border-box;
+  color: #FFFFFF; }
+  @media (max-width: 991.98px) {
+    .btn-blue {
+      min-width: 100%; } }
+  .btn-blue:hover {
+    background: #2776f3;
+    color: #FFFFFF; }
 
 .first-faq {
   background: #ECFDFD;
@@ -104,29 +120,6 @@ button {
     .first-faq span img {
       padding-right: 7px;
       padding-bottom: 2px; }
-  .first-faq .input-block {
-    margin-top: 32px; }
-    .first-faq .input-block input {
-      width: 100%;
-      background: #FDFFFF;
-      border: 1px solid #BFCACA;
-      box-sizing: border-box;
-      border-radius: 5px;
-      padding: 10px 16px; }
-      @media (max-width: 575.98px) {
-        .first-faq .input-block input {
-          margin-bottom: 10px; } }
-    .first-faq .input-block button {
-      background: #3F85F4;
-      border-radius: 4px;
-      padding: 10px 15px;
-      width: 100%;
-      font-weight: bold;
-      font-size: 16px;
-      color: #FFFFFF; }
-      .first-faq .input-block button:hover {
-        background: #2776f3;
-        color: #FFFFFF; }
 
 .second-buttons {
   padding: 32px 0; }
@@ -990,18 +983,6 @@ button {
       font-size: 16px;
       line-height: 20px; } }
 
-.btn-blue {
-  font-weight: bold;
-  font-size: 16px;
-  color: #FFFFFF;
-  background: #3F85F4;
-  border-radius: 4px;
-  max-width: 240px;
-  padding: 15px 30px; }
-  .btn-blue:hover {
-    background: #2776f3;
-    color: #FFFFFF; }
-
 .first-fees {
   padding: 40px 0;
   background: none;
@@ -1350,10 +1331,6 @@ button {
     @media (max-width: 575.98px) {
       .affiliate-first p {
         margin-bottom: 28px; } }
-  .affiliate-first button {
-    font-weight: normal;
-    font-size: 14px;
-    padding: 10px 40px; }
 
 .affiliate-carts {
   padding: 40px 0; }
@@ -3295,5 +3272,20 @@ p.first-steps-p {
     @media (max-width: 575.98px) {
       .bottom-block .p-block {
         padding-left: 12px; } }
+
+.input-block {
+  margin-top: 32px; }
+  .input-block .group input {
+    border: 1px solid #BFCACA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 52px;
+    padding: 22px 24px 6px 16px; }
+    .input-block .group input:focus ~ label, .input-block .group input:valid ~ label {
+      bottom: 20px;
+      left: 16px; }
+  .input-block .group label {
+    left: 16px;
+    bottom: 8px; }
 
 /*# sourceMappingURL=style.css.map */
