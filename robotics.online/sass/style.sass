@@ -103,6 +103,7 @@ button
 	color: #FFFFFF
 	@media (max-width: 991.98px)
 		min-width: 100%
+		font-size: 16px
 	&:hover
 		background: darken(#3F85F4,5%)
 		color: #FFFFFF
@@ -3004,6 +3005,11 @@ p.first-steps-p
 		line-height: 24px
 		margin-bottom: 0
 
+@media (min-width: 1200px)
+	.col-580
+		flex-basis: 580px
+		max-width: 580px
+
 .hover-img
 	cursor: pointer
 	&:hover
@@ -3011,26 +3017,37 @@ p.first-steps-p
 .task-2
 	padding: 50px 0 0 0
 	h1
-		font-size: 40px
-		line-height: 53px
-		margin-bottom: 35px
-		@media (max-width: 1199.98px)
-			font-size: 32px
+		font-size: 48px
+		line-height: 60px
+		margin-bottom: 24px
+		@media (max-width: 991.98px)
+			font-size: 38px
+			br
+				display: none
 		@media (max-width: 575.98px)
-			font-size: 20px
-			line-height: 34px
+			font-size: 28px
+			line-height: 36px
 			margin-bottom: 20px
 	
 	.input-block
-		margin-bottom: 33px
+		margin-bottom: 45px
+		@media (max-width: 1199.98px)
+			margin-bottom: 12px
+		@media (max-width: 991.98px)
+			margin-bottom: 24px
 	.watch-video
 		.right-block-video
 			display: flex
 			flex-direction: column
 			align-items: center
 			height: 100%
+			position: relative
+			left: 15px
 			@media (max-width: 1199.98px)
 				justify-content: center
+			@media (max-width: 991.98px)
+				position: static
+				
 			img
 				margin-top: auto
 				@media (max-width: 1199.98px)
@@ -3046,8 +3063,8 @@ p.first-steps-p
 					margin-bottom: 12px
 				@media (max-width: 991.98px)
 					margin-bottom: 24px
+					font-size: 18px
 				@media (max-width: 575.98px)
-					font-size: 12px
 					margin-top: 0
 .globus-section
 	padding: 75px 0
@@ -3104,7 +3121,7 @@ p.first-steps-p
 		@media (max-width: 767.98px)
 			font-size: 22px
 		@media (max-width: 575.98px)
-			font-size: 14px
+			font-size: 16px
 			margin-bottom: 0
 			text-align: center
 		@media (max-width: 330px)
@@ -3396,6 +3413,8 @@ p.first-steps-p
 		label
 			left: 16px
 			bottom: 8px
+			@media (max-width: 575.98px)
+				font-size: 16px
 
 
 

@@ -100,7 +100,8 @@ button {
   color: #FFFFFF; }
   @media (max-width: 991.98px) {
     .btn-blue {
-      min-width: 100%; } }
+      min-width: 100%;
+      font-size: 16px; } }
   .btn-blue:hover {
     background: #2776f3;
     color: #FFFFFF; }
@@ -2910,6 +2911,10 @@ p.first-steps-p {
       line-height: 24px;
       margin-bottom: 0; } }
 
+@media (min-width: 1200px) {
+  .col-580 {
+    flex-basis: 580px;
+    max-width: 580px; } }
 .hover-img {
   cursor: pointer; }
   .hover-img:hover {
@@ -2918,27 +2923,40 @@ p.first-steps-p {
 .task-2 {
   padding: 50px 0 0 0; }
   .task-2 h1 {
-    font-size: 40px;
-    line-height: 53px;
-    margin-bottom: 35px; }
-    @media (max-width: 1199.98px) {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 24px; }
+    @media (max-width: 991.98px) {
       .task-2 h1 {
-        font-size: 32px; } }
+        font-size: 38px; }
+        .task-2 h1 br {
+          display: none; } }
     @media (max-width: 575.98px) {
       .task-2 h1 {
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 28px;
+        line-height: 36px;
         margin-bottom: 20px; } }
   .task-2 .input-block {
-    margin-bottom: 33px; }
+    margin-bottom: 45px; }
+    @media (max-width: 1199.98px) {
+      .task-2 .input-block {
+        margin-bottom: 12px; } }
+    @media (max-width: 991.98px) {
+      .task-2 .input-block {
+        margin-bottom: 24px; } }
   .task-2 .watch-video .right-block-video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%; }
+    height: 100%;
+    position: relative;
+    left: 15px; }
     @media (max-width: 1199.98px) {
       .task-2 .watch-video .right-block-video {
         justify-content: center; } }
+    @media (max-width: 991.98px) {
+      .task-2 .watch-video .right-block-video {
+        position: static; } }
     .task-2 .watch-video .right-block-video img {
       margin-top: auto; }
       @media (max-width: 1199.98px) {
@@ -2956,10 +2974,10 @@ p.first-steps-p {
           margin-bottom: 12px; } }
       @media (max-width: 991.98px) {
         .task-2 .watch-video .right-block-video span {
-          margin-bottom: 24px; } }
+          margin-bottom: 24px;
+          font-size: 18px; } }
       @media (max-width: 575.98px) {
         .task-2 .watch-video .right-block-video span {
-          font-size: 12px;
           margin-top: 0; } }
 
 .globus-section {
@@ -3018,7 +3036,7 @@ p.first-steps-p {
       font-size: 22px; } }
   @media (max-width: 575.98px) {
     .profit-block h2 {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 0;
       text-align: center; } }
   @media (max-width: 330px) {
@@ -3316,5 +3334,8 @@ p.first-steps-p {
   .input-block .group label {
     left: 16px;
     bottom: 8px; }
+    @media (max-width: 575.98px) {
+      .input-block .group label {
+        font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
