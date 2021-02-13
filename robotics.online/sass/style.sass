@@ -3010,6 +3010,11 @@ p.first-steps-p
 		flex-basis: 580px
 		max-width: 580px
 
+@media (min-width: 1200px)
+	.col-450
+		flex-basis: 480px
+		max-width: 480px
+
 .hover-img
 	cursor: pointer
 	&:hover
@@ -3345,7 +3350,7 @@ p.first-steps-p
 .weekly-lottery
 	padding: 120px 0 60px 0
 	border-bottom: 1px solid #E0E7F0
-	@media (max-width: 1991.98px)
+	@media (max-width: 1191.98px)
 		padding: 75px 0 60px 0
 	@media (max-width: 767.98px)
 		padding: 0 0 60px 0
@@ -3415,6 +3420,285 @@ p.first-steps-p
 			bottom: 8px
 			@media (max-width: 575.98px)
 				font-size: 16px
+
+.Contact_Us
+	.first-faq
+		padding: 80px 0
+		@media (max-width: 767.98px)
+			padding: 40px 0
+	h1
+		margin-bottom: 14px
+	h5
+		font-size: 18px
+		line-height: 21px
+		color: #4F4F4F
+	h4
+		font-family: Playfair Display
+		font-weight: bold
+		font-size: 28px
+		line-height: 37px
+		color: #3A353B
+		opacity: 0.95
+	span, a
+		font-size: 18px
+		line-height: 28px
+		text-align: center
+		color: #4F4F4F
+		@media (max-width: 330px)
+			font-size: 16px
+	a
+		color: #3F85F4
+	.massage_ask
+		padding: 40px 0 72px 0
+		@media (max-width: 767.98px)
+			padding: 40px 0
+		img
+			margin-bottom: 32px
+			min-height: 256px
+			@media (max-width: 767.98px)
+				min-height: 180px
+		h4
+			margin-bottom: 34px
+			@media (max-width: 575.98px)
+				margin-bottom: 16px
+	.thert
+		h4
+			margin-bottom: 35px
+			@media (max-width: 575.98px)
+				margin-bottom: 16px
+		.carts-block
+			margin-top: 86px
+			@media (max-width: 767.98px)
+				margin-top: 42px
+			.cart-submit
+				background: #FFFFFF
+				box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.12)
+				border-radius: 4px
+				padding: 65px 52px
+				text-align: center
+				height: 100%
+				@media (max-width: 1191.98px)
+					padding: 36px 24px
+				@media (max-width: 575.98px)
+					padding: 24px 16px
+				h4
+					margin-bottom: 45px
+					@media (max-width: 575.98px)
+						margin-bottom: 24px
+				.wrap
+					padding: 3px
+					border-radius: 4px
+					background: #f2f2f2
+				.input-block
+					margin-top: 24px
+					@media (max-width: 575.98px)
+						margin-top: 12px
+					.group
+						input
+							height: 64px
+							&:focus, &:valid 
+								~	label
+										font-size: 12px
+										bottom: 26px
+						label
+							font-size: 18px
+							line-height: 21px
+							color: #808080
+							bottom: 14px
+							left: 19px
+					textarea
+						width: 100%
+						border: 1px solid #d9d9d9
+						padding: 22px 19px
+						font-size: 18px
+						line-height: 21px
+						color: #808080
+						text-align: left
+						font-family: Roboto
+					textarea::placeholder
+						font-size: 18px
+						line-height: 21px
+						color: #808080
+						text-align: left
+						font-family: Roboto
+
+				button
+					margin-top: 50px
+					@media (max-width: 575.98px)
+						margin-top: 24px
+		.accordeon-block
+			background: #f9ffff
+			padding: 0 0 0 32px
+			margin: 40px -52px 0 -52px
+			border-top: 4px solid #e8f4f4
+			border-bottom: 4px solid #e8f4f4
+			@media (max-width: 1191.98px)
+				margin: 40px -24px 0 -24px
+				padding: 0
+			@media (max-width: 575.98px)
+				margin: 24px -16px 0 -16px
+			.cart-ask
+				padding-left: 18px
+				border: 1px solid transparent
+				cursor: pointer
+				text-align: left
+				&:last-child
+					.card-header
+						border: none
+
+				.card-header
+					background: transparent
+					padding: 21px 25px 21px 0
+					border-bottom: 1px solid #8AC6C6
+					span
+						font-size: 18px
+						line-height: 21px
+						color: #3F85F4
+						display: inline-block
+						margin-left: 11px
+						text-align: left
+						@media (max-width: 575.98px)
+							font-size: 16px
+				.cart-body
+					padding: 27px 37px 13px 22px
+					font-size: 18px
+					line-height: 21px
+					color: #4F4F4F
+					display: none
+					//box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5)
+					@media (max-width: 991.98px)
+						font-size: 16px
+						padding: 14px 16px 14px 0
+					
+					
+				&:hover
+					box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5)
+					img
+						transform: rotate(90deg)
+					.card-header
+						border-bottom: 1px solid #8AC6C6
+					.cart-body
+						display: block
+						
+
+.read-btn
+	color: #413C42
+	border: 2px solid #CCCCCC
+	background: transparent
+	&:hover
+		color: black
+		background: #f7f7f7
+
+.stylish-select-container
+	width: 100%
+	.modal &
+		margin-bottom: 20px
+	> .stylish-select-selected
+			background: #fff
+			box-sizing: border-box
+			border: 1px solid #d9d9d9
+			border-radius: 4px
+			color: inherit
+			font-size: 18px
+			line-height: 21px
+			color: #808080
+			text-align: left
+			font-family: Roboto
+			padding: 22px 19px
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 20px
+				height: 12px
+				right: 22px
+				top: 50%
+				transform: translateY(-50%)
+				background-image: url(../img/Vector-11.svg)
+				background-repeat: no-repeat
+				transition: .2s
+
+	&[data-select-state="open"] 
+		> .stylish-select-selected
+			border-bottom-left-radius: 0
+			border-bottom-right-radius: 0
+	> .stylish-select-list
+		color: #808080
+		max-height: none
+		border: 1px solid #808080
+		border-radius: 0 0 4px 4px
+		background: #fff
+		max-height: 260px
+		overflow-y: scroll
+		text-align: left
+		&::-webkit-scrollbar
+			background-color: transparent
+			width: 2px
+		&::-webkit-scrollbar-thumb
+			border-radius: 12px
+			background-color: #808080
+			max-height: 20px
+		> li 
+			padding: 20px 19px
+			line-height: inherit
+			border: 1px solid transparent
+			border-bottom: 1px solid #d9d9d9
+			background-color: transparent !important
+			transition: .2s
+			@media (max-width: 1439px)
+				padding: 12px 30px 12px 12px
+				font-size: 14px
+			&:last-child
+				border-radius: 0 0 4px 4px
+				border-bottom: none
+			&:hover
+				color: black
+[data-select-state=open]
+	.stylish-select-selected
+		&:after
+			transform: translateY(-50%) rotateX(180deg)
+
+.working_hours
+	padding-top: 100px
+	border-bottom: 4px solid #e8f4f4
+	@media (max-width: 767.98px)
+		padding-top: 40px
+	.cart-time
+		background: #fff
+		padding: 40px 48px
+		box-shadow: 0px -14px 38px 0px rgba(0, 0, 0, 0.12)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-top: 4px solid #b5e8ec
+		@media (max-width: 767.98px)
+			padding: 32px 16px
+		span
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			color: #00ACC1
+			margin-bottom: 12px
+			text-align: left
+		small
+			font-size: 14px
+			line-height: 16px
+			color: #4F4F4F
+			opacity: 0.75
+	.cart-time-2
+		border-top: 4px solid #c6dafc
+		span
+			color: #3F85F4
+
+
+
+
+
+
+
+
+
+
 
 
 
