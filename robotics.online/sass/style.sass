@@ -3551,8 +3551,6 @@ p.first-steps-p
 				border: 1px solid transparent
 				cursor: pointer
 				text-align: left
-				position: relative
-				z-index: 1
 				&:last-child
 					.card-header
 						border: none
@@ -3561,8 +3559,6 @@ p.first-steps-p
 					background: transparent
 					padding: 21px 25px 21px 0
 					border-bottom: 1px solid #8AC6C6
-					position: relative
-					z-index: 1
 					span
 						font-size: 18px
 						line-height: 21px
@@ -3579,14 +3575,15 @@ p.first-steps-p
 					color: #4F4F4F
 					display: none
 					position: absolute
-					z-index: 2
+					top: 100%
 					left: -1px
-					box-shadow: -2px 15px 20px rgba(184, 197, 229, 0.5)
+					box-shadow: -2px 15px 20px rgba(184, 197, 229, 0.5)	
+					background: #fff
+					border-left: 1px solid #D2E7EC
+					border-bottom: 1px solid #D2E7EC
 					@media (max-width: 991.98px)
 						font-size: 16px
 						padding: 14px 16px 14px 0
-					
-					
 				&:hover
 					box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5)
 					border-top: 1px solid #D2E7EC
@@ -3598,10 +3595,6 @@ p.first-steps-p
 						border-bottom: 1px solid #8AC6C6
 					.cart-body
 						display: block
-						background: #fff
-						border-left: 1px solid #D2E7EC
-						border-bottom: 1px solid #D2E7EC
-						z-index: 3
 
 						
 

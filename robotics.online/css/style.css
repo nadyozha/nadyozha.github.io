@@ -3482,17 +3482,13 @@ p.first-steps-p {
     padding-left: 18px;
     border: 1px solid transparent;
     cursor: pointer;
-    text-align: left;
-    position: relative;
-    z-index: 1; }
+    text-align: left; }
     .Contact_Us .thert .accordeon-block .cart-ask:last-child .card-header {
       border: none; }
     .Contact_Us .thert .accordeon-block .cart-ask .card-header {
       background: transparent;
       padding: 21px 25px 21px 0;
-      border-bottom: 1px solid #8AC6C6;
-      position: relative;
-      z-index: 1; }
+      border-bottom: 1px solid #8AC6C6; }
       .Contact_Us .thert .accordeon-block .cart-ask .card-header span {
         font-size: 18px;
         line-height: 21px;
@@ -3510,9 +3506,12 @@ p.first-steps-p {
       color: #4F4F4F;
       display: none;
       position: absolute;
-      z-index: 2;
+      top: 100%;
       left: -1px;
-      box-shadow: -2px 15px 20px rgba(184, 197, 229, 0.5); }
+      box-shadow: -2px 15px 20px rgba(184, 197, 229, 0.5);
+      background: #fff;
+      border-left: 1px solid #D2E7EC;
+      border-bottom: 1px solid #D2E7EC; }
       @media (max-width: 991.98px) {
         .Contact_Us .thert .accordeon-block .cart-ask .cart-body {
           font-size: 16px;
@@ -3527,11 +3526,7 @@ p.first-steps-p {
       .Contact_Us .thert .accordeon-block .cart-ask:hover .card-header {
         border-bottom: 1px solid #8AC6C6; }
       .Contact_Us .thert .accordeon-block .cart-ask:hover .cart-body {
-        display: block;
-        background: #fff;
-        border-left: 1px solid #D2E7EC;
-        border-bottom: 1px solid #D2E7EC;
-        z-index: 3; }
+        display: block; }
 
 .read-btn {
   color: #413C42;
