@@ -3488,7 +3488,7 @@ p.first-steps-p {
     text-align: left;
     transition: none !important; }
     .Contact_Us .thert .accordeon-block .cart-ask:last-child .card-header {
-      border: none; }
+      border-bottom: 1px solid transparent; }
     .Contact_Us .thert .accordeon-block .cart-ask .card-header {
       background: transparent;
       padding: 21px 25px 21px 0;
