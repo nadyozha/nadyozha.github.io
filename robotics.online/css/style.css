@@ -3473,7 +3473,7 @@ p.first-steps-p {
   border-bottom: 4px solid #e8f4f4; }
   @media (max-width: 1191.98px) {
     .Contact_Us .thert .accordeon-block {
-      margin: 40px -24px 0 -24px;
+      margin: 40px 0 0 0;
       padding: 0; } }
   @media (max-width: 575.98px) {
     .Contact_Us .thert .accordeon-block {
@@ -3515,7 +3515,7 @@ p.first-steps-p {
       @media (max-width: 991.98px) {
         .Contact_Us .thert .accordeon-block .cart-ask .cart-body {
           font-size: 16px;
-          padding: 14px 16px 14px 0; } }
+          padding: 16px; } }
     .Contact_Us .thert .accordeon-block .cart-ask:hover {
       box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5);
       border-top: 1px solid #D2E7EC;
