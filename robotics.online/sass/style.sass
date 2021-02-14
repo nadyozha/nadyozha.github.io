@@ -27,7 +27,7 @@ input::placeholder, textarea::placeholder
 	
 *
 	outline: none !important
-	transition: 0.4s ease
+	transition: 0.3s ease
 	&:focus
 		box-shadow: none !important
 
@@ -3422,6 +3422,10 @@ p.first-steps-p
 				font-size: 16px
 
 .Contact_Us
+	.you-want
+		h3
+			@media (max-width: 767.98px)
+				margin-top: 80px
 	.first-faq
 		padding: 80px 0
 		@media (max-width: 767.98px)
@@ -3584,19 +3588,17 @@ p.first-steps-p
 					@media (max-width: 991.98px)
 						font-size: 16px
 						padding: 16px 16px 16px 24px
-				&:hover
-					box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5)
-					border-top: 1px solid #D2E7EC
-					border-left: 1px solid #D2E7EC
-					transform: translateY(-2px)
-					img
-						transform: rotate(90deg)
-					.card-header
-						border-bottom: 1px solid #8AC6C6
-					.cart-body
-						display: block
-
-						
+			.active-ask
+				box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5)
+				border-top: 1px solid #D2E7EC
+				border-left: 1px solid #D2E7EC
+				transform: translateY(-2px)
+				img
+					transform: rotate(90deg)
+				.card-header
+					border-bottom: 1px solid #8AC6C6
+				.cart-body
+					display: flex
 
 .read-btn
 	color: #413C42

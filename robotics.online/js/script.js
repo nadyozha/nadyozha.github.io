@@ -69,3 +69,9 @@ $('.left-block-btn').click(function(){
   $(this).addClass('active-mobile');
   $(this).siblings().removeClass('active-mobile');
 });
+
+$('.cart-ask .card-header').click(function(){
+  $('.cart-ask').removeClass('active-ask');
+  $(this).parent('.cart-ask').addClass('active-ask');
+});
+

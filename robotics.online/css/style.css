@@ -24,7 +24,7 @@ input::placeholder, textarea::placeholder {
 
 * {
   outline: none !important;
-  transition: 0.4s ease; }
+  transition: 0.3s ease; }
   *:focus {
     box-shadow: none !important; }
 
@@ -3342,6 +3342,9 @@ p.first-steps-p {
       .input-block .group label {
         font-size: 16px; } }
 
+@media (max-width: 767.98px) {
+  .Contact_Us .you-want h3 {
+    margin-top: 80px; } }
 .Contact_Us .first-faq {
   padding: 80px 0; }
   @media (max-width: 767.98px) {
@@ -3516,17 +3519,17 @@ p.first-steps-p {
         .Contact_Us .thert .accordeon-block .cart-ask .cart-body {
           font-size: 16px;
           padding: 16px 16px 16px 24px; } }
-    .Contact_Us .thert .accordeon-block .cart-ask:hover {
-      box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5);
-      border-top: 1px solid #D2E7EC;
-      border-left: 1px solid #D2E7EC;
-      transform: translateY(-2px); }
-      .Contact_Us .thert .accordeon-block .cart-ask:hover img {
-        transform: rotate(90deg); }
-      .Contact_Us .thert .accordeon-block .cart-ask:hover .card-header {
-        border-bottom: 1px solid #8AC6C6; }
-      .Contact_Us .thert .accordeon-block .cart-ask:hover .cart-body {
-        display: block; }
+  .Contact_Us .thert .accordeon-block .active-ask {
+    box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5);
+    border-top: 1px solid #D2E7EC;
+    border-left: 1px solid #D2E7EC;
+    transform: translateY(-2px); }
+    .Contact_Us .thert .accordeon-block .active-ask img {
+      transform: rotate(90deg); }
+    .Contact_Us .thert .accordeon-block .active-ask .card-header {
+      border-bottom: 1px solid #8AC6C6; }
+    .Contact_Us .thert .accordeon-block .active-ask .cart-body {
+      display: flex; }
 
 .read-btn {
   color: #413C42;
