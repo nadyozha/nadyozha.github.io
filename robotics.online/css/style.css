@@ -3485,13 +3485,16 @@ p.first-steps-p {
     padding-left: 18px;
     border: 1px solid transparent;
     cursor: pointer;
-    text-align: left; }
+    text-align: left;
+    transition: none !important; }
     .Contact_Us .thert .accordeon-block .cart-ask:last-child .card-header {
       border: none; }
     .Contact_Us .thert .accordeon-block .cart-ask .card-header {
       background: transparent;
       padding: 21px 25px 21px 0;
       border-bottom: 1px solid #8AC6C6; }
+      .Contact_Us .thert .accordeon-block .cart-ask .card-header img {
+        transition: none !important; }
       .Contact_Us .thert .accordeon-block .cart-ask .card-header span {
         font-size: 18px;
         line-height: 21px;
