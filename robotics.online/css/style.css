@@ -3400,15 +3400,26 @@ p.first-steps-p {
     background: #FFFFFF;
     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    padding: 65px 52px;
-    text-align: center;
-    height: 100%; }
+    padding: 65px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     @media (max-width: 1191.98px) {
       .Contact_Us .thert .carts-block .cart-submit {
-        padding: 36px 24px; } }
+        padding: 36px 0; } }
     @media (max-width: 575.98px) {
       .Contact_Us .thert .carts-block .cart-submit {
-        padding: 24px 16px; } }
+        padding: 24px 0; } }
+    .Contact_Us .thert .carts-block .cart-submit .submit-wrapper {
+      text-align: center;
+      padding: 0 52px; }
+      @media (max-width: 991.98px) {
+        .Contact_Us .thert .carts-block .cart-submit .submit-wrapper {
+          padding: 0 24px; } }
+      @media (max-width: 575.98px) {
+        .Contact_Us .thert .carts-block .cart-submit .submit-wrapper {
+          padding: 0 16px; } }
     .Contact_Us .thert .carts-block .cart-submit h4 {
       margin-bottom: 45px; }
       @media (max-width: 575.98px) {
@@ -3457,7 +3468,7 @@ p.first-steps-p {
 .Contact_Us .thert .accordeon-block {
   background: #f9ffff;
   padding: 0 0 0 32px;
-  margin: 40px -52px 0 -52px;
+  margin: 40px 0 0 0;
   border-top: 4px solid #e8f4f4;
   border-bottom: 4px solid #e8f4f4; }
   @media (max-width: 1191.98px) {
@@ -3466,18 +3477,22 @@ p.first-steps-p {
       padding: 0; } }
   @media (max-width: 575.98px) {
     .Contact_Us .thert .accordeon-block {
-      margin: 24px -16px 0 -16px; } }
+      margin: 24px 0 0 0; } }
   .Contact_Us .thert .accordeon-block .cart-ask {
     padding-left: 18px;
     border: 1px solid transparent;
     cursor: pointer;
-    text-align: left; }
+    text-align: left;
+    position: relative;
+    z-index: 1; }
     .Contact_Us .thert .accordeon-block .cart-ask:last-child .card-header {
       border: none; }
     .Contact_Us .thert .accordeon-block .cart-ask .card-header {
       background: transparent;
       padding: 21px 25px 21px 0;
-      border-bottom: 1px solid #8AC6C6; }
+      border-bottom: 1px solid #8AC6C6;
+      position: relative;
+      z-index: 1; }
       .Contact_Us .thert .accordeon-block .cart-ask .card-header span {
         font-size: 18px;
         line-height: 21px;
@@ -3493,19 +3508,30 @@ p.first-steps-p {
       font-size: 18px;
       line-height: 21px;
       color: #4F4F4F;
-      display: none; }
+      display: none;
+      position: absolute;
+      z-index: 2;
+      left: -1px;
+      box-shadow: -2px 15px 20px rgba(184, 197, 229, 0.5); }
       @media (max-width: 991.98px) {
         .Contact_Us .thert .accordeon-block .cart-ask .cart-body {
           font-size: 16px;
           padding: 14px 16px 14px 0; } }
     .Contact_Us .thert .accordeon-block .cart-ask:hover {
-      box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5); }
+      box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5);
+      border-top: 1px solid #D2E7EC;
+      border-left: 1px solid #D2E7EC;
+      transform: translateY(-2px); }
       .Contact_Us .thert .accordeon-block .cart-ask:hover img {
         transform: rotate(90deg); }
       .Contact_Us .thert .accordeon-block .cart-ask:hover .card-header {
         border-bottom: 1px solid #8AC6C6; }
       .Contact_Us .thert .accordeon-block .cart-ask:hover .cart-body {
-        display: block; }
+        display: block;
+        background: #fff;
+        border-left: 1px solid #D2E7EC;
+        border-bottom: 1px solid #D2E7EC;
+        z-index: 3; }
 
 .read-btn {
   color: #413C42;
