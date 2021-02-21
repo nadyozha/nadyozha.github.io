@@ -970,7 +970,7 @@ button {
       margin-top: 40px; } }
   @media (max-width: 575.98px) {
     .you-want h3 {
-      font-size: 30px;
+      font-size: 24px;
       line-height: 32px; } }
 .you-want small {
   font-size: 18px;
@@ -3147,7 +3147,7 @@ p.first-steps-p {
       font-size: 22px; } }
   @media (max-width: 575.98px) {
     .h2-text {
-      font-size: 16px;
+      font-size: 20px;
       margin-bottom: 0; } }
 
 .h6-green {
@@ -3519,17 +3519,17 @@ p.first-steps-p {
         .Contact_Us .thert .accordeon-block .cart-ask .cart-body {
           font-size: 16px;
           padding: 16px 16px 16px 24px; } }
-    .Contact_Us .thert .accordeon-block .cart-ask:hover {
-      box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5);
-      border-top: 1px solid #D2E7EC;
-      border-left: 1px solid #D2E7EC;
-      transform: translateY(-2px); }
-      .Contact_Us .thert .accordeon-block .cart-ask:hover img {
-        transform: rotate(90deg); }
-      .Contact_Us .thert .accordeon-block .cart-ask:hover .card-header {
-        border-bottom: 1px solid #8AC6C6; }
-      .Contact_Us .thert .accordeon-block .cart-ask:hover .cart-body {
-        display: flex; }
+  .Contact_Us .thert .accordeon-block .active-ask {
+    box-shadow: 0px 4px 20px rgba(184, 197, 229, 0.5);
+    border-top: 1px solid #D2E7EC;
+    border-left: 1px solid #D2E7EC;
+    transform: translateY(-2px); }
+    .Contact_Us .thert .accordeon-block .active-ask img {
+      transform: rotate(90deg); }
+    .Contact_Us .thert .accordeon-block .active-ask .card-header {
+      border-bottom: 1px solid #8AC6C6; }
+    .Contact_Us .thert .accordeon-block .active-ask .cart-body {
+      display: flex; }
 
 .read-btn {
   color: #413C42;
