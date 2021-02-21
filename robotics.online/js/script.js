@@ -70,9 +70,48 @@ $('.left-block-btn').click(function(){
   $(this).siblings().removeClass('active-mobile');
 });
 
-$('.cart-ask .card-header').click(function(){
-  $('.cart-ask').removeClass('active-ask');
-  $(this).parent('.cart-ask').toggleClass('active-ask');
+//$('.cart-ask .card-header').click(function(){
+  //$('.cart-ask').removeClass('active-ask');
+  //$(this).parent('.cart-ask').toggleClass('active-ask');
+//});
+$('#ask-1 .card-header').click(function(){
+  $('#ask-1').toggleClass('active-ask');
+  $('#ask-2').removeClass('active-ask');
+  $('#ask-3').removeClass('active-ask');
+  $('#ask-4').removeClass('active-ask');
+  $('#ask-5').removeClass('active-ask');
+});
+
+$('#ask-2 .card-header').click(function(){
+  $('#ask-2').toggleClass('active-ask');
+  $('#ask-1').removeClass('active-ask');
+  $('#ask-3').removeClass('active-ask');
+  $('#ask-4').removeClass('active-ask');
+  $('#ask-5').removeClass('active-ask');
+});
+
+$('#ask-3 .card-header').click(function(){
+  $('#ask-3').toggleClass('active-ask');
+  $('#ask-2').removeClass('active-ask');
+  $('#ask-1').removeClass('active-ask');
+  $('#ask-4').removeClass('active-ask');
+  $('#ask-5').removeClass('active-ask');
+});
+
+$('#ask-4 .card-header').click(function(){
+  $('#ask-4').toggleClass('active-ask');
+  $('#ask-2').removeClass('active-ask');
+  $('#ask-3').removeClass('active-ask');
+  $('#ask-1').removeClass('active-ask');
+  $('#ask-5').removeClass('active-ask');
+});
+
+$('#ask-5 .card-header').click(function(){
+  $('#ask-5').toggleClass('active-ask');
+  $('#ask-2').removeClass('active-ask');
+  $('#ask-3').removeClass('active-ask');
+  $('#ask-4').removeClass('active-ask');
+  $('#ask-1').removeClass('active-ask');
 });
 
 
