@@ -239,6 +239,9 @@ button {
             .second-buttons .faq .accordion .card .card-body p {
               font-size: 14px; } }
 
+.fz-18 {
+  font-size: 18px; }
+
 .first-news {
   padding: 20px 0; }
 
@@ -3303,7 +3306,7 @@ p.first-steps-p {
     .carts-review .cart-rev .cart-top h6 {
       margin-bottom: 0;
       font-size: 20px;
-      color: #3A353B;
+      color: #000;
       opacity: 0.95;
       font-weight: bold; }
   .carts-review .cart-rev p {
@@ -3624,13 +3627,13 @@ p.first-steps-p {
         padding: 32px 16px; } }
     .working_hours .cart-time span {
       font-weight: bold;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 19px;
       color: #00ACC1;
       margin-bottom: 12px;
       text-align: left; }
     .working_hours .cart-time small {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 16px;
       color: #4F4F4F;
       opacity: 0.75; }
