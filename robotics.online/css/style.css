@@ -452,7 +452,8 @@ button {
 
 .show-all {
   color: #3A353B !important;
-  opacity: 0.95; }
+  opacity: 0.95;
+  font-size: 16px !important; }
   .show-all:hover {
     color: #3A353B;
     opacity: 0.6; }
