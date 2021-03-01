@@ -43,7 +43,7 @@ h1 {
   font-weight: bold;
   font-size: 56px;
   line-height: 75px;
-  color: #3A353B;
+  color: #000000;
   margin-bottom: 0; }
   @media (max-width: 991.98px) {
     h1 {
@@ -3303,9 +3303,6 @@ p.first-steps-p {
       @media (max-width: 1300px) {
         .carts-review .cart-rev .cart-top img {
           height: 20px; } }
-      @media (max-width: 575.98px) {
-        .carts-review .cart-rev .cart-top img {
-          height: 17px; } }
     .carts-review .cart-rev .cart-top h6 {
       margin-bottom: 0;
       font-size: 18px;
